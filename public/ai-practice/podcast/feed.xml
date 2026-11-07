@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-07 · 一部 AI 短片的完整流水线，以及新模型发布后该删掉哪些 skill</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-07/</link>
+      <description>一个人拍 AI 科幻剧集：哪些环节交给模型，哪些还得自己做；Garry Tan：换上新模型后，删掉一个它已经不需要的 skill；用 ChatGPT 把自己的画和照片做成 GIF 发群里；创作工具开始内置 MCP，agent 和人可以接力干活（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-07/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 一个人拍 AI 科幻剧集：哪些环节交给模型，哪些还得自己做<br>02:37 Garry Tan：换上新模型后，删掉一个它已经不需要的 skill<br>03:54 用 ChatGPT 把自己的画和照片做成 GIF 发群里<br>05:24 创作工具开始内置 MCP，agent 和人可以接力干活<br>06:38 今天可以做的一件事</p><p><b>一个人拍 AI 科幻剧集：哪些环节交给模型，哪些还得自己做</b><br><a href="https://www.youtube.com/watch?v=OWr3IU82bJ8">Theoretically Media</a></p><p><b>Garry Tan：换上新模型后，删掉一个它已经不需要的 skill</b><br><a href="https://x.com/garrytan/status/2118920030243139596">Follow Builders (X)</a></p><p><b>用 ChatGPT 把自己的画和照片做成 GIF 发群里</b><br><a href="https://lifehacker.com/tech/chatgpts-new-gif-generator-is-fun-but-wont-replace-us-humans?utm_medium=RSS">Lifehacker</a></p><p><b>创作工具开始内置 MCP，agent 和人可以接力干活</b><br><a href="https://x.com/trq212/status/2118822238262853904">Follow Builders (X)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-07.mp3" length="2630540" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-07</guid>
+      <pubDate>Sat, 07 Nov 2026 22:45:17 GMT</pubDate>
+      <itunes:duration>00:07:18</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-06 · 一条唱歌视频变成月入 2.5 万美元的 App，一句提示词让 agent 催你洗衣服</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-06/</link>
       <description>一条法语唱歌视频，九个月后变成月入 2.5 万美元的 App；让 AI 助手记住你几天没洗衣服，到家后再来催（本集语音由 AI 合成）</description>
