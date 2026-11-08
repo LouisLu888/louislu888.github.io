@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-08",
+    "title": "月入 1 万美元卡了几年的 SaaS 怎么重新增长，Karpathy 3 分钟做出一个视频站",
+    "summary": "提案软件月入一万美元卡了几年，问题出在首页那句话；18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元；看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站；剪视频的 agent 卡住时，会直接打电话问他；Aaron Levie：效率提升十倍百倍的人，具备这五个条件",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-08/",
+    "items": [
+      {
+        "headline": "提案软件月入一万美元卡了几年，问题出在首页那句话",
+        "sources": [
+          {
+            "label": "Smart Bear Live",
+            "title": "E13 w/ Ruben Gamez: How to Restart Growth in a Stagnant SaaS Business",
+            "url": "https://smartbearlive.transistor.fm/13"
+          }
+        ]
+      },
+      {
+        "headline": "18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元",
+        "sources": [
+          {
+            "label": "Starter Story (YouTube)",
+            "title": "Here's how bro scaled from $10K to $60K/month with 1 creator 🤯",
+            "url": "https://www.youtube.com/shorts/cJEohUq7iys"
+          }
+        ]
+      },
+      {
+        "headline": "看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Andrej Karpathy: Earlier this week Tristan published his top YouTube channels:\nhttps://t.co/NZ3UC",
+            "url": "https://x.com/karpathy/status/2119114537442189652"
+          }
+        ]
+      },
+      {
+        "headline": "剪视频的 agent 卡住时，会直接打电话问他",
+        "sources": [
+          {
+            "label": "Matt Wolfe",
+            "title": "Claude Code Just Called My Phone",
+            "url": "https://www.youtube.com/shorts/A5SfzBD6M3o"
+          }
+        ]
+      },
+      {
+        "headline": "Aaron Levie：效率提升十倍百倍的人，具备这五个条件",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Aaron Levie: This sounds extreme and I wouldn’t have believed it even a year ago, but we’re s",
+            "url": "https://x.com/levie/status/2119111328099168409"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "提案软件月入一万美元卡了几年，问题出在首页那句话"
+      },
+      {
+        "start": 147,
+        "title": "18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元"
+      },
+      {
+        "start": 222,
+        "title": "看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站"
+      },
+      {
+        "start": 282,
+        "title": "剪视频的 agent 卡住时，会直接打电话问他"
+      },
+      {
+        "start": 346,
+        "title": "Aaron Levie：效率提升十倍百倍的人，具备这五个条件"
+      },
+      {
+        "start": 415,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 463,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-08.mp3",
+    "audioBytes": 2780156,
+    "publishedAt": "2026-11-08T22:44:59.755Z"
+  },
+  {
     "date": "2026-11-07",
     "title": "一部 AI 短片的完整流水线，以及新模型发布后该删掉哪些 skill",
     "summary": "一个人拍 AI 科幻剧集：哪些环节交给模型，哪些还得自己做；Garry Tan：换上新模型后，删掉一个它已经不需要的 skill；用 ChatGPT 把自己的画和照片做成 GIF 发群里；创作工具开始内置 MCP，agent 和人可以接力干活",
