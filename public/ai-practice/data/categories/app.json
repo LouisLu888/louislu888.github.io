@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c5"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-07",
+      "headline": "18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元",
+      "oneLiner": "Lino 18 岁，没学过编程，用 Rork 做了 App AbMaxx。他说停掉所有网红合作、改投 Meta 广告之后，月收入从 1 万美元涨到 6 万美元。",
+      "who": "AbMaxx 开发者 Lino，18 岁，零编程经验，用 AI 应用搭建工具 Rork 做出这个 App。",
+      "how": "他发现 UGC 和大网红合作把利润率压到了 5% 到 10%，于是全部停掉，只保留一位拿股权的合作创作者专门做素材，再全力投 Meta 广告。",
+      "result": "他说 Meta 广告的 ROAS（广告带来的收入除以广告花费）在 2 到 2.5 倍，月收入从 1 万美元升到 6 万美元。",
+      "tryThis": "把每个获客渠道扣掉成本后的利润率单独算一遍，先停掉最差的那个。",
+      "caveat": "2 到 2.5 倍 ROAS 算的是收入，不是利润，还要扣掉商店分成和退款。能放量的前提是素材持续有效，所以他用股权绑住了那位创作者。",
+      "body": "[Starter Story 的短视频](https://www.youtube.com/shorts/cJEohUq7iys)讲了一个获客取舍。Lino 用 Rork 做 AbMaxx，开发门槛不是瓶颈，卡住他的是渠道成本：UGC 和大网红合作看上去带量，但他算下来利润率只剩 5% 到 10%。\n\n他的调整分两步：**先停掉利润最薄的渠道，再把内容生产集中到一位拿股权的创作者身上**，素材统一供给 Meta 广告。合作方式从按条付费变成长期绑定，素材质量和成本都更容易控制。\n\n对用 AI 工具做 App 的人来说，做出产品之后，按渠道算账往往比继续加功能更重要。动手之前先确认 App 本身有稳定的付费转化，否则广告投得越多，亏得越多。",
+      "sources": [
+        {
+          "label": "Starter Story (YouTube)",
+          "title": "Here's how bro scaled from $10K to $60K/month with 1 creator 🤯",
+          "url": "https://www.youtube.com/shorts/cJEohUq7iys"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-02",
+      "issueDate": "2026-11-08",
+      "issueNumber": 30
+    },
+    {
+      "candidateIds": [
         "c4"
       ],
       "category": "app",

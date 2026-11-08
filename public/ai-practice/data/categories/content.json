@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c4"
+      ],
+      "category": "content",
+      "kind": "本周演示",
+      "eventDate": "2026-11-07",
+      "headline": "剪视频的 agent 卡住时，会直接打电话问他",
+      "oneLiner": "YouTuber Matt Wolfe 用 Claude Code 剪视频：遇到需要创意判断的地方，agent 打电话问他；渲染完成就发短信；其余时间不打扰他。",
+      "who": "AI 主题 YouTuber Matt Wolfe，用 Claude Code 处理视频剪辑。这条是他和 Bird 的赞助合作内容。",
+      "how": "通过 Bird 让 agent 能打电话、发短信和邮件，按三种情况处理：需要创意决定时打电话，渲染完成时发短信，不需要他时继续干活。",
+      "result": "他说 agent 不再停在终端里干等他回复。",
+      "tryThis": "给你的 agent 任务分三级：必须问人的、通知一下就行的、自己处理的。先把这三类写进指令里，再决定要不要接电话或短信通道。",
+      "caveat": "Bird 需要付费，还要给 agent 开通对外联系的权限。打电话的门槛要设清楚，否则打扰会比在终端里干等更多。",
+      "body": "Matt Wolfe 在[短视频](https://www.youtube.com/shorts/A5SfzBD6M3o)里演示，Claude Code 剪他的视频时，不再停在终端里等他看屏幕。工具 Bird 让 agent 能打电话、发短信和邮件，支持 Claude Code、ChatGPT、Cursor 和 Codex。\n\n更值得借鉴的是他的**三级打扰规则**：创意决定打电话，进度结果发短信，其余不打扰。内容创作者把剪辑、渲染这类长任务交给 agent 时，人最大的时间损耗往往是反复回来查看进度。\n\n不接电话也能先用这套分级：在任务说明里写清楚哪些事必须停下来问你。这样你可以离开电脑，回来时只处理真正需要你拍板的事。",
+      "sources": [
+        {
+          "label": "Matt Wolfe",
+          "title": "Claude Code Just Called My Phone",
+          "url": "https://www.youtube.com/shorts/A5SfzBD6M3o"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-04",
+      "issueDate": "2026-11-08",
+      "issueNumber": 30
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "content",

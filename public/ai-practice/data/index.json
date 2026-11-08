@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-07T14:44:00.224Z",
+  "updatedAt": "2026-11-08T14:44:51.314Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 31
+      "count": 32
     },
     {
       "id": "consulting",
@@ -20,28 +20,28 @@
       "name": "内容创作",
       "en": "AI content creation",
       "desc": "用 AI 辅助研究与制作，积累受众，获得广告、赞助和相关收入",
-      "count": 10
+      "count": 11
     },
     {
       "id": "saas",
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 12
+      "count": 13
     },
     {
       "id": "app",
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 17
+      "count": 18
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 31
+      "count": 32
     },
     {
       "id": "life",
@@ -52,6 +52,44 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-08",
+      "number": 30,
+      "title": "月入 1 万美元卡了几年的 SaaS 怎么重新增长，Karpathy 3 分钟做出一个视频站",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 7,
+      "itemCount": 5,
+      "categoryCounts": {
+        "saas": 1,
+        "app": 1,
+        "productivity": 1,
+        "content": 1,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "提案软件月入一万美元卡了几年，问题出在首页那句话"
+        },
+        {
+          "category": "app",
+          "headline": "18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元"
+        },
+        {
+          "category": "productivity",
+          "headline": "看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站"
+        },
+        {
+          "category": "content",
+          "headline": "剪视频的 agent 卡住时，会直接打电话问他"
+        },
+        {
+          "category": "perspective",
+          "headline": "Aaron Levie：效率提升十倍百倍的人，具备这五个条件"
+        }
+      ]
+    },
     {
       "date": "2026-11-07",
       "number": 29,

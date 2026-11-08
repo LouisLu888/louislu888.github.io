@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c6"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-08",
+      "headline": "提案软件月入一万美元卡了几年，问题出在首页那句话",
+      "oneLiner": "Nusii 创始人 Michael Koper 说，产品月收入在 1 万美元左右持平了几年。两位做过同类产品的创始人陪他重新找卖点，建议他别再做所有行业的通用工具。",
+      "who": "Michael Koper 是程序员出身，一个人做提案软件 Nusii，联合创始人走后营销没人管。陪他复盘的是 Jason Cohen（WP Engine 创始人）和 Ruben Gamez（Bidsketch、SignWell 创始人）。",
+      "how": "三人从首页标题开始追问：客户为什么买、和谁比、谁会留下来。最后落到选定一个垂直行业，再想办法把对口的潜在客户放大到现在的 10 倍。",
+      "result": "Michael 估计新客户里 30% 到 40% 原来用 Word，约 5% 来自 HubSpot 的报价插件。Ruben 说 SignWell 有一半客户之前没用过任何同类系统。",
+      "tryThis": "用一句话写完「用我的产品能多成交，因为……」。写不出来，就先去访谈最近 5 个续费的客户。",
+      "caveat": "Jason 提醒，单个功能现在很容易被别人做出来，AI 让这件事更快，所以光靠功能没法跟对手拉开距离。换成垂直定位，也得有人持续做营销，这正是 Michael 最弱的一块。",
+      "body": "[Smart Bear Live 这一期](https://smartbearlive.transistor.fm/13)是一次公开的诊断。Nusii 首页写的是「认真做生意的公司用来赢更多单的提案软件」。Jason 追问「赢更多单」到底靠什么，Michael 先回答「方便跟进」。Ruben 不同意：他给 Bidsketch 做过大量用户访谈，大多数人只用自动跟进，这个功能只能算优化。**真正起作用的是速度**。很多客户会选第一份看着还行的提案，在线签字又省掉了打印这一步。\n\n第二个问题是人人都说自己「简单」。Ruben 说，客户拿来比的往往是 Word，跟 Word 比，任何提案软件都显得简单。还有一个现象：自由职业者接到项目就退订，留下来的是持续往外发提案的团队。\n\n两位嘉宾给的方向是：在拥挤的市场里**不做横向通用工具，先选一个真实的垂直行业**，然后接受一点，跟对手拉开距离之后，仍然需要 10 倍的有效流量。建议从 29:21 和 01:06:02 两段开始听。",
+      "sources": [
+        {
+          "label": "Smart Bear Live",
+          "title": "E13 w/ Ruben Gamez: How to Restart Growth in a Stagnant SaaS Business",
+          "url": "https://smartbearlive.transistor.fm/13"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-01",
+      "issueDate": "2026-11-08",
+      "issueNumber": 30
+    },
+    {
+      "candidateIds": [
         "c7"
       ],
       "category": "saas",

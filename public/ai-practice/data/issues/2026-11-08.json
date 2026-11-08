@@ -1,0 +1,281 @@
+{
+  "date": "2026-11-08",
+  "title": "月入 1 万美元卡了几年的 SaaS 怎么重新增长，Karpathy 3 分钟做出一个视频站",
+  "items": [
+    {
+      "candidateIds": [
+        "c6"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-08",
+      "headline": "提案软件月入一万美元卡了几年，问题出在首页那句话",
+      "oneLiner": "Nusii 创始人 Michael Koper 说，产品月收入在 1 万美元左右持平了几年。两位做过同类产品的创始人陪他重新找卖点，建议他别再做所有行业的通用工具。",
+      "who": "Michael Koper 是程序员出身，一个人做提案软件 Nusii，联合创始人走后营销没人管。陪他复盘的是 Jason Cohen（WP Engine 创始人）和 Ruben Gamez（Bidsketch、SignWell 创始人）。",
+      "how": "三人从首页标题开始追问：客户为什么买、和谁比、谁会留下来。最后落到选定一个垂直行业，再想办法把对口的潜在客户放大到现在的 10 倍。",
+      "result": "Michael 估计新客户里 30% 到 40% 原来用 Word，约 5% 来自 HubSpot 的报价插件。Ruben 说 SignWell 有一半客户之前没用过任何同类系统。",
+      "tryThis": "用一句话写完「用我的产品能多成交，因为……」。写不出来，就先去访谈最近 5 个续费的客户。",
+      "caveat": "Jason 提醒，单个功能现在很容易被别人做出来，AI 让这件事更快，所以光靠功能没法跟对手拉开距离。换成垂直定位，也得有人持续做营销，这正是 Michael 最弱的一块。",
+      "body": "[Smart Bear Live 这一期](https://smartbearlive.transistor.fm/13)是一次公开的诊断。Nusii 首页写的是「认真做生意的公司用来赢更多单的提案软件」。Jason 追问「赢更多单」到底靠什么，Michael 先回答「方便跟进」。Ruben 不同意：他给 Bidsketch 做过大量用户访谈，大多数人只用自动跟进，这个功能只能算优化。**真正起作用的是速度**。很多客户会选第一份看着还行的提案，在线签字又省掉了打印这一步。\n\n第二个问题是人人都说自己「简单」。Ruben 说，客户拿来比的往往是 Word，跟 Word 比，任何提案软件都显得简单。还有一个现象：自由职业者接到项目就退订，留下来的是持续往外发提案的团队。\n\n两位嘉宾给的方向是：在拥挤的市场里**不做横向通用工具，先选一个真实的垂直行业**，然后接受一点，跟对手拉开距离之后，仍然需要 10 倍的有效流量。建议从 29:21 和 01:06:02 两段开始听。",
+      "sources": [
+        {
+          "label": "Smart Bear Live",
+          "title": "E13 w/ Ruben Gamez: How to Restart Growth in a Stagnant SaaS Business",
+          "url": "https://smartbearlive.transistor.fm/13"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-01"
+    },
+    {
+      "candidateIds": [
+        "c5"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-07",
+      "headline": "18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元",
+      "oneLiner": "Lino 18 岁，没学过编程，用 Rork 做了 App AbMaxx。他说停掉所有网红合作、改投 Meta 广告之后，月收入从 1 万美元涨到 6 万美元。",
+      "who": "AbMaxx 开发者 Lino，18 岁，零编程经验，用 AI 应用搭建工具 Rork 做出这个 App。",
+      "how": "他发现 UGC 和大网红合作把利润率压到了 5% 到 10%，于是全部停掉，只保留一位拿股权的合作创作者专门做素材，再全力投 Meta 广告。",
+      "result": "他说 Meta 广告的 ROAS（广告带来的收入除以广告花费）在 2 到 2.5 倍，月收入从 1 万美元升到 6 万美元。",
+      "tryThis": "把每个获客渠道扣掉成本后的利润率单独算一遍，先停掉最差的那个。",
+      "caveat": "2 到 2.5 倍 ROAS 算的是收入，不是利润，还要扣掉商店分成和退款。能放量的前提是素材持续有效，所以他用股权绑住了那位创作者。",
+      "body": "[Starter Story 的短视频](https://www.youtube.com/shorts/cJEohUq7iys)讲了一个获客取舍。Lino 用 Rork 做 AbMaxx，开发门槛不是瓶颈，卡住他的是渠道成本：UGC 和大网红合作看上去带量，但他算下来利润率只剩 5% 到 10%。\n\n他的调整分两步：**先停掉利润最薄的渠道，再把内容生产集中到一位拿股权的创作者身上**，素材统一供给 Meta 广告。合作方式从按条付费变成长期绑定，素材质量和成本都更容易控制。\n\n对用 AI 工具做 App 的人来说，做出产品之后，按渠道算账往往比继续加功能更重要。动手之前先确认 App 本身有稳定的付费转化，否则广告投得越多，亏得越多。",
+      "sources": [
+        {
+          "label": "Starter Story (YouTube)",
+          "title": "Here's how bro scaled from $10K to $60K/month with 1 creator 🤯",
+          "url": "https://www.youtube.com/shorts/cJEohUq7iys"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-02"
+    },
+    {
+      "candidateIds": [
+        "c21"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-07",
+      "headline": "看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站",
+      "oneLiner": "Andrej Karpathy 说，他用 Claude Code 一次生成了 TristanTube：收录 4.7 万个硬核视频，还带一个躺着看的 TV 模式，前后用了 3 分钟。",
+      "who": "AI 研究者 Andrej Karpathy。朋友 Tristan 公开了自己常看的 YouTube 频道清单，他想直接拿来用。",
+      "how": "把这份清单交给 Claude Code，一次提示生成一个可浏览的网站，带 TV 模式。",
+      "result": "他说一次就生成成功，用时 3 分钟，站点汇集了 4.7 万个视频。",
+      "tryThis": "找一份你常翻的清单，例如书单、播客列表或内部文档目录，让编码 agent 做成一个能浏览、能筛选的小网页。",
+      "caveat": "这是数据现成、需求清楚、不用长期维护的个人小工具。换成需要账号、付费或持续更新的产品，3 分钟远远不够。",
+      "body": "Karpathy 在 [X 上](https://x.com/karpathy/status/2119114537442189652)说，他看到 Tristan 发的频道清单觉得很好，就用 Claude Code「one-shot」做成了 TristanTube：4.7 万个视频，外加一个适合放松观看的 TV 模式，用时 3 分钟。\n\n这里可以借鉴的是选题方式：**把别人整理好的清单变成能直接用的界面**。输入现成，目标明确，结果好不好打开就知道，正适合让 agent 一次完成。\n\n对上班族来说，类似的东西很多：团队的工具清单、客户案例库、培训视频目录。先做一个只给自己用的版本，用一周觉得顺手，再考虑分享给同事。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Andrej Karpathy: Earlier this week Tristan published his top YouTube channels:\nhttps://t.co/NZ3UC",
+          "url": "https://x.com/karpathy/status/2119114537442189652"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-03"
+    },
+    {
+      "candidateIds": [
+        "c4"
+      ],
+      "category": "content",
+      "kind": "本周演示",
+      "eventDate": "2026-11-07",
+      "headline": "剪视频的 agent 卡住时，会直接打电话问他",
+      "oneLiner": "YouTuber Matt Wolfe 用 Claude Code 剪视频：遇到需要创意判断的地方，agent 打电话问他；渲染完成就发短信；其余时间不打扰他。",
+      "who": "AI 主题 YouTuber Matt Wolfe，用 Claude Code 处理视频剪辑。这条是他和 Bird 的赞助合作内容。",
+      "how": "通过 Bird 让 agent 能打电话、发短信和邮件，按三种情况处理：需要创意决定时打电话，渲染完成时发短信，不需要他时继续干活。",
+      "result": "他说 agent 不再停在终端里干等他回复。",
+      "tryThis": "给你的 agent 任务分三级：必须问人的、通知一下就行的、自己处理的。先把这三类写进指令里，再决定要不要接电话或短信通道。",
+      "caveat": "Bird 需要付费，还要给 agent 开通对外联系的权限。打电话的门槛要设清楚，否则打扰会比在终端里干等更多。",
+      "body": "Matt Wolfe 在[短视频](https://www.youtube.com/shorts/A5SfzBD6M3o)里演示，Claude Code 剪他的视频时，不再停在终端里等他看屏幕。工具 Bird 让 agent 能打电话、发短信和邮件，支持 Claude Code、ChatGPT、Cursor 和 Codex。\n\n更值得借鉴的是他的**三级打扰规则**：创意决定打电话，进度结果发短信，其余不打扰。内容创作者把剪辑、渲染这类长任务交给 agent 时，人最大的时间损耗往往是反复回来查看进度。\n\n不接电话也能先用这套分级：在任务说明里写清楚哪些事必须停下来问你。这样你可以离开电脑，回来时只处理真正需要你拍板的事。",
+      "sources": [
+        {
+          "label": "Matt Wolfe",
+          "title": "Claude Code Just Called My Phone",
+          "url": "https://www.youtube.com/shorts/A5SfzBD6M3o"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-04"
+    },
+    {
+      "candidateIds": [
+        "c22"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-07",
+      "headline": "Aaron Levie：效率提升十倍百倍的人，具备这五个条件",
+      "oneLiner": "Box CEO Aaron Levie 2026 年 11 月 7 日说，他看到不少产出比 AI 之前高一到两个数量级的例子，而且原本经验越深的人，拉开的差距越大。",
+      "who": "Box CEO Aaron Levie，在 X 上发帖。",
+      "how": "他认为在编程领域，以下条件同时具备时，十倍以上的产出是现实的：好的 agent 运行环境、对领域和要做的东西理解很深、代码库比较新、能同时指挥多个 agent、测试和部署几乎没有阻力。",
+      "result": "他的依据是自己看到的「大量例子」。他还观察到，这个差距并没有随时间缩小，原来积累越深、又愿意换做法的人，杠杆越大。",
+      "tryThis": "对照这五个条件，看自己卡在哪一项。很多人的瓶颈在测试和部署太慢，而不是模型不够强。",
+      "caveat": "这是他的判断，没有给出具体数据。他也说目前主要发生在软件工程，扩展到科学、建筑工程、金融、安全等领域，是他的预测。",
+      "body": "Levie 在 [X 上](https://x.com/levie/status/2119111328099168409)说，一年前他自己也不会相信，但现在已经能看到很多比 AI 之前高一到两个数量级的产出。他列了前提：**合适的运行环境、深厚的领域理解、较新的代码库、同时调度多个 agent 的熟练度、低阻力的测试和部署**。\n\n他的另一个观察更有用：AI 没有拉平差距。原来更懂行、又愿意换方法的人，随着模型能接更大更难的活，优势在复利增长。\n\n对大厂员工来说，这意味着专业积累依然是最大的筹码，前提是愿意重搭自己的工作流程。从一个新项目开始试最容易，老代码库的效果他自己也说存在例外。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: This sounds extreme and I wouldn’t have believed it even a year ago, but we’re s",
+          "url": "https://x.com/levie/status/2119111328099168409"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-05"
+    }
+  ],
+  "action": "打开你最近常用的一份清单，比如收藏的文章、团队工具列表或客户问题记录，交给 Claude Code 或其他编码 agent，让它做成一个能搜索、能筛选的单页网页。做之前先写清楚两件事：哪些地方需要停下来问你，最后你怎么验收。做完记下总耗时，把检查和修改的时间也算进去，用这个数字判断下一件事值不值得交给 agent。",
+  "readingMinutes": 7,
+  "meta": {
+    "generatedAt": "2026-11-08T14:44:45.297Z",
+    "engine": "cli",
+    "candidateCount": 28,
+    "candidatesBySource": {
+      "Simon Willison": 1,
+      "Lenny's Newsletter & Podcast": 1,
+      "Ali Abdaal": 1,
+      "Matt Wolfe": 1,
+      "Starter Story (YouTube)": 1,
+      "Smart Bear Live": 1,
+      "Follow Builders (X)": 19,
+      "Behind the Craft (Peter Yang)": 1,
+      "The AI Daily Brief": 1,
+      "Y Combinator / Lightcone (YouTube)": 1
+    },
+    "shortlist": [
+      {
+        "id": "c21",
+        "reason": "谁：Karpathy本人；怎么用：用Claude Code 3分钟一次生成TristanTube，收录4.7万个视频，带电视模式；结果：作品已上线可访问。本人亲历，个人可照着试",
+        "source": "Follow Builders (X)",
+        "title": "Andrej Karpathy: Earlier this week Tristan published his top YouTube channels:\nhttps://t.co/NZ3UC"
+      },
+      {
+        "id": "c6",
+        "reason": "谁：提案软件Nusii的创始人，月收入停在1万美元左右好几年；怎么做：Jason Cohen和Ruben Gamez现场诊断定位、首页文案、代理商客户转化；有逐字稿和真实数字，适合想做小SaaS的读者。AI成分弱，但商业闭环案例扎实",
+        "source": "Smart Bear Live",
+        "title": "E13 w/ Ruben Gamez: How to Restart Growth in a Stagnant SaaS Business"
+      },
+      {
+        "id": "c5",
+        "reason": "谁：18岁零代码的Lino，用Rork做出AbMaxx；怎么做：砍掉利润只剩5-10%的网红合作，全投Meta广告（ROAS 2-2.5倍），配一个持股的创作者做内容；结果：月收入从1万美元涨到6万美元。只有简介，但数字和做法都写清了",
+        "source": "Starter Story (YouTube)",
+        "title": "Here's how bro scaled from $10K to $60K/month with 1 creator 🤯"
+      },
+      {
+        "id": "c26",
+        "reason": "AI生活类：OpenAI健康产品VP和Peter Yang讲各自怎么用AI帮患癌的父母，包括准备看医生、研究治疗方案、应对照护压力。只有简介，但场景具体，读者能代入",
+        "source": "Behind the Craft (Peter Yang)",
+        "title": "OpenAI VP: How AI Changed My Family’s Fight Against Cancer | Ashley Alexander"
+      },
+      {
+        "id": "c4",
+        "reason": "谁：Matt Wolfe；怎么用：让Claude Code剪视频，需要创作决定时打电话问他，渲染完发短信，其他时候不打扰、自己接着做；结果：不用守在终端前。工作流讲得清楚，但这是赞助内容（#BirdPartner），写时要标明",
+        "source": "Matt Wolfe",
+        "title": "Claude Code Just Called My Phone"
+      },
+      {
+        "id": "c27",
+        "reason": "讲用智能体剪辑、做动画、生成视频：会议精华、概念演示、业务更新动画、会自动更新的客户教程，并给了入门的三个层级。只有简介，但可操作的场景写得比较具体",
+        "source": "The AI Daily Brief",
+        "title": "Agentic Video Is Real and Here’s What You Should Try"
+      },
+      {
+        "id": "c22",
+        "reason": "AI认知类：Box CEO判断AI编程带来十倍甚至百倍的效率提升，并列出前提条件：好的harness、懂业务领域、同时调度多个智能体、测试部署顺畅；还指出高手和普通人的差距没有缩小",
+        "source": "Follow Builders (X)",
+        "title": "Aaron Levie: This sounds extreme and I wouldn’t have believed it even a year ago, but we’re s"
+      },
+      {
+        "id": "c2",
+        "reason": "AI认知类：Gemini产品负责人谈前沿模型实验室里PM做什么、60-20-20框架、怎么写第一个eval。只有简介，但eval和框架对PM读者有参考价值",
+        "source": "Lenny's Newsletter & Podcast",
+        "title": "What it actually takes to build frontier models | Tulsee Doshi (Head of Product for Gemini)"
+      },
+      {
+        "id": "c28",
+        "reason": "AI认知类：Paul Graham和Replit CEO对谈，讲Replit怎么提前布局AI编程、Agent如何自己排错和配置基础设施，以及银行、制造业等大公司在用它替代软件项目。只有简介，做法细节有限",
+        "source": "Y Combinator / Lightcone (YouTube)",
+        "title": "How To Build The Future: Paul Graham & Amjad Masad"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 12743,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2061,
+        "output_tokens_details": {
+          "thinking_tokens": 611
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 12743,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2061,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 12743,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12743
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.14317200000000002
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 37374,
+      "cache_read_input_tokens": 29932,
+      "output_tokens": 9803,
+      "output_tokens_details": {
+        "thinking_tokens": 1292
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 37374,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 4240,
+          "cache_read_input_tokens": 29932,
+          "cache_creation_input_tokens": 7442,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7442
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.5010544
+  }
+}

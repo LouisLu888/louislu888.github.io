@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c22"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-07",
+      "headline": "Aaron Levie：效率提升十倍百倍的人，具备这五个条件",
+      "oneLiner": "Box CEO Aaron Levie 2026 年 11 月 7 日说，他看到不少产出比 AI 之前高一到两个数量级的例子，而且原本经验越深的人，拉开的差距越大。",
+      "who": "Box CEO Aaron Levie，在 X 上发帖。",
+      "how": "他认为在编程领域，以下条件同时具备时，十倍以上的产出是现实的：好的 agent 运行环境、对领域和要做的东西理解很深、代码库比较新、能同时指挥多个 agent、测试和部署几乎没有阻力。",
+      "result": "他的依据是自己看到的「大量例子」。他还观察到，这个差距并没有随时间缩小，原来积累越深、又愿意换做法的人，杠杆越大。",
+      "tryThis": "对照这五个条件，看自己卡在哪一项。很多人的瓶颈在测试和部署太慢，而不是模型不够强。",
+      "caveat": "这是他的判断，没有给出具体数据。他也说目前主要发生在软件工程，扩展到科学、建筑工程、金融、安全等领域，是他的预测。",
+      "body": "Levie 在 [X 上](https://x.com/levie/status/2119111328099168409)说，一年前他自己也不会相信，但现在已经能看到很多比 AI 之前高一到两个数量级的产出。他列了前提：**合适的运行环境、深厚的领域理解、较新的代码库、同时调度多个 agent 的熟练度、低阻力的测试和部署**。\n\n他的另一个观察更有用：AI 没有拉平差距。原来更懂行、又愿意换方法的人，随着模型能接更大更难的活，优势在复利增长。\n\n对大厂员工来说，这意味着专业积累依然是最大的筹码，前提是愿意重搭自己的工作流程。从一个新项目开始试最容易，老代码库的效果他自己也说存在例外。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: This sounds extreme and I wouldn’t have believed it even a year ago, but we’re s",
+          "url": "https://x.com/levie/status/2119111328099168409"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-08-05",
+      "issueDate": "2026-11-08",
+      "issueNumber": 30
+    },
+    {
+      "candidateIds": [
         "c14"
       ],
       "category": "perspective",
