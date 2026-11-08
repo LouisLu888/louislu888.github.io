@@ -108,6 +108,7 @@ The old events have only been live for a few hours, so renaming them now costs a
 2. **P1, engagement:** `Article Read`, `Language Switched`, `Newsletter Signup Submitted`.
 3. **P2, static pages:** ship `public/analytics.js` (same IDs, same `page_type` logic) and include it in the AI 实干派 build templates (`ai-practice/scripts`), the decks and the Fix Clipboard page. Add `Product Download Clicked`. (`Podcast Played` was dropped: the site has no audio player; episodes are only consumed through the feed.)
 4. **Ongoing:** this file is the source of truth. Add an event here before adding it to code.
+5. **Session Replay (2026-11-07):** `public/analytics.js` lazy-loads the self-hosted plugin `public/vendor/amplitude-session-replay-min.js` (plugin 1.36.6; Browser SDK upgraded to 2.49.1 alongside it) after the `load` event and browser idle, so the ~150 KB gzipped script stays off LCP. The trade-off is that the first second or two of a visit is not in the replay. Settings: `sampleRate: 1` (`REPLAY_SAMPLE_RATE` in `analytics.js`; the org-level Session Replay setting in Amplitude overrides it, so lower it there if the quota gets tight), `useWebWorker: true`, `privacyConfig.defaultMaskLevel: 'medium'` (all form inputs masked, page text visible since the site is public). Add `data-amp-mask` to mask an element's text or `data-amp-block` to drop it from the recording entirely. Replays attach to sessions through the `[Amplitude] Session Replay ID` property the plugin adds to every event after it loads.
 
 ## 8. Decisions for you
 

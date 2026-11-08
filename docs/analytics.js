@@ -64,6 +64,41 @@
   ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
   document.head.appendChild(ga);
 
+  // --- Amplitude Session Replay ---
+  // The plugin is ~150 KB gzipped, so it loads after the page has rendered and the browser is idle,
+  // keeping it off LCP. Clicks in the first moments before it loads are not in the replay.
+  // Privacy: 'medium' masks every input/textarea (e.g. newsletter email); page text stays visible
+  // because the site is public content. Add data-amp-mask / data-amp-block to hide anything else.
+  // Sample rate: 100% while traffic is low. The org-level remote setting in Amplitude overrides this.
+  var REPLAY_SAMPLE_RATE = 1;
+
+  function loadSessionReplay(amp) {
+    if (!REPLAY_SAMPLE_RATE || !amp.add) return;
+    function inject() {
+      var s = document.createElement('script');
+      s.src = '/vendor/amplitude-session-replay-min.js';
+      s.async = true;
+      s.onload = function () {
+        var sr = window.sessionReplay;
+        if (!sr || !sr.plugin) return;
+        amp.add(
+          sr.plugin({
+            sampleRate: REPLAY_SAMPLE_RATE,
+            useWebWorker: true, // compress off the main thread
+            privacyConfig: { defaultMaskLevel: 'medium', blockSelector: ['[data-amp-block]'] },
+          }),
+        );
+      };
+      document.head.appendChild(s);
+    }
+    function whenIdle() {
+      if (window.requestIdleCallback) window.requestIdleCallback(inject, { timeout: 3000 });
+      else setTimeout(inject, 1);
+    }
+    if (document.readyState === 'complete') whenIdle();
+    else window.addEventListener('load', whenIdle, { once: true });
+  }
+
   // --- Amplitude (self-hosted SDK: no third-party CDN, reachable from mainland China) ---
   var amp = window.amplitude;
   if (amp && amp.init) {
@@ -77,6 +112,7 @@
         elementInteractions: true,
       },
     });
+    loadSessionReplay(amp);
     // The React app sets the language user property itself once its language is known.
     if (!document.documentElement.hasAttribute('data-spa')) {
       var who = new amp.Identify();
