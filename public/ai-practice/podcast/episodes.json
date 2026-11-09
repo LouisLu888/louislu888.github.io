@@ -1,5 +1,108 @@
 [
   {
+    "date": "2026-11-09",
+    "title": "AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比",
+    "summary": "AI 写的 PR 说明太长，他只留一段人话在外面；遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比；斯坦福 AI 编程课改作业：交给开源维护者审；Box CEO：每三到六个月，把做不成的事再试一遍；没写过 Swift 的创始人，用 Codex 做出挪威语口语 App",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-09/",
+    "items": [
+      {
+        "headline": "AI 写的 PR 说明太长，他只留一段人话在外面",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "Hide your slop PR descriptions behind",
+            "url": "https://simonwillison.net/2026/Nov/9/details-summary/"
+          }
+        ]
+      },
+      {
+        "headline": "遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "parse_number() as a SQLite extension: C vs Rust",
+            "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/"
+          },
+          {
+            "label": "Simon Willison",
+            "title": "The Web Is More Than Enough, by Paul Ford",
+            "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/"
+          }
+        ]
+      },
+      {
+        "headline": "斯坦福 AI 编程课改作业：交给开源维护者审",
+        "sources": [
+          {
+            "label": "Latent Space",
+            "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+            "url": "https://latent.space/p/cs146s/"
+          }
+        ]
+      },
+      {
+        "headline": "Box CEO：每三到六个月，把做不成的事再试一遍",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Aaron Levie: A good lesson in AI is that you need to check back in on the latest with every 3",
+            "url": "https://x.com/levie/status/2119502716770902234"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Aaron Levie: We’re moving from an era of AI where the output comes roughly at the rate that y",
+            "url": "https://x.com/levie/status/2119592025440092192"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Nan Yu: Software got a lot easier if you know what you wanna build, and a lot harder if ",
+            "url": "https://x.com/thenanyu/status/2119462224721002560"
+          }
+        ]
+      },
+      {
+        "headline": "没写过 Swift 的创始人，用 Codex 做出挪威语口语 App",
+        "sources": [
+          {
+            "label": "Lenny's Newsletter & Podcast",
+            "title": "How this founder built a better Duolingo with Codex | William Imoh",
+            "url": "https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "AI 写的 PR 说明太长，他只留一段人话在外面"
+      },
+      {
+        "start": 172,
+        "title": "遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比"
+      },
+      {
+        "start": 285,
+        "title": "斯坦福 AI 编程课改作业：交给开源维护者审"
+      },
+      {
+        "start": 402,
+        "title": "Box CEO：每三到六个月，把做不成的事再试一遍"
+      },
+      {
+        "start": 496,
+        "title": "没写过 Swift 的创始人，用 Codex 做出挪威语口语 App"
+      },
+      {
+        "start": 582,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 630,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-09.mp3",
+    "audioBytes": 3778796,
+    "publishedAt": "2026-11-09T22:46:15.884Z"
+  },
+  {
     "date": "2026-11-08",
     "title": "月入 1 万美元卡了几年的 SaaS 怎么重新增长，Karpathy 3 分钟做出一个视频站",
     "summary": "提案软件月入一万美元卡了几年，问题出在首页那句话；18 岁开发者砍掉网红合作，月收入从 1 万涨到 6 万美元；看到一份 YouTube 频道清单，Karpathy 3 分钟做成视频站；剪视频的 agent 卡住时，会直接打电话问他；Aaron Levie：效率提升十倍百倍的人，具备这五个条件",
