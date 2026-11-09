@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 写的 PR 说明太长，他只留一段人话在外面｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-09-01/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 写的 PR 说明太长，他只留一段人话在外面｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-09-01/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 写的 PR 说明太长，他只留一段人话在外面｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">34</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">19</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">34</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">18</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-09/">AI 实干派 031 · 2026 年 11 月 9 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h1>AI 写的 PR 说明太长，他只留一段人话在外面</h1>
+        <p class="summary">Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 维护 Datasette、llm 等开源项目。他说自己现在的改动大多以 PR 的形式出现，由 Claude Code 或 Codex 替他开。</dd><dt>怎么用</dt><dd>PR 开头放一段人工确认过的高层说明，常配一张截图；智能体写的完整说明放进 &lt;details&gt;&lt;summary&gt; 折叠块，summary 一栏写模型名和推理档位，例如「Claude Opus 5.5 Medium」。</dd><dt>结果</dt><dd>他说 PR 读起来不再像 slop。信息一点没少，读者扫一眼开头就能判断要不要细看。他贴了 5 个近期 PR 的开头段作为示例。</dd><dt>你可以试</dt><dd>下一份 AI 生成的 PR、周报或方案，先写两三句给人看的摘要，把长文折叠起来。GitHub 的 Markdown 直接支持这组标签，issue 评论里也能用。</dd><dt>注意</dt><dd>开头那段必须真的代表你的判断。可以从智能体原文里挑一句，但要你确认过。手机键盘敲这组标签很麻烦，GitHub 编辑器也没有对应按钮。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/9/details-summary/">博客</a>里说，现在的编码智能体写 PR 说明写得太好了：问题、方案、验证步骤一应俱全，也正因为太全，别人一看就知道是 AI 写的，第一反应是「我不读」。他自己就是这么想的，哪怕作者是他本人。</p><p>他的解法成本很低：<strong>一段人话开头＋截图＋折叠起来的 AI 全文</strong>。比如 Datasette 一个 PR 的开头只写了一句：行页面原来把单行显示成一行宽表，46 列的表会一路滚到右边，页面左边大片空白。另一个写的是 edit-tools.js（约 220KB）原来每个页面都加载，现在只在有编辑权限的用户第一次碰到编辑功能时才加载。summary 里标明模型名，读者一眼就知道折叠的部分是谁写的。</p><p>这个办法不只适用于代码。团队里谁的 AI 产出越多，读的人负担就越重。<strong>先用人的判断交代「为什么值得看」</strong>，细节留给需要的人展开，这条思路放到需求文档、调研报告、周报上都成立。他还给了一个记标签顺序的办法：读作「details-summary」，两个音节在前，三个音节在后。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/9/details-summary/" target="_blank" rel="noopener" title="Hide your slop PR descriptions behind">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-09/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

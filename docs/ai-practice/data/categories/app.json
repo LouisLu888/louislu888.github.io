@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c7"
+      ],
+      "category": "app",
+      "kind": "本周演示",
+      "eventDate": "2026-11-09",
+      "headline": "没写过 Swift 的创始人，用 Codex 做出挪威语口语 App",
+      "oneLiner": "William Imoh 连用 1000 天 Duolingo 后仍然说不了挪威语，于是用 Codex 和 GPT-Live 做了实时语音 App Mural，同时上架 iOS 和 Android 原生版本。",
+      "who": "William Imoh 是开发者营销公司 Hackmamba 的创始人，团队约 25 人。他从迪拜搬到挪威，化工专业出身，自学编程，做过四年 PM，此前从没写过 Swift。",
+      "how": "他用 Codex 写原生的 iOS 和 Android 客户端，用 GPT-Live 做实时语音对话。经营公司这边，他在 Grok Bot 里给每个职能分配一个《指环王》角色。",
+      "result": "他在 How I AI 节目里现场演示了一段挪威语对话。Mural 已在 GitHub 开源。",
+      "tryThis": "如果你也有一个用了很久、却没帮你解决真正问题的 App，可以先用实时语音模型做一个只覆盖核心场景的原型，自己天天用一段时间再说。",
+      "caveat": "语音陪练的体验取决于延迟，每次会话也有模型成本，他在节目里专门谈了这两点。上架和后续维护仍然需要你自己投入。",
+      "body": "Claire Vo 在 [How I AI 这期](https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo)请来 William Imoh。他的出发点很直接：Duolingo 连续打卡 1000 天，还是没法用挪威语对话。他没写过 Swift，就用 Codex 做了原生的 Mural，语音部分接 GPT-Live。节目里还讲了让 App 界面和其他语言 App 区别开的那条设计提示词，以及每次会话的成本和语音陪练能接受的延迟上限。\n\n另一半内容是他怎么一个人带约 25 人的公司：在 Grok Bot 里给每个创始人职能分配一个指环王角色，让智能体访问他 15 个常开的标签页，只保留一样不给。他说最让他担心的是对 AI 的依赖，被替代反倒不是。\n\n对想做 AI App 的人，可以借鉴的是**选题来自自己长期没解决的痛点**，先自己当用户。源码可以直接参考。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "How this founder built a better Duolingo with Codex | William Imoh",
+          "url": "https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-09-05",
+      "issueDate": "2026-11-09",
+      "issueNumber": 31
+    },
+    {
+      "candidateIds": [
         "c5"
       ],
       "category": "app",

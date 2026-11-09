@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 031｜AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比</title>
+  <meta name="description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-09/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 031｜AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比">
+  <meta property="og:description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-09/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 031｜AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比">
+  <meta name="twitter:description" content="Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">34</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">19</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">34</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">18</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 031 · 2026 年 11 月 9 日 · 周一 · 约 9 分钟读完</div>
+        <h1>AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-09-01">Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-09-02">Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-09-03">Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-09-04">Aaron Levie 认为，过去六个月模型在工具调用和长上下文上进步很大，智能体可以调用一切有 API 的系统；OpenAI 的 Nan Yu 提醒，需求想不清楚的话，花钱做出来的会是一堆垃圾。</a></li><li><span class="tag" data-cat="app">AI App</span><a href="#2026-11-09-05">William Imoh 连用 1000 天 Duolingo 后仍然说不了挪威语，于是用 Codex 和 GPT-Live 做了实时语音 App Mural，同时上架 iOS 和 Android 原生版本。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-09-01">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-09-01/">01｜AI 写的 PR 说明太长，他只留一段人话在外面</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 维护 Datasette、llm 等开源项目。他说自己现在的改动大多以 PR 的形式出现，由 Claude Code 或 Codex 替他开。</dd><dt>怎么用</dt><dd>PR 开头放一段人工确认过的高层说明，常配一张截图；智能体写的完整说明放进 &lt;details&gt;&lt;summary&gt; 折叠块，summary 一栏写模型名和推理档位，例如「Claude Opus 5.5 Medium」。</dd><dt>结果</dt><dd>他说 PR 读起来不再像 slop。信息一点没少，读者扫一眼开头就能判断要不要细看。他贴了 5 个近期 PR 的开头段作为示例。</dd><dt>你可以试</dt><dd>下一份 AI 生成的 PR、周报或方案，先写两三句给人看的摘要，把长文折叠起来。GitHub 的 Markdown 直接支持这组标签，issue 评论里也能用。</dd><dt>注意</dt><dd>开头那段必须真的代表你的判断。可以从智能体原文里挑一句，但要你确认过。手机键盘敲这组标签很麻烦，GitHub 编辑器也没有对应按钮。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/9/details-summary/">博客</a>里说，现在的编码智能体写 PR 说明写得太好了：问题、方案、验证步骤一应俱全，也正因为太全，别人一看就知道是 AI 写的，第一反应是「我不读」。他自己就是这么想的，哪怕作者是他本人。</p><p>他的解法成本很低：<strong>一段人话开头＋截图＋折叠起来的 AI 全文</strong>。比如 Datasette 一个 PR 的开头只写了一句：行页面原来把单行显示成一行宽表，46 列的表会一路滚到右边，页面左边大片空白。另一个写的是 edit-tools.js（约 220KB）原来每个页面都加载，现在只在有编辑权限的用户第一次碰到编辑功能时才加载。summary 里标明模型名，读者一眼就知道折叠的部分是谁写的。</p><p>这个办法不只适用于代码。团队里谁的 AI 产出越多，读的人负担就越重。<strong>先用人的判断交代「为什么值得看」</strong>，细节留给需要的人展开，这条思路放到需求文档、调研报告、周报上都成立。他还给了一个记标签顺序的办法：读作「details-summary」，两个音节在前，三个音节在后。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/9/details-summary/" target="_blank" rel="noopener" title="Hide your slop PR descriptions behind">Simon Willison</a></div>
+      </section>
+      <section class="item" id="2026-11-09-02">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-08<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-09-02/">02｜遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Simon Willison 遛狗时好奇：写一个 SQLite 扩展函数 parse_number()，把「-$1,234.56」「12.5%」这类字符串转成数字，用 C 和用 Rust 各有多难？</dd><dt>怎么用</dt><dd>他在 Claude 聊天（Opus 5.5）里说明函数规则，要求比较两种语言的性能、代码复杂度和编译产物大小；发现 C 版偏慢后，又让它自己写解析函数追上 Rust；最后让它克隆他的 research 仓库，按已有格式写成报告并打包成 zip。</dd><dt>结果</dt><dd>第一轮结果：Rust 扩展 298–321 KB，C 扩展只有 14 KB，但 Rust 更快，原因是 Rust 里对应 strtod 的函数快一倍。改用 Clinger&#39;s fast path 后，在 200 万行混合数据上，C 版每行从 67 ns 降到 19 ns，Rust 两个版本分别是 46 ns 和 41 ns。</dd><dt>你可以试</dt><dd>手头有「A 和 B 哪个好」的技术问题时，先让聊天模型写原型、跑基准，再顺着结果追问为什么。最后让它按你已有的文档格式整理成报告。</dd><dt>注意</dt><dd>这类探索适合边界清楚的小问题。基准数字是模型在沙箱里跑出来的，要用到生产环境，还得在自己的机器和数据上重跑一遍。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">研究笔记</a>里记下了全过程，一共三条提示词：第一条提问题，第二条追问性能，第三条让模型照他 research 仓库的格式写报告。中间最有价值的是第二步：数据显示 C 版反而慢，他没有接受这个结论，而是<strong>让模型解释原因，再给它一个明确的目标</strong>：写一个能追上 Rust 的 C 解析器。小数数据上，C 版从 106 ns 降到 18 ns。</p><p>同一天他还在 <a href="https://simonwillison.net/2026/Nov/9/hn-50421091/">Hacker News 评论</a>里做了另一个小实验：在同一个对话里，让 Claude 把一个 77KB 的 Three.js 3D 作品改写成不依赖库的原生 JS，得到 98KB 的版本。两版看上去不完全一样，他说自己也没完全弄懂差异从哪来。</p><p>对工程师、PM 和做技术选型的人，这种用法可以用来<strong>低成本地预调研</strong>：开会讨论之前，先让模型拿出带数字的对比，人再判断哪些结果可信、哪些需要复核。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" target="_blank" rel="noopener" title="parse_number() as a SQLite extension: C vs Rust">Simon Willison</a><a href="https://simonwillison.net/2026/Nov/9/hn-50421091/" target="_blank" rel="noopener" title="The Web Is More Than Enough, by Paul Ford">Simon Willison</a></div>
+      </section>
+      <section class="item" id="2026-11-09-03">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-08<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-09-03/">03｜斯坦福 AI 编程课改作业：交给开源维护者审</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>Mihail Eric 在斯坦福教 CS146S「The Modern Software Developer」，同时是 Monaco 的 AI 负责人。他上了 Latent Space 的节目。</dd><dt>核心观点</dt><dd>他认为功能实现可以交给智能体，人难以替代的部分是弄清维护者要不要这个改动、代码为什么这样写、补丁会弄坏什么。工具上他的原则是：「You buy to learn, and you build to keep.」</dd><dt>依据</dt><dd>他调查过的斯坦福大二、大三学生全都在用智能体写代码。节目引用 Faros 的研究：AI 采用度高的团队合并的 PR 多了 98%，PR 审查时间却长了 91%。</dd><dt>对你的意义</dt><dd>让智能体写完一个补丁后，用 Geoffrey Litt 的 explain-diff skill 生成讲解和测验，看哪道题你得回去翻代码才答得上，那里就是你还没真正理解的地方。</dd><dt>争议·条件</dt><dd>Monaco 自建工作区，是因为细节取决于它自己的云环境。对多数小团队来说，先买现成工具更合适。他预测开源仓库会变成由智能体运行的软件工厂，这是他个人的判断。</dd></dl>
+        <div class="body"><p>在 <a href="https://latent.space/p/cs146s/">Latent Space 这期节目</a>里，Mihail Eric 讲了课程第二轮的改动。第一轮的作业里有一项是让学生用 AI 审查工具审一个仓库并评估反馈，他判断这类练习学生现在一次提示就能做完。所以今年改成<strong>给真实的开源项目提补丁，由维护者审核</strong>。智能体一个下午就能写完功能，但维护者想不想要这个功能、这段代码为什么这样写，只能靠和人沟通才能弄清。这样的沟通，也是初级工程师向资深工程师学习的机会。</p><p>在 Monaco，团队评估了几款代码审查产品，最后留下了 Devin。智能体工作区则是自己搭的，因为后台智能体需要一个能运行产品、复现故障、测试补丁的环境，而这和公司的云配置绑在一起。内部系统 Hal 两类人都在用：工程师让它排查故障、开 PR，销售问它产品怎么运作，拿到的是能转述给客户的解释。</p><p>上面 98% 和 91% 那组数字说明，<strong>产出变快以后，瓶颈转到了审查和理解上</strong>。团队在加大 AI 编码投入之前，值得先想清楚谁来审、凭什么审。</p></div>
+        <div class="sources">原文：<a href="https://latent.space/p/cs146s/" target="_blank" rel="noopener" title="How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco">Latent Space</a></div>
+      </section>
+      <section class="item" id="2026-11-09-04">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-08<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-09-04/">04｜Box CEO：每三到六个月，把做不成的事再试一遍</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>Box CEO Aaron Levie 在 X 上连发两帖；Codex 产品负责人、前 Linear 产品负责人 Nan Yu 同一天发了一条短帖。</dd><dt>核心观点</dt><dd>Levie 认为：每过三到六个月，都应该回头重试以前做不成的事；智能体能调用现有的系统和工具；多个智能体并行处理任务以后，效率提升不再局限在 20%–50%。</dd><dt>依据</dt><dd>他的依据是近六个月模型在电脑和工具使用、上下文衰减（context rot）、推理和多模态上的进步，并举编码领域已经出现的变化为例。安全、科研方向是他的推测。</dd><dt>对你的意义</dt><dd>把过去试过、失败了的 AI 任务记成一张清单，写上失败原因，每季度拿新模型重跑一遍。</dd><dt>争议·条件</dt><dd>Nan Yu 说，AI 让软件对「知道要做什么」的人更容易了，对不知道的人更难了：以前什么也做不出来，现在会花一大笔钱做出一堆垃圾。</dd></dl>
+        <div class="body"><p>Aaron Levie 2026-11-08 <a href="https://x.com/levie/status/2119502716770902234">发帖</a>说，AI 领域一条好经验是每三到六个月回头试一次以前做不成的事。他列举了过去半年模型在工具调用、长上下文和推理上的进步，认为凡是有 API 的系统，智能体都能调用。几小时后他在<a href="https://x.com/levie/status/2119592025440092192">另一帖</a>里进一步说，工作方式正从「和 AI 一来一回聊天」转向「给一组智能体布置问题，让它们并行干大量的活」，投入的时间和产出的关联会被打破。这些都是他的判断，编码领域是他举出的已有例子。</p><p>反方的提醒来自 <a href="https://x.com/thenanyu/status/2119462224721002560">Nan Yu</a>：目标清楚的人可以直奔结果，不清楚的人会花钱做出一堆垃圾。两种说法放在一起看，<strong>能放大多少算力，取决于你能把问题说得多清楚</strong>。在把任务分给多个智能体之前，先把验收标准写出来。</p></div>
+        <div class="sources">原文：<a href="https://x.com/levie/status/2119502716770902234" target="_blank" rel="noopener" title="Aaron Levie: A good lesson in AI is that you need to check back in on the latest with every 3">Follow Builders (X)</a><a href="https://x.com/levie/status/2119592025440092192" target="_blank" rel="noopener" title="Aaron Levie: We’re moving from an era of AI where the output comes roughly at the rate that y">Follow Builders (X)</a><a href="https://x.com/thenanyu/status/2119462224721002560" target="_blank" rel="noopener" title="Nan Yu: Software got a lot easier if you know what you wanna build, and a lot harder if ">Follow Builders (X)</a></div>
+      </section>
+      <section class="item" id="2026-11-09-05">
+        <div class="item-meta"><span class="tag" data-cat="app">AI App</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-09-05/">05｜没写过 Swift 的创始人，用 Codex 做出挪威语口语 App</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>William Imoh 是开发者营销公司 Hackmamba 的创始人，团队约 25 人。他从迪拜搬到挪威，化工专业出身，自学编程，做过四年 PM，此前从没写过 Swift。</dd><dt>怎么用</dt><dd>他用 Codex 写原生的 iOS 和 Android 客户端，用 GPT-Live 做实时语音对话。经营公司这边，他在 Grok Bot 里给每个职能分配一个《指环王》角色。</dd><dt>结果</dt><dd>他在 How I AI 节目里现场演示了一段挪威语对话。Mural 已在 GitHub 开源。</dd><dt>你可以试</dt><dd>如果你也有一个用了很久、却没帮你解决真正问题的 App，可以先用实时语音模型做一个只覆盖核心场景的原型，自己天天用一段时间再说。</dd><dt>注意</dt><dd>语音陪练的体验取决于延迟，每次会话也有模型成本，他在节目里专门谈了这两点。上架和后续维护仍然需要你自己投入。</dd></dl>
+        <div class="body"><p>Claire Vo 在 <a href="https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo">How I AI 这期</a>请来 William Imoh。他的出发点很直接：Duolingo 连续打卡 1000 天，还是没法用挪威语对话。他没写过 Swift，就用 Codex 做了原生的 Mural，语音部分接 GPT-Live。节目里还讲了让 App 界面和其他语言 App 区别开的那条设计提示词，以及每次会话的成本和语音陪练能接受的延迟上限。</p><p>另一半内容是他怎么一个人带约 25 人的公司：在 Grok Bot 里给每个创始人职能分配一个指环王角色，让智能体访问他 15 个常开的标签页，只保留一样不给。他说最让他担心的是对 AI 的依赖，被替代反倒不是。</p><p>对想做 AI App 的人，可以借鉴的是<strong>选题来自自己长期没解决的痛点</strong>，先自己当用户。源码可以直接参考。</p></div>
+        <div class="sources">原文：<a href="https://www.lennysnewsletter.com/p/how-this-founder-built-a-better-duolingo" target="_blank" rel="noopener" title="How this founder built a better Duolingo with Codex | William Imoh">Lenny&#39;s Newsletter &amp; Podcast</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>今天挑一份你用 AI 生成、准备发给别人的长文档，比如 PR、周报或方案。先在开头写三句话：改了什么、为什么、需要对方看哪里，再把 AI 写的全文折叠起来或放进附录，模型名标在旁边。发出后记两件事：对方多久回复，追问的是开头那几句，还是折叠部分的细节。连做三次，你就能看出哪些信息该由你亲自把关，哪些可以交给 AI。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-08/">← 2026 年 11 月 8 日 · 周日</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

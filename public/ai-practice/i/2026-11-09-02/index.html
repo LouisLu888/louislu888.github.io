@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-09-02/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-09-02/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">34</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">19</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">34</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">18</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-09/">AI 实干派 031 · 2026 年 11 月 9 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-08<span>·</span>US</div>
+        <h1>遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比</h1>
+        <p class="summary">Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>Simon Willison 遛狗时好奇：写一个 SQLite 扩展函数 parse_number()，把「-$1,234.56」「12.5%」这类字符串转成数字，用 C 和用 Rust 各有多难？</dd><dt>怎么用</dt><dd>他在 Claude 聊天（Opus 5.5）里说明函数规则，要求比较两种语言的性能、代码复杂度和编译产物大小；发现 C 版偏慢后，又让它自己写解析函数追上 Rust；最后让它克隆他的 research 仓库，按已有格式写成报告并打包成 zip。</dd><dt>结果</dt><dd>第一轮结果：Rust 扩展 298–321 KB，C 扩展只有 14 KB，但 Rust 更快，原因是 Rust 里对应 strtod 的函数快一倍。改用 Clinger&#39;s fast path 后，在 200 万行混合数据上，C 版每行从 67 ns 降到 19 ns，Rust 两个版本分别是 46 ns 和 41 ns。</dd><dt>你可以试</dt><dd>手头有「A 和 B 哪个好」的技术问题时，先让聊天模型写原型、跑基准，再顺着结果追问为什么。最后让它按你已有的文档格式整理成报告。</dd><dt>注意</dt><dd>这类探索适合边界清楚的小问题。基准数字是模型在沙箱里跑出来的，要用到生产环境，还得在自己的机器和数据上重跑一遍。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">研究笔记</a>里记下了全过程，一共三条提示词：第一条提问题，第二条追问性能，第三条让模型照他 research 仓库的格式写报告。中间最有价值的是第二步：数据显示 C 版反而慢，他没有接受这个结论，而是<strong>让模型解释原因，再给它一个明确的目标</strong>：写一个能追上 Rust 的 C 解析器。小数数据上，C 版从 106 ns 降到 18 ns。</p><p>同一天他还在 <a href="https://simonwillison.net/2026/Nov/9/hn-50421091/">Hacker News 评论</a>里做了另一个小实验：在同一个对话里，让 Claude 把一个 77KB 的 Three.js 3D 作品改写成不依赖库的原生 JS，得到 98KB 的版本。两版看上去不完全一样，他说自己也没完全弄懂差异从哪来。</p><p>对工程师、PM 和做技术选型的人，这种用法可以用来<strong>低成本地预调研</strong>：开会讨论之前，先让模型拿出带数字的对比，人再判断哪些结果可信、哪些需要复核。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/" target="_blank" rel="noopener" title="parse_number() as a SQLite extension: C vs Rust">Simon Willison</a><a href="https://simonwillison.net/2026/Nov/9/hn-50421091/" target="_blank" rel="noopener" title="The Web Is More Than Enough, by Paul Ford">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-09/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

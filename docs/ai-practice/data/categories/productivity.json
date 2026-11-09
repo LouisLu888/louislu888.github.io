@@ -8,6 +8,66 @@
   "items": [
     {
       "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-09",
+      "headline": "AI 写的 PR 说明太长，他只留一段人话在外面",
+      "oneLiner": "Simon Willison 的项目改动现在大多由 Claude Code 或 Codex 提 PR。他把智能体写的长说明折叠起来，外面只留一段自己确认过的简介和截图。",
+      "who": "开发者 Simon Willison 维护 Datasette、llm 等开源项目。他说自己现在的改动大多以 PR 的形式出现，由 Claude Code 或 Codex 替他开。",
+      "how": "PR 开头放一段人工确认过的高层说明，常配一张截图；智能体写的完整说明放进 <details><summary> 折叠块，summary 一栏写模型名和推理档位，例如「Claude Opus 5.5 Medium」。",
+      "result": "他说 PR 读起来不再像 slop。信息一点没少，读者扫一眼开头就能判断要不要细看。他贴了 5 个近期 PR 的开头段作为示例。",
+      "tryThis": "下一份 AI 生成的 PR、周报或方案，先写两三句给人看的摘要，把长文折叠起来。GitHub 的 Markdown 直接支持这组标签，issue 评论里也能用。",
+      "caveat": "开头那段必须真的代表你的判断。可以从智能体原文里挑一句，但要你确认过。手机键盘敲这组标签很麻烦，GitHub 编辑器也没有对应按钮。",
+      "body": "Simon Willison 在[博客](https://simonwillison.net/2026/Nov/9/details-summary/)里说，现在的编码智能体写 PR 说明写得太好了：问题、方案、验证步骤一应俱全，也正因为太全，别人一看就知道是 AI 写的，第一反应是「我不读」。他自己就是这么想的，哪怕作者是他本人。\n\n他的解法成本很低：**一段人话开头＋截图＋折叠起来的 AI 全文**。比如 Datasette 一个 PR 的开头只写了一句：行页面原来把单行显示成一行宽表，46 列的表会一路滚到右边，页面左边大片空白。另一个写的是 edit-tools.js（约 220KB）原来每个页面都加载，现在只在有编辑权限的用户第一次碰到编辑功能时才加载。summary 里标明模型名，读者一眼就知道折叠的部分是谁写的。\n\n这个办法不只适用于代码。团队里谁的 AI 产出越多，读的人负担就越重。**先用人的判断交代「为什么值得看」**，细节留给需要的人展开，这条思路放到需求文档、调研报告、周报上都成立。他还给了一个记标签顺序的办法：读作「details-summary」，两个音节在前，三个音节在后。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Hide your slop PR descriptions behind",
+          "url": "https://simonwillison.net/2026/Nov/9/details-summary/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-09-01",
+      "issueDate": "2026-11-09",
+      "issueNumber": 31
+    },
+    {
+      "candidateIds": [
+        "c3",
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-08",
+      "headline": "遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比",
+      "oneLiner": "Simon Willison 只用普通的 Claude 聊天，让它对比 C 和 Rust 写的 SQLite 扩展。改写之后，C 版在小数数据上从每行 106 ns 降到 18 ns。",
+      "who": "Simon Willison 遛狗时好奇：写一个 SQLite 扩展函数 parse_number()，把「-$1,234.56」「12.5%」这类字符串转成数字，用 C 和用 Rust 各有多难？",
+      "how": "他在 Claude 聊天（Opus 5.5）里说明函数规则，要求比较两种语言的性能、代码复杂度和编译产物大小；发现 C 版偏慢后，又让它自己写解析函数追上 Rust；最后让它克隆他的 research 仓库，按已有格式写成报告并打包成 zip。",
+      "result": "第一轮结果：Rust 扩展 298–321 KB，C 扩展只有 14 KB，但 Rust 更快，原因是 Rust 里对应 strtod 的函数快一倍。改用 Clinger's fast path 后，在 200 万行混合数据上，C 版每行从 67 ns 降到 19 ns，Rust 两个版本分别是 46 ns 和 41 ns。",
+      "tryThis": "手头有「A 和 B 哪个好」的技术问题时，先让聊天模型写原型、跑基准，再顺着结果追问为什么。最后让它按你已有的文档格式整理成报告。",
+      "caveat": "这类探索适合边界清楚的小问题。基准数字是模型在沙箱里跑出来的，要用到生产环境，还得在自己的机器和数据上重跑一遍。",
+      "body": "Simon Willison 在[研究笔记](https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/)里记下了全过程，一共三条提示词：第一条提问题，第二条追问性能，第三条让模型照他 research 仓库的格式写报告。中间最有价值的是第二步：数据显示 C 版反而慢，他没有接受这个结论，而是**让模型解释原因，再给它一个明确的目标**：写一个能追上 Rust 的 C 解析器。小数数据上，C 版从 106 ns 降到 18 ns。\n\n同一天他还在 [Hacker News 评论](https://simonwillison.net/2026/Nov/9/hn-50421091/)里做了另一个小实验：在同一个对话里，让 Claude 把一个 77KB 的 Three.js 3D 作品改写成不依赖库的原生 JS，得到 98KB 的版本。两版看上去不完全一样，他说自己也没完全弄懂差异从哪来。\n\n对工程师、PM 和做技术选型的人，这种用法可以用来**低成本地预调研**：开会讨论之前，先让模型拿出带数字的对比，人再判断哪些结果可信、哪些需要复核。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "parse_number() as a SQLite extension: C vs Rust",
+          "url": "https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/"
+        },
+        {
+          "label": "Simon Willison",
+          "title": "The Web Is More Than Enough, by Paul Ford",
+          "url": "https://simonwillison.net/2026/Nov/9/hn-50421091/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-09-02",
+      "issueDate": "2026-11-09",
+      "issueNumber": 31
+    },
+    {
+      "candidateIds": [
         "c21"
       ],
       "category": "productivity",

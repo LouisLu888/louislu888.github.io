@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-08T14:44:51.314Z",
+  "updatedAt": "2026-11-09T14:44:49.572Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 32
+      "count": 34
     },
     {
       "id": "consulting",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 18
+      "count": 19
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 32
+      "count": 34
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-09",
+      "number": 31,
+      "title": "AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 9,
+      "itemCount": 5,
+      "categoryCounts": {
+        "productivity": 2,
+        "perspective": 2,
+        "app": 1
+      },
+      "headlines": [
+        {
+          "category": "productivity",
+          "headline": "AI 写的 PR 说明太长，他只留一段人话在外面"
+        },
+        {
+          "category": "productivity",
+          "headline": "遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比"
+        },
+        {
+          "category": "perspective",
+          "headline": "斯坦福 AI 编程课改作业：交给开源维护者审"
+        },
+        {
+          "category": "perspective",
+          "headline": "Box CEO：每三到六个月，把做不成的事再试一遍"
+        },
+        {
+          "category": "app",
+          "headline": "没写过 Swift 的创始人，用 Codex 做出挪威语口语 App"
+        }
+      ]
+    },
     {
       "date": "2026-11-08",
       "number": 30,

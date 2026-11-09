@@ -8,6 +8,72 @@
   "items": [
     {
       "candidateIds": [
+        "c34"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-08",
+      "headline": "斯坦福 AI 编程课改作业：交给开源维护者审",
+      "oneLiner": "Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。",
+      "who": "Mihail Eric 在斯坦福教 CS146S「The Modern Software Developer」，同时是 Monaco 的 AI 负责人。他上了 Latent Space 的节目。",
+      "how": "他认为功能实现可以交给智能体，人难以替代的部分是弄清维护者要不要这个改动、代码为什么这样写、补丁会弄坏什么。工具上他的原则是：「You buy to learn, and you build to keep.」",
+      "result": "他调查过的斯坦福大二、大三学生全都在用智能体写代码。节目引用 Faros 的研究：AI 采用度高的团队合并的 PR 多了 98%，PR 审查时间却长了 91%。",
+      "tryThis": "让智能体写完一个补丁后，用 Geoffrey Litt 的 explain-diff skill 生成讲解和测验，看哪道题你得回去翻代码才答得上，那里就是你还没真正理解的地方。",
+      "caveat": "Monaco 自建工作区，是因为细节取决于它自己的云环境。对多数小团队来说，先买现成工具更合适。他预测开源仓库会变成由智能体运行的软件工厂，这是他个人的判断。",
+      "body": "在 [Latent Space 这期节目](https://latent.space/p/cs146s/)里，Mihail Eric 讲了课程第二轮的改动。第一轮的作业里有一项是让学生用 AI 审查工具审一个仓库并评估反馈，他判断这类练习学生现在一次提示就能做完。所以今年改成**给真实的开源项目提补丁，由维护者审核**。智能体一个下午就能写完功能，但维护者想不想要这个功能、这段代码为什么这样写，只能靠和人沟通才能弄清。这样的沟通，也是初级工程师向资深工程师学习的机会。\n\n在 Monaco，团队评估了几款代码审查产品，最后留下了 Devin。智能体工作区则是自己搭的，因为后台智能体需要一个能运行产品、复现故障、测试补丁的环境，而这和公司的云配置绑在一起。内部系统 Hal 两类人都在用：工程师让它排查故障、开 PR，销售问它产品怎么运作，拿到的是能转述给客户的解释。\n\n上面 98% 和 91% 那组数字说明，**产出变快以后，瓶颈转到了审查和理解上**。团队在加大 AI 编码投入之前，值得先想清楚谁来审、凭什么审。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco",
+          "url": "https://latent.space/p/cs146s/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-09-03",
+      "issueDate": "2026-11-09",
+      "issueNumber": 31
+    },
+    {
+      "candidateIds": [
+        "c28",
+        "c21",
+        "c31"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-08",
+      "headline": "Box CEO：每三到六个月，把做不成的事再试一遍",
+      "oneLiner": "Aaron Levie 认为，过去六个月模型在工具调用和长上下文上进步很大，智能体可以调用一切有 API 的系统；OpenAI 的 Nan Yu 提醒，需求想不清楚的话，花钱做出来的会是一堆垃圾。",
+      "who": "Box CEO Aaron Levie 在 X 上连发两帖；Codex 产品负责人、前 Linear 产品负责人 Nan Yu 同一天发了一条短帖。",
+      "how": "Levie 认为：每过三到六个月，都应该回头重试以前做不成的事；智能体能调用现有的系统和工具；多个智能体并行处理任务以后，效率提升不再局限在 20%–50%。",
+      "result": "他的依据是近六个月模型在电脑和工具使用、上下文衰减（context rot）、推理和多模态上的进步，并举编码领域已经出现的变化为例。安全、科研方向是他的推测。",
+      "tryThis": "把过去试过、失败了的 AI 任务记成一张清单，写上失败原因，每季度拿新模型重跑一遍。",
+      "caveat": "Nan Yu 说，AI 让软件对「知道要做什么」的人更容易了，对不知道的人更难了：以前什么也做不出来，现在会花一大笔钱做出一堆垃圾。",
+      "body": "Aaron Levie 2026-11-08 [发帖](https://x.com/levie/status/2119502716770902234)说，AI 领域一条好经验是每三到六个月回头试一次以前做不成的事。他列举了过去半年模型在工具调用、长上下文和推理上的进步，认为凡是有 API 的系统，智能体都能调用。几小时后他在[另一帖](https://x.com/levie/status/2119592025440092192)里进一步说，工作方式正从「和 AI 一来一回聊天」转向「给一组智能体布置问题，让它们并行干大量的活」，投入的时间和产出的关联会被打破。这些都是他的判断，编码领域是他举出的已有例子。\n\n反方的提醒来自 [Nan Yu](https://x.com/thenanyu/status/2119462224721002560)：目标清楚的人可以直奔结果，不清楚的人会花钱做出一堆垃圾。两种说法放在一起看，**能放大多少算力，取决于你能把问题说得多清楚**。在把任务分给多个智能体之前，先把验收标准写出来。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: A good lesson in AI is that you need to check back in on the latest with every 3",
+          "url": "https://x.com/levie/status/2119502716770902234"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: We’re moving from an era of AI where the output comes roughly at the rate that y",
+          "url": "https://x.com/levie/status/2119592025440092192"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Nan Yu: Software got a lot easier if you know what you wanna build, and a lot harder if ",
+          "url": "https://x.com/thenanyu/status/2119462224721002560"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-09-04",
+      "issueDate": "2026-11-09",
+      "issueNumber": 31
+    },
+    {
+      "candidateIds": [
         "c22"
       ],
       "category": "perspective",

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>斯坦福 AI 编程课改作业：交给开源维护者审｜AI 实干派</title>
+  <meta name="description" content="Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-09-03/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="斯坦福 AI 编程课改作业：交给开源维护者审｜AI 实干派">
+  <meta property="og:description" content="Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-09-03/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="斯坦福 AI 编程课改作业：交给开源维护者审｜AI 实干派">
+  <meta name="twitter:description" content="Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-09.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip active" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">34</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">19</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">34</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">18</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-09/">AI 实干派 031 · 2026 年 11 月 9 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-08<span>·</span>US</div>
+        <h1>斯坦福 AI 编程课改作业：交给开源维护者审</h1>
+        <p class="summary">Mihail Eric 发现去年的作业学生一条提示词就能做完，今年改成给开源项目提补丁，由维护者审核。他在 Monaco 的团队买了 Devin 做代码审查，智能体工作区则自己搭。</p>
+        <dl class="facts"><dt>谁说的</dt><dd>Mihail Eric 在斯坦福教 CS146S「The Modern Software Developer」，同时是 Monaco 的 AI 负责人。他上了 Latent Space 的节目。</dd><dt>核心观点</dt><dd>他认为功能实现可以交给智能体，人难以替代的部分是弄清维护者要不要这个改动、代码为什么这样写、补丁会弄坏什么。工具上他的原则是：「You buy to learn, and you build to keep.」</dd><dt>依据</dt><dd>他调查过的斯坦福大二、大三学生全都在用智能体写代码。节目引用 Faros 的研究：AI 采用度高的团队合并的 PR 多了 98%，PR 审查时间却长了 91%。</dd><dt>对你的意义</dt><dd>让智能体写完一个补丁后，用 Geoffrey Litt 的 explain-diff skill 生成讲解和测验，看哪道题你得回去翻代码才答得上，那里就是你还没真正理解的地方。</dd><dt>争议·条件</dt><dd>Monaco 自建工作区，是因为细节取决于它自己的云环境。对多数小团队来说，先买现成工具更合适。他预测开源仓库会变成由智能体运行的软件工厂，这是他个人的判断。</dd></dl>
+        <div class="body"><p>在 <a href="https://latent.space/p/cs146s/">Latent Space 这期节目</a>里，Mihail Eric 讲了课程第二轮的改动。第一轮的作业里有一项是让学生用 AI 审查工具审一个仓库并评估反馈，他判断这类练习学生现在一次提示就能做完。所以今年改成<strong>给真实的开源项目提补丁，由维护者审核</strong>。智能体一个下午就能写完功能，但维护者想不想要这个功能、这段代码为什么这样写，只能靠和人沟通才能弄清。这样的沟通，也是初级工程师向资深工程师学习的机会。</p><p>在 Monaco，团队评估了几款代码审查产品，最后留下了 Devin。智能体工作区则是自己搭的，因为后台智能体需要一个能运行产品、复现故障、测试补丁的环境，而这和公司的云配置绑在一起。内部系统 Hal 两类人都在用：工程师让它排查故障、开 PR，销售问它产品怎么运作，拿到的是能转述给客户的解释。</p><p>上面 98% 和 91% 那组数字说明，<strong>产出变快以后，瓶颈转到了审查和理解上</strong>。团队在加大 AI 编码投入之前，值得先想清楚谁来审、凭什么审。</p></div>
+        <div class="sources">原文：<a href="https://latent.space/p/cs146s/" target="_blank" rel="noopener" title="How Stanford Teaches AI-Native Engineering — Mihail Eric, Monaco">Latent Space</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-09/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/perspective/">更多「AI 认知」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>
