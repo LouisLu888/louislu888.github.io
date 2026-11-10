@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-11-10",
+    "title": "一只报警器定位到 40 厘米，一条视频广告约 5 美元",
+    "summary": "满屋没拆的箱子里，Claude 帮他找出一直在响的报警器；agent 配齐数据和权限后，一条 UGC 广告约 5 美元；没写过 Swift，他用 Codex 做出原生双端语言陪练；用 Fable 5.2 跑大任务，先说清什么算完成；Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-10/",
+    "items": [
+      {
+        "headline": "满屋没拆的箱子里，Claude 帮他找出一直在响的报警器",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "Locating the source of a mysterious beep with Claude",
+            "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/"
+          }
+        ]
+      },
+      {
+        "headline": "agent 配齐数据和权限后，一条 UGC 广告约 5 美元",
+        "sources": [
+          {
+            "label": "Startup Ideas Podcast (Greg Isenberg)",
+            "title": "AI Agents are too good at marketing now",
+            "url": "https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now"
+          }
+        ]
+      },
+      {
+        "headline": "没写过 Swift，他用 Codex 做出原生双端语言陪练",
+        "sources": [
+          {
+            "label": "Lenny's Newsletter & Podcast",
+            "title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+            "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a"
+          }
+        ]
+      },
+      {
+        "headline": "用 Fable 5.2 跑大任务，先说清什么算完成",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Dan Shipper: BREAKING:\n\n@AnthropicAI just dropped Claude Fable 5.2. It’s a paradigm-shifting ",
+            "url": "https://x.com/danshipper/status/2119869228207546638"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Alex Albert: Every time we have a new model, I run the same simple prompt on all my projects:",
+            "url": "https://x.com/alexalbert__/status/2119884951550386671"
+          },
+          {
+            "label": "Simon Willison",
+            "title": "Quoting Prompting Claude Fable 5.2",
+            "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+          }
+        ]
+      },
+      {
+        "headline": "Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力",
+        "sources": [
+          {
+            "label": "One Useful Thing (Ethan Mollick)",
+            "title": "Fable 5.2 and Jagged AGI",
+            "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "满屋没拆的箱子里，Claude 帮他找出一直在响的报警器"
+      },
+      {
+        "start": 159,
+        "title": "agent 配齐数据和权限后，一条 UGC 广告约 5 美元"
+      },
+      {
+        "start": 259,
+        "title": "没写过 Swift，他用 Codex 做出原生双端语言陪练"
+      },
+      {
+        "start": 357,
+        "title": "用 Fable 5.2 跑大任务，先说清什么算完成"
+      },
+      {
+        "start": 457,
+        "title": "Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力"
+      },
+      {
+        "start": 568,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 618,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-10.mp3",
+    "audioBytes": 3709676,
+    "publishedAt": "2026-11-10T22:46:45.991Z"
+  },
+  {
     "date": "2026-11-09",
     "title": "AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比",
     "summary": "AI 写的 PR 说明太长，他只留一段人话在外面；遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比；斯坦福 AI 编程课改作业：交给开源维护者审；Box CEO：每三到六个月，把做不成的事再试一遍；没写过 Swift 的创始人，用 Codex 做出挪威语口语 App",

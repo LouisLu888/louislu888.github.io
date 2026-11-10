@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-10 · 一只报警器定位到 40 厘米，一条视频广告约 5 美元</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-10/</link>
+      <description>满屋没拆的箱子里，Claude 帮他找出一直在响的报警器；agent 配齐数据和权限后，一条 UGC 广告约 5 美元；没写过 Swift，他用 Codex 做出原生双端语言陪练；用 Fable 5.2 跑大任务，先说清什么算完成；Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-10/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 满屋没拆的箱子里，Claude 帮他找出一直在响的报警器<br>02:39 agent 配齐数据和权限后，一条 UGC 广告约 5 美元<br>04:19 没写过 Swift，他用 Codex 做出原生双端语言陪练<br>05:57 用 Fable 5.2 跑大任务，先说清什么算完成<br>07:37 Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力<br>09:28 今天可以做的一件事</p><p><b>满屋没拆的箱子里，Claude 帮他找出一直在响的报警器</b><br><a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/">Simon Willison</a></p><p><b>agent 配齐数据和权限后，一条 UGC 广告约 5 美元</b><br><a href="https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now">Startup Ideas Podcast (Greg Isenberg)</a></p><p><b>没写过 Swift，他用 Codex 做出原生双端语言陪练</b><br><a href="https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a">Lenny's Newsletter &amp; Podcast</a></p><p><b>用 Fable 5.2 跑大任务，先说清什么算完成</b><br><a href="https://x.com/danshipper/status/2119869228207546638">Follow Builders (X)</a> · <a href="https://x.com/alexalbert__/status/2119884951550386671">Follow Builders (X)</a> · <a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/">Simon Willison</a></p><p><b>Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力</b><br><a href="https://www.oneusefulthing.org/p/fable-52-and-jagged-agi">One Useful Thing (Ethan Mollick)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-10.mp3" length="3709676" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 22:46:45 GMT</pubDate>
+      <itunes:duration>00:10:18</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-09 · AI 写的 PR 只留一段人话在外面，遛狗时让 Claude 跑完 C 和 Rust 的性能对比</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-09/</link>
       <description>AI 写的 PR 说明太长，他只留一段人话在外面；遛狗时冒出一个问题，Claude 跑完了 C 和 Rust 的对比；斯坦福 AI 编程课改作业：交给开源维护者审；Box CEO：每三到六个月，把做不成的事再试一遍；没写过 Swift 的创始人，用 Codex 做出挪威语口语 App（本集语音由 AI 合成）</description>
