@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-09T14:44:49.572Z",
+  "updatedAt": "2026-11-10T14:45:31.719Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 34
+      "count": 35
     },
     {
       "id": "consulting",
@@ -34,24 +34,61 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 19
+      "count": 21
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 34
+      "count": 35
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 18
+      "count": 19
     }
   ],
   "days": [
+    {
+      "date": "2026-11-10",
+      "number": 32,
+      "title": "一只报警器定位到 40 厘米，一条视频广告约 5 美元",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "life": 1,
+        "app": 2,
+        "productivity": 1,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "life",
+          "headline": "满屋没拆的箱子里，Claude 帮他找出一直在响的报警器"
+        },
+        {
+          "category": "app",
+          "headline": "agent 配齐数据和权限后，一条 UGC 广告约 5 美元"
+        },
+        {
+          "category": "app",
+          "headline": "没写过 Swift，他用 Codex 做出原生双端语言陪练"
+        },
+        {
+          "category": "productivity",
+          "headline": "用 Fable 5.2 跑大任务，先说清什么算完成"
+        },
+        {
+          "category": "perspective",
+          "headline": "Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力"
+        }
+      ]
+    },
     {
       "date": "2026-11-09",
       "number": 31,

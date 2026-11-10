@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>用 Fable 5.2 跑大任务，先说清什么算完成｜AI 实干派</title>
+  <meta name="description" content="Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-10-04/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="用 Fable 5.2 跑大任务，先说清什么算完成｜AI 实干派">
+  <meta property="og:description" content="Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-10-04/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="用 Fable 5.2 跑大任务，先说清什么算完成｜AI 实干派">
+  <meta name="twitter:description" content="Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">35</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">21</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">35</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">19</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-10/">AI 实干派 032 · 2026 年 11 月 10 日 · 周二</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周动态<span>·</span>2026-11-09<span>·</span>US</div>
+        <h1>用 Fable 5.2 跑大任务，先说清什么算完成</h1>
+        <p class="summary">Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>Every CEO Dan Shipper 汇总了团队的提前试用。Anthropic 的 Alex Albert 和官方提示文档另外给了两条具体用法。</dd><dt>怎么用</dt><dd>Shipper 建议交给它大任务，让它过夜或跑一个周末，但事先定好完成标准、预算和检查力度。Albert 每次新模型发布，都会在所有项目上跑同一条体检提示。</dd><dt>结果</dt><dd>Kieran Klaassen 3 天上线了自带 agent 的剪辑工具 Everycut。另一位同事 Mike 发现，它做完构建后还会再花一两天测试。还有人把研究做成纪录片，说那是职业生涯里效率最高的 3 周。</dd><dt>你可以试</dt><dd>挑一个自己维护的项目，跑一遍 Albert 的提示，只让它修有把握的地方，其余列成清单由你过目。</dd><dt>注意</dt><dd>Shipper 说试用期免费，按 API 价格这些项目会很贵。新版比 5.1 便宜 20%，但写邮件、快速来回改代码这类事，他会换别的模型。</dd></dl>
+        <div class="body"><p>Shipper 的<a href="https://x.com/danshipper/status/2119869228207546638">试用总结</a>里，最实用的是工作方式的变化：<strong>大任务交出去之前，先写清目标、预算和要检查到什么程度</strong>，再离开去做别的事。</p><p>Albert 的<a href="https://x.com/alexalbert__/status/2119884951550386671">提示</a>原文是：「通读整个项目，找出所有坏掉的、不一致的、低效的或不再需要的东西。有把握的直接修，其余列出来给我审。」</p><p>Anthropic 的<a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/">提示文档</a>还提到一个细节。如果提示里不提代码归谁，或者说是别人的代码，模型倾向于沿着现有结构往上加。加一句「这个代码库是你的，怎么设计由你决定，你会继续在上面开发」，在小型编码测试里，合并重复代码的比例从不到一成升到约一半。想让它顺手重构，就把这句话加上；不想让它动结构，就别加。</p></div>
+        <div class="sources">原文：<a href="https://x.com/danshipper/status/2119869228207546638" target="_blank" rel="noopener" title="Dan Shipper: BREAKING:
+
+@AnthropicAI just dropped Claude Fable 5.2. It’s a paradigm-shifting ">Follow Builders (X)</a><a href="https://x.com/alexalbert__/status/2119884951550386671" target="_blank" rel="noopener" title="Alex Albert: Every time we have a new model, I run the same simple prompt on all my projects:">Follow Builders (X)</a><a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" target="_blank" rel="noopener" title="Quoting Prompting Claude Fable 5.2">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-10/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

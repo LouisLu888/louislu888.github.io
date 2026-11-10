@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 032｜一只报警器定位到 40 厘米，一条视频广告约 5 美元</title>
+  <meta name="description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-10/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 032｜一只报警器定位到 40 厘米，一条视频广告约 5 美元">
+  <meta property="og:description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-10/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 032｜一只报警器定位到 40 厘米，一条视频广告约 5 美元">
+  <meta name="twitter:description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">35</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">21</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">35</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">19</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 032 · 2026 年 11 月 10 日 · 周二 · 约 8 分钟读完</div>
+        <h1>一只报警器定位到 40 厘米，一条视频广告约 5 美元</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="life">AI 生活</span><a href="#2026-11-10-01">Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。</a></li><li><span class="tag" data-cat="app">AI App</span><a href="#2026-11-10-02">Cody Schneider 演示用 agent 做投放：输入品牌网址出五条静态广告。他说一条带动效的 AI 虚拟人广告约 5 美元，请人做要 300 到 500 美元。</a></li><li><span class="tag" data-cat="app">AI App</span><a href="#2026-11-10-03">William Imoh 用 Codex 做出 iOS 和 Android 原生的 AI 语言陪练 Mural。他说 30 分钟实时语音的成本约 3 到 5 美元。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-10-04">Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-10-05">Ethan Mollick 让 Fable 5.2 筹划一门年入 2 万美元的生意、写一篇实证论文。他称之为「参差的 AGI」：产出接近专家，但看不出自己哪里品味和判断出了错。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-10-01">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-10-01/">01｜满屋没拆的箱子里，Claude 帮他找出一直在响的报警器</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 家里有间储物间，堆满搬家后还没拆的箱子，其中有东西间歇性地蜂鸣。两声间隔太长，人站在屋里听不出位置。</dd><dt>怎么用</dt><dd>他先在手机上用 Claude Code Cloud 写问题说明，AI 顺带找到一篇 2007 年的声学测距论文。系统由一台 Python 服务器和若干设备组成，各设备用浏览器麦克风监听；之后他在笔记本上和 Fable 5.2 一边运行一边加功能。</dd><dt>结果</dt><dd>他说系统把声源定位到约 40 厘米内。翻开那一堆箱子，找到一只急需换电池的旧一氧化碳报警器。</dd><dt>你可以试</dt><dd>遇到靠人工排查很费劲的家务问题，可以先让 AI 写一份问题说明，查查有没有现成方法，再决定动不动手。前提是会运行 Python，手边有几台闲置设备。</dd><dt>注意</dt><dd>设备互相放声音来自动测位置，效果不好，他改成手动拖图标粗定位。服务器还能让监听设备执行任意新代码，只适合在自家网络里用。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/">本人博客</a>记录了 Beep Locator 的做法。两台 iPad、一部手机和两台电脑扫码加入，各自缓存最近 60 秒的音频，用 FFT 检测疑似蜂鸣。检测到蜂鸣后，服务器让一台设备播放一声短 chirp，用来对齐各设备的录音，再算出位置。</p><p>他的流程分三步。第一步只让 AI 写 problem.md，研究看着靠谱了才让它动手搭系统。第二步是<strong>先校验工具</strong>：他加了拍手模式，在屋里不同位置拍手，确认地图能标出拍手的位置，再去找蜂鸣。第三步，让 AI 加回放功能，他听过录音、确认是那个蜂鸣后点一下标记，系统之后就专门盯这个频率。</p><p>他觉得最有意思的是，这等于给 Claude Code 装上了耳朵。设备一直在线，新代码直接推送过去，他基本只需坐在电脑旁聊进展、提需求。真正动手的那步，摆设备和翻箱子，还得他自己来。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank" rel="noopener" title="Locating the source of a mysterious beep with Claude">Simon Willison</a></div>
+      </section>
+      <section class="item" id="2026-11-10-02">
+        <div class="item-meta"><span class="tag" data-cat="app">AI App</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-10-02/">02｜agent 配齐数据和权限后，一条 UGC 广告约 5 美元</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>营销数据平台 Graphed 创始人 Cody Schneider，在 Greg Isenberg 的节目里给产品没人买的创始人现场演示。</dd><dt>怎么用</dt><dd>Airbyte 把广告、分析、CRM、支付数据同步进 ClickHouse 仓库，agent 只从仓库读数据。Facebook 和 Google Ads 的 API 只用来写，比如上传素材、关停广告。再给 agent 接上生图、视频、线索类 API。</dd><dt>结果</dt><dd>静态广告 skill 读品牌网址，提取品牌风格，查对手广告库，再从 Reddit 等处找痛点，提出五个方案并生成成图。他说 Google Ads agent 能在 20 秒内审完 5000 个搜索词，判断搜索意图是否匹配落地页。</dd><dt>你可以试</dt><dd>先只做一步：把产品网址交给 agent，让它整理用户痛点、写五条广告文案，人工挑一两条，小预算投放测试。</dd><dt>注意</dt><dd>读写分开，是为了防止 agent 高频请求违反平台 API 条款、导致封号。Greg 补充说，还需要大量参考素材和一个给广告打分的创意总监 agent，上线前保留人工把关。</dd></dl>
+        <div class="body"><p><a href="https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now">这期节目</a>里，Cody Schneider 用自家平台演示，同时讲了开源组件的拼法。他把 agent 的工作环境分成三块：<strong>数据、平台写权限、工具</strong>。数据全放进仓库有两个好处：agent 可以随便查，不撞 API 限流；广告还能一路关联到付款和客户终身价值，看出哪类素材带来的客户更值钱。</p><p>现场他给 Idea Browser 生成了五个方向，比如「别再花六个月做一个没人要的点子」，再把同一组概念改写成虚拟人口播视频脚本。他的判断是，Facebook 的算法会把好素材匹配给合适的买家，<strong>出素材的速度</strong>最重要。</p><p>对独立开发者来说，最低成本的版本是只用静态广告这一步做需求验证。全套数据管道要接很多付费服务，等投放确实有效再补也来得及。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now" target="_blank" rel="noopener" title="AI Agents are too good at marketing now">Startup Ideas Podcast (Greg Isenberg)</a></div>
+      </section>
+      <section class="item" id="2026-11-10-03">
+        <div class="item-meta"><span class="tag" data-cat="app">AI App</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-10-03/">03｜没写过 Swift，他用 Codex 做出原生双端语言陪练</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>25 人公司 Hackmamba 的创始人 William Imoh。他在 Duolingo 连续打卡 1000 天，仍然无法用挪威语对话，于是自己做了一个全程沉浸的陪练。</dd><dt>怎么用</dt><dd>Codex 写 Swift 和 Kotlin，他按 epic 和 user story 写需求，给出明确的设计方向（极简、苹果水准、有秋天的感觉）。第一版是暗色，他改成了暖色渐变。实时语音用 GPT-Live-1。</dd><dt>结果</dt><dd>他说没有 GPT-Live-1 就做不出这个产品。一次会话的模型费用对软件来说偏高，但比按需请真人家教便宜。</dd><dt>你可以试</dt><dd>下次让 agent 写功能，先写「用户问题 → user story → 验收标准」。卡住了就开新会话，把任务拆成几步，再让另一个 agent 审查。</dd><dt>注意</dt><dd>实时语音成本高，定价要先覆盖每次会话的模型费用。他默认给 agent 很宽的权限，但银行和客户数据不开放。</dd></dl>
+        <div class="body"><p>在 <a href="https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a">How I AI 这一期</a>里，Imoh 的观点是，agent 写代码以后，创始人会什么语言已经不那么重要，技术栈跟着产品愿景走。他觉得做产品经理的经验能直接变成更好的提示：需求越贴近具体的用户问题，产出越稳定。</p><p>公司运营上，他用一组以指环王角色命名的 Grok Bot 分工：Gandalf 当幕僚长，Legolas 管市场，Aragorn 管销售。它们接入了 Google Workspace、Linear、Notion、Pipedrive 和 QuickBooks。他说上下文来自<strong>给到的访问权限，而不是更长的提示</strong>。模型变强后，他的大部分 skill 已经用不上，留下来的是增长策略、内容策略、去 AI 腔这类长期有用的经验。</p><p>做 AI App 的人可以先算一笔账：核心体验每分钟的模型成本，和用户愿意付的价格之间还有没有空间。</p></div>
+        <div class="sources">原文：<a href="https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a" target="_blank" rel="noopener" title="🎙️ How I AI: How this founder built a better Duolingo with Codex">Lenny&#39;s Newsletter &amp; Podcast</a></div>
+      </section>
+      <section class="item" id="2026-11-10-04">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周动态<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-10-04/">04｜用 Fable 5.2 跑大任务，先说清什么算完成</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Every CEO Dan Shipper 汇总了团队的提前试用。Anthropic 的 Alex Albert 和官方提示文档另外给了两条具体用法。</dd><dt>怎么用</dt><dd>Shipper 建议交给它大任务，让它过夜或跑一个周末，但事先定好完成标准、预算和检查力度。Albert 每次新模型发布，都会在所有项目上跑同一条体检提示。</dd><dt>结果</dt><dd>Kieran Klaassen 3 天上线了自带 agent 的剪辑工具 Everycut。另一位同事 Mike 发现，它做完构建后还会再花一两天测试。还有人把研究做成纪录片，说那是职业生涯里效率最高的 3 周。</dd><dt>你可以试</dt><dd>挑一个自己维护的项目，跑一遍 Albert 的提示，只让它修有把握的地方，其余列成清单由你过目。</dd><dt>注意</dt><dd>Shipper 说试用期免费，按 API 价格这些项目会很贵。新版比 5.1 便宜 20%，但写邮件、快速来回改代码这类事，他会换别的模型。</dd></dl>
+        <div class="body"><p>Shipper 的<a href="https://x.com/danshipper/status/2119869228207546638">试用总结</a>里，最实用的是工作方式的变化：<strong>大任务交出去之前，先写清目标、预算和要检查到什么程度</strong>，再离开去做别的事。</p><p>Albert 的<a href="https://x.com/alexalbert__/status/2119884951550386671">提示</a>原文是：「通读整个项目，找出所有坏掉的、不一致的、低效的或不再需要的东西。有把握的直接修，其余列出来给我审。」</p><p>Anthropic 的<a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/">提示文档</a>还提到一个细节。如果提示里不提代码归谁，或者说是别人的代码，模型倾向于沿着现有结构往上加。加一句「这个代码库是你的，怎么设计由你决定，你会继续在上面开发」，在小型编码测试里，合并重复代码的比例从不到一成升到约一半。想让它顺手重构，就把这句话加上；不想让它动结构，就别加。</p></div>
+        <div class="sources">原文：<a href="https://x.com/danshipper/status/2119869228207546638" target="_blank" rel="noopener" title="Dan Shipper: BREAKING:
+
+@AnthropicAI just dropped Claude Fable 5.2. It’s a paradigm-shifting ">Follow Builders (X)</a><a href="https://x.com/alexalbert__/status/2119884951550386671" target="_blank" rel="noopener" title="Alex Albert: Every time we have a new model, I run the same simple prompt on all my projects:">Follow Builders (X)</a><a href="https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/" target="_blank" rel="noopener" title="Quoting Prompting Claude Fable 5.2">Simon Willison</a></div>
+      </section>
+      <section class="item" id="2026-11-10-05">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-09<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-10-05/">05｜Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>创业学教授 Ethan Mollick，在公开发布前大量试用了这个模型，2026-11-09 发表在 One Useful Thing。</dd><dt>核心观点</dt><dd>他把 AGI 定义为「用电脑完成的多数智力任务上，达到多数人类专家的水平」。按这个标准，他认为 Fable 5.2「几乎」算 AGI，缺口不再是幻觉，而在品味和判断。</dd><dt>依据</dt><dd>Fable 筛了 22 个点子，选定 Prebid Brief，读了 201 个市县政府的公开议程。他说方案像 MBA 团队学期末的水平，AI 自估成功率 20% 到 40%。论文方面，他只花了不到一小时，但成稿 182 页，所谓预注册并没有真正做，也没人完整核对过结果。</dd><dt>对你的意义</dt><dd>分工时，把「发现问题、判断好坏、决定删什么」留给人。想让 AI 托管一件事，要预留每周几个小时的人工补位。</dd><dt>争议·条件</dt><dd>AI 准备向地方政府发公共记录申请时，他叫停了实验，所以 AI 能否独立经营这门生意没有验证。AI 的产出速度已经超过人审读的速度。</dd></dl>
+        <div class="body"><p>Mollick 在<a href="https://www.oneusefulthing.org/p/fable-52-and-jagged-agi">文章</a>里列了几项测试。论文发现，科罗拉多把 LLC 注册费从 50 美元降到 1 美元后，新注册增加约 17%，但后续的经营活动记录没有相应增加。他说这篇论文好于他对二年级博士生的预期，但现在还不能发表：每条批评都换来一轮新分析，没有一处被删掉。</p><p>他还让 Fable 重建了 Auden 1941 年那门以难著称的文学课。第一版内容准确但乏味，第二版又像儿童游戏，每次都要他指出问题，AI 几分钟就能改好，却<strong>自己一次都没发现</strong>。</p><p>他的判断是，AI 已经能在很短时间内做完要人做几个月的初稿，瓶颈转到了审核和取舍。拿它做副业调研或写报告，要把人工核对的时间算进成本。</p></div>
+        <div class="sources">原文：<a href="https://www.oneusefulthing.org/p/fable-52-and-jagged-agi" target="_blank" rel="noopener" title="Fable 5.2 and Jagged AGI">One Useful Thing (Ethan Mollick)</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>挑一个你自己维护的项目，可以是代码仓库、一份长期更新的文档或表格模板，把 Alex Albert 的那句话交给 AI：「通读整个项目，找出所有坏掉的、不一致的、低效的或不再需要的东西。有把握的直接修，其余列出来给我审。」改动完成后，记下三件事：它修了什么，你否掉了什么，你总共花了多少分钟审核。这份记录能帮你判断以后哪些清理工作可以放心交给 AI。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-09/">← 2026 年 11 月 9 日 · 周一</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>满屋没拆的箱子里，Claude 帮他找出一直在响的报警器｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-10-01/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="满屋没拆的箱子里，Claude 帮他找出一直在响的报警器｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-10-01/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="满屋没拆的箱子里，Claude 帮他找出一直在响的报警器｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-10.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">35</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">7</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">13</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">21</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">35</span></a><a class="cat-chip active" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">19</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-10/">AI 实干派 032 · 2026 年 11 月 10 日 · 周二</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周演示<span>·</span>2026-11-09<span>·</span>US</div>
+        <h1>满屋没拆的箱子里，Claude 帮他找出一直在响的报警器</h1>
+        <p class="summary">Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 家里有间储物间，堆满搬家后还没拆的箱子，其中有东西间歇性地蜂鸣。两声间隔太长，人站在屋里听不出位置。</dd><dt>怎么用</dt><dd>他先在手机上用 Claude Code Cloud 写问题说明，AI 顺带找到一篇 2007 年的声学测距论文。系统由一台 Python 服务器和若干设备组成，各设备用浏览器麦克风监听；之后他在笔记本上和 Fable 5.2 一边运行一边加功能。</dd><dt>结果</dt><dd>他说系统把声源定位到约 40 厘米内。翻开那一堆箱子，找到一只急需换电池的旧一氧化碳报警器。</dd><dt>你可以试</dt><dd>遇到靠人工排查很费劲的家务问题，可以先让 AI 写一份问题说明，查查有没有现成方法，再决定动不动手。前提是会运行 Python，手边有几台闲置设备。</dd><dt>注意</dt><dd>设备互相放声音来自动测位置，效果不好，他改成手动拖图标粗定位。服务器还能让监听设备执行任意新代码，只适合在自家网络里用。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/">本人博客</a>记录了 Beep Locator 的做法。两台 iPad、一部手机和两台电脑扫码加入，各自缓存最近 60 秒的音频，用 FFT 检测疑似蜂鸣。检测到蜂鸣后，服务器让一台设备播放一声短 chirp，用来对齐各设备的录音，再算出位置。</p><p>他的流程分三步。第一步只让 AI 写 problem.md，研究看着靠谱了才让它动手搭系统。第二步是<strong>先校验工具</strong>：他加了拍手模式，在屋里不同位置拍手，确认地图能标出拍手的位置，再去找蜂鸣。第三步，让 AI 加回放功能，他听过录音、确认是那个蜂鸣后点一下标记，系统之后就专门盯这个频率。</p><p>他觉得最有意思的是，这等于给 Claude Code 装上了耳朵。设备一直在线，新代码直接推送过去，他基本只需坐在电脑旁聊进展、提需求。真正动手的那步，摆设备和翻箱子，还得他自己来。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/9/mysterious-beeps/" target="_blank" rel="noopener" title="Locating the source of a mysterious beep with Claude">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-10/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/life/">更多「AI 生活」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

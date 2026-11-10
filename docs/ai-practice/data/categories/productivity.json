@@ -8,6 +8,45 @@
   "items": [
     {
       "candidateIds": [
+        "c42",
+        "c35",
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-09",
+      "headline": "用 Fable 5.2 跑大任务，先说清什么算完成",
+      "oneLiner": "Every 团队试用 Fable 5.2，有人 3 天上线了内部视频剪辑工具。Dan Shipper 说它慢、费 token，日常写邮件他会换别的模型。",
+      "who": "Every CEO Dan Shipper 汇总了团队的提前试用。Anthropic 的 Alex Albert 和官方提示文档另外给了两条具体用法。",
+      "how": "Shipper 建议交给它大任务，让它过夜或跑一个周末，但事先定好完成标准、预算和检查力度。Albert 每次新模型发布，都会在所有项目上跑同一条体检提示。",
+      "result": "Kieran Klaassen 3 天上线了自带 agent 的剪辑工具 Everycut。另一位同事 Mike 发现，它做完构建后还会再花一两天测试。还有人把研究做成纪录片，说那是职业生涯里效率最高的 3 周。",
+      "tryThis": "挑一个自己维护的项目，跑一遍 Albert 的提示，只让它修有把握的地方，其余列成清单由你过目。",
+      "caveat": "Shipper 说试用期免费，按 API 价格这些项目会很贵。新版比 5.1 便宜 20%，但写邮件、快速来回改代码这类事，他会换别的模型。",
+      "body": "Shipper 的[试用总结](https://x.com/danshipper/status/2119869228207546638)里，最实用的是工作方式的变化：**大任务交出去之前，先写清目标、预算和要检查到什么程度**，再离开去做别的事。\n\nAlbert 的[提示](https://x.com/alexalbert__/status/2119884951550386671)原文是：「通读整个项目，找出所有坏掉的、不一致的、低效的或不再需要的东西。有把握的直接修，其余列出来给我审。」\n\nAnthropic 的[提示文档](https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/)还提到一个细节。如果提示里不提代码归谁，或者说是别人的代码，模型倾向于沿着现有结构往上加。加一句「这个代码库是你的，怎么设计由你决定，你会继续在上面开发」，在小型编码测试里，合并重复代码的比例从不到一成升到约一半。想让它顺手重构，就把这句话加上；不想让它动结构，就别加。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Dan Shipper: BREAKING:\n\n@AnthropicAI just dropped Claude Fable 5.2. It’s a paradigm-shifting ",
+          "url": "https://x.com/danshipper/status/2119869228207546638"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Alex Albert: Every time we have a new model, I run the same simple prompt on all my projects:",
+          "url": "https://x.com/alexalbert__/status/2119884951550386671"
+        },
+        {
+          "label": "Simon Willison",
+          "title": "Quoting Prompting Claude Fable 5.2",
+          "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-10-04",
+      "issueDate": "2026-11-10",
+      "issueNumber": 32
+    },
+    {
+      "candidateIds": [
         "c2"
       ],
       "category": "productivity",

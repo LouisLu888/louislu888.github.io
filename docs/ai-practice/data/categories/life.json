@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c5"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-09",
+      "headline": "满屋没拆的箱子里，Claude 帮他找出一直在响的报警器",
+      "oneLiner": "Simon Willison 用 Claude Code 做了一个多设备声音定位工具。他说定位误差约 40 厘米，最后在那堆箱子里翻出一只旧的一氧化碳报警器。",
+      "who": "开发者 Simon Willison 家里有间储物间，堆满搬家后还没拆的箱子，其中有东西间歇性地蜂鸣。两声间隔太长，人站在屋里听不出位置。",
+      "how": "他先在手机上用 Claude Code Cloud 写问题说明，AI 顺带找到一篇 2007 年的声学测距论文。系统由一台 Python 服务器和若干设备组成，各设备用浏览器麦克风监听；之后他在笔记本上和 Fable 5.2 一边运行一边加功能。",
+      "result": "他说系统把声源定位到约 40 厘米内。翻开那一堆箱子，找到一只急需换电池的旧一氧化碳报警器。",
+      "tryThis": "遇到靠人工排查很费劲的家务问题，可以先让 AI 写一份问题说明，查查有没有现成方法，再决定动不动手。前提是会运行 Python，手边有几台闲置设备。",
+      "caveat": "设备互相放声音来自动测位置，效果不好，他改成手动拖图标粗定位。服务器还能让监听设备执行任意新代码，只适合在自家网络里用。",
+      "body": "Simon Willison 在[本人博客](https://simonwillison.net/2026/Nov/9/mysterious-beeps/)记录了 Beep Locator 的做法。两台 iPad、一部手机和两台电脑扫码加入，各自缓存最近 60 秒的音频，用 FFT 检测疑似蜂鸣。检测到蜂鸣后，服务器让一台设备播放一声短 chirp，用来对齐各设备的录音，再算出位置。\n\n他的流程分三步。第一步只让 AI 写 problem.md，研究看着靠谱了才让它动手搭系统。第二步是**先校验工具**：他加了拍手模式，在屋里不同位置拍手，确认地图能标出拍手的位置，再去找蜂鸣。第三步，让 AI 加回放功能，他听过录音、确认是那个蜂鸣后点一下标记，系统之后就专门盯这个频率。\n\n他觉得最有意思的是，这等于给 Claude Code 装上了耳朵。设备一直在线，新代码直接推送过去，他基本只需坐在电脑旁聊进展、提需求。真正动手的那步，摆设备和翻箱子，还得他自己来。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Locating the source of a mysterious beep with Claude",
+          "url": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-10-01",
+      "issueDate": "2026-11-10",
+      "issueNumber": 32
+    },
+    {
+      "candidateIds": [
         "c42"
       ],
       "category": "life",

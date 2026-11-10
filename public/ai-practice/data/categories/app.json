@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c50"
+      ],
+      "category": "app",
+      "kind": "本周演示",
+      "eventDate": "2026-11-09",
+      "headline": "agent 配齐数据和权限后，一条 UGC 广告约 5 美元",
+      "oneLiner": "Cody Schneider 演示用 agent 做投放：输入品牌网址出五条静态广告。他说一条带动效的 AI 虚拟人广告约 5 美元，请人做要 300 到 500 美元。",
+      "who": "营销数据平台 Graphed 创始人 Cody Schneider，在 Greg Isenberg 的节目里给产品没人买的创始人现场演示。",
+      "how": "Airbyte 把广告、分析、CRM、支付数据同步进 ClickHouse 仓库，agent 只从仓库读数据。Facebook 和 Google Ads 的 API 只用来写，比如上传素材、关停广告。再给 agent 接上生图、视频、线索类 API。",
+      "result": "静态广告 skill 读品牌网址，提取品牌风格，查对手广告库，再从 Reddit 等处找痛点，提出五个方案并生成成图。他说 Google Ads agent 能在 20 秒内审完 5000 个搜索词，判断搜索意图是否匹配落地页。",
+      "tryThis": "先只做一步：把产品网址交给 agent，让它整理用户痛点、写五条广告文案，人工挑一两条，小预算投放测试。",
+      "caveat": "读写分开，是为了防止 agent 高频请求违反平台 API 条款、导致封号。Greg 补充说，还需要大量参考素材和一个给广告打分的创意总监 agent，上线前保留人工把关。",
+      "body": "[这期节目](https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now)里，Cody Schneider 用自家平台演示，同时讲了开源组件的拼法。他把 agent 的工作环境分成三块：**数据、平台写权限、工具**。数据全放进仓库有两个好处：agent 可以随便查，不撞 API 限流；广告还能一路关联到付款和客户终身价值，看出哪类素材带来的客户更值钱。\n\n现场他给 Idea Browser 生成了五个方向，比如「别再花六个月做一个没人要的点子」，再把同一组概念改写成虚拟人口播视频脚本。他的判断是，Facebook 的算法会把好素材匹配给合适的买家，**出素材的速度**最重要。\n\n对独立开发者来说，最低成本的版本是只用静态广告这一步做需求验证。全套数据管道要接很多付费服务，等投放确实有效再补也来得及。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "AI Agents are too good at marketing now",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=AI%20Agents%20are%20too%20good%20at%20marketing%20now"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-10-02",
+      "issueDate": "2026-11-10",
+      "issueNumber": 32
+    },
+    {
+      "candidateIds": [
+        "c8"
+      ],
+      "category": "app",
+      "kind": "本周演示",
+      "eventDate": "2026-11-09",
+      "headline": "没写过 Swift，他用 Codex 做出原生双端语言陪练",
+      "oneLiner": "William Imoh 用 Codex 做出 iOS 和 Android 原生的 AI 语言陪练 Mural。他说 30 分钟实时语音的成本约 3 到 5 美元。",
+      "who": "25 人公司 Hackmamba 的创始人 William Imoh。他在 Duolingo 连续打卡 1000 天，仍然无法用挪威语对话，于是自己做了一个全程沉浸的陪练。",
+      "how": "Codex 写 Swift 和 Kotlin，他按 epic 和 user story 写需求，给出明确的设计方向（极简、苹果水准、有秋天的感觉）。第一版是暗色，他改成了暖色渐变。实时语音用 GPT-Live-1。",
+      "result": "他说没有 GPT-Live-1 就做不出这个产品。一次会话的模型费用对软件来说偏高，但比按需请真人家教便宜。",
+      "tryThis": "下次让 agent 写功能，先写「用户问题 → user story → 验收标准」。卡住了就开新会话，把任务拆成几步，再让另一个 agent 审查。",
+      "caveat": "实时语音成本高，定价要先覆盖每次会话的模型费用。他默认给 agent 很宽的权限，但银行和客户数据不开放。",
+      "body": "在 [How I AI 这一期](https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a)里，Imoh 的观点是，agent 写代码以后，创始人会什么语言已经不那么重要，技术栈跟着产品愿景走。他觉得做产品经理的经验能直接变成更好的提示：需求越贴近具体的用户问题，产出越稳定。\n\n公司运营上，他用一组以指环王角色命名的 Grok Bot 分工：Gandalf 当幕僚长，Legolas 管市场，Aragorn 管销售。它们接入了 Google Workspace、Linear、Notion、Pipedrive 和 QuickBooks。他说上下文来自**给到的访问权限，而不是更长的提示**。模型变强后，他的大部分 skill 已经用不上，留下来的是增长策略、内容策略、去 AI 腔这类长期有用的经验。\n\n做 AI App 的人可以先算一笔账：核心体验每分钟的模型成本，和用户愿意付的价格之间还有没有空间。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: How this founder built a better Duolingo with Codex",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-10-03",
+      "issueDate": "2026-11-10",
+      "issueNumber": 32
+    },
+    {
+      "candidateIds": [
         "c7"
       ],
       "category": "app",

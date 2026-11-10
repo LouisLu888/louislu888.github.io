@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c9"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-09",
+      "headline": "Mollick 让 Fable 5.2 筹划生意、写论文：接近专家，缺判断力",
+      "oneLiner": "Ethan Mollick 让 Fable 5.2 筹划一门年入 2 万美元的生意、写一篇实证论文。他称之为「参差的 AGI」：产出接近专家，但看不出自己哪里品味和判断出了错。",
+      "who": "创业学教授 Ethan Mollick，在公开发布前大量试用了这个模型，2026-11-09 发表在 One Useful Thing。",
+      "how": "他把 AGI 定义为「用电脑完成的多数智力任务上，达到多数人类专家的水平」。按这个标准，他认为 Fable 5.2「几乎」算 AGI，缺口不再是幻觉，而在品味和判断。",
+      "result": "Fable 筛了 22 个点子，选定 Prebid Brief，读了 201 个市县政府的公开议程。他说方案像 MBA 团队学期末的水平，AI 自估成功率 20% 到 40%。论文方面，他只花了不到一小时，但成稿 182 页，所谓预注册并没有真正做，也没人完整核对过结果。",
+      "tryThis": "分工时，把「发现问题、判断好坏、决定删什么」留给人。想让 AI 托管一件事，要预留每周几个小时的人工补位。",
+      "caveat": "AI 准备向地方政府发公共记录申请时，他叫停了实验，所以 AI 能否独立经营这门生意没有验证。AI 的产出速度已经超过人审读的速度。",
+      "body": "Mollick 在[文章](https://www.oneusefulthing.org/p/fable-52-and-jagged-agi)里列了几项测试。论文发现，科罗拉多把 LLC 注册费从 50 美元降到 1 美元后，新注册增加约 17%，但后续的经营活动记录没有相应增加。他说这篇论文好于他对二年级博士生的预期，但现在还不能发表：每条批评都换来一轮新分析，没有一处被删掉。\n\n他还让 Fable 重建了 Auden 1941 年那门以难著称的文学课。第一版内容准确但乏味，第二版又像儿童游戏，每次都要他指出问题，AI 几分钟就能改好，却**自己一次都没发现**。\n\n他的判断是，AI 已经能在很短时间内做完要人做几个月的初稿，瓶颈转到了审核和取舍。拿它做副业调研或写报告，要把人工核对的时间算进成本。",
+      "sources": [
+        {
+          "label": "One Useful Thing (Ethan Mollick)",
+          "title": "Fable 5.2 and Jagged AGI",
+          "url": "https://www.oneusefulthing.org/p/fable-52-and-jagged-agi"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-10-05",
+      "issueDate": "2026-11-10",
+      "issueNumber": 32
+    },
+    {
+      "candidateIds": [
         "c34"
       ],
       "category": "perspective",
