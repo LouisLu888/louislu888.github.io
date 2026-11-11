@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c8"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-08",
+      "headline": "30 个单功能小工具，一个人六年做到 100 万美元",
+      "oneLiner": "Sanskar 一人做了 30 多个产品，8 个有收入，他说六年累计营收刚过 100 万美元，前两年收入为零。",
+      "who": "印度班加罗尔的独立开发者 Sanskar，做过呼叫中心夜班和销售，现在一个人经营 8 个付费产品。",
+      "how": "产品都做成 Chrome 插件或 Google Workspace 插件，每个只做一件事；代码主要交给 Claude 写，技术栈是 Next.js、Supabase、Cloudflare 和 Resend。",
+      "result": "他说每月约有 1000 个付费客户，团队只有他自己；Sheet AI 靠 YouTube 内容做到 2000 多美元 MRR，AppSumo 渠道累计 8.5 万美元以上。",
+      "tryThis": "先用 vibe coding 工具花几分钟做一个预售页，写明付款后 10 到 30 天交付，有人下单再开始做。",
+      "caveat": "他是先花两年学会做产品才起量的，最大的产品 MagicSlides 也是在做了一个 Sheets 插件之后才推出；营收不等于利润。",
+      "body": "Sanskar 在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=How%20I%20Made%20%241M%20Building%2030%20Micro-Apps)里拆了自己的打法。最大的产品 MagicSlides 能把 PDF、YouTube 视频转成可编辑的演示文稿。其他几个也是单功能工具：和视频对话、一键打码敏感信息、在 Google Sheets 里用 AI。Magic Form 的来历是这样的：Sheet AI 做到 2000 美元 MRR 后，一位投资人让他做 pitch deck，他想到 Sheets 和 Slides 都做过了，就接着做 Google Form。\n\n他有三条做法可以直接借鉴。一是**借平台分发**，插件市场里自带用户。二是**一个产品只卖一件事**，他说功能一多，卖家和买家都说不清卖的是什么。三是**每个产品单独开 YouTube 频道**，因为受众不同。他说老视频几年后还在带来销售，Magic Form 的一条视频自然播放 14.5 万次。Instagram 上，他一小时用手机加 Edits 拍了 10 条介绍视频，看哪条有反应。\n\n他给自己的总结是：最大的错误是在一个没人要的东西上坚持太久。所以要**先放购买按钮，再写代码**。问题要选有人愿意付钱的，他特别提醒，学生自己的痛点往往没人买单。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "How I Made $1M Building 30 Micro-Apps",
+          "url": "https://www.youtube.com/@starterstory/search?query=How%20I%20Made%20%241M%20Building%2030%20Micro-Apps"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-01",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "saas",

@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c4"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-10",
+      "headline": "PM 招聘需求四年最高，「LLM」成 JD 头号技能",
+      "oneLiner": "Lenny 用两组招聘数据发现：PM 空缺比 2023 年 3 月低点涨了 75%，美国软件工程师年招聘约 11.3 万，不到 2022 年的一半。",
+      "who": "Lenny Rachitsky 基于 TrueUp（9000 多家科技公司职位）和 Live Data Technologies（1.24 亿人的职业变动）发布 2026 年下半年科技就业报告。",
+      "how": "他认为 AI 让小团队承担更宽的职责，细分岗位在收缩，懂 AI 工具成了各岗位的基本要求。",
+      "result": "PM 招聘 JD 里最常出现的技能是「LLM」，「Claude」排第三；FDE 空缺一年涨 4.6 倍到约 1500 个；设计空缺约 1900 个、同比降 28%；美国用户研究招聘比 2022 年降 66%；移动端和前端需求近乎减半。",
+      "tryThis": "对照目标岗位最新 JD 的技能词，把 Claude、Cursor、MCP、evals 这类工具的实际作品放进简历和作品集。",
+      "caveat": "空缺增长不等于招聘增长，PM 和工程都是空缺涨、实际招聘持平或下降；FDE 增长部分来自销售工程师改名。",
+      "body": "[Lenny 的报告](https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late)里有几组反直觉的数字。PM 是五个核心岗位里唯一一个招聘占比上升的，从 2021 年的 16% 升到 21%。工程空缺过去一年只增长 2.5%。现在每 1 个设计空缺对应 3.8 个 PM 空缺。15% 的科技岗位集中在湾区，远程岗位比例创新低。\n\n他的解读是：岗位在合并，小团队里每个人管的范围更宽。用户研究萎缩，他归因于产品节奏变快，以及 Listen Labs 这类工具让非研究员也能自己做访谈。设计岗位 JD 里，「Claude」今年春天超过 CSS 排到第二。\n\n对大厂员工的启发：**往更宽的职责方向走**，比如 PM 兼原型、工程兼安全或客户部署，比守着单一专项更稳。这些是 Lenny 的推断，数据只显示相关性。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "State of the tech job market: late 2026",
+          "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-03",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
+        "c46"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-11",
+      "headline": "OpenAI 工程师开车上班路上，用语音开 PR",
+      "oneLiner": "OpenAI 开发者体验工程师 Dominik Kundel 说，他常在通勤路上和个人 agent 对话、启动 PR，到办公室再审。",
+      "who": "OpenAI 的 Dominik Kundel 和 Charlie Guo，在 AI Engineer Code Summit 的 Codex 工作坊上分享，会后接受 Richard MacManus 采访。",
+      "how": "Guo 把语音当成「控制面」，用来管理多个线程、查进度、开新任务，而不只是听写；Kundel 很多任务先交给个人 agent dot 发起，因为它已经掌握他的上下文。",
+      "result": "Kundel 说他的 dot 能访问他的开发机、笔记本和云端环境，所以能接手推进 PR；Guo 列了 dot 的三种用法：安全网、在 Slack 里接活、随处可用。",
+      "tryThis": "把审查和发起分开：零碎时间用语音派出几个小任务，回到电脑前集中审查结果。",
+      "caveat": "Guo 承认对 Codex 重度用户来说 dot 用着有点别扭；本地任务转到云端仍让不少人困惑，Kundel 说还在改进。",
+      "body": "这场[工作坊](https://latent.space/p/codex-work/)的核心是工作方式。Kundel 演示改网站时会用语音口述，他说在自己还没想清楚要什么时，这样迭代很快。Guo 的用法更进一步：他不把语音当作某一条工作线的输入方式，而是**用声音调度所有线程**，查进度、从其他应用取数据、新建任务。\n\n两人的建议都很朴素：把推理强度调低（turn it down），遇到问题让 agent 帮你，**别对现在的用法太执着**，因为工具一直在变。对普通开发者，可以借鉴的是「通勤时发起、到岗后审查」的节奏。前提是 agent 能访问你的代码环境，PR 要等你审过才合并。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+          "url": "https://latent.space/p/codex-work/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-06",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
         "c9"
       ],
       "category": "perspective",

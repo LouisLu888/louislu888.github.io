@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-10T14:45:31.719Z",
+  "updatedAt": "2026-11-11T15:20:47.037Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 35
+      "count": 37
     },
     {
       "id": "consulting",
       "name": "AI 咨询",
       "en": "AI consulting",
       "desc": "找客户、诊断业务、界定交付、培训、实施与维护",
-      "count": 7
+      "count": 8
     },
     {
       "id": "content",
@@ -27,7 +27,7 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 13
+      "count": 14
     },
     {
       "id": "app",
@@ -41,17 +41,59 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 35
+      "count": 36
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 19
+      "count": 20
     }
   ],
   "days": [
+    {
+      "date": "2026-11-11",
+      "number": 33,
+      "title": "一个人 30 个小产品做到百万美元，新模型接了 15 个任务被叫停",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 9,
+      "itemCount": 6,
+      "categoryCounts": {
+        "saas": 1,
+        "productivity": 1,
+        "perspective": 2,
+        "consulting": 1,
+        "life": 1
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "30 个单功能小工具，一个人六年做到 100 万美元"
+        },
+        {
+          "category": "productivity",
+          "headline": "让新模型清积压任务，它多做了 9 个才被叫停"
+        },
+        {
+          "category": "perspective",
+          "headline": "PM 招聘需求四年最高，「LLM」成 JD 头号技能"
+        },
+        {
+          "category": "consulting",
+          "headline": "把按小时收费的活，改成按结果定价的服务"
+        },
+        {
+          "category": "life",
+          "headline": "数学老师用 Claude Code 给全家建了个「家务大脑」"
+        },
+        {
+          "category": "perspective",
+          "headline": "OpenAI 工程师开车上班路上，用语音开 PR"
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "number": 32,

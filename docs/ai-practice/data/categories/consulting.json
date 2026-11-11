@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c51"
+      ],
+      "category": "consulting",
+      "kind": "本周演示",
+      "eventDate": "2026-11-10",
+      "headline": "把按小时收费的活，改成按结果定价的服务",
+      "oneLiner": "Greg Isenberg 现场让 Fable 5.2 在 Upwork 上找了一个 450 美元固定价的分析报告任务，并直接开始交付。",
+      "who": "Startup Ideas Podcast 主持人、设计代理公司 LCA 创始人 Greg Isenberg，在单人节目里试跑新模型 Fable 5.2 的 12 个提示词。",
+      "how": "他让模型审计自家网站、定价、onboarding 和竞品，长时间运行并保留日志；让它扮演自由职业者完成整单，并标出哪些部分有把握、哪些要人检查、该怎么定价。",
+      "result": "他说业务审计的排序结论很切中要害；用模型给自己的愿景文档做红队评审，有些地方比一位知名顾问给的反馈还好。",
+      "tryThis": "挑一个你熟悉的按小时收费服务（比如把客户用了 12 年的表格重建成网页工具），用模型做一遍，记下人工复核花的时间，再报一个固定价。",
+      "caveat": "需要 Claude Max 套餐；Upwork 那单在节目结束时还没做完；他自己说不会百分之百信任输出，财务核查类任务必须人工复核。",
+      "body": "Isenberg 在[这期节目](https://www.youtube.com/@GregIsenberg/search?query=Claude%20Fable%205.2%3A%20How%20I%E2%80%99d%20Make%20Money%20With%20It)里给的提示词有几个可以直接拿来做服务。一是**收购尽调**：把卖家的损益表交给模型，让它把每个数字标成已核实、未核实或可疑，再列 15 个出价前要问的问题。二是**旧系统重建**：弄清客户的表格实际在做什么，重建成简单网页应用，迁移数据，再给员工写一页说明。三是 **grill me**：让模型一次问一个问题，问 20 个你怎么做业务决策，再整理成它以后遵循的技能文件。\n\n他的判断是，这类活以前按小时收 50 到 100 美元，现在可以**按产出收固定价**。咨询入门的人可以学他的提示结构：要求模型自报哪里有把握、哪里需要人看。这部分正好对应你在交付里承担的验收责任，也是报价的依据。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Claude Fable 5.2: How I’d Make Money With It",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Claude%20Fable%205.2%3A%20How%20I%E2%80%99d%20Make%20Money%20With%20It"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-04",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
         "c47"
       ],
       "category": "consulting",

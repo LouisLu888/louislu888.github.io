@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c2"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "数学老师用 Claude Code 给全家建了个「家务大脑」",
+      "oneLiner": "Scott Farrar 把家电、保修、保险文件和家庭待办整理成一组 Markdown 文件，用 Claude Code 管理，和妻子共用，还投到墙上的显示屏。",
+      "who": "数学教育者、家长 Scott Farrar，受够了聊天式 AI 聊着聊着跑偏、记不住事。",
+      "how": "在 Claude Code 里维护一个 Markdown 文件夹，用 Obsidian 查看，记录家电、保修、保险文档和待办；用它比价车险、规划维修。",
+      "result": "他在节目里演示了用这套资料买车险，说 AI 让他问保险公司时更有针对性；墙上的 DAKboard 显示优先任务和「最近完成」。",
+      "tryThis": "先建一个本地文件夹，把家电型号、保修期、保单拍照或抄成文字，让 AI 按固定格式整理，以后每次问家务问题都从这里读。",
+      "caveat": "保单和家庭文件会交给 AI 读取，放哪些敏感信息要自己把关；文件和实际情况不同步时 AI 会出错，节目专门讨论了这一点。",
+      "body": "Farrar 在 [How I AI 节目](https://podcasters.spotify.com/pod/show/pen-name/episodes/Claude-Code--Obsidian-My-familys-AI-brain--Scott-Farrar-e3s3sgr)里讲了他为什么把家务从聊天窗口搬到 Claude Code：**资料存成文件，AI 每次都从同一份记录出发**，不会像聊天那样遗忘。起步时他问 Claude 先拍什么，得到一份要拍照存档的清单。\n\n这套做法适合家里事务多、两个人分担的家庭。夫妻共用一个待办文件，墙上显示屏除了要做的事，还专门放「最近完成」，他认为这能真正改变家里人的行为。不写代码的人用 Obsidian 也能看懂和编辑这些文件。买保险、修家电这类事要由本人联系对方，AI 负责整理资料和准备问题。",
+      "sources": [
+        {
+          "label": "How I AI (Claire Vo)",
+          "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+          "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/Claude-Code--Obsidian-My-familys-AI-brain--Scott-Farrar-e3s3sgr"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-05",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
         "c5"
       ],
       "category": "life",

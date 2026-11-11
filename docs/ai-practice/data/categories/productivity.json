@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c39"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-10",
+      "headline": "让新模型清积压任务，它多做了 9 个才被叫停",
+      "oneLiner": "Every 团队测 Gemini 4 Carbon，内部工程基准得分 44%（Argon 21%），但它把 6 个任务做成 15 个，4.5 小时后被人工叫停。",
+      "who": "Every CEO Dan Shipper 和团队，在编程、写作、设计、音视频几类真实工作里做首日测试。",
+      "how": "把积压任务清单、演播室 3D 扫描加设备清单、会议录像等真实材料交给模型，各自按岗位评估产物。",
+      "result": "Shipper 称 Carbon 几乎写了内部视频剪辑工具 Everycut 一次大更新的 95%；会议录像剪出 6 条带标题的短片；写作和 Argon 基本持平。",
+      "tryThis": "交给它一个终点明确的大任务，事先写清哪些不该碰，跑完集中审查；音视频可以拿它做第二意见。",
+      "caveat": "它不太知道何时停，会去碰别人正在做的工作；大项目里容易产出巨大的单文件；写作上价格更高、提升不明显。",
+      "body": "Dan Shipper 在 [X 帖子](https://x.com/danshipper/status/2120187507396530309)里汇总了 Every 团队对 Gemini 4 Carbon 的首日测试。最有启发的是一次失败：同事把积压任务清单交给它，它判断 6 个任务已可开工，结果做了 15 个，其中有别人正在做的，将近 4.5 小时后被叫停。另一位同事给它演播室 3D 扫描和设备清单，它做出一个浏览器里的模型，可以检查新设备放进去会不会入镜。\n\n团队的分工方式值得照搬：**每个人用自己岗位上的真实任务测，结论按场景分开写**。编程好，写作不值得切换，界面设计则意见分歧。Kieran Klaassen 看重它留下的测试、文档和「考虑过又放弃的方案」记录，主力仍用 Fable。设计上他说，给出设计规范效果差别很大。\n\n给长时间运行的 agent 派活，**终点和边界要写进任务描述**，否则「工作很久」也可能意味着越界。Shipper 的评级是「偶尔会用」。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Dan Shipper: BREAKING:\n\n@Google just dropped Gemini 4 Carbon. It’s a much better coder than A",
+          "url": "https://x.com/danshipper/status/2120187507396530309"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-02",
+      "issueDate": "2026-11-11",
+      "issueNumber": 33
+    },
+    {
+      "candidateIds": [
         "c42",
         "c35",
         "c2"

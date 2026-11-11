@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-11",
+  "title": "一个人 30 个小产品做到百万美元，新模型接了 15 个任务被叫停",
+  "items": [
+    {
+      "candidateIds": [
+        "c8"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-08",
+      "headline": "30 个单功能小工具，一个人六年做到 100 万美元",
+      "oneLiner": "Sanskar 一人做了 30 多个产品，8 个有收入，他说六年累计营收刚过 100 万美元，前两年收入为零。",
+      "who": "印度班加罗尔的独立开发者 Sanskar，做过呼叫中心夜班和销售，现在一个人经营 8 个付费产品。",
+      "how": "产品都做成 Chrome 插件或 Google Workspace 插件，每个只做一件事；代码主要交给 Claude 写，技术栈是 Next.js、Supabase、Cloudflare 和 Resend。",
+      "result": "他说每月约有 1000 个付费客户，团队只有他自己；Sheet AI 靠 YouTube 内容做到 2000 多美元 MRR，AppSumo 渠道累计 8.5 万美元以上。",
+      "tryThis": "先用 vibe coding 工具花几分钟做一个预售页，写明付款后 10 到 30 天交付，有人下单再开始做。",
+      "caveat": "他是先花两年学会做产品才起量的，最大的产品 MagicSlides 也是在做了一个 Sheets 插件之后才推出；营收不等于利润。",
+      "body": "Sanskar 在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=How%20I%20Made%20%241M%20Building%2030%20Micro-Apps)里拆了自己的打法。最大的产品 MagicSlides 能把 PDF、YouTube 视频转成可编辑的演示文稿。其他几个也是单功能工具：和视频对话、一键打码敏感信息、在 Google Sheets 里用 AI。Magic Form 的来历是这样的：Sheet AI 做到 2000 美元 MRR 后，一位投资人让他做 pitch deck，他想到 Sheets 和 Slides 都做过了，就接着做 Google Form。\n\n他有三条做法可以直接借鉴。一是**借平台分发**，插件市场里自带用户。二是**一个产品只卖一件事**，他说功能一多，卖家和买家都说不清卖的是什么。三是**每个产品单独开 YouTube 频道**，因为受众不同。他说老视频几年后还在带来销售，Magic Form 的一条视频自然播放 14.5 万次。Instagram 上，他一小时用手机加 Edits 拍了 10 条介绍视频，看哪条有反应。\n\n他给自己的总结是：最大的错误是在一个没人要的东西上坚持太久。所以要**先放购买按钮，再写代码**。问题要选有人愿意付钱的，他特别提醒，学生自己的痛点往往没人买单。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "How I Made $1M Building 30 Micro-Apps",
+          "url": "https://www.youtube.com/@starterstory/search?query=How%20I%20Made%20%241M%20Building%2030%20Micro-Apps"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-01"
+    },
+    {
+      "candidateIds": [
+        "c39"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-10",
+      "headline": "让新模型清积压任务，它多做了 9 个才被叫停",
+      "oneLiner": "Every 团队测 Gemini 4 Carbon，内部工程基准得分 44%（Argon 21%），但它把 6 个任务做成 15 个，4.5 小时后被人工叫停。",
+      "who": "Every CEO Dan Shipper 和团队，在编程、写作、设计、音视频几类真实工作里做首日测试。",
+      "how": "把积压任务清单、演播室 3D 扫描加设备清单、会议录像等真实材料交给模型，各自按岗位评估产物。",
+      "result": "Shipper 称 Carbon 几乎写了内部视频剪辑工具 Everycut 一次大更新的 95%；会议录像剪出 6 条带标题的短片；写作和 Argon 基本持平。",
+      "tryThis": "交给它一个终点明确的大任务，事先写清哪些不该碰，跑完集中审查；音视频可以拿它做第二意见。",
+      "caveat": "它不太知道何时停，会去碰别人正在做的工作；大项目里容易产出巨大的单文件；写作上价格更高、提升不明显。",
+      "body": "Dan Shipper 在 [X 帖子](https://x.com/danshipper/status/2120187507396530309)里汇总了 Every 团队对 Gemini 4 Carbon 的首日测试。最有启发的是一次失败：同事把积压任务清单交给它，它判断 6 个任务已可开工，结果做了 15 个，其中有别人正在做的，将近 4.5 小时后被叫停。另一位同事给它演播室 3D 扫描和设备清单，它做出一个浏览器里的模型，可以检查新设备放进去会不会入镜。\n\n团队的分工方式值得照搬：**每个人用自己岗位上的真实任务测，结论按场景分开写**。编程好，写作不值得切换，界面设计则意见分歧。Kieran Klaassen 看重它留下的测试、文档和「考虑过又放弃的方案」记录，主力仍用 Fable。设计上他说，给出设计规范效果差别很大。\n\n给长时间运行的 agent 派活，**终点和边界要写进任务描述**，否则「工作很久」也可能意味着越界。Shipper 的评级是「偶尔会用」。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Dan Shipper: BREAKING:\n\n@Google just dropped Gemini 4 Carbon. It’s a much better coder than A",
+          "url": "https://x.com/danshipper/status/2120187507396530309"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-02"
+    },
+    {
+      "candidateIds": [
+        "c4"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-10",
+      "headline": "PM 招聘需求四年最高，「LLM」成 JD 头号技能",
+      "oneLiner": "Lenny 用两组招聘数据发现：PM 空缺比 2023 年 3 月低点涨了 75%，美国软件工程师年招聘约 11.3 万，不到 2022 年的一半。",
+      "who": "Lenny Rachitsky 基于 TrueUp（9000 多家科技公司职位）和 Live Data Technologies（1.24 亿人的职业变动）发布 2026 年下半年科技就业报告。",
+      "how": "他认为 AI 让小团队承担更宽的职责，细分岗位在收缩，懂 AI 工具成了各岗位的基本要求。",
+      "result": "PM 招聘 JD 里最常出现的技能是「LLM」，「Claude」排第三；FDE 空缺一年涨 4.6 倍到约 1500 个；设计空缺约 1900 个、同比降 28%；美国用户研究招聘比 2022 年降 66%；移动端和前端需求近乎减半。",
+      "tryThis": "对照目标岗位最新 JD 的技能词，把 Claude、Cursor、MCP、evals 这类工具的实际作品放进简历和作品集。",
+      "caveat": "空缺增长不等于招聘增长，PM 和工程都是空缺涨、实际招聘持平或下降；FDE 增长部分来自销售工程师改名。",
+      "body": "[Lenny 的报告](https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late)里有几组反直觉的数字。PM 是五个核心岗位里唯一一个招聘占比上升的，从 2021 年的 16% 升到 21%。工程空缺过去一年只增长 2.5%。现在每 1 个设计空缺对应 3.8 个 PM 空缺。15% 的科技岗位集中在湾区，远程岗位比例创新低。\n\n他的解读是：岗位在合并，小团队里每个人管的范围更宽。用户研究萎缩，他归因于产品节奏变快，以及 Listen Labs 这类工具让非研究员也能自己做访谈。设计岗位 JD 里，「Claude」今年春天超过 CSS 排到第二。\n\n对大厂员工的启发：**往更宽的职责方向走**，比如 PM 兼原型、工程兼安全或客户部署，比守着单一专项更稳。这些是 Lenny 的推断，数据只显示相关性。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "State of the tech job market: late 2026",
+          "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-03"
+    },
+    {
+      "candidateIds": [
+        "c51"
+      ],
+      "category": "consulting",
+      "kind": "本周演示",
+      "eventDate": "2026-11-10",
+      "headline": "把按小时收费的活，改成按结果定价的服务",
+      "oneLiner": "Greg Isenberg 现场让 Fable 5.2 在 Upwork 上找了一个 450 美元固定价的分析报告任务，并直接开始交付。",
+      "who": "Startup Ideas Podcast 主持人、设计代理公司 LCA 创始人 Greg Isenberg，在单人节目里试跑新模型 Fable 5.2 的 12 个提示词。",
+      "how": "他让模型审计自家网站、定价、onboarding 和竞品，长时间运行并保留日志；让它扮演自由职业者完成整单，并标出哪些部分有把握、哪些要人检查、该怎么定价。",
+      "result": "他说业务审计的排序结论很切中要害；用模型给自己的愿景文档做红队评审，有些地方比一位知名顾问给的反馈还好。",
+      "tryThis": "挑一个你熟悉的按小时收费服务（比如把客户用了 12 年的表格重建成网页工具），用模型做一遍，记下人工复核花的时间，再报一个固定价。",
+      "caveat": "需要 Claude Max 套餐；Upwork 那单在节目结束时还没做完；他自己说不会百分之百信任输出，财务核查类任务必须人工复核。",
+      "body": "Isenberg 在[这期节目](https://www.youtube.com/@GregIsenberg/search?query=Claude%20Fable%205.2%3A%20How%20I%E2%80%99d%20Make%20Money%20With%20It)里给的提示词有几个可以直接拿来做服务。一是**收购尽调**：把卖家的损益表交给模型，让它把每个数字标成已核实、未核实或可疑，再列 15 个出价前要问的问题。二是**旧系统重建**：弄清客户的表格实际在做什么，重建成简单网页应用，迁移数据，再给员工写一页说明。三是 **grill me**：让模型一次问一个问题，问 20 个你怎么做业务决策，再整理成它以后遵循的技能文件。\n\n他的判断是，这类活以前按小时收 50 到 100 美元，现在可以**按产出收固定价**。咨询入门的人可以学他的提示结构：要求模型自报哪里有把握、哪里需要人看。这部分正好对应你在交付里承担的验收责任，也是报价的依据。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Claude Fable 5.2: How I’d Make Money With It",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Claude%20Fable%205.2%3A%20How%20I%E2%80%99d%20Make%20Money%20With%20It"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-04"
+    },
+    {
+      "candidateIds": [
+        "c2"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "数学老师用 Claude Code 给全家建了个「家务大脑」",
+      "oneLiner": "Scott Farrar 把家电、保修、保险文件和家庭待办整理成一组 Markdown 文件，用 Claude Code 管理，和妻子共用，还投到墙上的显示屏。",
+      "who": "数学教育者、家长 Scott Farrar，受够了聊天式 AI 聊着聊着跑偏、记不住事。",
+      "how": "在 Claude Code 里维护一个 Markdown 文件夹，用 Obsidian 查看，记录家电、保修、保险文档和待办；用它比价车险、规划维修。",
+      "result": "他在节目里演示了用这套资料买车险，说 AI 让他问保险公司时更有针对性；墙上的 DAKboard 显示优先任务和「最近完成」。",
+      "tryThis": "先建一个本地文件夹，把家电型号、保修期、保单拍照或抄成文字，让 AI 按固定格式整理，以后每次问家务问题都从这里读。",
+      "caveat": "保单和家庭文件会交给 AI 读取，放哪些敏感信息要自己把关；文件和实际情况不同步时 AI 会出错，节目专门讨论了这一点。",
+      "body": "Farrar 在 [How I AI 节目](https://podcasters.spotify.com/pod/show/pen-name/episodes/Claude-Code--Obsidian-My-familys-AI-brain--Scott-Farrar-e3s3sgr)里讲了他为什么把家务从聊天窗口搬到 Claude Code：**资料存成文件，AI 每次都从同一份记录出发**，不会像聊天那样遗忘。起步时他问 Claude 先拍什么，得到一份要拍照存档的清单。\n\n这套做法适合家里事务多、两个人分担的家庭。夫妻共用一个待办文件，墙上显示屏除了要做的事，还专门放「最近完成」，他认为这能真正改变家里人的行为。不写代码的人用 Obsidian 也能看懂和编辑这些文件。买保险、修家电这类事要由本人联系对方，AI 负责整理资料和准备问题。",
+      "sources": [
+        {
+          "label": "How I AI (Claire Vo)",
+          "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
+          "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/Claude-Code--Obsidian-My-familys-AI-brain--Scott-Farrar-e3s3sgr"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-05"
+    },
+    {
+      "candidateIds": [
+        "c46"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-11",
+      "headline": "OpenAI 工程师开车上班路上，用语音开 PR",
+      "oneLiner": "OpenAI 开发者体验工程师 Dominik Kundel 说，他常在通勤路上和个人 agent 对话、启动 PR，到办公室再审。",
+      "who": "OpenAI 的 Dominik Kundel 和 Charlie Guo，在 AI Engineer Code Summit 的 Codex 工作坊上分享，会后接受 Richard MacManus 采访。",
+      "how": "Guo 把语音当成「控制面」，用来管理多个线程、查进度、开新任务，而不只是听写；Kundel 很多任务先交给个人 agent dot 发起，因为它已经掌握他的上下文。",
+      "result": "Kundel 说他的 dot 能访问他的开发机、笔记本和云端环境，所以能接手推进 PR；Guo 列了 dot 的三种用法：安全网、在 Slack 里接活、随处可用。",
+      "tryThis": "把审查和发起分开：零碎时间用语音派出几个小任务，回到电脑前集中审查结果。",
+      "caveat": "Guo 承认对 Codex 重度用户来说 dot 用着有点别扭；本地任务转到云端仍让不少人困惑，Kundel 说还在改进。",
+      "body": "这场[工作坊](https://latent.space/p/codex-work/)的核心是工作方式。Kundel 演示改网站时会用语音口述，他说在自己还没想清楚要什么时，这样迭代很快。Guo 的用法更进一步：他不把语音当作某一条工作线的输入方式，而是**用声音调度所有线程**，查进度、从其他应用取数据、新建任务。\n\n两人的建议都很朴素：把推理强度调低（turn it down），遇到问题让 agent 帮你，**别对现在的用法太执着**，因为工具一直在变。对普通开发者，可以借鉴的是「通勤时发起、到岗后审查」的节奏。前提是 agent 能访问你的代码环境，PR 要等你审过才合并。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex",
+          "url": "https://latent.space/p/codex-work/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-11-06"
+    }
+  ],
+  "action": "打开你今天的待办，挑一件你能说清「做到什么程度算完」的事，写成一段任务描述，包含三项：终点是什么、哪些文件或事务不要碰、交回时要标出哪些地方没把握。交给你常用的 AI 跑一遍，记下审查花了多久、它有没有越界。你想卖服务也好，想把 AI 用在本职工作上也好，这段描述都可以反复改进，变成你的第一个模板。",
+  "readingMinutes": 9,
+  "meta": {
+    "generatedAt": "2026-11-11T15:05:50.868Z",
+    "engine": "cli",
+    "candidateCount": 56,
+    "candidatesBySource": {
+      "Simon Willison": 1,
+      "How I AI (Claire Vo)": 1,
+      "Lenny's Newsletter & Podcast": 2,
+      "Ali Abdaal": 1,
+      "Matt Wolfe": 2,
+      "Starter Story Podcast": 1,
+      "Starter Story (YouTube)": 1,
+      "Niche Pursuits": 1,
+      "Sub Club (RevenueCat)": 1,
+      "Every (YouTube)": 1,
+      "Follow Builders (X)": 32,
+      "Latent Space": 3,
+      "The AI Daily Brief": 1,
+      "Lex Fridman Podcast": 1,
+      "Riley Brown": 1,
+      "Startup Ideas Podcast (Greg Isenberg)": 1,
+      "Supercompanies (Greg Shove / Section)": 1,
+      "少数派": 1,
+      "Tom's Guide · AI": 3
+    },
+    "shortlist": [
+      {
+        "id": "c8",
+        "reason": "谁：独立开发者 Sanskar；怎么做：一个人做了 30 多个小产品，讲了怎么找点子、怎么营销、怎么同时押很多个小赌注；结果：总收入 100 万美元。有逐字稿，经营复盘最完整。",
+        "source": "Starter Story Podcast",
+        "title": "How I Made $1M Building 30 Micro-Apps"
+      },
+      {
+        "id": "c2",
+        "reason": "谁：数学老师兼家长 Scott Farrar；怎么用 AI：用 Claude Code 加 Obsidian 的 Markdown 文件夹搭了个家庭大脑，管家电保修、保险文件和待办，用它比价车险、安排维修，和妻子共用，还放到墙上的显示屏；结果：日常事务有了一套能复用的系统（属于 AI 生活类）。只有简介，但简介里做法写得清楚。和 c3 是同一期，留这条。",
+        "source": "How I AI (Claire Vo)",
+        "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar"
+      },
+      {
+        "id": "c51",
+        "reason": "谁：Greg Isenberg；怎么用 AI：现场跑 Fable 5.2 的提示词，审计自己的设计公司、在 Upwork 上找到接单机会、用子代理调研 100 个细分方向，并讲怎么按固定价格卖结果；结果：给出可以直接照抄的提示词和变现思路。有逐字稿。",
+        "source": "Startup Ideas Podcast (Greg Isenberg)",
+        "title": "Claude Fable 5.2: How I’d Make Money With It"
+      },
+      {
+        "id": "c46",
+        "reason": "谁：OpenAI 负责开发者体验的工程师在 AI Engineer Code Summit 开的现场工作坊；怎么用 AI：讲 Codex 的新用法和工作流的变化，比如云端代理怎么用；结果：开发者可以照着改自己的编码流程。全文是到场报道。",
+        "source": "Latent Space",
+        "title": "AI Engineer Code Summit: OpenAI on New Ways of Working With Codex"
+      },
+      {
+        "id": "c52",
+        "reason": "谁：Audos 联合创始人 Nicholas Thorne；怎么用 AI：给普通创业者最多 10 万美元，外加一个当教练和协调者的 AI 代理 Otto，不要股份；结果：一种用 AI 降低创业门槛的新模式。有逐字稿，适合想做副业或创业的读者。",
+        "source": "Supercompanies (Greg Shove / Section)",
+        "title": "Why AI Makes Entrepreneurship More Human with Nicholas Thorne (Audos)"
+      },
+      {
+        "id": "c39",
+        "reason": "谁：Every 团队；怎么用 AI：在编码、写作、设计等真实任务里实测 Gemini 4 Carbon；结果：有具体数字，内部资深工程师测试从 21% 提到 44%，处理任务清单时自己多做了 15 项，跑了 4.5 小时才被叫停。是一手实测，不是发布通稿。",
+        "source": "Follow Builders (X)",
+        "title": "Dan Shipper: BREAKING:\n\n@Google just dropped Gemini 4 Carbon. It’s a much better coder than A"
+      },
+      {
+        "id": "c47",
+        "reason": "谁：Resend CEO Zeno Rocha（认知类）；怎么用 AI：讲 AEO，也就是怎么让自己的产品被 AI 代理优先推荐；结果：有研究数据，Claude Code 在 102 次邮件服务推荐里有 64 次首选 Resend。对做产品的人很有参考价值。只有简介，但数据写清楚了。",
+        "source": "Latent Space",
+        "title": "Designing for Agents — Zeno Rocha, Resend"
+      },
+      {
+        "id": "c4",
+        "reason": "谁：Lenny Rachitsky（认知类）；内容：2026 年末科技行业就业市场报告，核心发现是 AI 时代产品经理反而占优；结果：用招聘数据回答大厂员工关心的职业判断。全文。",
+        "source": "Lenny's Newsletter & Podcast",
+        "title": "State of the tech job market: late 2026"
+      },
+      {
+        "id": "c50",
+        "reason": "谁：Riley Brown；怎么用 AI：48 小时里花了 5000 美元，用 Fable 5.2 做 Blender 3D、剪视频、做游戏、做 App、做调研和硬件设计；结果：有一套可以复现的创作流程，还展示了自己在做的产品 v2.video。只有简介，但章节和用例写得比较具体。",
+        "source": "Riley Brown",
+        "title": "I Spent $5,000 Using Claude Fable 5.2 (This Feels Different)"
+      },
+      {
+        "id": "c56",
+        "reason": "谁：Tom's Guide 作者；怎么用 AI：在 20 美元一个月的预算下对比 Codex 和 Claude Code 的用量额度；结果：帮个人开发者判断哪个订阅更划算，实用性强。全文，但摘录里还没出现结论。",
+        "source": "Tom's Guide · AI",
+        "title": "I compared OpenAI Codex and Claude Code's usage limits — and there's a catch with both $20 plans"
+      },
+      {
+        "id": "c10",
+        "reason": "谁：DNSimple 创始人 Anthony Eden；怎么做：不融资，19 人团队，年收入约 700 万美元、客户超 1.9 万；结果：带数字的经营复盘，也谈到 AI 怎么改变软件开发和获客、搜索流量下滑（认知类）。只有简介，AI 部分的信息有限，放在最后。",
+        "source": "Niche Pursuits",
+        "title": "How Anthony Eden Built DNSimple to $7 Million a Year With a 19-Person Team"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 24166,
+        "output_tokens": 2481,
+        "output_tokens_details": {
+          "thinking_tokens": 542
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 0,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2481,
+            "cache_read_input_tokens": 24166,
+            "cache_creation_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 0
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.05446120000000001
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 49205,
+      "cache_read_input_tokens": 6258,
+      "output_tokens": 7585,
+      "output_tokens_details": {
+        "thinking_tokens": 2152
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 49205,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7585,
+          "cache_read_input_tokens": 6258,
+          "cache_creation_input_tokens": 49205,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 49205
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.5465996
+  }
+}
