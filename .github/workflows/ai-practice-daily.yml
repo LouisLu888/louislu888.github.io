@@ -118,9 +118,18 @@ jobs:
           fi
 
       # Share cards render Chinese titles; the runner has Chrome but no CJK font.
+      # Never fatal: on 2026-11-11 security.ubuntu.com stopped resolving on the
+      # runner and this step killed two finished issues. Without the font the
+      # cards show boxes for Chinese, which beats publishing nothing.
       - name: Install CJK font for share cards
         if: ${{ !inputs.check_only && steps.guard.outputs.skip != 'true' }}
-        run: sudo apt-get install -y -qq fonts-noto-cjk > /dev/null
+        run: |
+          for attempt in 1 2 3; do
+            sudo apt-get update -qq > /dev/null 2>&1 || true
+            sudo apt-get install -y -qq --fix-missing fonts-noto-cjk > /dev/null && exit 0
+            sleep 15
+          done
+          echo "::warning::fonts-noto-cjk could not be installed; share cards will lack CJK glyphs"
 
       - name: Build indexes, pages and share cards; publish to docs/
         if: ${{ !inputs.check_only && steps.guard.outputs.skip != 'true' }}
