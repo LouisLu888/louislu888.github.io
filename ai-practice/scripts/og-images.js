@@ -9,7 +9,7 @@
 //
 // Chrome: $CHROME_BIN, else the macOS app path, else `google-chrome` (present
 // on GitHub's Ubuntu runners). Chinese text needs a CJK font; the workflow
-// installs fonts-noto-cjk. If Chrome is missing, this exits 0 with a warning
+// downloads Noto Sans/Serif SC from the noto-cjk repo. If Chrome is missing, this exits 0 with a warning
 // and pages fall back to og/default.png (or no image when that is missing).
 //
 // Usage: node og-images.js [--force]   (build-index.js --og calls this too)

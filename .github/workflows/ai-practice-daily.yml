@@ -118,18 +118,22 @@ jobs:
           fi
 
       # Share cards render Chinese titles; the runner has Chrome but no CJK font.
-      # Never fatal: on 2026-11-11 security.ubuntu.com stopped resolving on the
-      # runner and this step killed two finished issues. Without the font the
-      # cards show boxes for Chinese, which beats publishing nothing.
+      # Fetched from GitHub, not apt: on 2026-11-11 security.ubuntu.com stopped
+      # resolving on the runner and the fonts-noto-cjk install failed (twice
+      # fatally, then 15 minutes of retries). og-images.js falls back to
+      # "Noto Sans SC" / "Noto Serif SC", which these subset fonts provide.
+      # Never fatal: a card with boxes beats no issue.
       - name: Install CJK font for share cards
         if: ${{ !inputs.check_only && steps.guard.outputs.skip != 'true' }}
         run: |
-          for attempt in 1 2 3; do
-            sudo apt-get update -qq > /dev/null 2>&1 || true
-            sudo apt-get install -y -qq --fix-missing fonts-noto-cjk > /dev/null && exit 0
-            sleep 15
+          mkdir -p ~/.local/share/fonts
+          base=https://raw.githubusercontent.com/notofonts/noto-cjk/main
+          for f in Sans/SubsetOTF/SC/NotoSansSC-Regular.otf Sans/SubsetOTF/SC/NotoSansSC-Bold.otf Serif/SubsetOTF/SC/NotoSerifSC-Bold.otf; do
+            curl -fsSL --retry 3 --max-time 120 -o ~/.local/share/fonts/$(basename $f) "$base/$f" \
+              || echo "::warning::could not fetch $f; share cards may lack CJK glyphs"
           done
-          echo "::warning::fonts-noto-cjk could not be installed; share cards will lack CJK glyphs"
+          fc-cache -f > /dev/null
+          fc-list :lang=zh family | head -5
 
       - name: Build indexes, pages and share cards; publish to docs/
         if: ${{ !inputs.check_only && steps.guard.outputs.skip != 'true' }}
