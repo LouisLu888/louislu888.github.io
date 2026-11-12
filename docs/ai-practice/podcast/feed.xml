@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-12 · 一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-12/</link>
+      <description>一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR；同一份问卷，团队每人用 Claude 挖出了不同的结论；写代码之前，先让 Agent 在 Paper 里定好设计系统；「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码；翻了 803 家公司的子处理方清单，看 AI 公司在买什么（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-12/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR<br>03:00 同一份问卷，团队每人用 Claude 挖出了不同的结论<br>04:39 写代码之前，先让 Agent 在 Paper 里定好设计系统<br>06:08 「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码<br>07:53 翻了 803 家公司的子处理方清单，看 AI 公司在买什么<br>09:25 今天可以做的一件事</p><p><b>一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR</b><br><a href="https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why">Startup Ideas Podcast (Greg Isenberg)</a></p><p><b>同一份问卷，团队每人用 Claude 挖出了不同的结论</b><br><a href="https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation">The Every Podcast (AI &amp; I)</a></p><p><b>写代码之前，先让 Agent 在 Paper 里定好设计系统</b><br><a href="https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why">Startup Ideas Podcast (Greg Isenberg)</a></p><p><b>「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码</b><br><a href="https://latent.space/p/jev-revolution/">Latent Space</a></p><p><b>翻了 803 家公司的子处理方清单，看 AI 公司在买什么</b><br><a href="https://x.com/nikunj/status/2120669243918418237">Follow Builders (X)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-12.mp3" length="3648764" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 22:47:08 GMT</pubDate>
+      <itunes:duration>00:10:08</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-11 · 一个人 30 个小产品做到百万美元，新模型接了 15 个任务被叫停</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-11/</link>
       <description>30 个单功能小工具，一个人六年做到 100 万美元；让新模型清积压任务，它多做了 9 个才被叫停；PM 招聘需求四年最高，「LLM」成 JD 头号技能；把按小时收费的活，改成按结果定价的服务；数学老师用 Claude Code 给全家建了个「家务大脑」；OpenAI 工程师开车上班路上，用语音开 PR（本集语音由 AI 合成）</description>

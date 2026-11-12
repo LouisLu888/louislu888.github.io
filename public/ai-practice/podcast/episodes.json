@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好",
+    "summary": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR；同一份问卷，团队每人用 Claude 挖出了不同的结论；写代码之前，先让 Agent 在 Paper 里定好设计系统；「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码；翻了 803 家公司的子处理方清单，看 AI 公司在买什么",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-12/",
+    "items": [
+      {
+        "headline": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR",
+        "sources": [
+          {
+            "label": "Startup Ideas Podcast (Greg Isenberg)",
+            "title": "I'm Obsessed With Grok Bot. Here's Why",
+            "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+          }
+        ]
+      },
+      {
+        "headline": "同一份问卷，团队每人用 Claude 挖出了不同的结论",
+        "sources": [
+          {
+            "label": "The Every Podcast (AI & I)",
+            "title": "A New Vision for Human Work After Automation",
+            "url": "https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation"
+          }
+        ]
+      },
+      {
+        "headline": "写代码之前，先让 Agent 在 Paper 里定好设计系统",
+        "sources": [
+          {
+            "label": "Startup Ideas Podcast (Greg Isenberg)",
+            "title": "I'm Obsessed With Grok Bot. Here's Why",
+            "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+          }
+        ]
+      },
+      {
+        "headline": "「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码",
+        "sources": [
+          {
+            "label": "Latent Space",
+            "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+            "url": "https://latent.space/p/jev-revolution/"
+          }
+        ]
+      },
+      {
+        "headline": "翻了 803 家公司的子处理方清单，看 AI 公司在买什么",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Nikunj Kothari: I scraped 803 companies sub-processors to investigate what AI native companies a",
+            "url": "https://x.com/nikunj/status/2120669243918418237"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR"
+      },
+      {
+        "start": 180,
+        "title": "同一份问卷，团队每人用 Claude 挖出了不同的结论"
+      },
+      {
+        "start": 279,
+        "title": "写代码之前，先让 Agent 在 Paper 里定好设计系统"
+      },
+      {
+        "start": 368,
+        "title": "「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码"
+      },
+      {
+        "start": 473,
+        "title": "翻了 803 家公司的子处理方清单，看 AI 公司在买什么"
+      },
+      {
+        "start": 565,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 608,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-12.mp3",
+    "audioBytes": 3648764,
+    "publishedAt": "2026-11-12T22:47:08.139Z"
+  },
+  {
     "date": "2026-11-11",
     "title": "一个人 30 个小产品做到百万美元，新模型接了 15 个任务被叫停",
     "summary": "30 个单功能小工具，一个人六年做到 100 万美元；让新模型清积压任务，它多做了 9 个才被叫停；PM 招聘需求四年最高，「LLM」成 JD 头号技能；把按小时收费的活，改成按结果定价的服务；数学老师用 Claude Code 给全家建了个「家务大脑」；OpenAI 工程师开车上班路上，用语音开 PR",
