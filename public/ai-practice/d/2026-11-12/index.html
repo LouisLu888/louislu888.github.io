@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 034｜一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好</title>
+  <meta name="description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-12/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 034｜一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好">
+  <meta property="og:description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-12/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-12.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 034｜一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好">
+  <meta name="twitter:description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-12.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">39</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">21</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">38</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">20</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 034 · 2026 年 11 月 12 日 · 周四 · 约 9 分钟读完</div>
+        <h1>一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-12-01">Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-12-02">Dan Shipper 用一个 Claude 订阅，一周做完按 2020 年标准需要五个人的活。他认为，模型能大批生成答案，但判断哪个答案重要的还是人。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-12-03">Ras Mic 给弟弟的服装品牌搭 Shopify 店，先让 Agent 通过 Paper MCP 做出设计系统和页面，他在画布上留评论改稿，确认后才连上 Shopify 生成前端。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-12-04">在 AI Engineer Code Summit 上，Glean、UiPath 和 Workday 的工程师展示了 Jev 这类「系统一」模型的用法：只返回选项、分数或概率，速度快，成本低。UiPath 的测试里，几千次调用不到一秒就跑完了。</a></li><li><span class="tag" data-cat="saas">Micro SaaS</span><a href="#2026-11-12-05">投资人 Nikunj Kothari 抓取了 803 家公司的子处理方清单。他统计，列出两家以上模型供应商的公司占 44%，3 月时是 33%；列出推理服务商的从 22% 升到 33%。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-12-01">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-11<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-12-01/">01｜一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者、AI 类 YouTuber Ras Mic，在 Greg Isenberg 的节目里演示他同时推进的多个项目，包括 Pluto、Bezalel 和一个 Rust 写的交易终端。</dd><dt>怎么用</dt><dd>每个认真做的项目单开一个 Bot，零散想法交给一个通用工程 Bot。先让 Bot 审方案，不让它直接动手。方案定了再让它调用 Claude Code 写代码，需要时开多个会话并行。</dd><dt>结果</dt><dd>他说那次会话交出 5 个 PR，全部可用，新功能已经有人在测。交易终端他一行代码没写。另一个项目的 Bot 还自己发邮件，找 GPU 供应商谈折扣。</dd><dt>你可以试</dt><dd>从手头一个项目开始，单独开一个对话或 Bot。把方案文档交给它，只说「review this」，看它挑出哪些问题，确认后再让它写代码。</dd><dt>注意</dt><dd>他本人是工程师，看得懂方案也会审代码。涉及支付或敏感数据时，他会额外跑安全检查。他也承认夜里让 Bot 做出的一个应用，自己一次都没运行过。</dd></dl>
+        <div class="body"><p>在 <a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why">Startup Ideas Podcast</a> 里，Ras Mic 演示了他的分工方法：<strong>一个项目一个 Bot，用完就删</strong>。Grok Bot 负责沟通和调度，写代码交给 Claude Code。做 Pluto 的新方向时，他把朋友写的 PDF 方案交给 Bot，只让它审。Bot 回复说「方向对，但不建议原样执行」，并缩小了范围。朋友的回复他原样贴回去，第二版方案他看过觉得可以，才说「build it out」。Bot 随后调用 Claude Code 跑了几个小时，交出 5 个可用的 PR。</p><p>他选择这种方式有两个原因。一是在手机上用着顺手，在妈妈家吃饭、开车时开着免提都能推进。二是个人 Agent 还能处理业务上的事，比如发邮件谈价、申请退款。连接 Claude Code 有两种办法：简单的是让 Bot 在自带的电脑上登录 Claude Code；他自己用的是 Tailscale 连起几台机器，再通过 T3 code 调用。他说每月 200 美元的 Claude Code 订阅相当于 8000 到 12000 美元的 API 额度，所以「补贴还在就该用」。</p><p><strong>先审方案再写代码</strong>这一步，不写代码的人也能借鉴。安全方面，他的建议是用最好的模型跑 /goal 做安全检查。遇到模型拒绝时，开个新会话换一种说法再问。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why" target="_blank" rel="noopener" title="I&#39;m Obsessed With Grok Bot. Here&#39;s Why">Startup Ideas Podcast (Greg Isenberg)</a></div>
+      </section>
+      <section class="item" id="2026-11-12-02">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-11<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-12-02/">02｜同一份问卷，团队每人用 Claude 挖出了不同的结论</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>Every 联合创始人兼 CEO Dan Shipper，在 Every 首届大会 Thesis 的闭幕演讲中提出这个观点（2026-11-11 播出）。</dd><dt>核心观点</dt><dd>他认为模型的默认答案人人都拿得到，所以不值钱。值钱的是两样：一个人对某块业务负有责任，以及他带进来的、与众不同的视角。</dd><dt>依据</dt><dd>同一份客户问卷，Dan 自己发现了团队版的销售机会。Yash 发现首月流失源于邮件太多，并提了改动的 PR。Douglas 读出读者的孤独感。另据内部实验，Claude 给出 400 个答案时，93% 的情况下包含 Dan 在 Slack 里的真实回复，但让它排序，这条只有约 60% 的情况能进前 10%。</dd><dt>对你的意义</dt><dd>下次用 AI 分析数据，先写下自己负责的指标和自己的判断，再去追问。别只停在「你看到了什么」这种默认问法。</dd><dt>争议·条件</dt><dd>Dan 自己也承认，模型一年后大概会更擅长排序。他的回应是：到那时人也在用新模型，比较的仍是「人加模型」和默认提示词。这是自家大会的主题演讲。</dd></dl>
+        <div class="body"><p>Dan Shipper 在 <a href="https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation">Thesis 闭幕演讲</a>里引用了 OpenAI 的 GDPval：盲评专家判定 AI 胜过人类专家的比例，2024 年是 12.4%，2025 年是 47.6%，2026 年约 83%。上周他抽工作间隙分析了季度问卷，做了一个团队对战游戏，又 vibe code 了一个 CRM，去给客户发开发邮件。按 2020 年的标准，这些活要数据科学家、游戏开发、产品营销、工程师和 BDR 五个人来做。</p><p>他的论据来自团队内部。直接问 Claude，得到的是「写作就是业务」这类结论，没错，但谁都能得到。团队里没有一个人交上去的是默认答案。负责评测的 Mike Taylor 做过实验，结论是<strong>生成很便宜，排序很难</strong>。</p><p>对读者来说，这意味着把时间花在定义自己负责什么、自己相信什么上。Dan 把这种工作方式叫作「分配经济」：衡量一个人的标准，变成他能否把智能资源分配好，并对结果负责。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation" target="_blank" rel="noopener" title="A New Vision for Human Work After Automation">The Every Podcast (AI &amp; I)</a></div>
+      </section>
+      <section class="item" id="2026-11-12-03">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-11<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-12-03/">03｜写代码之前，先让 Agent 在 Paper 里定好设计系统</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>同一期节目里的 Ras Mic。他自称不懂设计工具，这次要给弟弟的服装品牌做一个网店。</dd><dt>怎么用</dt><dd>他把喜欢的网站截图交给 Agent，让它据此生成设计系统，规定字体、颜色、间距、圆角和按钮尺寸，再按这套系统出页面。他在 Paper 里直接留评论，然后让 Agent「address the comments」。</dd><dt>结果</dt><dd>几轮来回后，Agent 做出了哥特风格的店铺设计。他连上 Shopify 账号，几分钟内页面就改版完成了。</dd><dt>你可以试</dt><dd>在 Paper 或 Figma 里接好 MCP，让 Agent 先产出一页设计系统。确认之后，在所有后续提示里都要求它照这份系统来做。</dd><dt>注意</dt><dd>设计和功能都要本人审批，他认为这一步省不掉。参考别人的网站时，应该提炼成自己的设计系统，不要整页照搬。</dd></dl>
+        <div class="body"><p>同一期<a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why">节目</a>里，Ras Mic 讲了设计流程。他的设计参考来自 X 上关注的设计师和 Mobbin。看到喜欢的网站，他就让 Agent 照着做一套设计系统，再自己微调。网店那次，他给的提示词很粗糙，Agent 先反问他想要什么氛围。中途 Agent 用了已经连好的 Framer，他纠正说要用 Shopify。</p><p>Greg Isenberg 指出，很多人直接让 Agent 写代码，结果页面有一股「AI 味」。Ras Mic 的做法是<strong>先锁定设计，再生成代码</strong>。在画布上留评论改稿，比上线后再一条条提意见、让 Agent 重写代码省事得多。</p><p>这一套适合不会设计、但要做落地页、网店或小工具界面的人。前提是工具接好了 MCP，另外设计系统要单独保存一份，后面每个项目都能引用。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why" target="_blank" rel="noopener" title="I&#39;m Obsessed With Grok Bot. Here&#39;s Why">Startup Ideas Podcast (Greg Isenberg)</a></div>
+      </section>
+      <section class="item" id="2026-11-12-04">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-12<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-12-04/">04｜「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>TypeSafe AI 联合创始人兼 CEO Diogo Almeida（Jev 的主要作者），以及 Glean、UiPath、Workday 的工程师，在大会上分享。Latent Space 做了报道。</dd><dt>核心观点</dt><dd>Almeida 主张，不要把 LLM 放在软件的核心再靠拼接字符串碰运气。应该在应用代码里到处嵌入「系统一」模型调用，用它做分类、打分和排序这类结构化判断。</dd><dt>依据</dt><dd>Glean 说决策的分类体系变了也不用重新微调。UiPath 用淘汰赛的方式让 Jev 给文档片段排序，几千次调用不到一秒跑完。Workday 做的原型能在用户还在打字时就开始填请假单。</dd><dt>对你的意义</dt><dd>如果你在用 LLM 做分类、打分或路由，挑一个环节换成返回结构化选择的快模型调用，对比一下稳定性、延迟和成本。</dd><dt>争议·条件</dt><dd>Almeida 推的是自家产品。Jev 九月才发布，不到两个月。UiPath 的工程师也说，Jev 单独用看起来没那么聪明，要靠组合策略才能用好。</dd></dl>
+        <div class="body"><p>Latent Space <a href="https://latent.space/p/jev-revolution/">报道</a>了这场大会的主题：「系统一」模型。这类模型不生成文本，只返回结构化的选择、分数或概率。Almeida 认为，LLM 做核心的问题出在可靠性上：「95% 的时候你得到爱因斯坦，5% 的时候是憨豆先生。分不清是哪个，怎么自动化？」</p><p>几家公司的用法更务实。Glean 把 Jev 和 LLM、其他分类器搭配使用，用户不需要知道背后跑的是哪种模型。UiPath 的<strong>淘汰赛式排序</strong>可以直接借鉴：把候选分成小组，每组选出最相关的，胜者进下一轮。</p><p>对工程和产品岗位来说，这提供了一种拆分思路：开放式生成交给 LLM，有限选项的判断交给快模型。会场还有人提到，业余时间用 Jev 做了一个给梦幻足球新闻排序的网站。</p></div>
+        <div class="sources">原文：<a href="https://latent.space/p/jev-revolution/" target="_blank" rel="noopener" title="The Jev Revolution: What Engineers Are Already Building with System One Models">Latent Space</a></div>
+      </section>
+      <section class="item" id="2026-11-12-05">
+        <div class="item-meta"><span class="tag" data-cat="saas">Micro SaaS</span><span>·</span>机会观察<span>·</span>2026-11-12<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-12-05/">05｜翻了 803 家公司的子处理方清单，看 AI 公司在买什么</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>FPV Ventures 合伙人 Nikunj Kothari，这是他第二次做这项统计，上一次在 3 月。</dd><dt>怎么用</dt><dd>他抓取各公司公开的子处理方清单（sub-processor list，按隐私合规要求公开的第三方服务商名单），统计各家用了哪些模型和基础设施。</dd><dt>结果</dt><dd>他的统计显示：多模型并用越来越普遍，Anthropic 的增速是 OpenAI 的两倍（他提醒样本小）；推理服务商里 Modal 领先；TypeSafe AI 短时间内从 0 增长到出现在许多公司的清单上；中国模型主要通过视频类服务进入。</dd><dt>你可以试</dt><dd>做 B2B 小产品之前，翻翻目标客户和竞品公开的子处理方清单，看看他们已经在为哪些服务付钱、跟谁集成。</dd><dt>注意</dt><dd>他自己说，子处理方清单是滞后指标，但只要列上了，就说明公司确实在用。</dd></dl>
+        <div class="body"><p>Nikunj Kothari 在 <a href="https://x.com/nikunj/status/2120669243918418237">X 上</a>分享了这份统计。他还发现了 86 对互相把对方列为子处理方的公司，例如 Anthropic 和 Cloudflare。完整数据放在他做的 deploygraph 网站上。</p><p>这个方法本身可以拿来用。<strong>子处理方清单是公开的，而且列出的都是真实采购</strong>，比看营销稿可靠。做 Micro SaaS 的人能借此判断两件事：目标客户用的是哪些模型和推理服务，你的产品要跟谁集成；哪些新服务正在被快速采用，周边可能有配套工具的需求。</p><p>例如，44% 的公司同时用多家模型，这说明多供应商的路由、计费和评测正在成为日常需求。这只是一个待验证的方向，要去问几家客户才能确认。</p></div>
+        <div class="sources">原文：<a href="https://x.com/nikunj/status/2120669243918418237" target="_blank" rel="noopener" title="Nikunj Kothari: I scraped 803 companies sub-processors to investigate what AI native companies a">Follow Builders (X)</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>从手头一个正在推进的小项目里，挑一份方案、需求文档或数据报告，单独开一个只管这个项目的 AI 对话。第一句只让它审：指出风险，说明它会改哪里，先别动手。开始追问之前，先写下你负责的指标和你自己的一个判断，带着这个判断去问。最后对比 AI 的默认结论和你挑出来的那条，看看哪条会让你明天真的去改点什么。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-11/">← 2026 年 11 月 11 日 · 周三</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

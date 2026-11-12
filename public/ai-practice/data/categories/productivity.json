@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c52"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR",
+      "oneLiner": "Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。",
+      "who": "开发者、AI 类 YouTuber Ras Mic，在 Greg Isenberg 的节目里演示他同时推进的多个项目，包括 Pluto、Bezalel 和一个 Rust 写的交易终端。",
+      "how": "每个认真做的项目单开一个 Bot，零散想法交给一个通用工程 Bot。先让 Bot 审方案，不让它直接动手。方案定了再让它调用 Claude Code 写代码，需要时开多个会话并行。",
+      "result": "他说那次会话交出 5 个 PR，全部可用，新功能已经有人在测。交易终端他一行代码没写。另一个项目的 Bot 还自己发邮件，找 GPU 供应商谈折扣。",
+      "tryThis": "从手头一个项目开始，单独开一个对话或 Bot。把方案文档交给它，只说「review this」，看它挑出哪些问题，确认后再让它写代码。",
+      "caveat": "他本人是工程师，看得懂方案也会审代码。涉及支付或敏感数据时，他会额外跑安全检查。他也承认夜里让 Bot 做出的一个应用，自己一次都没运行过。",
+      "body": "在 [Startup Ideas Podcast](https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why) 里，Ras Mic 演示了他的分工方法：**一个项目一个 Bot，用完就删**。Grok Bot 负责沟通和调度，写代码交给 Claude Code。做 Pluto 的新方向时，他把朋友写的 PDF 方案交给 Bot，只让它审。Bot 回复说「方向对，但不建议原样执行」，并缩小了范围。朋友的回复他原样贴回去，第二版方案他看过觉得可以，才说「build it out」。Bot 随后调用 Claude Code 跑了几个小时，交出 5 个可用的 PR。\n\n他选择这种方式有两个原因。一是在手机上用着顺手，在妈妈家吃饭、开车时开着免提都能推进。二是个人 Agent 还能处理业务上的事，比如发邮件谈价、申请退款。连接 Claude Code 有两种办法：简单的是让 Bot 在自带的电脑上登录 Claude Code；他自己用的是 Tailscale 连起几台机器，再通过 T3 code 调用。他说每月 200 美元的 Claude Code 订阅相当于 8000 到 12000 美元的 API 额度，所以「补贴还在就该用」。\n\n**先审方案再写代码**这一步，不写代码的人也能借鉴。安全方面，他的建议是用最好的模型跑 /goal 做安全检查。遇到模型拒绝时，开个新会话换一种说法再问。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "I'm Obsessed With Grok Bot. Here's Why",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-01",
+      "issueDate": "2026-11-12",
+      "issueNumber": 34
+    },
+    {
+      "candidateIds": [
+        "c52"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "写代码之前，先让 Agent 在 Paper 里定好设计系统",
+      "oneLiner": "Ras Mic 给弟弟的服装品牌搭 Shopify 店，先让 Agent 通过 Paper MCP 做出设计系统和页面，他在画布上留评论改稿，确认后才连上 Shopify 生成前端。",
+      "who": "同一期节目里的 Ras Mic。他自称不懂设计工具，这次要给弟弟的服装品牌做一个网店。",
+      "how": "他把喜欢的网站截图交给 Agent，让它据此生成设计系统，规定字体、颜色、间距、圆角和按钮尺寸，再按这套系统出页面。他在 Paper 里直接留评论，然后让 Agent「address the comments」。",
+      "result": "几轮来回后，Agent 做出了哥特风格的店铺设计。他连上 Shopify 账号，几分钟内页面就改版完成了。",
+      "tryThis": "在 Paper 或 Figma 里接好 MCP，让 Agent 先产出一页设计系统。确认之后，在所有后续提示里都要求它照这份系统来做。",
+      "caveat": "设计和功能都要本人审批，他认为这一步省不掉。参考别人的网站时，应该提炼成自己的设计系统，不要整页照搬。",
+      "body": "同一期[节目](https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why)里，Ras Mic 讲了设计流程。他的设计参考来自 X 上关注的设计师和 Mobbin。看到喜欢的网站，他就让 Agent 照着做一套设计系统，再自己微调。网店那次，他给的提示词很粗糙，Agent 先反问他想要什么氛围。中途 Agent 用了已经连好的 Framer，他纠正说要用 Shopify。\n\nGreg Isenberg 指出，很多人直接让 Agent 写代码，结果页面有一股「AI 味」。Ras Mic 的做法是**先锁定设计，再生成代码**。在画布上留评论改稿，比上线后再一条条提意见、让 Agent 重写代码省事得多。\n\n这一套适合不会设计、但要做落地页、网店或小工具界面的人。前提是工具接好了 MCP，另外设计系统要单独保存一份，后面每个项目都能引用。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "I'm Obsessed With Grok Bot. Here's Why",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-03",
+      "issueDate": "2026-11-12",
+      "issueNumber": 34
+    },
+    {
+      "candidateIds": [
         "c39"
       ],
       "category": "productivity",

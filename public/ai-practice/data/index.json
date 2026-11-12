@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-11T15:20:47.037Z",
+  "updatedAt": "2026-11-12T14:45:03.483Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 37
+      "count": 39
     },
     {
       "id": "consulting",
@@ -27,7 +27,7 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 14
+      "count": 15
     },
     {
       "id": "app",
@@ -41,7 +41,7 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 36
+      "count": 38
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-12",
+      "number": 34,
+      "title": "一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 9,
+      "itemCount": 5,
+      "categoryCounts": {
+        "productivity": 2,
+        "perspective": 2,
+        "saas": 1
+      },
+      "headlines": [
+        {
+          "category": "productivity",
+          "headline": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR"
+        },
+        {
+          "category": "perspective",
+          "headline": "同一份问卷，团队每人用 Claude 挖出了不同的结论"
+        },
+        {
+          "category": "productivity",
+          "headline": "写代码之前，先让 Agent 在 Paper 里定好设计系统"
+        },
+        {
+          "category": "perspective",
+          "headline": "「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码"
+        },
+        {
+          "category": "saas",
+          "headline": "翻了 803 家公司的子处理方清单，看 AI 公司在买什么"
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "number": 33,

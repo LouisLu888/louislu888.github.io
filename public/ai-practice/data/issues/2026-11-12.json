@@ -1,0 +1,299 @@
+{
+  "date": "2026-11-12",
+  "title": "一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好",
+  "items": [
+    {
+      "candidateIds": [
+        "c52"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR",
+      "oneLiner": "Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。",
+      "who": "开发者、AI 类 YouTuber Ras Mic，在 Greg Isenberg 的节目里演示他同时推进的多个项目，包括 Pluto、Bezalel 和一个 Rust 写的交易终端。",
+      "how": "每个认真做的项目单开一个 Bot，零散想法交给一个通用工程 Bot。先让 Bot 审方案，不让它直接动手。方案定了再让它调用 Claude Code 写代码，需要时开多个会话并行。",
+      "result": "他说那次会话交出 5 个 PR，全部可用，新功能已经有人在测。交易终端他一行代码没写。另一个项目的 Bot 还自己发邮件，找 GPU 供应商谈折扣。",
+      "tryThis": "从手头一个项目开始，单独开一个对话或 Bot。把方案文档交给它，只说「review this」，看它挑出哪些问题，确认后再让它写代码。",
+      "caveat": "他本人是工程师，看得懂方案也会审代码。涉及支付或敏感数据时，他会额外跑安全检查。他也承认夜里让 Bot 做出的一个应用，自己一次都没运行过。",
+      "body": "在 [Startup Ideas Podcast](https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why) 里，Ras Mic 演示了他的分工方法：**一个项目一个 Bot，用完就删**。Grok Bot 负责沟通和调度，写代码交给 Claude Code。做 Pluto 的新方向时，他把朋友写的 PDF 方案交给 Bot，只让它审。Bot 回复说「方向对，但不建议原样执行」，并缩小了范围。朋友的回复他原样贴回去，第二版方案他看过觉得可以，才说「build it out」。Bot 随后调用 Claude Code 跑了几个小时，交出 5 个可用的 PR。\n\n他选择这种方式有两个原因。一是在手机上用着顺手，在妈妈家吃饭、开车时开着免提都能推进。二是个人 Agent 还能处理业务上的事，比如发邮件谈价、申请退款。连接 Claude Code 有两种办法：简单的是让 Bot 在自带的电脑上登录 Claude Code；他自己用的是 Tailscale 连起几台机器，再通过 T3 code 调用。他说每月 200 美元的 Claude Code 订阅相当于 8000 到 12000 美元的 API 额度，所以「补贴还在就该用」。\n\n**先审方案再写代码**这一步，不写代码的人也能借鉴。安全方面，他的建议是用最好的模型跑 /goal 做安全检查。遇到模型拒绝时，开个新会话换一种说法再问。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "I'm Obsessed With Grok Bot. Here's Why",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-01"
+    },
+    {
+      "candidateIds": [
+        "c6"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-11",
+      "headline": "同一份问卷，团队每人用 Claude 挖出了不同的结论",
+      "oneLiner": "Dan Shipper 用一个 Claude 订阅，一周做完按 2020 年标准需要五个人的活。他认为，模型能大批生成答案，但判断哪个答案重要的还是人。",
+      "who": "Every 联合创始人兼 CEO Dan Shipper，在 Every 首届大会 Thesis 的闭幕演讲中提出这个观点（2026-11-11 播出）。",
+      "how": "他认为模型的默认答案人人都拿得到，所以不值钱。值钱的是两样：一个人对某块业务负有责任，以及他带进来的、与众不同的视角。",
+      "result": "同一份客户问卷，Dan 自己发现了团队版的销售机会。Yash 发现首月流失源于邮件太多，并提了改动的 PR。Douglas 读出读者的孤独感。另据内部实验，Claude 给出 400 个答案时，93% 的情况下包含 Dan 在 Slack 里的真实回复，但让它排序，这条只有约 60% 的情况能进前 10%。",
+      "tryThis": "下次用 AI 分析数据，先写下自己负责的指标和自己的判断，再去追问。别只停在「你看到了什么」这种默认问法。",
+      "caveat": "Dan 自己也承认，模型一年后大概会更擅长排序。他的回应是：到那时人也在用新模型，比较的仍是「人加模型」和默认提示词。这是自家大会的主题演讲。",
+      "body": "Dan Shipper 在 [Thesis 闭幕演讲](https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation)里引用了 OpenAI 的 GDPval：盲评专家判定 AI 胜过人类专家的比例，2024 年是 12.4%，2025 年是 47.6%，2026 年约 83%。上周他抽工作间隙分析了季度问卷，做了一个团队对战游戏，又 vibe code 了一个 CRM，去给客户发开发邮件。按 2020 年的标准，这些活要数据科学家、游戏开发、产品营销、工程师和 BDR 五个人来做。\n\n他的论据来自团队内部。直接问 Claude，得到的是「写作就是业务」这类结论，没错，但谁都能得到。团队里没有一个人交上去的是默认答案。负责评测的 Mike Taylor 做过实验，结论是**生成很便宜，排序很难**。\n\n对读者来说，这意味着把时间花在定义自己负责什么、自己相信什么上。Dan 把这种工作方式叫作「分配经济」：衡量一个人的标准，变成他能否把智能资源分配好，并对结果负责。",
+      "sources": [
+        {
+          "label": "The Every Podcast (AI & I)",
+          "title": "A New Vision for Human Work After Automation",
+          "url": "https://www.youtube.com/@EveryInc/search?query=A%20New%20Vision%20for%20Human%20Work%20After%20Automation"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-02"
+    },
+    {
+      "candidateIds": [
+        "c52"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-11",
+      "headline": "写代码之前，先让 Agent 在 Paper 里定好设计系统",
+      "oneLiner": "Ras Mic 给弟弟的服装品牌搭 Shopify 店，先让 Agent 通过 Paper MCP 做出设计系统和页面，他在画布上留评论改稿，确认后才连上 Shopify 生成前端。",
+      "who": "同一期节目里的 Ras Mic。他自称不懂设计工具，这次要给弟弟的服装品牌做一个网店。",
+      "how": "他把喜欢的网站截图交给 Agent，让它据此生成设计系统，规定字体、颜色、间距、圆角和按钮尺寸，再按这套系统出页面。他在 Paper 里直接留评论，然后让 Agent「address the comments」。",
+      "result": "几轮来回后，Agent 做出了哥特风格的店铺设计。他连上 Shopify 账号，几分钟内页面就改版完成了。",
+      "tryThis": "在 Paper 或 Figma 里接好 MCP，让 Agent 先产出一页设计系统。确认之后，在所有后续提示里都要求它照这份系统来做。",
+      "caveat": "设计和功能都要本人审批，他认为这一步省不掉。参考别人的网站时，应该提炼成自己的设计系统，不要整页照搬。",
+      "body": "同一期[节目](https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why)里，Ras Mic 讲了设计流程。他的设计参考来自 X 上关注的设计师和 Mobbin。看到喜欢的网站，他就让 Agent 照着做一套设计系统，再自己微调。网店那次，他给的提示词很粗糙，Agent 先反问他想要什么氛围。中途 Agent 用了已经连好的 Framer，他纠正说要用 Shopify。\n\nGreg Isenberg 指出，很多人直接让 Agent 写代码，结果页面有一股「AI 味」。Ras Mic 的做法是**先锁定设计，再生成代码**。在画布上留评论改稿，比上线后再一条条提意见、让 Agent 重写代码省事得多。\n\n这一套适合不会设计、但要做落地页、网店或小工具界面的人。前提是工具接好了 MCP，另外设计系统要单独保存一份，后面每个项目都能引用。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "I'm Obsessed With Grok Bot. Here's Why",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=I'm%20Obsessed%20With%20Grok%20Bot.%20Here's%20Why"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-03"
+    },
+    {
+      "candidateIds": [
+        "c48"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-12",
+      "headline": "「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码",
+      "oneLiner": "在 AI Engineer Code Summit 上，Glean、UiPath 和 Workday 的工程师展示了 Jev 这类「系统一」模型的用法：只返回选项、分数或概率，速度快，成本低。UiPath 的测试里，几千次调用不到一秒就跑完了。",
+      "who": "TypeSafe AI 联合创始人兼 CEO Diogo Almeida（Jev 的主要作者），以及 Glean、UiPath、Workday 的工程师，在大会上分享。Latent Space 做了报道。",
+      "how": "Almeida 主张，不要把 LLM 放在软件的核心再靠拼接字符串碰运气。应该在应用代码里到处嵌入「系统一」模型调用，用它做分类、打分和排序这类结构化判断。",
+      "result": "Glean 说决策的分类体系变了也不用重新微调。UiPath 用淘汰赛的方式让 Jev 给文档片段排序，几千次调用不到一秒跑完。Workday 做的原型能在用户还在打字时就开始填请假单。",
+      "tryThis": "如果你在用 LLM 做分类、打分或路由，挑一个环节换成返回结构化选择的快模型调用，对比一下稳定性、延迟和成本。",
+      "caveat": "Almeida 推的是自家产品。Jev 九月才发布，不到两个月。UiPath 的工程师也说，Jev 单独用看起来没那么聪明，要靠组合策略才能用好。",
+      "body": "Latent Space [报道](https://latent.space/p/jev-revolution/)了这场大会的主题：「系统一」模型。这类模型不生成文本，只返回结构化的选择、分数或概率。Almeida 认为，LLM 做核心的问题出在可靠性上：「95% 的时候你得到爱因斯坦，5% 的时候是憨豆先生。分不清是哪个，怎么自动化？」\n\n几家公司的用法更务实。Glean 把 Jev 和 LLM、其他分类器搭配使用，用户不需要知道背后跑的是哪种模型。UiPath 的**淘汰赛式排序**可以直接借鉴：把候选分成小组，每组选出最相关的，胜者进下一轮。\n\n对工程和产品岗位来说，这提供了一种拆分思路：开放式生成交给 LLM，有限选项的判断交给快模型。会场还有人提到，业余时间用 Jev 做了一个给梦幻足球新闻排序的网站。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "The Jev Revolution: What Engineers Are Already Building with System One Models",
+          "url": "https://latent.space/p/jev-revolution/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-04"
+    },
+    {
+      "candidateIds": [
+        "c18"
+      ],
+      "category": "saas",
+      "kind": "机会观察",
+      "eventDate": "2026-11-12",
+      "headline": "翻了 803 家公司的子处理方清单，看 AI 公司在买什么",
+      "oneLiner": "投资人 Nikunj Kothari 抓取了 803 家公司的子处理方清单。他统计，列出两家以上模型供应商的公司占 44%，3 月时是 33%；列出推理服务商的从 22% 升到 33%。",
+      "who": "FPV Ventures 合伙人 Nikunj Kothari，这是他第二次做这项统计，上一次在 3 月。",
+      "how": "他抓取各公司公开的子处理方清单（sub-processor list，按隐私合规要求公开的第三方服务商名单），统计各家用了哪些模型和基础设施。",
+      "result": "他的统计显示：多模型并用越来越普遍，Anthropic 的增速是 OpenAI 的两倍（他提醒样本小）；推理服务商里 Modal 领先；TypeSafe AI 短时间内从 0 增长到出现在许多公司的清单上；中国模型主要通过视频类服务进入。",
+      "tryThis": "做 B2B 小产品之前，翻翻目标客户和竞品公开的子处理方清单，看看他们已经在为哪些服务付钱、跟谁集成。",
+      "caveat": "他自己说，子处理方清单是滞后指标，但只要列上了，就说明公司确实在用。",
+      "body": "Nikunj Kothari 在 [X 上](https://x.com/nikunj/status/2120669243918418237)分享了这份统计。他还发现了 86 对互相把对方列为子处理方的公司，例如 Anthropic 和 Cloudflare。完整数据放在他做的 deploygraph 网站上。\n\n这个方法本身可以拿来用。**子处理方清单是公开的，而且列出的都是真实采购**，比看营销稿可靠。做 Micro SaaS 的人能借此判断两件事：目标客户用的是哪些模型和推理服务，你的产品要跟谁集成；哪些新服务正在被快速采用，周边可能有配套工具的需求。\n\n例如，44% 的公司同时用多家模型，这说明多供应商的路由、计费和评测正在成为日常需求。这只是一个待验证的方向，要去问几家客户才能确认。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Nikunj Kothari: I scraped 803 companies sub-processors to investigate what AI native companies a",
+          "url": "https://x.com/nikunj/status/2120669243918418237"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-12-05"
+    }
+  ],
+  "action": "从手头一个正在推进的小项目里，挑一份方案、需求文档或数据报告，单独开一个只管这个项目的 AI 对话。第一句只让它审：指出风险，说明它会改哪里，先别动手。开始追问之前，先写下你负责的指标和你自己的一个判断，带着这个判断去问。最后对比 AI 的默认结论和你挑出来的那条，看看哪条会让你明天真的去改点什么。",
+  "readingMinutes": 9,
+  "meta": {
+    "generatedAt": "2026-11-12T14:45:00.244Z",
+    "engine": "cli",
+    "candidateCount": 56,
+    "candidatesBySource": {
+      "Simon Willison": 5,
+      "The Every Podcast (AI & I)": 1,
+      "Matt Wolfe": 2,
+      "Starter Story (YouTube)": 2,
+      "Every (YouTube)": 1,
+      "Rest of World": 1,
+      "Follow Builders (X)": 32,
+      "Google DeepMind: The Podcast": 1,
+      "No Priors": 1,
+      "Latent Space": 3,
+      "The AI Daily Brief": 1,
+      "Y Combinator / Lightcone (YouTube)": 1,
+      "Startup Ideas Podcast (Greg Isenberg)": 1,
+      "Consulting Success Podcast": 1,
+      "Tom's Guide · AI": 2,
+      "NYT Personal Tech": 1
+    },
+    "shortlist": [
+      {
+        "id": "c52",
+        "reason": "谁：Ras Mic；怎么用：把 Grok Bot 当个人 agent 和总调度，工程活交给 Claude Code，覆盖工程、设计、内容选题、财务、购物五块，有 bot 和提示词演示；结果：做出了 Pluto、一个 Rust 交易应用、他哥哥服装品牌的 Shopify 店。有逐字稿，可以照着做。",
+        "source": "Startup Ideas Podcast (Greg Isenberg)",
+        "title": "I'm Obsessed With Grok Bot. Here's Why"
+      },
+      {
+        "id": "c7",
+        "reason": "谁：一人公司的 Peter Yang；怎么用：AI 幕僚长、播客调研、视频剪辑、内容生产的自动化流程，把 ChatGPT、Claude Code、GroqBot 用可复用的 skills 串起来；结果：一个人撑起整个业务。只有简介，但流程写得比较具体。",
+        "source": "Matt Wolfe",
+        "title": "He Built an AI System That Runs His Entire Business"
+      },
+      {
+        "id": "c6",
+        "reason": "谁：Every CEO Dan Shipper 的闭幕主题演讲（有逐字稿）；怎么用：讲 AI 让智能变便宜之后人该做什么，判断是非共识的视角最值钱。他的推文（c37）里提到上周在会议间隙分析了客户调研、自己搭了 CRM 并开始外联，可作为具体例子。属于认知类。",
+        "source": "The Every Podcast (AI & I)",
+        "title": "A New Vision for Human Work After Automation"
+      },
+      {
+        "id": "c53",
+        "reason": "谁：做了二十多年的咨询顾问 Aaron Cruikshank；怎么做：从卖调研转向卖高价值结果，再加上 AI；结果：从 17 人做到百万美元营收但利润不高，到现在约 3 人的规模又接近七位数。是有数字的经营复盘，不过只有简介。",
+        "source": "Consulting Success Podcast",
+        "title": "From Selling Research to Guiding Million-Dollar Decisions with Aaron Cruikshank"
+      },
+      {
+        "id": "c10",
+        "reason": "谁：Bogdan；怎么用：把自己的电子书副业做成 AI 应用 GetEbook，10 分钟内写完一本电子书；结果：几个月收入 10 万美元以上，章节里有讲经营数字。只有简介，里面还有引流链接，要谨慎处理。",
+        "source": "Starter Story (YouTube)",
+        "title": "I made $100K in 3 months with this AI wrapper"
+      },
+      {
+        "id": "c3",
+        "reason": "谁：Simon Willison；怎么用：用剩下的 Fable 5.2 额度，让 AI 用 tree-sitter 分析他自己 vibe coding 做的 244 个工具，自动打标签；结果：网站首页有了按标签浏览的标签云。是小而能照着试的个人案例。",
+        "source": "Simon Willison",
+        "title": "Browse tools.simonwillison.net by tag"
+      },
+      {
+        "id": "c48",
+        "reason": "谁：TypeSafe AI 创始人 Diogo Almeida 和一批工程师；讲什么：用 Jev 这类「系统一」决策模型（返回选择、打分、概率）在生产环境里做了什么，Jev 已经超过 1 亿美元年收入；结果：比推理型大模型更快更便宜。比单纯的模型发布消息更接近一线实践。",
+        "source": "Latent Space",
+        "title": "The Jev Revolution: What Engineers Are Already Building with System One Models"
+      },
+      {
+        "id": "c18",
+        "reason": "谁：投资人 Nikunj Kothari；怎么做：亲自抓取了 803 家公司的子处理商清单；结果：44% 的公司同时用两家以上模型厂商，33% 用了推理服务商，Anthropic 增速是 OpenAI 的两倍。是有依据的一手判断，属于认知类。",
+        "source": "Follow Builders (X)",
+        "title": "Nikunj Kothari: I scraped 803 companies sub-processors to investigate what AI native companies a"
+      },
+      {
+        "id": "c35",
+        "reason": "谁：SPC 合伙人、前 Dropbox CTO Aditya Agarwal；判断：现在值得做的公司分两类，一类把 AI 推进到具体干活的地方（相当于今天的垂直 SaaS），一类用 AI 加速科学研究，并举了被投公司的例子。给创业者的方向判断，属于认知类。",
+        "source": "Follow Builders (X)",
+        "title": "Aditya Agarwal: There are basically two kinds of companies to build right now.\n\n1. Diffusion of "
+      },
+      {
+        "id": "c2",
+        "reason": "谁：AWS；怎么用：一大群 agent 用 Rust 写出官方的 AWS 本地模拟器，头三周提交了 29,684 次；结果：不用付费 API key 就能在本地跑测试。是 agent 大规模写代码的真实例子，信息比较少。",
+        "source": "Simon Willison",
+        "title": "aws-emulator"
+      },
+      {
+        "id": "c56",
+        "reason": "AI 生活类：美联航禁止 AI 代理登录账户、管理订单。普通人想用 AI 助手订机票时会直接碰到这个限制，值得提醒一句；不过这条是新闻，没有具体做法。",
+        "source": "NYT Personal Tech",
+        "title": "United Airlines Blocks A.I. Agents From Booking Flights"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 22635,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2713,
+        "output_tokens_details": {
+          "thinking_tokens": 851
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 22635,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2713,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 22635,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 22635
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.235348
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 31118,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 7562,
+      "output_tokens_details": {
+        "thinking_tokens": 2460
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 31118,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7562,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 31118,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 31118
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.400192
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR｜AI 实干派</title>
+  <meta name="description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-12-01/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR｜AI 实干派">
+  <meta property="og:description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-12-01/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-12.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR｜AI 实干派">
+  <meta name="twitter:description" content="Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-12.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">39</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">21</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">38</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">20</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-12/">AI 实干派 034 · 2026 年 11 月 12 日 · 周四</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-11<span>·</span>US</div>
+        <h1>一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR</h1>
+        <p class="summary">Ras Mic 用 Grok Bot 按项目分工，再让它调度 Claude Code（Opus 5.5）。他说一次持续数小时的会话交出 5 个能用的 PR，用的是每月 200 美元的订阅。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者、AI 类 YouTuber Ras Mic，在 Greg Isenberg 的节目里演示他同时推进的多个项目，包括 Pluto、Bezalel 和一个 Rust 写的交易终端。</dd><dt>怎么用</dt><dd>每个认真做的项目单开一个 Bot，零散想法交给一个通用工程 Bot。先让 Bot 审方案，不让它直接动手。方案定了再让它调用 Claude Code 写代码，需要时开多个会话并行。</dd><dt>结果</dt><dd>他说那次会话交出 5 个 PR，全部可用，新功能已经有人在测。交易终端他一行代码没写。另一个项目的 Bot 还自己发邮件，找 GPU 供应商谈折扣。</dd><dt>你可以试</dt><dd>从手头一个项目开始，单独开一个对话或 Bot。把方案文档交给它，只说「review this」，看它挑出哪些问题，确认后再让它写代码。</dd><dt>注意</dt><dd>他本人是工程师，看得懂方案也会审代码。涉及支付或敏感数据时，他会额外跑安全检查。他也承认夜里让 Bot 做出的一个应用，自己一次都没运行过。</dd></dl>
+        <div class="body"><p>在 <a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why">Startup Ideas Podcast</a> 里，Ras Mic 演示了他的分工方法：<strong>一个项目一个 Bot，用完就删</strong>。Grok Bot 负责沟通和调度，写代码交给 Claude Code。做 Pluto 的新方向时，他把朋友写的 PDF 方案交给 Bot，只让它审。Bot 回复说「方向对，但不建议原样执行」，并缩小了范围。朋友的回复他原样贴回去，第二版方案他看过觉得可以，才说「build it out」。Bot 随后调用 Claude Code 跑了几个小时，交出 5 个可用的 PR。</p><p>他选择这种方式有两个原因。一是在手机上用着顺手，在妈妈家吃饭、开车时开着免提都能推进。二是个人 Agent 还能处理业务上的事，比如发邮件谈价、申请退款。连接 Claude Code 有两种办法：简单的是让 Bot 在自带的电脑上登录 Claude Code；他自己用的是 Tailscale 连起几台机器，再通过 T3 code 调用。他说每月 200 美元的 Claude Code 订阅相当于 8000 到 12000 美元的 API 额度，所以「补贴还在就该用」。</p><p><strong>先审方案再写代码</strong>这一步，不写代码的人也能借鉴。安全方面，他的建议是用最好的模型跑 /goal 做安全检查。遇到模型拒绝时，开个新会话换一种说法再问。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/@GregIsenberg/search?query=I&#39;m%20Obsessed%20With%20Grok%20Bot.%20Here&#39;s%20Why" target="_blank" rel="noopener" title="I&#39;m Obsessed With Grok Bot. Here&#39;s Why">Startup Ideas Podcast (Greg Isenberg)</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-12/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>
