@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-13 · 一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-13/</link>
+      <description>装 853 款软件测卸载，又给 400 多位用户补发激活邮件；Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用；24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工；对着手机说话几小时，一个人搭起完整的产品发布（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-13/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 装 853 款软件测卸载，又给 400 多位用户补发激活邮件<br>03:06 Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用<br>04:56 24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工<br>06:32 对着手机说话几小时，一个人搭起完整的产品发布<br>07:47 今天可以做的一件事</p><p><b>装 853 款软件测卸载，又给 400 多位用户补发激活邮件</b><br><a href="https://sspai.com/post/118512">少数派</a></p><p><b>Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用</b><br><a href="https://sspai.com/post/118153">少数派</a></p><p><b>24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工</b><br><a href="https://latent.space/p/artcraft/">Latent Space</a></p><p><b>对着手机说话几小时，一个人搭起完整的产品发布</b><br><a href="https://www.youtube.com/watch?v=VnJiHSS5Pjk">Riley Brown</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-13.mp3" length="3112940" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-13</guid>
+      <pubDate>Fri, 13 Nov 2026 22:46:14 GMT</pubDate>
+      <itunes:duration>00:08:39</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-12 · 一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-12/</link>
       <description>一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR；同一份问卷，团队每人用 Claude 挖出了不同的结论；写代码之前，先让 Agent 在 Paper 里定好设计系统；「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码；翻了 803 家公司的子处理方清单，看 AI 公司在买什么（本集语音由 AI 合成）</description>

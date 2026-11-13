@@ -1,5 +1,79 @@
 [
   {
+    "date": "2026-11-13",
+    "title": "一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述",
+    "summary": "装 853 款软件测卸载，又给 400 多位用户补发激活邮件；Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用；24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工；对着手机说话几小时，一个人搭起完整的产品发布",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-13/",
+    "items": [
+      {
+        "headline": "装 853 款软件测卸载，又给 400 多位用户补发激活邮件",
+        "sources": [
+          {
+            "label": "少数派",
+            "title": "在快 AI 时代，我是怎么把 Mole 做成一款「慢产品」的？",
+            "url": "https://sspai.com/post/118512"
+          }
+        ]
+      },
+      {
+        "headline": "Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用",
+        "sources": [
+          {
+            "label": "少数派",
+            "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验",
+            "url": "https://sspai.com/post/118153"
+          }
+        ]
+      },
+      {
+        "headline": "24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工",
+        "sources": [
+          {
+            "label": "Latent Space",
+            "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+            "url": "https://latent.space/p/artcraft/"
+          }
+        ]
+      },
+      {
+        "headline": "对着手机说话几小时，一个人搭起完整的产品发布",
+        "sources": [
+          {
+            "label": "Riley Brown",
+            "title": "You NEED to Try Claude Projects From Your Phone (Building A Full App)",
+            "url": "https://www.youtube.com/watch?v=VnJiHSS5Pjk"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "装 853 款软件测卸载，又给 400 多位用户补发激活邮件"
+      },
+      {
+        "start": 186,
+        "title": "Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用"
+      },
+      {
+        "start": 296,
+        "title": "24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工"
+      },
+      {
+        "start": 392,
+        "title": "对着手机说话几小时，一个人搭起完整的产品发布"
+      },
+      {
+        "start": 467,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 519,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-13.mp3",
+    "audioBytes": 3112940,
+    "publishedAt": "2026-11-13T22:46:14.167Z"
+  },
+  {
     "date": "2026-11-12",
     "title": "一个项目配一个 Bot 并行开发，AI 能写出 400 个答案却排不出哪个最好",
     "summary": "一个项目一个 Bot：他在手机上指挥 Claude Code 交出五个 PR；同一份问卷，团队每人用 Claude 挖出了不同的结论；写代码之前，先让 Agent 在 Paper 里定好设计系统；「95% 是爱因斯坦，5% 是憨豆」：工程师把快模型写进代码；翻了 803 家公司的子处理方清单，看 AI 公司在买什么",
