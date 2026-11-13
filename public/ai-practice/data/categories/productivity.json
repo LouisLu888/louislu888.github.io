@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c50"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-13",
+      "headline": "Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用",
+      "oneLiner": "一位食品专业研究生用 Gemini、Qwen、ChatGPT 和本地 Agent 分阶段写综述，最后以第一作者被《食品科学》录用；每段数据和术语都由他回原文核对。",
+      "who": "少数派作者胡拉图说是食品科学方向的研究生，研究沙棘果渣。这篇综述从选题、找文献、写正文到画机理图，都由他一个人完成。",
+      "how": "用 Gemini 挖研究空白、生成三级大纲；在 Zotero 用「由所选条目生成报告」批量导出摘要，分批交给 Qwen 分级；按章节生成带出处标注的初稿；用 ChatGPT 出机理图草图，再用 Keynote 重画；最后用 WorkBuddy 检查参考文献格式。",
+      "result": "论文被《食品科学》录用并网络首发。他没有说一共省了多少时间，但给出了每个环节的完整提示词。",
+      "tryThis": "写报告或调研时，先把资料的摘要整理成表格，让 AI 标出相关度和「[需读全文核实]」，再按章节写，不要一次性丢进全文。",
+      "caveat": "他强调这套流程来自工科综述，换到别的领域需要调整。数据、专有名词和方法描述都要人回到原文核对。",
+      "body": "作者在[少数派](https://sspai.com/post/118153)拆解了自己的综述写作流程。关键一步是**用摘要代替全文**：他认为几十篇 PDF 一起丢给 AI，容易超出上下文，也更容易让 AI 编造内容。所以他在 Zotero 里全选文献，生成报告，复制标题、作者和摘要，每次 15 到 20 篇交给 Qwen。AI 输出一张表格，内容包括研究对象、方法、结论和相关度评级，并标出摘要里缺失、要读全文才能确认的条件。提示词里明确禁止 AI 根据标题猜结果。\n\n写正文时，他要求 AI 以研究问题为主线横向对比，不许逐篇复述；每句引用都按「[编号, 第一作者, 年份]」标注出处；摘要支撑不了的论点，就标「[此处缺乏文献支撑，需补充检索]」。初稿出来后，凡是涉及数字、术语和工艺过程的地方，他都回到原文逐一核对。\n\n投稿前，他让本地 Agent 按 GB/T 7714 检查引用顺序和缺失条目，要求它**只改副本，先交核验报告，等他确认后再改**。这种「先报告、再确认、最后修改」的做法，也可以用在合同、标书这类需要精确核对的文档上。",
+      "sources": [
+        {
+          "label": "少数派",
+          "title": "研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验",
+          "url": "https://sspai.com/post/118153"
+        }
+      ],
+      "region": "CN",
+      "id": "2026-11-13-02",
+      "issueDate": "2026-11-13",
+      "issueNumber": 35
+    },
+    {
+      "candidateIds": [
+        "c48"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-12",
+      "headline": "对着手机说话几小时，一个人搭起完整的产品发布",
+      "oneLiner": "Riley Brown 用手机上的 Claude Code 并行开了二三十个会话，几小时内做出一个 Mac 录屏应用、iPhone 版、落地页、3D 发布视频和 UGC 广告。",
+      "who": "创作者 Riley Brown 在 YouTube 演示用手机完成一次产品发布，这期视频由 Convex 赞助。",
+      "how": "他在 Claude Projects 里用 Claude Code，混用 Opus 5.5 和 Fable 5.2，靠语音下指令，多个会话同时跑。",
+      "result": "他说一共约 20 到 25 条提示词，做出 Screen Studio 的仿制品 Glaze、iPhone 应用、落地页、应用图标，在 Blender 里渲染的 3D 发布视频，以及配 ElevenLabs 配音的 UGC 广告。",
+      "tryThis": "如果你要发布一个小工具，可以把应用、落地页、图标和宣传视频拆成几个并行会话，逐个在真机上验收。",
+      "caveat": "他演示的是仿制现有产品，方向是明确的。整个流程还要在真实设备上测试，视频里也没有涉及上线后的用户反馈。",
+      "body": "Riley Brown 在[视频](https://www.youtube.com/watch?v=VnJiHSS5Pjk)里完整走了一遍：规划和搭建应用，审查落地页设计，在真机上测试桌面版和 iOS 版，设计图标，写发布视频的 brief，用 Blender 渲染 3D 视频，最后生成 UGC 风格的广告。\n\n可以借鉴的是**按交付物拆分并行会话**：一次发布需要的应用、页面、素材、广告，各开一个会话推进，人负责在真机上验收。想看测试环节，可以从 06:10 开始；想看 3D 视频怎么做，从 17:18 开始。",
+      "sources": [
+        {
+          "label": "Riley Brown",
+          "title": "You NEED to Try Claude Projects From Your Phone (Building A Full App)",
+          "url": "https://www.youtube.com/watch?v=VnJiHSS5Pjk"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-13-04",
+      "issueDate": "2026-11-13",
+      "issueNumber": 35
+    },
+    {
+      "candidateIds": [
         "c52"
       ],
       "category": "productivity",

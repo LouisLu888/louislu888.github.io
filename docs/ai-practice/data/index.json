@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-12T14:45:03.483Z",
+  "updatedAt": "2026-11-13T15:51:01.334Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 39
+      "count": 40
     },
     {
       "id": "consulting",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 21
+      "count": 22
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 38
+      "count": 40
     },
     {
       "id": "life",
@@ -52,6 +52,38 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-13",
+      "number": 35,
+      "title": "一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 7,
+      "itemCount": 4,
+      "categoryCounts": {
+        "app": 1,
+        "productivity": 2,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "装 853 款软件测卸载，又给 400 多位用户补发激活邮件"
+        },
+        {
+          "category": "productivity",
+          "headline": "Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用"
+        },
+        {
+          "category": "perspective",
+          "headline": "24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工"
+        },
+        {
+          "category": "productivity",
+          "headline": "对着手机说话几小时，一个人搭起完整的产品发布"
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "number": 34,

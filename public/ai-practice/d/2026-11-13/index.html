@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 035｜一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述</title>
+  <meta name="description" content="Tw93 让 Agent 装、卸 853 款 Mac 软件，给清理工具 Mole 补规则；第一轮 300 多款就补出 13 类通用规则、90 多条清理路径和 100 多条单元测试。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-13/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 035｜一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述">
+  <meta property="og:description" content="Tw93 让 Agent 装、卸 853 款 Mac 软件，给清理工具 Mole 补规则；第一轮 300 多款就补出 13 类通用规则、90 多条清理路径和 100 多条单元测试。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-13/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-13.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 035｜一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述">
+  <meta name="twitter:description" content="Tw93 让 Agent 装、卸 853 款 Mac 软件，给清理工具 Mole 补规则；第一轮 300 多款就补出 13 类通用规则、90 多条清理路径和 100 多条单元测试。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-13.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">40</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">22</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">40</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">20</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 035 · 2026 年 11 月 13 日 · 周五 · 约 7 分钟读完</div>
+        <h1>一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="app">AI App</span><a href="#2026-11-13-01">Tw93 让 Agent 装、卸 853 款 Mac 软件，给清理工具 Mole 补规则；第一轮 300 多款就补出 13 类通用规则、90 多条清理路径和 100 多条单元测试。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-13-02">一位食品专业研究生用 Gemini、Qwen、ChatGPT 和本地 Agent 分阶段写综述，最后以第一作者被《食品科学》录用；每段数据和术语都由他回原文核对。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-13-03">ArtCraft CEO Brandon Thomas 说，团队用一份大提示词在 24 小时内做出接近 Photoshop 的开源工具；他主张后端交给人，桌面应用和游戏交给 Agent。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-13-04">Riley Brown 用手机上的 Claude Code 并行开了二三十个会话，几小时内做出一个 Mac 录屏应用、iPhone 版、落地页、3D 发布视频和 UGC 广告。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-13-01">
+        <div class="item-meta"><span class="tag" data-cat="app">AI App</span><span>·</span>经营复盘<span>·</span>2026-11-13<span>·</span>CN</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-13-01/">01｜装 853 款软件测卸载，又给 400 多位用户补发激活邮件</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Tw93 是 Mac 清理工具 Mole 的开发者，开源 CLI 免费，桌面版收费。他在少数派复盘了 1.13 到 1.19 这两个多月的迭代。</dd><dt>怎么用</dt><dd>Agent 借助 computer use 去官网下载软件，安装、检查残留、卸载，过程中还自己写了自动化脚本；用 AI 脚本整理未激活订单；用 Opus 5.5 自绘图标，用 Gemini 改界面文案。</dd><dt>结果</dt><dd>他说第一轮 300 多款软件测完，补了 13 类通用规则、90 多条精确路径，改掉 30 多处不该清理的地方。补发邮件后，他发现不少人填错了邮箱，于是改了购买流程。</dd><dt>你可以试</dt><dd>如果你在卖软件或数字产品，把买了却没用的订单导出来，逐个写一封简短的提醒信，回信可以当作用户访谈来读。</dd><dt>注意</dt><dd>大规模真机测试要有空闲设备和磁盘空间。弹窗、管理员密码这类步骤，仍然需要他在旁边处理。</dd></dl>
+        <div class="body"><p>Tw93 在<a href="https://sspai.com/post/118512">少数派</a>复盘了 Mole 这两个月的迭代。为了把卸载做干净，他把 300 多款 Mac 软件分成 30 组，让 Agent 用 computer use 逐个下载、安装，检查目录和自启动项，卸载后再找残留，把缺的规则补进 Mole，测试名单后来扩到 853 款。测 30 多款 AI 工具时，他让 AI 对比每次安装前后的状态，把写入的目录记进一份台账。他发现，Mole 支持视障用户时加的<strong>无障碍属性，让 AI 能准确找到每个按钮</strong>，比靠截图和坐标稳定得多。Windows 版有 482 款软件，跑在虚拟机和一台 24 小时开机的 ThinkPad X1 上测。</p><p>他说花时间最多的是一些「不可扩展的蠢事」。他用 AI 写了个本地脚本，列出 5 月到 9 月约 400 单已购未激活的订单，再按月份、国家和语言一封封发信。回信里有人买来送家人，也有人把邮箱写成 gmail.con。他随后改了流程：<strong>付款后直接在网页上显示 Key</strong>，点击激活还能唤起客户端，自动填好 Key。文案方面，他让 Gemini 输出改前改后的对比和修改原因，再自己一条条审。</p><p>他的判断是，代码越来越便宜，差距出在亲手试过才知道的细节上。AI 让一个人也能做完这些原本很耗人力的事，但做不做、做到多细，还是他自己定。</p></div>
+        <div class="sources">原文：<a href="https://sspai.com/post/118512" target="_blank" rel="noopener" title="在快 AI 时代，我是怎么把 Mole 做成一款「慢产品」的？">少数派</a></div>
+      </section>
+      <section class="item" id="2026-11-13-02">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-13<span>·</span>CN</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-13-02/">02｜Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>少数派作者胡拉图说是食品科学方向的研究生，研究沙棘果渣。这篇综述从选题、找文献、写正文到画机理图，都由他一个人完成。</dd><dt>怎么用</dt><dd>用 Gemini 挖研究空白、生成三级大纲；在 Zotero 用「由所选条目生成报告」批量导出摘要，分批交给 Qwen 分级；按章节生成带出处标注的初稿；用 ChatGPT 出机理图草图，再用 Keynote 重画；最后用 WorkBuddy 检查参考文献格式。</dd><dt>结果</dt><dd>论文被《食品科学》录用并网络首发。他没有说一共省了多少时间，但给出了每个环节的完整提示词。</dd><dt>你可以试</dt><dd>写报告或调研时，先把资料的摘要整理成表格，让 AI 标出相关度和「[需读全文核实]」，再按章节写，不要一次性丢进全文。</dd><dt>注意</dt><dd>他强调这套流程来自工科综述，换到别的领域需要调整。数据、专有名词和方法描述都要人回到原文核对。</dd></dl>
+        <div class="body"><p>作者在<a href="https://sspai.com/post/118153">少数派</a>拆解了自己的综述写作流程。关键一步是<strong>用摘要代替全文</strong>：他认为几十篇 PDF 一起丢给 AI，容易超出上下文，也更容易让 AI 编造内容。所以他在 Zotero 里全选文献，生成报告，复制标题、作者和摘要，每次 15 到 20 篇交给 Qwen。AI 输出一张表格，内容包括研究对象、方法、结论和相关度评级，并标出摘要里缺失、要读全文才能确认的条件。提示词里明确禁止 AI 根据标题猜结果。</p><p>写正文时，他要求 AI 以研究问题为主线横向对比，不许逐篇复述；每句引用都按「[编号, 第一作者, 年份]」标注出处；摘要支撑不了的论点，就标「[此处缺乏文献支撑，需补充检索]」。初稿出来后，凡是涉及数字、术语和工艺过程的地方，他都回到原文逐一核对。</p><p>投稿前，他让本地 Agent 按 GB/T 7714 检查引用顺序和缺失条目，要求它<strong>只改副本，先交核验报告，等他确认后再改</strong>。这种「先报告、再确认、最后修改」的做法，也可以用在合同、标书这类需要精确核对的文档上。</p></div>
+        <div class="sources">原文：<a href="https://sspai.com/post/118153" target="_blank" rel="noopener" title="研究生如何用 AI 辅助完成一篇综述：我的科研写作工具与实践经验">少数派</a></div>
+      </section>
+      <section class="item" id="2026-11-13-03">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-13<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-13-03/">03｜24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>Brandon Thomas 是 ArtCraft 创始人兼 CEO，2026 年 11 月在旧金山 AI Engineer Code Summit 上演讲，Latent Space 做了报道。</dd><dt>核心观点</dt><dd>他认为后端、schema 迁移、API 设计应该由人来做；桌面应用、游戏这类「基本不变」的软件，可以放心交给 Agent。他还说，不懂 Rust 也能让 Agent 写 Rust。</dd><dt>依据</dt><dd>他说团队先给模型一份详细提示词，写明 Photoshop 的工具、数据结构和文件导入器，再用一份大提示词让它搭出整个应用，全部兼容 MCP 和 CLI，24 小时内出了近似版。他还说 ArtCraft 已发布 17 款开源应用，每天下载约 170 万次。</dd><dt>对你的意义</dt><dd>给团队分配 AI 任务时，先按「出错后能不能轻易回滚」来分：涉及数据结构和接口的改动留给人，界面和独立工具交给 Agent。</dd><dt>争议·条件</dt><dd>他说功能对齐度刚过 60%；项目 GitHub 上写的功能覆盖约 76%，专业可用度约 46%。他也承认在权限、扩容和 CI 上踩了很多坑，CI 撑不住，只好自建。</dd></dl>
+        <div class="body"><p>据 <a href="https://latent.space/p/artcraft/">Latent Space 报道</a>，Brandon Thomas 在 AIE Code 上讲了 ArtCraft 的做法：先复刻用户熟悉的软件，界面和操作手感直接对齐 Adobe，好让画师沿用原来的习惯；之后再做更偏 Agent 的新界面。PhotoCraft 用 Rust 从零写成，他称打开速度是 Photoshop 的十倍。他说开源社区已有约 4000 名开发者，社区还在开发约 300 款应用。他观察到，画师会在他们提供的软件上<strong>用 vibe coding 搭自己的工作流</strong>。</p><p>对读者更有用的是他的分工判断：<strong>后端、schema 迁移和 API 设计交给人；桌面应用、游戏以及基本不变的东西交给 Agent，并且放手让它做。</strong>这条判断的前提是他们有一个清晰的参照物，也就是现成的 Photoshop 可以对照。没有现成软件可抄的新产品，24 小时能做到什么程度，这场演讲里没有给出答案。</p></div>
+        <div class="sources">原文：<a href="https://latent.space/p/artcraft/" target="_blank" rel="noopener" title="AI Ambition: ArtCraft Cloned Photoshop and Now Wants to &quot;Rebuild Everything&quot;">Latent Space</a></div>
+      </section>
+      <section class="item" id="2026-11-13-04">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-12<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-13-04/">04｜对着手机说话几小时，一个人搭起完整的产品发布</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>创作者 Riley Brown 在 YouTube 演示用手机完成一次产品发布，这期视频由 Convex 赞助。</dd><dt>怎么用</dt><dd>他在 Claude Projects 里用 Claude Code，混用 Opus 5.5 和 Fable 5.2，靠语音下指令，多个会话同时跑。</dd><dt>结果</dt><dd>他说一共约 20 到 25 条提示词，做出 Screen Studio 的仿制品 Glaze、iPhone 应用、落地页、应用图标，在 Blender 里渲染的 3D 发布视频，以及配 ElevenLabs 配音的 UGC 广告。</dd><dt>你可以试</dt><dd>如果你要发布一个小工具，可以把应用、落地页、图标和宣传视频拆成几个并行会话，逐个在真机上验收。</dd><dt>注意</dt><dd>他演示的是仿制现有产品，方向是明确的。整个流程还要在真实设备上测试，视频里也没有涉及上线后的用户反馈。</dd></dl>
+        <div class="body"><p>Riley Brown 在<a href="https://www.youtube.com/watch?v=VnJiHSS5Pjk">视频</a>里完整走了一遍：规划和搭建应用，审查落地页设计，在真机上测试桌面版和 iOS 版，设计图标，写发布视频的 brief，用 Blender 渲染 3D 视频，最后生成 UGC 风格的广告。</p><p>可以借鉴的是<strong>按交付物拆分并行会话</strong>：一次发布需要的应用、页面、素材、广告，各开一个会话推进，人负责在真机上验收。想看测试环节，可以从 06:10 开始；想看 3D 视频怎么做，从 17:18 开始。</p></div>
+        <div class="sources">原文：<a href="https://www.youtube.com/watch?v=VnJiHSS5Pjk" target="_blank" rel="noopener" title="You NEED to Try Claude Projects From Your Phone (Building A Full App)">Riley Brown</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>打开你的销售后台或表单工具，导出最近三个月「付了钱但没用」或「注册了没登录」的用户名单，可以让 AI 写个小脚本帮你整理。先挑 20 个人，各写一封三四句话的信：提醒他们东西还在，问问卡在哪一步。回信先别急着处理，记下其中出现两次以上的问题，比如填错邮箱、没收到邮件、设备还没到。这些通常就是你购买或开通流程里最先要补的环节。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-12/">← 2026 年 11 月 12 日 · 周四</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

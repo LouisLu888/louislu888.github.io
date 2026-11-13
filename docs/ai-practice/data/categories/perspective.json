@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c46"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-13",
+      "headline": "24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工",
+      "oneLiner": "ArtCraft CEO Brandon Thomas 说，团队用一份大提示词在 24 小时内做出接近 Photoshop 的开源工具；他主张后端交给人，桌面应用和游戏交给 Agent。",
+      "who": "Brandon Thomas 是 ArtCraft 创始人兼 CEO，2026 年 11 月在旧金山 AI Engineer Code Summit 上演讲，Latent Space 做了报道。",
+      "how": "他认为后端、schema 迁移、API 设计应该由人来做；桌面应用、游戏这类「基本不变」的软件，可以放心交给 Agent。他还说，不懂 Rust 也能让 Agent 写 Rust。",
+      "result": "他说团队先给模型一份详细提示词，写明 Photoshop 的工具、数据结构和文件导入器，再用一份大提示词让它搭出整个应用，全部兼容 MCP 和 CLI，24 小时内出了近似版。他还说 ArtCraft 已发布 17 款开源应用，每天下载约 170 万次。",
+      "tryThis": "给团队分配 AI 任务时，先按「出错后能不能轻易回滚」来分：涉及数据结构和接口的改动留给人，界面和独立工具交给 Agent。",
+      "caveat": "他说功能对齐度刚过 60%；项目 GitHub 上写的功能覆盖约 76%，专业可用度约 46%。他也承认在权限、扩容和 CI 上踩了很多坑，CI 撑不住，只好自建。",
+      "body": "据 [Latent Space 报道](https://latent.space/p/artcraft/)，Brandon Thomas 在 AIE Code 上讲了 ArtCraft 的做法：先复刻用户熟悉的软件，界面和操作手感直接对齐 Adobe，好让画师沿用原来的习惯；之后再做更偏 Agent 的新界面。PhotoCraft 用 Rust 从零写成，他称打开速度是 Photoshop 的十倍。他说开源社区已有约 4000 名开发者，社区还在开发约 300 款应用。他观察到，画师会在他们提供的软件上**用 vibe coding 搭自己的工作流**。\n\n对读者更有用的是他的分工判断：**后端、schema 迁移和 API 设计交给人；桌面应用、游戏以及基本不变的东西交给 Agent，并且放手让它做。**这条判断的前提是他们有一个清晰的参照物，也就是现成的 Photoshop 可以对照。没有现成软件可抄的新产品，24 小时能做到什么程度，这场演讲里没有给出答案。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "AI Ambition: ArtCraft Cloned Photoshop and Now Wants to \"Rebuild Everything\"",
+          "url": "https://latent.space/p/artcraft/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-13-03",
+      "issueDate": "2026-11-13",
+      "issueNumber": 35
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "perspective",
