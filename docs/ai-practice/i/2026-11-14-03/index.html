@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>把病历放进一个文件夹，让 AI 写一页病情简报｜AI 实干派</title>
+  <meta name="description" content="Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-14-03/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="把病历放进一个文件夹，让 AI 写一页病情简报｜AI 实干派">
+  <meta property="og:description" content="Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-14-03/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="把病历放进一个文件夹，让 AI 写一页病情简报｜AI 实干派">
+  <meta name="twitter:description" content="Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">40</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">22</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">41</span></a><a class="cat-chip active" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">24</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-14/">AI 实干派 036 · 2026 年 11 月 14 日 · 周六</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周动态<span>·</span>2026-11-14<span>·</span>US</div>
+        <h1>把病历放进一个文件夹，让 AI 写一页病情简报</h1>
+        <p class="summary">Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>写 AI 教程的 Peter Yang，面向家里有人患癌症或其他长期疾病的家属。</dd><dt>怎么用</dt><dd>三步：把患者的全部病历上传到一个文件夹，比如 Google Drive；把 skill 链接发给 ChatGPT 或 Claude，让它安装；再让 skill 读取这个文件夹。</dd><dt>结果</dt><dd>他说这个 skill 能生成一页简报、检索临床试验，还能做别的整理。别人可以 fork 后改成适用于其他慢性病的版本。</dd><dt>你可以试</dt><dd>先拿最近一次就诊的资料试一下，看一页简报是否准确，再决定要不要放进完整病历。生成的试验清单带去和主治医生讨论。</dd><dt>注意</dt><dd>交给 AI 的是完整病历，这是最敏感的个人数据，文件夹的共享范围和所用账号要自己把关。临床试验能不能入组、治疗怎么调整，最后都要由医生判断。</dd></dl>
+        <div class="body"><p>Peter Yang 在 <a href="https://x.com/petergyang/status/2121430386685395022">这条帖子</a>里写的流程很短：病历集中放进一个文件夹，安装他的免费 skill，然后让 skill 去读这个文件夹。产出有两样：一页病情简报，以及相关临床试验的检索结果。</p><p>长期疾病的病历往往分散在不同医院和不同时间，家属每次换医生、看急诊，都得重新讲一遍病史。<strong>一页简报</strong>能省下最多的沟通时间。临床试验检索费时间，又需要读专业资料，AI 可以先筛一轮，家属再拿去问医生。</p><p>他鼓励大家 fork 这个 skill，改成适用于其他慢性病的版本。自己动手改的话，可以加上用药清单、过敏史、检查指标的时间线，这些都是复诊时最常被问到的。整理病历的过程里，凡是上传了哪些文件、AI 引用了哪一份，都要能追溯回原始报告。</p></div>
+        <div class="sources">原文：<a href="https://x.com/petergyang/status/2121430386685395022" target="_blank" rel="noopener" title="Peter Yang: If you know a loved one suffering from cancer or another long-term illness:
+
+1. ">Follow Builders (X)</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-14/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/life/">更多「AI 生活」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

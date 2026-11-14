@@ -8,6 +8,114 @@
   "items": [
     {
       "candidateIds": [
+        "c35"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-14",
+      "headline": "旧电视别急着换：本地 AI 代理帮你清理应用",
+      "oneLiner": "Tom's Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。",
+      "who": "Tom's Guide 作者 Amanda Caswell，照着 AI 工程师 Fahd Mirza 的演示和他在 GitHub 公开的提示词，给一台画面正常、系统变慢的旧智能电视做清理。",
+      "how": "电脑上用 Ollama 跑 Qwen3 8B，Hermes Agent 负责执行；电视开启开发者选项和无线调试，经 ADB 配对。提示词要求代理先查内存、给已装应用分类，改动前征得同意，只停用不卸载，并记录改动方便还原。",
+      "result": "代理可以列出不常用的应用、关掉多余动画、精简主屏幕。作者说界面能否明显变快要看电视本身；让代理搭一个无广告主屏幕，她没有成功。",
+      "tryThis": "如果你有 Android TV 或 Google TV，再加一台能跑 8B 模型的电脑，第一步只让代理报告可用内存，不改任何设置。",
+      "caveat": "开发者权限能动到电视的核心功能，停用错系统应用可能出问题，恢复出厂设置后要重新登录各个流媒体账号。三星的 Tizen 电视不适用这套方法，LG webOS 的连接流程不一样。处理器老、内存小的电视，清理后硬件瓶颈还在。",
+      "body": "[Tom's Guide 这篇实操](https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again)用的是三个免费工具：Ollama 在本机跑模型（示例命令 `ollama run qwen3:8b`），Hermes Agent 把指令变成操作，电视那边在设置里连点七次版本号打开开发者选项，再开无线调试、查到 IP、完成 ADB 配对。只填 IP 地址不够，配对授权这一步省不了。\n\n可借鉴的是 Fahd Mirza 提示词里的几条约束：**先查看再动手，每次改动先问人，只停用不卸载，改了什么都记下来。** 把权限交给代理时，这几条可以套用到别的设备上。模型跑在本地，提示词不会发到云端，不过电视自带的应用照样收集数据。\n\n作者的结论很实在：大多数人直接用设置菜单，或者花点小钱买个电视棒，会更省事。这套方法适合本来就喜欢折腾、想让旧电视再多用几年的人。电脑配置低的话可以换小一点的模型，代价是复杂指令可能执行不好。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I found a free AI trick that could make your old smart TV feel new again",
+          "url": "https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-01",
+      "issueDate": "2026-11-14",
+      "issueNumber": 36
+    },
+    {
+      "candidateIds": [
+        "c15"
+      ],
+      "category": "life",
+      "kind": "本周动态",
+      "eventDate": "2026-11-14",
+      "headline": "把病历放进一个文件夹，让 AI 写一页病情简报",
+      "oneLiner": "Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。",
+      "who": "写 AI 教程的 Peter Yang，面向家里有人患癌症或其他长期疾病的家属。",
+      "how": "三步：把患者的全部病历上传到一个文件夹，比如 Google Drive；把 skill 链接发给 ChatGPT 或 Claude，让它安装；再让 skill 读取这个文件夹。",
+      "result": "他说这个 skill 能生成一页简报、检索临床试验，还能做别的整理。别人可以 fork 后改成适用于其他慢性病的版本。",
+      "tryThis": "先拿最近一次就诊的资料试一下，看一页简报是否准确，再决定要不要放进完整病历。生成的试验清单带去和主治医生讨论。",
+      "caveat": "交给 AI 的是完整病历，这是最敏感的个人数据，文件夹的共享范围和所用账号要自己把关。临床试验能不能入组、治疗怎么调整，最后都要由医生判断。",
+      "body": "Peter Yang 在 [这条帖子](https://x.com/petergyang/status/2121430386685395022)里写的流程很短：病历集中放进一个文件夹，安装他的免费 skill，然后让 skill 去读这个文件夹。产出有两样：一页病情简报，以及相关临床试验的检索结果。\n\n长期疾病的病历往往分散在不同医院和不同时间，家属每次换医生、看急诊，都得重新讲一遍病史。**一页简报**能省下最多的沟通时间。临床试验检索费时间，又需要读专业资料，AI 可以先筛一轮，家属再拿去问医生。\n\n他鼓励大家 fork 这个 skill，改成适用于其他慢性病的版本。自己动手改的话，可以加上用药清单、过敏史、检查指标的时间线，这些都是复诊时最常被问到的。整理病历的过程里，凡是上传了哪些文件、AI 引用了哪一份，都要能追溯回原始报告。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: If you know a loved one suffering from cancer or another long-term illness:\n\n1. ",
+          "url": "https://x.com/petergyang/status/2121430386685395022"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-03",
+      "issueDate": "2026-11-14",
+      "issueNumber": 36
+    },
+    {
+      "candidateIds": [
+        "c33"
+      ],
+      "category": "life",
+      "kind": "本周动态",
+      "eventDate": "2026-11-13",
+      "headline": "孩子用聊天机器人，家长分别能管到哪一步",
+      "oneLiner": "Lifehacker 对比了主流聊天机器人的未成年人保护：ChatGPT、Copilot 可以设使用时段，Meta 能给家长发话题报告，但没有一家让家长看对话原文。",
+      "who": "Lifehacker 作者 David Nield，逐个梳理 ChatGPT、Gemini、Meta AI、Siri AI、Copilot、Grok 的年龄限制和家长控制。",
+      "how": "对每款产品分别列出最低年龄、怎么识别未成年人、家长能设置什么，以及有哪些绕过的漏洞。",
+      "result": "ChatGPT 能设使用时段、调敏感度，但青少年可以自己解除绑定；Gemini 只能开关；Meta 能看话题报告，涉及自伤时会提醒家长；Copilot 可以关掉图像生成和语音模式；Grok 的年龄验证被 Common Sense Media 评为无效。",
+      "tryThis": "今天先查一下孩子在用哪几款，挨个进家长控制入口。ChatGPT 网页版的路径是：头像 > Settings > Parental controls > Add family member。",
+      "caveat": "ChatGPT 和 Gemini 都能在浏览器里匿名免登录使用，绑定账号管不到这部分。Gemini 匿名使用时只有通用限制，没有未成年人专属的保护。",
+      "body": "[Lifehacker 这篇对比](https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS)里的信息，家长能直接拿去用。各家最低年龄基本都是 13 岁，也都在用各种信号推测用户年龄。差别在于家长能管到哪一步：**ChatGPT 能限时段，Meta 能看话题报告，Copilot 能关掉单项功能，Gemini 只能整体开关。** 这几家都不让家长看对话原文。\n\n有两个漏洞要提前知道。第一，绑定大多是可选的，ChatGPT 明确说青少年可以自己解除。第二，匿名网页版绕开了账号设置，Copilot 已经关掉了匿名入口。Grok 有 Kids Mode，但靠孩子自己申报年龄，很容易绕过。\n\n技术手段只能管一部分，绑定能不能一直保持，要靠和孩子商量好。比较可行的组合是：开通家长绑定，在设备层面用 Screen Time、Family Link 或 Family Safety 管应用，再和孩子约定哪些话题可以先来找家长。",
+      "sources": [
+        {
+          "label": "Lifehacker",
+          "title": "I Analyzed the Seven Biggest AI Chatbots to Determine How Safe They Are for Kids",
+          "url": "https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-04",
+      "issueDate": "2026-11-14",
+      "issueNumber": 36
+    },
+    {
+      "candidateIds": [
+        "c36"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-13",
+      "headline": "让两个 AI 排 100 美元吃遍纽约的路线",
+      "oneLiner": "Tom's Guide 作者让 ChatGPT 和 Gemini 用 100 美元预算挑纽约五个区的平价餐馆，两家都列出了菜品和价格，他最后主要采纳了 Gemini 的推荐。",
+      "who": "土生土长的纽约人 Elton Jones，周末要和朋友扫街吃东西。",
+      "how": "同一条提示词发给两个 AI：“在纽约五个区找 7 家最好的平价餐馆，总预算 100 美元，优先吃得饱，列出具体点什么、当前价格和地图。”",
+      "result": "两边有三家推荐重合。ChatGPT 的地图更详细，算了税和小费，还标出哪些价格需要再确认；Gemini 列了交通线路，推荐的餐馆更有特色，所以他主要用了 Gemini 的。",
+      "tryThis": "把提示词里的城市、店数和预算换成自己的，同时发给两个 AI，优先去两边都推荐的店。",
+      "caveat": "价格是 AI 估算或从第三方菜单查来的，ChatGPT 自己就提醒有一家实际账单可能更高；只收现金、排队时间这类信息，出门前要再核实。",
+      "body": "[这篇对比](https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city)里的提示词可以直接借用，它把条件写得很清楚：店数、范围、总预算、优先吃饱，再要求列出点什么菜、多少钱、附地图。ChatGPT 给出的每一项都标了价格来源，比如“2026 年 10 月查过的菜单”“第三方菜单，需要确认”。\n\n**两个模型交叉比对**，是这篇里最值得学的一步：两边都推荐的店更可靠，只出现在一边的再挑着看。作者淘汰了 ChatGPT 推荐的一个普通清真餐车，换成 Gemini 推荐的那家得过 Vendy 奖、有招牌酱料的。\n\n旅行或周末出游都能这么用。最后让 AI 把交通费、税和小费一起算进总预算，到了现场按菜单实际价格调整。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I challenged ChatGPT and Gemini to find NYC’s best eats under $100 — here’s the winner (and how to try it in your city)",
+          "url": "https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-05",
+      "issueDate": "2026-11-14",
+      "issueNumber": 36
+    },
+    {
+      "candidateIds": [
         "c2"
       ],
       "category": "life",

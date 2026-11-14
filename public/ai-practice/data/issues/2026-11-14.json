@@ -1,0 +1,295 @@
+{
+  "date": "2026-11-14",
+  "title": "旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值",
+  "items": [
+    {
+      "candidateIds": [
+        "c35"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-14",
+      "headline": "旧电视别急着换：本地 AI 代理帮你清理应用",
+      "oneLiner": "Tom's Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。",
+      "who": "Tom's Guide 作者 Amanda Caswell，照着 AI 工程师 Fahd Mirza 的演示和他在 GitHub 公开的提示词，给一台画面正常、系统变慢的旧智能电视做清理。",
+      "how": "电脑上用 Ollama 跑 Qwen3 8B，Hermes Agent 负责执行；电视开启开发者选项和无线调试，经 ADB 配对。提示词要求代理先查内存、给已装应用分类，改动前征得同意，只停用不卸载，并记录改动方便还原。",
+      "result": "代理可以列出不常用的应用、关掉多余动画、精简主屏幕。作者说界面能否明显变快要看电视本身；让代理搭一个无广告主屏幕，她没有成功。",
+      "tryThis": "如果你有 Android TV 或 Google TV，再加一台能跑 8B 模型的电脑，第一步只让代理报告可用内存，不改任何设置。",
+      "caveat": "开发者权限能动到电视的核心功能，停用错系统应用可能出问题，恢复出厂设置后要重新登录各个流媒体账号。三星的 Tizen 电视不适用这套方法，LG webOS 的连接流程不一样。处理器老、内存小的电视，清理后硬件瓶颈还在。",
+      "body": "[Tom's Guide 这篇实操](https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again)用的是三个免费工具：Ollama 在本机跑模型（示例命令 `ollama run qwen3:8b`），Hermes Agent 把指令变成操作，电视那边在设置里连点七次版本号打开开发者选项，再开无线调试、查到 IP、完成 ADB 配对。只填 IP 地址不够，配对授权这一步省不了。\n\n可借鉴的是 Fahd Mirza 提示词里的几条约束：**先查看再动手，每次改动先问人，只停用不卸载，改了什么都记下来。** 把权限交给代理时，这几条可以套用到别的设备上。模型跑在本地，提示词不会发到云端，不过电视自带的应用照样收集数据。\n\n作者的结论很实在：大多数人直接用设置菜单，或者花点小钱买个电视棒，会更省事。这套方法适合本来就喜欢折腾、想让旧电视再多用几年的人。电脑配置低的话可以换小一点的模型，代价是复杂指令可能执行不好。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I found a free AI trick that could make your old smart TV feel new again",
+          "url": "https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-01"
+    },
+    {
+      "candidateIds": [
+        "c10",
+        "c30"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-14",
+      "headline": "Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍",
+      "oneLiner": "Garry Tan 在 Claude Code 里测了 52 个编程任务：Fable 5.2 解出 82.7%，Opus 5.5 解出 84.6%，Fable 每解出一题的成本是 Opus 的 2.80 倍。",
+      "who": "Y Combinator CEO Garry Tan，在 Claude Code 2.1.322 上对比两个模型日常编程的性价比。",
+      "how": "他用同一批 52 个任务分别跑 Fable 5.2 和 Opus 5.5，比较两项指标：解出率，以及每解出一题花了多少钱。",
+      "result": "两者解出率接近，Fable 每解出一题的成本是 Opus 的 2.80 倍。他的建议是继续把 Opus 5.5 设为编程默认模型，同时承认这批任务 Opus 大多能解，想分出高下需要更难的题。",
+      "tryThis": "挑 20 到 50 个团队真实做过的任务，记录每个模型的解出率和每解出一题的成本，再定默认模型和升级规则。",
+      "caveat": "任务越长、越难，排名可能越不一样。Agent Arena 测的是 16 轮以上的长会话，Fable 在那里领先更多，而且 API 已经降价，所以简单任务上的结论不能直接搬到长任务上。",
+      "body": "Garry Tan 在 [X 上](https://x.com/garrytan/status/2121464508225053153)给出的口径值得照搬：**看每解出一题的成本，而不只看分数。** 两个模型解出率只差两个百分点左右，成本却差了 2.8 倍，对按 token 付费的团队来说，选默认模型时这一项更重要。\n\n同一天 [Latent Space 的汇总](https://latent.space/p/ainews-the-no-ai-slop-manifesto/)给出了另一面的数据。Agent Arena 测的是长时间编程会话，Fable 5.2 排第一，净提升 +30.4%，约为 Opus 5.5 的 1.6 倍；会话到 16 轮以上时，Fable 不需要纠正的回复占 93%，Opus 是 85%。Fable 的 API 价格也从每百万 token 输入/输出 $10/$50 降到了 $8/$40。在 Artificial Analysis 的编程代理指数上，两者并列 58 分，但得分 48 以上的配置里，每个任务的成本从 $1.51 到 $44.22 不等。\n\n比较实用的做法是分两档：**日常短任务用便宜模型，长链路、容易跑偏的任务再升级到贵的。** 各家榜单怎么排，最后都要拿自己团队的任务库来验证。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Garry Tan: Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claud",
+          "url": "https://x.com/garrytan/status/2121464508225053153"
+        },
+        {
+          "label": "Latent Space",
+          "title": "[AINews] The No AI Slop Manifesto",
+          "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-02"
+    },
+    {
+      "candidateIds": [
+        "c15"
+      ],
+      "category": "life",
+      "kind": "本周动态",
+      "eventDate": "2026-11-14",
+      "headline": "把病历放进一个文件夹，让 AI 写一页病情简报",
+      "oneLiner": "Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。",
+      "who": "写 AI 教程的 Peter Yang，面向家里有人患癌症或其他长期疾病的家属。",
+      "how": "三步：把患者的全部病历上传到一个文件夹，比如 Google Drive；把 skill 链接发给 ChatGPT 或 Claude，让它安装；再让 skill 读取这个文件夹。",
+      "result": "他说这个 skill 能生成一页简报、检索临床试验，还能做别的整理。别人可以 fork 后改成适用于其他慢性病的版本。",
+      "tryThis": "先拿最近一次就诊的资料试一下，看一页简报是否准确，再决定要不要放进完整病历。生成的试验清单带去和主治医生讨论。",
+      "caveat": "交给 AI 的是完整病历，这是最敏感的个人数据，文件夹的共享范围和所用账号要自己把关。临床试验能不能入组、治疗怎么调整，最后都要由医生判断。",
+      "body": "Peter Yang 在 [这条帖子](https://x.com/petergyang/status/2121430386685395022)里写的流程很短：病历集中放进一个文件夹，安装他的免费 skill，然后让 skill 去读这个文件夹。产出有两样：一页病情简报，以及相关临床试验的检索结果。\n\n长期疾病的病历往往分散在不同医院和不同时间，家属每次换医生、看急诊，都得重新讲一遍病史。**一页简报**能省下最多的沟通时间。临床试验检索费时间，又需要读专业资料，AI 可以先筛一轮，家属再拿去问医生。\n\n他鼓励大家 fork 这个 skill，改成适用于其他慢性病的版本。自己动手改的话，可以加上用药清单、过敏史、检查指标的时间线，这些都是复诊时最常被问到的。整理病历的过程里，凡是上传了哪些文件、AI 引用了哪一份，都要能追溯回原始报告。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: If you know a loved one suffering from cancer or another long-term illness:\n\n1. ",
+          "url": "https://x.com/petergyang/status/2121430386685395022"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-03"
+    },
+    {
+      "candidateIds": [
+        "c33"
+      ],
+      "category": "life",
+      "kind": "本周动态",
+      "eventDate": "2026-11-13",
+      "headline": "孩子用聊天机器人，家长分别能管到哪一步",
+      "oneLiner": "Lifehacker 对比了主流聊天机器人的未成年人保护：ChatGPT、Copilot 可以设使用时段，Meta 能给家长发话题报告，但没有一家让家长看对话原文。",
+      "who": "Lifehacker 作者 David Nield，逐个梳理 ChatGPT、Gemini、Meta AI、Siri AI、Copilot、Grok 的年龄限制和家长控制。",
+      "how": "对每款产品分别列出最低年龄、怎么识别未成年人、家长能设置什么，以及有哪些绕过的漏洞。",
+      "result": "ChatGPT 能设使用时段、调敏感度，但青少年可以自己解除绑定；Gemini 只能开关；Meta 能看话题报告，涉及自伤时会提醒家长；Copilot 可以关掉图像生成和语音模式；Grok 的年龄验证被 Common Sense Media 评为无效。",
+      "tryThis": "今天先查一下孩子在用哪几款，挨个进家长控制入口。ChatGPT 网页版的路径是：头像 > Settings > Parental controls > Add family member。",
+      "caveat": "ChatGPT 和 Gemini 都能在浏览器里匿名免登录使用，绑定账号管不到这部分。Gemini 匿名使用时只有通用限制，没有未成年人专属的保护。",
+      "body": "[Lifehacker 这篇对比](https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS)里的信息，家长能直接拿去用。各家最低年龄基本都是 13 岁，也都在用各种信号推测用户年龄。差别在于家长能管到哪一步：**ChatGPT 能限时段，Meta 能看话题报告，Copilot 能关掉单项功能，Gemini 只能整体开关。** 这几家都不让家长看对话原文。\n\n有两个漏洞要提前知道。第一，绑定大多是可选的，ChatGPT 明确说青少年可以自己解除。第二，匿名网页版绕开了账号设置，Copilot 已经关掉了匿名入口。Grok 有 Kids Mode，但靠孩子自己申报年龄，很容易绕过。\n\n技术手段只能管一部分，绑定能不能一直保持，要靠和孩子商量好。比较可行的组合是：开通家长绑定，在设备层面用 Screen Time、Family Link 或 Family Safety 管应用，再和孩子约定哪些话题可以先来找家长。",
+      "sources": [
+        {
+          "label": "Lifehacker",
+          "title": "I Analyzed the Seven Biggest AI Chatbots to Determine How Safe They Are for Kids",
+          "url": "https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-04"
+    },
+    {
+      "candidateIds": [
+        "c36"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-13",
+      "headline": "让两个 AI 排 100 美元吃遍纽约的路线",
+      "oneLiner": "Tom's Guide 作者让 ChatGPT 和 Gemini 用 100 美元预算挑纽约五个区的平价餐馆，两家都列出了菜品和价格，他最后主要采纳了 Gemini 的推荐。",
+      "who": "土生土长的纽约人 Elton Jones，周末要和朋友扫街吃东西。",
+      "how": "同一条提示词发给两个 AI：“在纽约五个区找 7 家最好的平价餐馆，总预算 100 美元，优先吃得饱，列出具体点什么、当前价格和地图。”",
+      "result": "两边有三家推荐重合。ChatGPT 的地图更详细，算了税和小费，还标出哪些价格需要再确认；Gemini 列了交通线路，推荐的餐馆更有特色，所以他主要用了 Gemini 的。",
+      "tryThis": "把提示词里的城市、店数和预算换成自己的，同时发给两个 AI，优先去两边都推荐的店。",
+      "caveat": "价格是 AI 估算或从第三方菜单查来的，ChatGPT 自己就提醒有一家实际账单可能更高；只收现金、排队时间这类信息，出门前要再核实。",
+      "body": "[这篇对比](https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city)里的提示词可以直接借用，它把条件写得很清楚：店数、范围、总预算、优先吃饱，再要求列出点什么菜、多少钱、附地图。ChatGPT 给出的每一项都标了价格来源，比如“2026 年 10 月查过的菜单”“第三方菜单，需要确认”。\n\n**两个模型交叉比对**，是这篇里最值得学的一步：两边都推荐的店更可靠，只出现在一边的再挑着看。作者淘汰了 ChatGPT 推荐的一个普通清真餐车，换成 Gemini 推荐的那家得过 Vendy 奖、有招牌酱料的。\n\n旅行或周末出游都能这么用。最后让 AI 把交通费、税和小费一起算进总预算，到了现场按菜单实际价格调整。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I challenged ChatGPT and Gemini to find NYC’s best eats under $100 — here’s the winner (and how to try it in your city)",
+          "url": "https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-05"
+    }
+  ],
+  "action": "从你常用的 AI 工具里挑一个，今天做两件事。第一，打开账号和权限设置，看看它能访问你的哪些数据，家里孩子用的账号也查一遍家长控制。第二，拿一个你这周本来就要做的真实任务，同时交给两个模型，记录哪个结果能直接用、你改了多少、花了多少钱。这一张小对照表，就是你选默认工具的依据。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-14T14:43:45.365Z",
+    "engine": "cli",
+    "candidateCount": 36,
+    "candidatesBySource": {
+      "Simon Willison": 2,
+      "Interconnects": 1,
+      "Matt Wolfe": 1,
+      "Starter Story (YouTube)": 1,
+      "Every (YouTube)": 2,
+      "Rest of World": 1,
+      "Follow Builders (X)": 21,
+      "Latent Space": 1,
+      "The AI Daily Brief": 1,
+      "Dwarkesh Podcast": 1,
+      "Lifehacker": 1,
+      "Tom's Guide · AI": 3
+    },
+    "shortlist": [
+      {
+        "id": "c15",
+        "reason": "AI生活类：Peter Yang 写了个免费的 skill，给家里有癌症或长期病患者的人用。步骤很具体：上传病历，让 ChatGPT 或 Claude 装上这个 skill，生成一页病情简报并检索临床试验。可以照做，也可以改了用在别的病上。",
+        "source": "Follow Builders (X)",
+        "title": "Peter Yang: If you know a loved one suffering from cancer or another long-term illness:\n\n1. "
+      },
+      {
+        "id": "c10",
+        "reason": "Garry Tan 用自己开源的测评框架，在 Claude Code 里跑了 52 个编程任务。Fable 5.2 解出约 82.7%，Opus 5.5 是 84.6%，但 Fable 每解一题的成本是 Opus 的 2.8 倍，所以他的建议是编程默认继续用 Opus。人、方法、结果和数字都有。c11 是同一件事，并在这一条里。",
+        "source": "Follow Builders (X)",
+        "title": "Garry Tan: Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claud"
+      },
+      {
+        "id": "c35",
+        "reason": "AI生活类：作者在自己电脑上跑免费的本地 AI agent 来管理旧智能电视，删掉没用的应用、精简主屏、调整拖慢速度的设置，不用订阅。是全文，应该有具体步骤。",
+        "source": "Tom's Guide · AI",
+        "title": "I found a free AI trick that could make your old smart TV feel new again"
+      },
+      {
+        "id": "c5",
+        "reason": "一人公司复盘：印度班加罗尔的 Sanskar 以前在呼叫中心上夜班，后来一个人做了 30 多个产品，其中 8 个赚钱，总收入过 100 万美元。只有简介，没写怎么用 AI，编辑要去视频里核实做法。",
+        "source": "Starter Story (YouTube)",
+        "title": "Bro built 30+ apps and recently crossed $1M in total revenue 😱"
+      },
+      {
+        "id": "c36",
+        "reason": "AI生活类：作者亲测让 ChatGPT 和 Gemini 在纽约找 100 美元以内的好馆子，比出了胜者，还写了在你自己城市怎么复现。有对比结果和做法。",
+        "source": "Tom's Guide · AI",
+        "title": "I challenged ChatGPT and Gemini to find NYC’s best eats under $100 — here’s the winner (and how to try it in your city)"
+      },
+      {
+        "id": "c34",
+        "reason": "AI生活类出行：作者讲自己旅行前用 7 个 ChatGPT 插件找当地团游、整理现有行程。是本人用法，全文可以提取具体流程。",
+        "source": "Tom's Guide · AI",
+        "title": "Ready for your next getaway? I use these 7 ChatGPT plugins to find the best local tours, organize an existing itinerary and more before I travel"
+      },
+      {
+        "id": "c30",
+        "reason": "AI认知类：AIE CODE 大会上一线工程师联署的 No AI Slop 宣言，上了 Hacker News 首页，本意是给团队在工作中讨论怎么用 AI 提供一个工具，适合关心 AI 产出质量的读者。",
+        "source": "Latent Space",
+        "title": "[AINews] The No AI Slop Manifesto"
+      },
+      {
+        "id": "c33",
+        "reason": "AI生活类：作者逐一分析了 7 个主流聊天机器人对孩子的安全性，对家长选工具、设限制有直接参考价值。是全文，可以提取比较结论。",
+        "source": "Lifehacker",
+        "title": "I Analyzed the Seven Biggest AI Chatbots to Determine How Safe They Are for Kids"
+      },
+      {
+        "id": "c3",
+        "reason": "AI认知类：研究者 Nathan Lambert 判断黄仁勋离任会怎样影响美国开源模型生态，给出了 Nvidia 继续支持开源的利益逻辑。是有依据的一线判断，不是普通新闻。",
+        "source": "Interconnects",
+        "title": "Open-source AI without Jensen"
+      },
+      {
+        "id": "c32",
+        "reason": "AI认知类：Dwarkesh Patel 讲过去三个月他对超级智能时间线的判断怎么大幅提前，认为 AI 研发会像数学一样被 AI 加速。只有简介，但有书面版链接可以补依据。",
+        "source": "Dwarkesh Podcast",
+        "title": "The avalanche that hit math is coming for AI development"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 14670,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2208,
+        "output_tokens_details": {
+          "thinking_tokens": 702
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 14670,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2208,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 14670,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 14670
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.161528
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 28601,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 6171,
+      "output_tokens_details": {
+        "thinking_tokens": 1209
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 28601,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6171,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 28601,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 28601
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.352236
+  }
+}

@@ -8,6 +8,39 @@
   "items": [
     {
       "candidateIds": [
+        "c10",
+        "c30"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-14",
+      "headline": "Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍",
+      "oneLiner": "Garry Tan 在 Claude Code 里测了 52 个编程任务：Fable 5.2 解出 82.7%，Opus 5.5 解出 84.6%，Fable 每解出一题的成本是 Opus 的 2.80 倍。",
+      "who": "Y Combinator CEO Garry Tan，在 Claude Code 2.1.322 上对比两个模型日常编程的性价比。",
+      "how": "他用同一批 52 个任务分别跑 Fable 5.2 和 Opus 5.5，比较两项指标：解出率，以及每解出一题花了多少钱。",
+      "result": "两者解出率接近，Fable 每解出一题的成本是 Opus 的 2.80 倍。他的建议是继续把 Opus 5.5 设为编程默认模型，同时承认这批任务 Opus 大多能解，想分出高下需要更难的题。",
+      "tryThis": "挑 20 到 50 个团队真实做过的任务，记录每个模型的解出率和每解出一题的成本，再定默认模型和升级规则。",
+      "caveat": "任务越长、越难，排名可能越不一样。Agent Arena 测的是 16 轮以上的长会话，Fable 在那里领先更多，而且 API 已经降价，所以简单任务上的结论不能直接搬到长任务上。",
+      "body": "Garry Tan 在 [X 上](https://x.com/garrytan/status/2121464508225053153)给出的口径值得照搬：**看每解出一题的成本，而不只看分数。** 两个模型解出率只差两个百分点左右，成本却差了 2.8 倍，对按 token 付费的团队来说，选默认模型时这一项更重要。\n\n同一天 [Latent Space 的汇总](https://latent.space/p/ainews-the-no-ai-slop-manifesto/)给出了另一面的数据。Agent Arena 测的是长时间编程会话，Fable 5.2 排第一，净提升 +30.4%，约为 Opus 5.5 的 1.6 倍；会话到 16 轮以上时，Fable 不需要纠正的回复占 93%，Opus 是 85%。Fable 的 API 价格也从每百万 token 输入/输出 $10/$50 降到了 $8/$40。在 Artificial Analysis 的编程代理指数上，两者并列 58 分，但得分 48 以上的配置里，每个任务的成本从 $1.51 到 $44.22 不等。\n\n比较实用的做法是分两档：**日常短任务用便宜模型，长链路、容易跑偏的任务再升级到贵的。** 各家榜单怎么排，最后都要拿自己团队的任务库来验证。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Garry Tan: Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claud",
+          "url": "https://x.com/garrytan/status/2121464508225053153"
+        },
+        {
+          "label": "Latent Space",
+          "title": "[AINews] The No AI Slop Manifesto",
+          "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-14-02",
+      "issueDate": "2026-11-14",
+      "issueNumber": 36
+    },
+    {
+      "candidateIds": [
         "c50"
       ],
       "category": "productivity",

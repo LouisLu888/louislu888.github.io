@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 036｜旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值</title>
+  <meta name="description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-14/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 036｜旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值">
+  <meta property="og:description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-14/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 036｜旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值">
+  <meta name="twitter:description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">40</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">22</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">41</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">24</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 036 · 2026 年 11 月 14 日 · 周六 · 约 8 分钟读完</div>
+        <h1>旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="life">AI 生活</span><a href="#2026-11-14-01">Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-14-02">Garry Tan 在 Claude Code 里测了 52 个编程任务：Fable 5.2 解出 82.7%，Opus 5.5 解出 84.6%，Fable 每解出一题的成本是 Opus 的 2.80 倍。</a></li><li><span class="tag" data-cat="life">AI 生活</span><a href="#2026-11-14-03">Peter Yang 免费公开了一个 Claude/ChatGPT skill：读取患者的全部病历，生成一页病情简报，并检索相关临床试验。这条帖子获得 434 个赞。</a></li><li><span class="tag" data-cat="life">AI 生活</span><a href="#2026-11-14-04">Lifehacker 对比了主流聊天机器人的未成年人保护：ChatGPT、Copilot 可以设使用时段，Meta 能给家长发话题报告，但没有一家让家长看对话原文。</a></li><li><span class="tag" data-cat="life">AI 生活</span><a href="#2026-11-14-05">Tom&#39;s Guide 作者让 ChatGPT 和 Gemini 用 100 美元预算挑纽约五个区的平价餐馆，两家都列出了菜品和价格，他最后主要采纳了 Gemini 的推荐。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-14-01">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周演示<span>·</span>2026-11-14<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-14-01/">01｜旧电视别急着换：本地 AI 代理帮你清理应用</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Tom&#39;s Guide 作者 Amanda Caswell，照着 AI 工程师 Fahd Mirza 的演示和他在 GitHub 公开的提示词，给一台画面正常、系统变慢的旧智能电视做清理。</dd><dt>怎么用</dt><dd>电脑上用 Ollama 跑 Qwen3 8B，Hermes Agent 负责执行；电视开启开发者选项和无线调试，经 ADB 配对。提示词要求代理先查内存、给已装应用分类，改动前征得同意，只停用不卸载，并记录改动方便还原。</dd><dt>结果</dt><dd>代理可以列出不常用的应用、关掉多余动画、精简主屏幕。作者说界面能否明显变快要看电视本身；让代理搭一个无广告主屏幕，她没有成功。</dd><dt>你可以试</dt><dd>如果你有 Android TV 或 Google TV，再加一台能跑 8B 模型的电脑，第一步只让代理报告可用内存，不改任何设置。</dd><dt>注意</dt><dd>开发者权限能动到电视的核心功能，停用错系统应用可能出问题，恢复出厂设置后要重新登录各个流媒体账号。三星的 Tizen 电视不适用这套方法，LG webOS 的连接流程不一样。处理器老、内存小的电视，清理后硬件瓶颈还在。</dd></dl>
+        <div class="body"><p><a href="https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again">Tom&#39;s Guide 这篇实操</a>用的是三个免费工具：Ollama 在本机跑模型（示例命令 `ollama run qwen3:8b`），Hermes Agent 把指令变成操作，电视那边在设置里连点七次版本号打开开发者选项，再开无线调试、查到 IP、完成 ADB 配对。只填 IP 地址不够，配对授权这一步省不了。</p><p>可借鉴的是 Fahd Mirza 提示词里的几条约束：<strong>先查看再动手，每次改动先问人，只停用不卸载，改了什么都记下来。</strong> 把权限交给代理时，这几条可以套用到别的设备上。模型跑在本地，提示词不会发到云端，不过电视自带的应用照样收集数据。</p><p>作者的结论很实在：大多数人直接用设置菜单，或者花点小钱买个电视棒，会更省事。这套方法适合本来就喜欢折腾、想让旧电视再多用几年的人。电脑配置低的话可以换小一点的模型，代价是复杂指令可能执行不好。</p></div>
+        <div class="sources">原文：<a href="https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again" target="_blank" rel="noopener" title="I found a free AI trick that could make your old smart TV feel new again">Tom&#39;s Guide · AI</a></div>
+      </section>
+      <section class="item" id="2026-11-14-02">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周动态<span>·</span>2026-11-14<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-14-02/">02｜Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Y Combinator CEO Garry Tan，在 Claude Code 2.1.322 上对比两个模型日常编程的性价比。</dd><dt>怎么用</dt><dd>他用同一批 52 个任务分别跑 Fable 5.2 和 Opus 5.5，比较两项指标：解出率，以及每解出一题花了多少钱。</dd><dt>结果</dt><dd>两者解出率接近，Fable 每解出一题的成本是 Opus 的 2.80 倍。他的建议是继续把 Opus 5.5 设为编程默认模型，同时承认这批任务 Opus 大多能解，想分出高下需要更难的题。</dd><dt>你可以试</dt><dd>挑 20 到 50 个团队真实做过的任务，记录每个模型的解出率和每解出一题的成本，再定默认模型和升级规则。</dd><dt>注意</dt><dd>任务越长、越难，排名可能越不一样。Agent Arena 测的是 16 轮以上的长会话，Fable 在那里领先更多，而且 API 已经降价，所以简单任务上的结论不能直接搬到长任务上。</dd></dl>
+        <div class="body"><p>Garry Tan 在 <a href="https://x.com/garrytan/status/2121464508225053153">X 上</a>给出的口径值得照搬：<strong>看每解出一题的成本，而不只看分数。</strong> 两个模型解出率只差两个百分点左右，成本却差了 2.8 倍，对按 token 付费的团队来说，选默认模型时这一项更重要。</p><p>同一天 <a href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/">Latent Space 的汇总</a>给出了另一面的数据。Agent Arena 测的是长时间编程会话，Fable 5.2 排第一，净提升 +30.4%，约为 Opus 5.5 的 1.6 倍；会话到 16 轮以上时，Fable 不需要纠正的回复占 93%，Opus 是 85%。Fable 的 API 价格也从每百万 token 输入/输出 $10/$50 降到了 $8/$40。在 Artificial Analysis 的编程代理指数上，两者并列 58 分，但得分 48 以上的配置里，每个任务的成本从 $1.51 到 $44.22 不等。</p><p>比较实用的做法是分两档：<strong>日常短任务用便宜模型，长链路、容易跑偏的任务再升级到贵的。</strong> 各家榜单怎么排，最后都要拿自己团队的任务库来验证。</p></div>
+        <div class="sources">原文：<a href="https://x.com/garrytan/status/2121464508225053153" target="_blank" rel="noopener" title="Garry Tan: Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claud">Follow Builders (X)</a><a href="https://latent.space/p/ainews-the-no-ai-slop-manifesto/" target="_blank" rel="noopener" title="[AINews] The No AI Slop Manifesto">Latent Space</a></div>
+      </section>
+      <section class="item" id="2026-11-14-03">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周动态<span>·</span>2026-11-14<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-14-03/">03｜把病历放进一个文件夹，让 AI 写一页病情简报</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>写 AI 教程的 Peter Yang，面向家里有人患癌症或其他长期疾病的家属。</dd><dt>怎么用</dt><dd>三步：把患者的全部病历上传到一个文件夹，比如 Google Drive；把 skill 链接发给 ChatGPT 或 Claude，让它安装；再让 skill 读取这个文件夹。</dd><dt>结果</dt><dd>他说这个 skill 能生成一页简报、检索临床试验，还能做别的整理。别人可以 fork 后改成适用于其他慢性病的版本。</dd><dt>你可以试</dt><dd>先拿最近一次就诊的资料试一下，看一页简报是否准确，再决定要不要放进完整病历。生成的试验清单带去和主治医生讨论。</dd><dt>注意</dt><dd>交给 AI 的是完整病历，这是最敏感的个人数据，文件夹的共享范围和所用账号要自己把关。临床试验能不能入组、治疗怎么调整，最后都要由医生判断。</dd></dl>
+        <div class="body"><p>Peter Yang 在 <a href="https://x.com/petergyang/status/2121430386685395022">这条帖子</a>里写的流程很短：病历集中放进一个文件夹，安装他的免费 skill，然后让 skill 去读这个文件夹。产出有两样：一页病情简报，以及相关临床试验的检索结果。</p><p>长期疾病的病历往往分散在不同医院和不同时间，家属每次换医生、看急诊，都得重新讲一遍病史。<strong>一页简报</strong>能省下最多的沟通时间。临床试验检索费时间，又需要读专业资料，AI 可以先筛一轮，家属再拿去问医生。</p><p>他鼓励大家 fork 这个 skill，改成适用于其他慢性病的版本。自己动手改的话，可以加上用药清单、过敏史、检查指标的时间线，这些都是复诊时最常被问到的。整理病历的过程里，凡是上传了哪些文件、AI 引用了哪一份，都要能追溯回原始报告。</p></div>
+        <div class="sources">原文：<a href="https://x.com/petergyang/status/2121430386685395022" target="_blank" rel="noopener" title="Peter Yang: If you know a loved one suffering from cancer or another long-term illness:
+
+1. ">Follow Builders (X)</a></div>
+      </section>
+      <section class="item" id="2026-11-14-04">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周动态<span>·</span>2026-11-13<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-14-04/">04｜孩子用聊天机器人，家长分别能管到哪一步</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Lifehacker 作者 David Nield，逐个梳理 ChatGPT、Gemini、Meta AI、Siri AI、Copilot、Grok 的年龄限制和家长控制。</dd><dt>怎么用</dt><dd>对每款产品分别列出最低年龄、怎么识别未成年人、家长能设置什么，以及有哪些绕过的漏洞。</dd><dt>结果</dt><dd>ChatGPT 能设使用时段、调敏感度，但青少年可以自己解除绑定；Gemini 只能开关；Meta 能看话题报告，涉及自伤时会提醒家长；Copilot 可以关掉图像生成和语音模式；Grok 的年龄验证被 Common Sense Media 评为无效。</dd><dt>你可以试</dt><dd>今天先查一下孩子在用哪几款，挨个进家长控制入口。ChatGPT 网页版的路径是：头像 &gt; Settings &gt; Parental controls &gt; Add family member。</dd><dt>注意</dt><dd>ChatGPT 和 Gemini 都能在浏览器里匿名免登录使用，绑定账号管不到这部分。Gemini 匿名使用时只有通用限制，没有未成年人专属的保护。</dd></dl>
+        <div class="body"><p><a href="https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS">Lifehacker 这篇对比</a>里的信息，家长能直接拿去用。各家最低年龄基本都是 13 岁，也都在用各种信号推测用户年龄。差别在于家长能管到哪一步：<strong>ChatGPT 能限时段，Meta 能看话题报告，Copilot 能关掉单项功能，Gemini 只能整体开关。</strong> 这几家都不让家长看对话原文。</p><p>有两个漏洞要提前知道。第一，绑定大多是可选的，ChatGPT 明确说青少年可以自己解除。第二，匿名网页版绕开了账号设置，Copilot 已经关掉了匿名入口。Grok 有 Kids Mode，但靠孩子自己申报年龄，很容易绕过。</p><p>技术手段只能管一部分，绑定能不能一直保持，要靠和孩子商量好。比较可行的组合是：开通家长绑定，在设备层面用 Screen Time、Family Link 或 Family Safety 管应用，再和孩子约定哪些话题可以先来找家长。</p></div>
+        <div class="sources">原文：<a href="https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS" target="_blank" rel="noopener" title="I Analyzed the Seven Biggest AI Chatbots to Determine How Safe They Are for Kids">Lifehacker</a></div>
+      </section>
+      <section class="item" id="2026-11-14-05">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周演示<span>·</span>2026-11-13<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-14-05/">05｜让两个 AI 排 100 美元吃遍纽约的路线</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>土生土长的纽约人 Elton Jones，周末要和朋友扫街吃东西。</dd><dt>怎么用</dt><dd>同一条提示词发给两个 AI：“在纽约五个区找 7 家最好的平价餐馆，总预算 100 美元，优先吃得饱，列出具体点什么、当前价格和地图。”</dd><dt>结果</dt><dd>两边有三家推荐重合。ChatGPT 的地图更详细，算了税和小费，还标出哪些价格需要再确认；Gemini 列了交通线路，推荐的餐馆更有特色，所以他主要用了 Gemini 的。</dd><dt>你可以试</dt><dd>把提示词里的城市、店数和预算换成自己的，同时发给两个 AI，优先去两边都推荐的店。</dd><dt>注意</dt><dd>价格是 AI 估算或从第三方菜单查来的，ChatGPT 自己就提醒有一家实际账单可能更高；只收现金、排队时间这类信息，出门前要再核实。</dd></dl>
+        <div class="body"><p><a href="https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city">这篇对比</a>里的提示词可以直接借用，它把条件写得很清楚：店数、范围、总预算、优先吃饱，再要求列出点什么菜、多少钱、附地图。ChatGPT 给出的每一项都标了价格来源，比如“2026 年 10 月查过的菜单”“第三方菜单，需要确认”。</p><p><strong>两个模型交叉比对</strong>，是这篇里最值得学的一步：两边都推荐的店更可靠，只出现在一边的再挑着看。作者淘汰了 ChatGPT 推荐的一个普通清真餐车，换成 Gemini 推荐的那家得过 Vendy 奖、有招牌酱料的。</p><p>旅行或周末出游都能这么用。最后让 AI 把交通费、税和小费一起算进总预算，到了现场按菜单实际价格调整。</p></div>
+        <div class="sources">原文：<a href="https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city" target="_blank" rel="noopener" title="I challenged ChatGPT and Gemini to find NYC’s best eats under $100 — here’s the winner (and how to try it in your city)">Tom&#39;s Guide · AI</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>从你常用的 AI 工具里挑一个，今天做两件事。第一，打开账号和权限设置，看看它能访问你的哪些数据，家里孩子用的账号也查一遍家长控制。第二，拿一个你这周本来就要做的真实任务，同时交给两个模型，记录哪个结果能直接用、你改了多少、花了多少钱。这一张小对照表，就是你选默认工具的依据。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-13/">← 2026 年 11 月 13 日 · 周五</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

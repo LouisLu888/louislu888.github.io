@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T15:51:01.334Z",
+  "updatedAt": "2026-11-14T14:43:49.236Z",
   "categories": [
     {
       "id": "perspective",
@@ -41,17 +41,52 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 40
+      "count": 41
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 20
+      "count": 24
     }
   ],
   "days": [
+    {
+      "date": "2026-11-14",
+      "number": 36,
+      "title": "旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "life": 4,
+        "productivity": 1
+      },
+      "headlines": [
+        {
+          "category": "life",
+          "headline": "旧电视别急着换：本地 AI 代理帮你清理应用"
+        },
+        {
+          "category": "productivity",
+          "headline": "Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍"
+        },
+        {
+          "category": "life",
+          "headline": "把病历放进一个文件夹，让 AI 写一页病情简报"
+        },
+        {
+          "category": "life",
+          "headline": "孩子用聊天机器人，家长分别能管到哪一步"
+        },
+        {
+          "category": "life",
+          "headline": "让两个 AI 排 100 美元吃遍纽约的路线"
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "number": 35,

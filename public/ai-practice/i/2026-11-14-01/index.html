@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>旧电视别急着换：本地 AI 代理帮你清理应用｜AI 实干派</title>
+  <meta name="description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-14-01/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="旧电视别急着换：本地 AI 代理帮你清理应用｜AI 实干派">
+  <meta property="og:description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-14-01/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="旧电视别急着换：本地 AI 代理帮你清理应用｜AI 实干派">
+  <meta name="twitter:description" content="Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-14.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">40</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">15</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">22</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">41</span></a><a class="cat-chip active" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">24</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-14/">AI 实干派 036 · 2026 年 11 月 14 日 · 周六</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="life">AI 生活</span><span>·</span>本周演示<span>·</span>2026-11-14<span>·</span>US</div>
+        <h1>旧电视别急着换：本地 AI 代理帮你清理应用</h1>
+        <p class="summary">Tom&#39;s Guide 作者用 Ollama、Hermes Agent 和 Qwen3 在家里电脑上跑本地代理，通过 ADB 检查并清理 Android TV，不用付订阅费；做无广告主屏幕这一步她没做成。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>Tom&#39;s Guide 作者 Amanda Caswell，照着 AI 工程师 Fahd Mirza 的演示和他在 GitHub 公开的提示词，给一台画面正常、系统变慢的旧智能电视做清理。</dd><dt>怎么用</dt><dd>电脑上用 Ollama 跑 Qwen3 8B，Hermes Agent 负责执行；电视开启开发者选项和无线调试，经 ADB 配对。提示词要求代理先查内存、给已装应用分类，改动前征得同意，只停用不卸载，并记录改动方便还原。</dd><dt>结果</dt><dd>代理可以列出不常用的应用、关掉多余动画、精简主屏幕。作者说界面能否明显变快要看电视本身；让代理搭一个无广告主屏幕，她没有成功。</dd><dt>你可以试</dt><dd>如果你有 Android TV 或 Google TV，再加一台能跑 8B 模型的电脑，第一步只让代理报告可用内存，不改任何设置。</dd><dt>注意</dt><dd>开发者权限能动到电视的核心功能，停用错系统应用可能出问题，恢复出厂设置后要重新登录各个流媒体账号。三星的 Tizen 电视不适用这套方法，LG webOS 的连接流程不一样。处理器老、内存小的电视，清理后硬件瓶颈还在。</dd></dl>
+        <div class="body"><p><a href="https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again">Tom&#39;s Guide 这篇实操</a>用的是三个免费工具：Ollama 在本机跑模型（示例命令 `ollama run qwen3:8b`），Hermes Agent 把指令变成操作，电视那边在设置里连点七次版本号打开开发者选项，再开无线调试、查到 IP、完成 ADB 配对。只填 IP 地址不够，配对授权这一步省不了。</p><p>可借鉴的是 Fahd Mirza 提示词里的几条约束：<strong>先查看再动手，每次改动先问人，只停用不卸载，改了什么都记下来。</strong> 把权限交给代理时，这几条可以套用到别的设备上。模型跑在本地，提示词不会发到云端，不过电视自带的应用照样收集数据。</p><p>作者的结论很实在：大多数人直接用设置菜单，或者花点小钱买个电视棒，会更省事。这套方法适合本来就喜欢折腾、想让旧电视再多用几年的人。电脑配置低的话可以换小一点的模型，代价是复杂指令可能执行不好。</p></div>
+        <div class="sources">原文：<a href="https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again" target="_blank" rel="noopener" title="I found a free AI trick that could make your old smart TV feel new again">Tom&#39;s Guide · AI</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-14/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/life/">更多「AI 生活」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>
