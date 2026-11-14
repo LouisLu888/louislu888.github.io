@@ -1,5 +1,98 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "旧电视交给本地 AI 清理，同样解出一道题，贵 2.8 倍的模型值不值",
+    "summary": "旧电视别急着换：本地 AI 代理帮你清理应用；Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍；把病历放进一个文件夹，让 AI 写一页病情简报；孩子用聊天机器人，家长分别能管到哪一步；让两个 AI 排 100 美元吃遍纽约的路线",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-14/",
+    "items": [
+      {
+        "headline": "旧电视别急着换：本地 AI 代理帮你清理应用",
+        "sources": [
+          {
+            "label": "Tom's Guide · AI",
+            "title": "I found a free AI trick that could make your old smart TV feel new again",
+            "url": "https://www.tomsguide.com/ai/i-found-a-free-ai-trick-that-could-make-your-old-smart-tv-feel-new-again"
+          }
+        ]
+      },
+      {
+        "headline": "Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Garry Tan: Keep Opus 5.5 as your coding default in Claude Code. On 52 coding tasks in Claud",
+            "url": "https://x.com/garrytan/status/2121464508225053153"
+          },
+          {
+            "label": "Latent Space",
+            "title": "[AINews] The No AI Slop Manifesto",
+            "url": "https://latent.space/p/ainews-the-no-ai-slop-manifesto/"
+          }
+        ]
+      },
+      {
+        "headline": "把病历放进一个文件夹，让 AI 写一页病情简报",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Peter Yang: If you know a loved one suffering from cancer or another long-term illness:\n\n1. ",
+            "url": "https://x.com/petergyang/status/2121430386685395022"
+          }
+        ]
+      },
+      {
+        "headline": "孩子用聊天机器人，家长分别能管到哪一步",
+        "sources": [
+          {
+            "label": "Lifehacker",
+            "title": "I Analyzed the Seven Biggest AI Chatbots to Determine How Safe They Are for Kids",
+            "url": "https://lifehacker.com/tech/how-safe-are-chatbots-for-kids?utm_medium=RSS"
+          }
+        ]
+      },
+      {
+        "headline": "让两个 AI 排 100 美元吃遍纽约的路线",
+        "sources": [
+          {
+            "label": "Tom's Guide · AI",
+            "title": "I challenged ChatGPT and Gemini to find NYC’s best eats under $100 — here’s the winner (and how to try it in your city)",
+            "url": "https://www.tomsguide.com/ai/i-challenged-chatgpt-and-gemini-to-find-nycs-best-eats-under-usd100-heres-the-winner-and-how-to-try-it-in-your-city"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "旧电视别急着换：本地 AI 代理帮你清理应用"
+      },
+      {
+        "start": 159,
+        "title": "Fable 5.2 解题数与 Opus 相当，每道成本却高 2.8 倍"
+      },
+      {
+        "start": 248,
+        "title": "把病历放进一个文件夹，让 AI 写一页病情简报"
+      },
+      {
+        "start": 328,
+        "title": "孩子用聊天机器人，家长分别能管到哪一步"
+      },
+      {
+        "start": 420,
+        "title": "让两个 AI 排 100 美元吃遍纽约的路线"
+      },
+      {
+        "start": 487,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 529,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-14.mp3",
+    "audioBytes": 3176444,
+    "publishedAt": "2026-11-14T22:46:16.675Z"
+  },
+  {
     "date": "2026-11-13",
     "title": "一个人装了 853 款软件来测卸载，一位研究生用 AI 写出被录用的综述",
     "summary": "装 853 款软件测卸载，又给 400 多位用户补发激活邮件；Zotero 导出摘要喂给 AI，一篇综述被《食品科学》录用；24 小时做出 Photoshop 近似版，ArtCraft 创始人这样分工；对着手机说话几小时，一个人搭起完整的产品发布",
