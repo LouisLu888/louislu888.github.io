@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c42"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-14",
+      "headline": "做了 46 个 App 后，他砍到 3 个专心做推广",
+      "oneLiner": "独立开发者 Max 做了 46 个以上的 App，6 到 7 个月做到 1 万美元 MRR；之后他只保留 3 个 App 做推广，月收入从 2000 美元涨到 8000 美元。",
+      "who": "Max 是独立 App 开发者，靠自己的应用辞去了朝九晚五的工作。他在 App Masters 节目里复盘了增长路径。",
+      "how": "他借助 AI 和 vibe coding 快速开发了大量 App。后来 Apple 政策收紧、商店竞争加剧，他不再继续铺量，集中 3 个 App 测试 ASO、SEO、TikTok、Lemon8 和 Meta 广告。",
+      "result": "按节目介绍，他用 6 到 7 个月做到 1 万美元 MRR；聚焦后，这几个 App 的月收入从 2000 美元涨到 8000 美元，约 4 倍。以上都是收入，不是利润，广告投入要另算。",
+      "tryThis": "如果你手上有几个 App，挑出已经有付费的那一个，用一个月只做推广：改商店关键词、发短视频、小额试投广告，记下每个渠道的下载和付费。",
+      "caveat": "只靠 ASO、发布后就不管的做法越来越难。开发越容易，同类 App 越多，推广渠道要一个个试，花的时间不比开发少。",
+      "body": "Max 的经历在 [App Masters 节目](https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/He-Built-46-Apps--Then-He-Did-This-to-Get-to-10K-MRR-e3sbcs4)里讲得很清楚。AI 让做 App 越来越便宜，让 App 长大却越来越难。他一度靠数量取胜，开发了 46 个以上的应用。后来他判断，**继续做新 App 解决不了问题，推广才是瓶颈。**\n\n他把精力收到 3 个 App 上，同时试自然流量和付费流量：ASO 和 SEO 带来搜索下载，TikTok 和 Lemon8 做内容分发，Meta 广告做付费获客。对用 AI 做 App 的人，这里有一个顺序可以借鉴：**先用低成本铺开多个小 App 测需求，找到有付费的几个后，停止铺量，把时间转到分发上。**评估效果时，看扣除广告费之后还剩多少收入。",
+      "sources": [
+        {
+          "label": "App Masters (Steve P. Young)",
+          "title": "He Built 46+ Apps. Then He Did This to Get to $10K MRR.",
+          "url": "https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/He-Built-46-Apps--Then-He-Did-This-to-Get-to-10K-MRR-e3sbcs4"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-15-03",
+      "issueDate": "2026-11-15",
+      "issueNumber": 37
+    },
+    {
+      "candidateIds": [
         "c51"
       ],
       "category": "app",

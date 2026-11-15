@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-14T14:43:49.236Z",
+  "updatedAt": "2026-11-15T14:44:24.335Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 40
+      "count": 41
     },
     {
       "id": "consulting",
@@ -27,21 +27,21 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 15
+      "count": 16
     },
     {
       "id": "app",
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 22
+      "count": 23
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 41
+      "count": 43
     },
     {
       "id": "life",
@@ -52,6 +52,43 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-15",
+      "number": 37,
+      "title": "Agent 不推荐他的托管产品；做了 46 个 App 后，他只留下 3 个",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "saas": 1,
+        "productivity": 2,
+        "app": 1,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "AI 冲垮了教程生意，他的托管产品该卖给谁"
+        },
+        {
+          "category": "productivity",
+          "headline": "强模型做计划，快模型干活，一行配置就能切换"
+        },
+        {
+          "category": "app",
+          "headline": "做了 46 个 App 后，他砍到 3 个专心做推广"
+        },
+        {
+          "category": "perspective",
+          "headline": "冥想救不了 AI 时代的打工人，独立赚钱的能力才能"
+        },
+        {
+          "category": "productivity",
+          "headline": "一条命令，用本地模型跑起数据库 Agent"
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "number": 36,

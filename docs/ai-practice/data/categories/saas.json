@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c8"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-15",
+      "headline": "AI 冲垮了教程生意，他的托管产品该卖给谁",
+      "oneLiner": "Rails 教育者 Chris Oliver 的 Hatchbox 平均每个账户约 2 台服务器，最大客户 32 台，他却从没给大客户发过邮件；嘉宾让 Agent 选部署工具，它也没选 Hatchbox。",
+      "who": "Chris Oliver 做 GoRails 教程多年，和一名员工一起经营 Rails 部署工具 Hatchbox。他在 Smart Bear Live 节目上请 WP Engine 创始人 Jason Cohen 和 Tuple 联创 Ben Orenstein 诊断生意。",
+      "how": "Ben 在节目开录前问自己的编程 Agent：我的副业项目要不要换用 Hatchbox？Agent 算了账，答案是不换。三人随后讨论 AI 时代的小型开发工具该怎么找客户、怎么定价。",
+      "result": "Chris 说，AI 冲击教育市场后，Hatchbox 从副业变成主要收入来源，眼下够他一人生活，还没到两人都能靠它生活。半数客户只有一台服务器，最大客户是一家 32 台服务器的代理公司。",
+      "tryThis": "把你的客户按付费或用量排序，给前三名各写一封邮件，问他们在做什么、替谁做。再问一次常用的 AI 助手，看它会不会推荐你的产品。",
+      "caveat": "Jason 提醒，月付约 20 美元、流失又高的客群很难撑起生意；但转向大客户就要做销售，这对只爱写代码的创始人是真实成本。",
+      "body": "Hatchbox 把 Rails 和 Node 应用部署到客户自己的云账户里，起点是 GoRails 最受欢迎的一篇部署教程。Chris 在 [Smart Bear Live](https://smartbearlive.transistor.fm/14) 上说，他们一直强调比 Heroku 便宜，结果招来的主要是业余开发者。Jason 当场纠正了他的视角：**5 台、30 台服务器的客户才是头部，大量业余用户是长尾。**他建议 Chris 别再盯着价格，去找那些想用自有基础设施、对价格又不敏感的人，比如替客户做应用的代理公司。这类公司可以把基础设施费用转给客户、自己加价。\n\nBen 补了一个新问题：**以后选工具的可能是 Agent。**他的 Agent 比较后认为，自己在 Railway 上每月约 15 到 20 美元，换成 Hatchbox 要付 15 美元，另外还要租 VPS、自己管备份，不划算。他问 LLM 怎么部署业余项目，Hatchbox 也没出现在推荐里。所以靠内容带来客户的老路也要重新检验。\n\n对做小工具的人，可以借鉴两点。一是 Ben 在 Tuple 起步时靠电话拿预付承诺，签下了头 3 万美元。二是 Jason 的说法：策略要贴合创始人本人。喜欢跟技术人员聊技术，就用演示代替幻灯片来卖，但仍要像管项目一样跟进每一单。",
+      "sources": [
+        {
+          "label": "Smart Bear Live",
+          "title": "E14 w/ Ben Orenstein: How to Price Your SaaS for Long-Term Growth",
+          "url": "https://smartbearlive.transistor.fm/14"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-15-01",
+      "issueDate": "2026-11-15",
+      "issueNumber": 37
+    },
+    {
+      "candidateIds": [
         "c18"
       ],
       "category": "saas",

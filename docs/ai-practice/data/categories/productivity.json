@@ -8,6 +8,66 @@
   "items": [
     {
       "candidateIds": [
+        "c23",
+        "c30"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-14",
+      "headline": "强模型做计划，快模型干活，一行配置就能切换",
+      "oneLiner": "Vercel CEO Guillermo Rauch 说他所有项目都用最强模型做计划、交给快模型子代理执行；Peter Yang 建议每次新模型发布后用两条命令体检 Claude Code 配置。",
+      "who": "Guillermo Rauch（Vercel CEO）和写 AI 实操教程的 Peter Yang，两人都每天用编程 Agent 做项目。",
+      "how": "Rauch 在 ~/.fx/AGENTS.md 里写了一行指令：先用最聪明的模型规划，再分派给快速模型的子代理执行。Peter Yang 用 \"/doctor prompt-audit\" 审查整套 Claude Code 配置，包括 Claude md、skills 和 commands，再用 \"/claude-api prompt-audit [skill名]\" 深入审查单个 skill。",
+      "result": "Rauch 说子代理的效果“非常好”。Peter Yang 说审查命令会给出修改建议，他希望每次新模型发布时 Claude Code 能自动提示运行。",
+      "tryThis": "如果你在用 Claude Code 或类似工具，今天在 AGENTS.md 里加一行“规划用强模型、执行交给快模型”，同时跑一次配置审查，把建议逐条看过再采纳。",
+      "caveat": "分工的前提是计划写得够细，否则快模型会照着模糊的计划跑偏。审查给出的修改也要人来判断，别一次全收。",
+      "body": "Rauch 在 [X 上](https://x.com/rauchg/status/2121739228698886454)写道，他所有项目都按同一种方式做：**最强的模型负责规划，速度快的模型以子代理身份执行。**这只是 AGENTS.md 里的一行指令。Peter Yang 在[另一条帖子](https://x.com/petergyang/status/2121649295950762363)里给了维护配置的办法：新模型发布后，用 /doctor prompt-audit 审查 Claude md、skills 和 commands，让它提出修改。\n\n两件事可以一起用。**分工省的是时间和费用，审查保证旧配置跟得上新模型。**很多人的提示词和 skill 是为上一代模型写的，换了模型可能写得过细，也可能有些地方已经不适用。适合配置文件积累较多、每天跑 Agent 的工程师和 PM。刚开始用的人可以先只做分工这一步。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Guillermo Rauch: Subagents on https://t.co/3Z4NESzNKd work so well… extremely delightful. Amazing",
+          "url": "https://x.com/rauchg/status/2121739228698886454"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: Two very useful prompts to try with Fable 5.2:\n\n\"/doctor prompt-audit\": Audits y",
+          "url": "https://x.com/petergyang/status/2121649295950762363"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-15-02",
+      "issueDate": "2026-11-15",
+      "issueNumber": 37
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-14",
+      "headline": "一条命令，用本地模型跑起数据库 Agent",
+      "oneLiner": "Simon Willison 发布 datasette-llm 0.1a11，新增 OpenAI 兼容接口支持，一条 uvx 命令就能用 LM Studio 上的本地模型驱动 Datasette Agent。",
+      "who": "开发者 Simon Willison 维护 Datasette，一个开源的数据探索工具，这次更新的是其中配置 LLM 的插件。",
+      "how": "新版本支持任何兼容 OpenAI 协议的接口。他演示的做法是：下载示例数据库 content.db，用 uvx 加载 datasette-agent，把默认模型指向 LM Studio 的本地地址 localhost:1234/v1，模型选 qwen3.8-27b。",
+      "result": "本机会启动一个 Datasette Agent 服务，由本地模型驱动，不需要调用云端 API。Ollama 和 llama.cpp 同样可以接入。",
+      "tryThis": "装好 LM Studio 或 Ollama 并加载一个模型，照着他文章里的命令先用示例库跑通，再换成自己的 SQLite 文件。",
+      "caveat": "插件还是 alpha 版本。Agent 好不好用，取决于你的机器能跑多大的模型。",
+      "body": "Simon Willison 在[发布说明](https://simonwillison.net/2026/Nov/14/datasette-llm/)里给了完整命令：用 uvx 带上 datasette-agent 启动 Datasette，通过 -s 参数把 datasette-llm 的默认模型设成 LM Studio 上的 qwen 模型，接口地址填本地端口。启动后，就能在浏览器里用本地模型驱动的 Agent 操作数据库。\n\n这对**手里有敏感数据、不方便上传到云端的分析师和运营**有用。客户名单、内部报表可以导成 SQLite，留在自己电脑上让 Agent 查询和整理。先用他提供的示例库跑通，确认模型能正确理解表结构，再接真实数据。查询结果要和原始数据抽样核对。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-llm 0.1a11",
+          "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-15-05",
+      "issueDate": "2026-11-15",
+      "issueNumber": 37
+    },
+    {
+      "candidateIds": [
         "c10",
         "c30"
       ],
