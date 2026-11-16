@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-16 · PK 只占 8.9% 的时长，却拿走 67.1% 的打赏；AI 产品的免费试用被薅掉数万美元</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-16/</link>
+      <description>用 AI 做工具抓了三周数据，他算清了 B 站直播的钱；免费试用被薅走数万美元，独立创始人彻底关掉试用；一条提示词写出地图插件，还请 AI 自己加点子；原型从几周缩到一两天，用户验证没有变快；一个周末，他把写摘要的 skill 迭代到了八成口味（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-16/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 用 AI 做工具抓了三周数据，他算清了 B 站直播的钱<br>03:05 免费试用被薅走数万美元，独立创始人彻底关掉试用<br>04:46 一条提示词写出地图插件，还请 AI 自己加点子<br>06:22 原型从几周缩到一两天，用户验证没有变快<br>07:37 一个周末，他把写摘要的 skill 迭代到了八成口味<br>08:53 今天可以做的一件事</p><p><b>用 AI 做工具抓了三周数据，他算清了 B 站直播的钱</b><br><a href="https://yage.ai/live-streaming-1.html">鸭哥 yage.ai</a></p><p><b>免费试用被薅走数万美元，独立创始人彻底关掉试用</b><br><a href="https://podcasters.spotify.com/pod/show/pen-name/episodes/How-I-fight-token-fraud-as-a-solo-founder-e3s9euc">How I AI (Claire Vo)</a></p><p><b>一条提示词写出地图插件，还请 AI 自己加点子</b><br><a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">Simon Willison</a> · <a href="https://simonwillison.net/2026/Nov/15/datasette/">Simon Willison</a></p><p><b>原型从几周缩到一两天，用户验证没有变快</b><br><a href="https://x.com/petergyang/status/2122060856498524510">Follow Builders (X)</a> · <a href="https://x.com/petergyang/status/2122132596352327816">Follow Builders (X)</a></p><p><b>一个周末，他把写摘要的 skill 迭代到了八成口味</b><br><a href="https://x.com/danshipper/status/2122091033001337134">Follow Builders (X)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-16.mp3" length="3551852" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-16</guid>
+      <pubDate>Mon, 16 Nov 2026 22:45:55 GMT</pubDate>
+      <itunes:duration>00:09:52</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-15 · Agent 不推荐他的托管产品；做了 46 个 App 后，他只留下 3 个</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-15/</link>
       <description>AI 冲垮了教程生意，他的托管产品该卖给谁；强模型做计划，快模型干活，一行配置就能切换；做了 46 个 App 后，他砍到 3 个专心做推广；冥想救不了 AI 时代的打工人，独立赚钱的能力才能；一条命令，用本地模型跑起数据库 Agent（本集语音由 AI 合成）</description>

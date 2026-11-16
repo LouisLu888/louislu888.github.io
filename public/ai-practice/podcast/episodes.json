@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-11-16",
+    "title": "PK 只占 8.9% 的时长，却拿走 67.1% 的打赏；AI 产品的免费试用被薅掉数万美元",
+    "summary": "用 AI 做工具抓了三周数据，他算清了 B 站直播的钱；免费试用被薅走数万美元，独立创始人彻底关掉试用；一条提示词写出地图插件，还请 AI 自己加点子；原型从几周缩到一两天，用户验证没有变快；一个周末，他把写摘要的 skill 迭代到了八成口味",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-16/",
+    "items": [
+      {
+        "headline": "用 AI 做工具抓了三周数据，他算清了 B 站直播的钱",
+        "sources": [
+          {
+            "label": "鸭哥 yage.ai",
+            "title": "直播观察（一）：平台怎么把打赏做成大生意",
+            "url": "https://yage.ai/live-streaming-1.html"
+          }
+        ]
+      },
+      {
+        "headline": "免费试用被薅走数万美元，独立创始人彻底关掉试用",
+        "sources": [
+          {
+            "label": "How I AI (Claire Vo)",
+            "title": "How I fight token fraud as a solo founder",
+            "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/How-I-fight-token-fraud-as-a-solo-founder-e3s9euc"
+          }
+        ]
+      },
+      {
+        "headline": "一条提示词写出地图插件，还请 AI 自己加点子",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "datasette-maplibre 0.1a0",
+            "url": "https://simonwillison.net/2026/Nov/15/datasette-maplibre/"
+          },
+          {
+            "label": "Simon Willison",
+            "title": "datasette 1.0a43",
+            "url": "https://simonwillison.net/2026/Nov/15/datasette/"
+          }
+        ]
+      },
+      {
+        "headline": "原型从几周缩到一两天，用户验证没有变快",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Peter Yang: \"Do you find being a designer more fun now that you can easily prototype everyth",
+            "url": "https://x.com/petergyang/status/2122060856498524510"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Peter Yang: \"When you ask Claude to create something, it's operating in a fresh context wher",
+            "url": "https://x.com/petergyang/status/2122132596352327816"
+          }
+        ]
+      },
+      {
+        "headline": "一个周末，他把写摘要的 skill 迭代到了八成口味",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Dan Shipper: we've been working hard on compounding skills lately (skills that get better eve",
+            "url": "https://x.com/danshipper/status/2122091033001337134"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "用 AI 做工具抓了三周数据，他算清了 B 站直播的钱"
+      },
+      {
+        "start": 185,
+        "title": "免费试用被薅走数万美元，独立创始人彻底关掉试用"
+      },
+      {
+        "start": 286,
+        "title": "一条提示词写出地图插件，还请 AI 自己加点子"
+      },
+      {
+        "start": 382,
+        "title": "原型从几周缩到一两天，用户验证没有变快"
+      },
+      {
+        "start": 457,
+        "title": "一个周末，他把写摘要的 skill 迭代到了八成口味"
+      },
+      {
+        "start": 533,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 592,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-16.mp3",
+    "audioBytes": 3551852,
+    "publishedAt": "2026-11-16T22:45:55.645Z"
+  },
+  {
     "date": "2026-11-15",
     "title": "Agent 不推荐他的托管产品；做了 46 个 App 后，他只留下 3 个",
     "summary": "AI 冲垮了教程生意，他的托管产品该卖给谁；强模型做计划，快模型干活，一行配置就能切换；做了 46 个 App 后，他砍到 3 个专心做推广；冥想救不了 AI 时代的打工人，独立赚钱的能力才能；一条命令，用本地模型跑起数据库 Agent",
