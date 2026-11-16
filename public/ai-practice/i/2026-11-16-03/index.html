@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一条提示词写出地图插件，还请 AI 自己加点子｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 用一条提示词让 Claude Fable 5.2 写出了 datasette-maplibre 插件的大部分代码。同一时期，他借助这个模型把 Datasette 1.0 里程碑推进到了 53%。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-16-03/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="一条提示词写出地图插件，还请 AI 自己加点子｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 用一条提示词让 Claude Fable 5.2 写出了 datasette-maplibre 插件的大部分代码。同一时期，他借助这个模型把 Datasette 1.0 里程碑推进到了 53%。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-16-03/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-16.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="一条提示词写出地图插件，还请 AI 自己加点子｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 用一条提示词让 Claude Fable 5.2 写出了 datasette-maplibre 插件的大部分代码。同一时期，他借助这个模型把 Datasette 1.0 里程碑推进到了 53%。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-16.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">42</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">11</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">17</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">24</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">45</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">24</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-16/">AI 实干派 038 · 2026 年 11 月 16 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-15<span>·</span>US</div>
+        <h1>一条提示词写出地图插件，还请 AI 自己加点子</h1>
+        <p class="summary">Simon Willison 用一条提示词让 Claude Fable 5.2 写出了 datasette-maplibre 插件的大部分代码。同一时期，他借助这个模型把 Datasette 1.0 里程碑推进到了 53%。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>Simon Willison 是开源工具 Datasette 的作者，正在赶 1.0 版本。</dd><dt>怎么用</dt><dd>他的提示词分三步：先读两个已有的地图插件和自己写的一个 demo 页面，再合并它们的功能做成新插件，最后加一句「be creative and think outside the box」。</dd><dt>结果</dt><dd>AI 给的创意里，他最喜欢的一个是先用 SVG 预览 GeoJSON 形状，滚动到可见区域时才加载 WebGL。Claude 还做了一个能在浏览器里通过 Datasette Lite 直接运行的演示。</dd><dt>你可以试</dt><dd>下次让 AI 写新功能时，指给它两三个现有的参考实现，讲清楚要合并成什么，再留一句开放的话让它提额外功能，你从中挑选。</dd><dt>注意</dt><dd>这个做法依赖他手里已有成熟插件和 demo 当参考。插件是 0.1a0 早期版本，生成的代码仍然要人来审查。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">发布记录</a>里贴出了完整的提示词。新插件把 MapLibre GL 和免费的 OpenFreeMap 矢量地图结合起来，功能来自他已有的两个插件。关键在于<strong>给 AI 看真实的参考代码，而不是只描述需求</strong>。末尾那句鼓励 AI 发挥的话，换来了 SVG 预览加懒加载 WebGL 这样的设计。</p><p>同一天他还发布了 <a href="https://simonwillison.net/2026/Nov/15/datasette/">Datasette 1.0a43</a>。他说自己一直在大量依赖 Claude Fable 5.2 清理 1.0 的任务清单。这一版加入了流式输出和几十处小改进，还修了一个安全问题：私有存储查询的标题和 SQL 可能被看到，他为此单独发了 GitHub advisory。</p><p>对工程和工具类岗位来说，<strong>让 AI 提功能点子</strong>成本很低，可以写进提示词的固定结尾。发版节奏变快以后，安全检查和发布说明仍然得自己把关。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/" target="_blank" rel="noopener" title="datasette-maplibre 0.1a0">Simon Willison</a><a href="https://simonwillison.net/2026/Nov/15/datasette/" target="_blank" rel="noopener" title="datasette 1.0a43">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-16/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

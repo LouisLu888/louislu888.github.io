@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-15T14:44:24.335Z",
+  "updatedAt": "2026-11-16T14:44:52.626Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 41
+      "count": 42
     },
     {
       "id": "consulting",
@@ -27,21 +27,21 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 16
+      "count": 17
     },
     {
       "id": "app",
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 23
+      "count": 24
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 43
+      "count": 45
     },
     {
       "id": "life",
@@ -52,6 +52,43 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-16",
+      "number": 38,
+      "title": "PK 只占 8.9% 的时长，却拿走 67.1% 的打赏；AI 产品的免费试用被薅掉数万美元",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "app": 1,
+        "saas": 1,
+        "productivity": 2,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "用 AI 做工具抓了三周数据，他算清了 B 站直播的钱"
+        },
+        {
+          "category": "saas",
+          "headline": "免费试用被薅走数万美元，独立创始人彻底关掉试用"
+        },
+        {
+          "category": "productivity",
+          "headline": "一条提示词写出地图插件，还请 AI 自己加点子"
+        },
+        {
+          "category": "perspective",
+          "headline": "原型从几周缩到一两天，用户验证没有变快"
+        },
+        {
+          "category": "productivity",
+          "headline": "一个周末，他把写摘要的 skill 迭代到了八成口味"
+        }
+      ]
+    },
     {
       "date": "2026-11-15",
       "number": 37,

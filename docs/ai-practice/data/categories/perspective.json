@@ -8,6 +8,39 @@
   "items": [
     {
       "candidateIds": [
+        "c28",
+        "c21"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-16",
+      "headline": "原型从几周缩到一两天，用户验证没有变快",
+      "oneLiner": "Anthropic 设计师 Nate Parrott 说，在 Arc 时验证一个想法要几周，现在一两天就够了，但把东西交到用户手里、看他们用不用的周期没有缩短。",
+      "who": "Nate Parrott 有工程背景，之前在 The Browser Company 做 Arc 浏览器，现在在 Anthropic 做设计。他在 Peter Yang 的访谈里谈了这些。",
+      "how": "他有两个观点。第一，AI 压缩的是构建环节，压缩不了用户验证。第二，模型每次都在全新的上下文里工作，会以为自己挑的风格很新颖，其实反复用同一套设计。",
+      "result": "他说 Arc 发布前做了一年预研，每个想法要做几周才知道行不行。他还点出 Claude 的默认风格：衬线字体、米白背景、橙色、卡片边上的竖条。Claude Design 的提示词里会明确告诉模型，除非用户要求，不要用这些。",
+      "tryThis": "把原型上省下的时间挪到用户测试上。在自己的设计提示词里写清楚，这个模型习惯用哪些字体和配色，没有要求时避开。",
+      "caveat": "默认风格的清单针对的是特定模型，换了模型需要重新观察。他所在的团队做原型的条件比一般团队好。",
+      "body": "Peter Yang 发了[访谈片段](https://x.com/petergyang/status/2122060856498524510)。Nate Parrott 被问到，原型变得容易后做设计是否更有趣了。他的回答落在一个具体的对比上：Arc 时期每个想法要做几周，现在一两天。**构建变快了，但把产品交给用户、搞清他们会不会用，这一段没有变快。**\n\n在[另一个片段](https://x.com/petergyang/status/2122132596352327816)里，他解释了 AI 做出的界面为什么长得都差不多。模型每次都觉得「这是我第一次做」，于是反复拿出同一套「原创」风格。Anthropic 的办法很直接，在提示词里点名这个模型偏爱的字体和颜色，要求默认不用。\n\n对 PM 和设计师来说，可以重新分配时间，少花在出稿上，多花在约用户试用上。用 AI 出界面时，**先维护一份「这个模型爱用的默认值」黑名单**，比每次事后修改更省事。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: \"Do you find being a designer more fun now that you can easily prototype everyth",
+          "url": "https://x.com/petergyang/status/2122060856498524510"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: \"When you ask Claude to create something, it's operating in a fresh context wher",
+          "url": "https://x.com/petergyang/status/2122132596352327816"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-16-04",
+      "issueDate": "2026-11-16",
+      "issueNumber": 38
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "perspective",
