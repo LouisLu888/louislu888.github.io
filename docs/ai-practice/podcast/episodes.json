@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-17",
+    "title": "一人公司被刷掉数万美元 token，一位父亲用 Claude Code 给全家建了记忆库",
+    "summary": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈；把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑；让 Claude 做设计不出「AI 味」的五个步骤；AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元；一条提示词做出家庭预算网页，能模拟取消订阅",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-17/",
+    "items": [
+      {
+        "headline": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈",
+        "sources": [
+          {
+            "label": "Lenny's Newsletter & Podcast",
+            "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+            "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+          }
+        ]
+      },
+      {
+        "headline": "把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑",
+        "sources": [
+          {
+            "label": "Lenny's Newsletter & Podcast",
+            "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+            "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+          }
+        ]
+      },
+      {
+        "headline": "让 Claude 做设计不出「AI 味」的五个步骤",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Peter Yang: My top 5 takeaways from @nateparrott on how to get Claude to design without AI s",
+            "url": "https://x.com/petergyang/status/2122347721298510021"
+          }
+        ]
+      },
+      {
+        "headline": "AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元",
+        "sources": [
+          {
+            "label": "Theoretically Media",
+            "title": "Seedance 2.5 Flash Is Cheap. But Is It Good?",
+            "url": "https://www.youtube.com/watch?v=oXlOoCIwJp8"
+          }
+        ]
+      },
+      {
+        "headline": "一条提示词做出家庭预算网页，能模拟取消订阅",
+        "sources": [
+          {
+            "label": "Tom's Guide · AI",
+            "title": "I used Google's new Gemini 4 Hydrogen to find out where my paycheck goes — and it only took one prompt",
+            "url": "https://www.tomsguide.com/ai/google-gemini/i-used-googles-new-gemini-4-hydrogen-to-find-out-where-my-paycheck-goes-and-it-only-took-one-prompt"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈"
+      },
+      {
+        "start": 176,
+        "title": "把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑"
+      },
+      {
+        "start": 265,
+        "title": "让 Claude 做设计不出「AI 味」的五个步骤"
+      },
+      {
+        "start": 348,
+        "title": "AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元"
+      },
+      {
+        "start": 438,
+        "title": "一条提示词做出家庭预算网页，能模拟取消订阅"
+      },
+      {
+        "start": 511,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 556,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-17.mp3",
+    "audioBytes": 3337580,
+    "publishedAt": "2026-11-17T22:45:37.830Z"
+  },
+  {
     "date": "2026-11-16",
     "title": "PK 只占 8.9% 的时长，却拿走 67.1% 的打赏；AI 产品的免费试用被薅掉数万美元",
     "summary": "用 AI 做工具抓了三周数据，他算清了 B 站直播的钱；免费试用被薅走数万美元，独立创始人彻底关掉试用；一条提示词写出地图插件，还请 AI 自己加点子；原型从几周缩到一两天，用户验证没有变快；一个周末，他把写摘要的 skill 迭代到了八成口味",
