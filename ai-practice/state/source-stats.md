@@ -1,48 +1,48 @@
 # AI 实干派 · 来源命中率
 
-统计范围：37 期（不含样刊）。候选数和初筛数从有记录的 37 期开始累计。
+统计范围：38 期（不含样刊）。候选数和初筛数从有记录的 38 期开始累计。
 
 | 来源 | 栏目 | 候选 | 初筛入选 | 成稿 | 成稿率 | 最近成稿 |
 |---|---|---|---|---|---|---|
-| Follow Builders (X) | productivity | 1007 | 107 | 34 | 3% | 2026-11-16 |
-| Simon Willison | productivity | 106 | 42 | 23 | 22% | 2026-11-16 |
-| Latent Space | perspective | 66 | 21 | 17 | 26% | 2026-11-14 |
-| Tom's Guide · AI | life | 44 | 19 | 11 | 25% | 2026-11-14 |
+| Follow Builders (X) | productivity | 1036 | 111 | 35 | 3% | 2026-11-17 |
+| Simon Willison | productivity | 108 | 42 | 23 | 21% | 2026-11-16 |
+| Latent Space | perspective | 68 | 21 | 17 | 25% | 2026-11-14 |
+| Tom's Guide · AI | life | 45 | 20 | 12 | 27% | 2026-11-17 |
+| Lenny's Newsletter & Podcast | productivity | 29 | 17 | 12 | 41% | 2026-11-17 |
 | Startup Ideas Podcast (Greg Isenberg) | app | 13 | 10 | 11 | 85% | 2026-11-12 |
-| Lenny's Newsletter & Podcast | productivity | 28 | 16 | 10 | 36% | 2026-11-11 |
 | Starter Story Podcast | saas | 10 | 8 | 8 | 80% | 2026-11-11 |
-| Starter Story (YouTube) | saas | 50 | 28 | 5 | 10% | 2026-11-08 |
+| Starter Story (YouTube) | saas | 51 | 29 | 5 | 10% | 2026-11-08 |
 | How I AI (Claire Vo) | productivity | 12 | 7 | 5 | 42% | 2026-11-16 |
 | 陈然 ranchen.org | content | 8 | 6 | 5 | 63% | 2026-11-15 |
 | 少数派 | life | 10 | 5 | 5 | 50% | 2026-11-13 |
 | Smart Bear Live | saas | 5 | 5 | 5 | 100% | 2026-11-15 |
-| Lifehacker | life | 14 | 6 | 4 | 29% | 2026-11-14 |
+| Lifehacker | life | 15 | 7 | 4 | 27% | 2026-11-14 |
+| Theoretically Media | content | 15 | 4 | 4 | 27% | 2026-11-17 |
 | The Every Podcast (AI & I) | productivity | 6 | 4 | 3 | 50% | 2026-11-12 |
-| Theoretically Media | content | 14 | 3 | 3 | 21% | 2026-11-07 |
-| Riley Brown | productivity | 19 | 9 | 2 | 11% | 2026-11-13 |
-| App Masters (Steve P. Young) | app | 12 | 5 | 2 | 17% | 2026-11-15 |
+| Riley Brown | productivity | 20 | 10 | 2 | 10% | 2026-11-13 |
+| App Masters (Steve P. Young) | app | 13 | 6 | 2 | 15% | 2026-11-15 |
 | Supercompanies (Greg Shove / Section) | consulting | 5 | 5 | 2 | 40% | 2026-10-14 |
-| Matt Wolfe | content | 45 | 4 | 2 | 4% | 2026-11-08 |
+| Matt Wolfe | content | 46 | 4 | 2 | 4% | 2026-11-08 |
 | Interconnects | productivity | 9 | 4 | 2 | 22% | 2026-10-31 |
 | The Superwall Podcast | app | 4 | 3 | 2 | 50% | 2026-10-16 |
-| Every (YouTube) | consulting | 61 | 2 | 2 | 3% | 2026-10-26 |
+| Every (YouTube) | consulting | 64 | 2 | 2 | 3% | 2026-10-26 |
 | Sub Club (RevenueCat) | app | 3 | 2 | 2 | 67% | 2026-10-28 |
 | One Useful Thing (Ethan Mollick) | perspective | 2 | 2 | 2 | 100% | 2026-11-10 |
 | Behind the Craft (Peter Yang) | productivity | 6 | 6 | 1 | 17% | 2026-11-05 |
 | Niche Pursuits | saas | 6 | 3 | 1 | 17% | 2026-10-21 |
 | Unsupervised Learning (Redpoint) | perspective | 4 | 1 | 1 | 25% | 2026-11-05 |
-| 鸭哥 yage.ai | productivity | 1 | 1 | 1 | 100% | 2026-11-16 |
+| 鸭哥 yage.ai | productivity | 2 | 1 | 1 | 50% | 2026-11-16 |
 | Hamel Husain | consulting | 1 | 1 | 1 | 100% | 2026-10-20 |
 | Y Combinator / Lightcone (YouTube) | saas | 29 | 7 | 0 | 0% | - |
-| The AI Daily Brief | perspective | 36 | 6 | 0 | 0% | - |
+| The AI Daily Brief | perspective | 37 | 6 | 0 | 0% | - |
 | NYT Personal Tech | life | 5 | 4 | 0 | 0% | - |
-| Creator Science (Jay Clouse) | content | 6 | 2 | 0 | 0% | - |
+| Creator Science (Jay Clouse) | content | 7 | 2 | 0 | 0% | - |
 | Rest of World | - | 17 | 1 | 0 | 0% | - |
+| Ras Mic | productivity | 8 | 1 | 0 | 0% | - |
 | No Priors | perspective | 7 | 1 | 0 | 0% | - |
-| Ras Mic | productivity | 6 | 1 | 0 | 0% | - |
 | Training Data (Sequoia) | perspective | 5 | 1 | 0 | 0% | - |
+| Dwarkesh Podcast | perspective | 5 | 1 | 0 | 0% | - |
 | Adam Lyttle | app | 5 | 1 | 0 | 0% | - |
-| Dwarkesh Podcast | perspective | 4 | 1 | 0 | 0% | - |
 | Lenny's Newsletter | （已移除） | 3 | 1 | 0 | 0% | - |
 | Consulting Success Podcast | consulting | 2 | 1 | 0 | 0% | - |
 | Ali Abdaal | content | 42 | 0 | 0 | 0% | - |

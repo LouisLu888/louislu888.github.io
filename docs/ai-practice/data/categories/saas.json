@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c3"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-16",
+      "headline": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈",
+      "oneLiner": "Claire Vo 说，token 欺诈让 ChatPRD 损失了数万美元，还占掉她大量工程时间。她最后取消了免费试用，停发优惠码，并用一个便宜模型实时给可疑会话分类。",
+      "who": "ChatPRD 创始人 Claire Vo，独立经营一款 AI 产品，在 How I AI 单人节目里复盘。",
+      "how": "会话用量超过滥用阈值后，交给一个零数据留存的 Jev 循环判断属于哪类滥用。确认是欺诈的，要么封号，要么悄悄降级到便宜模型；客服 agent 也写了明确规则。",
+      "result": "她说损失达数万美元。大约一半优惠码流到了转卖者手里。按国家屏蔽流量后，滥用明显减少。",
+      "tryThis": "做 AI 产品的，今天就把监控从「请求数」改成「美元花费」，再逐个列出免费入口：试用、优惠码、API/MCP。",
+      "caveat": "取消试用、按国家屏蔽都有代价：她丢掉了产品驱动增长和企业线索，国际化策略也得重新考虑。",
+      "body": "Claire Vo 在 [How I AI](https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight) 里说，ChatPRD 通过了 SOC 2，定期做渗透测试，她本人也是资深技术创始人，照样被 token 欺诈刷掉数万美元。她遇到的滥用有六种，包括批量刷免费试用、转卖优惠码、盗刷测卡、把产品当中转站，还有人把自定义 MCP 接口变成 24 小时跑的算力 worker。\n\n她的防线一步步收紧：试用前要求绑卡没挡住，改成付费试用也没挡住，最后取消免费试用；发现约一半合作伙伴优惠码被转卖后，不再发码；MCP 只放行批准的 host，并屏蔽免费隧道，以及看起来和正规公司无关的基础设施。封了一批号以后，申诉邮件里有不少是 AI 写的，所以她给客服 agent 接上欺诈查询工具，规定**它不能恢复账号，也不能发优惠码**。\n\n她的结论是：**卖 AI 就是在卖算力**。要按美元而不是请求数追踪用量，持续监控模型花费，关掉每个免费入口，验证的对象从账号扩展到客户端。她还发现，用户一旦拿不到昂贵模型，欺诈很快就消失了。做 Micro SaaS 时，可以先把最贵的模型放在付费墙后面。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-01",
+      "issueDate": "2026-11-17",
+      "issueNumber": 39
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "saas",

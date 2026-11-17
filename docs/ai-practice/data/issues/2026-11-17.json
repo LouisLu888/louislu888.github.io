@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-17",
+  "title": "一人公司被刷掉数万美元 token，一位父亲用 Claude Code 给全家建了记忆库",
+  "items": [
+    {
+      "candidateIds": [
+        "c3"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-16",
+      "headline": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈",
+      "oneLiner": "Claire Vo 说，token 欺诈让 ChatPRD 损失了数万美元，还占掉她大量工程时间。她最后取消了免费试用，停发优惠码，并用一个便宜模型实时给可疑会话分类。",
+      "who": "ChatPRD 创始人 Claire Vo，独立经营一款 AI 产品，在 How I AI 单人节目里复盘。",
+      "how": "会话用量超过滥用阈值后，交给一个零数据留存的 Jev 循环判断属于哪类滥用。确认是欺诈的，要么封号，要么悄悄降级到便宜模型；客服 agent 也写了明确规则。",
+      "result": "她说损失达数万美元。大约一半优惠码流到了转卖者手里。按国家屏蔽流量后，滥用明显减少。",
+      "tryThis": "做 AI 产品的，今天就把监控从「请求数」改成「美元花费」，再逐个列出免费入口：试用、优惠码、API/MCP。",
+      "caveat": "取消试用、按国家屏蔽都有代价：她丢掉了产品驱动增长和企业线索，国际化策略也得重新考虑。",
+      "body": "Claire Vo 在 [How I AI](https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight) 里说，ChatPRD 通过了 SOC 2，定期做渗透测试，她本人也是资深技术创始人，照样被 token 欺诈刷掉数万美元。她遇到的滥用有六种，包括批量刷免费试用、转卖优惠码、盗刷测卡、把产品当中转站，还有人把自定义 MCP 接口变成 24 小时跑的算力 worker。\n\n她的防线一步步收紧：试用前要求绑卡没挡住，改成付费试用也没挡住，最后取消免费试用；发现约一半合作伙伴优惠码被转卖后，不再发码；MCP 只放行批准的 host，并屏蔽免费隧道，以及看起来和正规公司无关的基础设施。封了一批号以后，申诉邮件里有不少是 AI 写的，所以她给客服 agent 接上欺诈查询工具，规定**它不能恢复账号，也不能发优惠码**。\n\n她的结论是：**卖 AI 就是在卖算力**。要按美元而不是请求数追踪用量，持续监控模型花费，关掉每个免费入口，验证的对象从账号扩展到客户端。她还发现，用户一旦拿不到昂贵模型，欺诈很快就消失了。做 Micro SaaS 时，可以先把最贵的模型放在付费墙后面。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-01"
+    },
+    {
+      "candidateIds": [
+        "c3"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-16",
+      "headline": "把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑",
+      "oneLiner": "数学教师 Scott Farrar 用 Claude Code 加 Obsidian 管家务：拍下每台家电，整理成型号、序列号和保修清单，再用它比较保险报价、维护全家的待办总表。",
+      "who": "数学教育者、家长 Scott Farrar，和妻子一起管理家务，在 How I AI 节目里演示。",
+      "how": "他把零散的原始信息丢给 Claude，由 Claude 维护 Obsidian 里的 Markdown 文件；用一个自定义 linter 防止待办等文档越写越长；墙上的显示屏展示行程和待办。",
+      "result": "他说家电照片变成了可搜索的保修档案；Claude 能结合房屋细节比较保险报价，指出可能的保障缺口，并拟好追问的问题。",
+      "tryThis": "先让 AI 告诉你它需要哪些背景，比如给每台家电拍照，从一个 Markdown 文件夹做起。",
+      "caveat": "Claude 建议用 GitHub 避免文件冲突，但妻子觉得太复杂。最后共享脚本放 GitHub，日常文件放 Dropbox。agent 跑偏时，他会先查清楚，防止错误信息写进记忆文件。",
+      "body": "Scott Farrar 在[节目](https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight)里说，他不再依赖长对话，原因是**聊天的问题在于记忆漂移，而不在于模型不够聪明**。Claude Code 把上下文存在 Markdown 文件里，他能打开检查、修改，下次会话接着用。他问 Claude 该怎么记录这个家，Claude 建议给每台家电拍照，这些照片后来成了带型号、序列号和保修信息的清单。\n\n他和妻子把能想到的家务都写下来，Claude 按优先级、费用和相关资料整理成一张总表，逾期的事会被提出来。墙上的显示屏展示近期出行、未完成任务、最近完成的事和每日小建议，全家人都看得到。比较保险时，Claude 用房屋的详细资料逐项对照，他不用全听推销员的。\n\n交给 AI 的主要是家电、房屋和保单信息，文件都在本地，自己看得见。想照着做，可以从一个场景起步，比如家电保修。**输入随便写，整理交给 AI，文件由自己审核。**",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-02"
+    },
+    {
+      "candidateIds": [
+        "c40"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-16",
+      "headline": "让 Claude 做设计不出「AI 味」的五个步骤",
+      "oneLiner": "Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。",
+      "who": "Peter Yang 整理自己对 Nate Parrott 的访谈，适合用 Claude 做界面的 PM、设计师和独立开发者。",
+      "how": "先给上下文：截图、喜欢的页面、过去的作品；已有产品就让 Claude 从代码重建现有界面。遇到难的布局，先让它研究同类产品的常见模式。",
+      "result": "这是一套操作顺序：先用线框图定下核心流程，再定字体和配色；关键页面一次要 5 个方案，挑出满意的部分，混搭后再要 5 个。",
+      "tryThis": "在 design.md 里写明不要 Claude 的惯用手法，例如衬线字体、米白背景、卡片边条。",
+      "caveat": "Nate Parrott 说「模型不知道自己的偏好是什么」，这份禁用清单要靠人看多了才写得出来。",
+      "body": "Peter Yang 在[帖子](https://x.com/petergyang/status/2122347721298510021)里总结了 Nate Parrott 讲的五条做法。核心观点是：Claude 做出来的设计显得千篇一律，往往因为上下文不够，加上模型自己的审美惯性。\n\n可以照搬的顺序是：**给上下文 → 研究用户熟悉的模式 → 写下偏好约束 → 先做线框图 → 多方案混搭。** 第二步很实用：布局难做时，先让 Claude 找几个解决过类似问题的知名产品，记下用户已经会用的布局，不必从零发明。第五步把「挑选」留给人，「生成」交给模型，一轮能看到十个方案。\n\n这套方法适合已有产品要改版或做新页面的场景。design.md 里的约束可以一直沿用，每发现一个新的 AI 惯用手法就加一条。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: My top 5 takeaways from @nateparrott on how to get Claude to design without AI s",
+          "url": "https://x.com/petergyang/status/2122347721298510021"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-03"
+    },
+    {
+      "candidateIds": [
+        "c6"
+      ],
+      "category": "content",
+      "kind": "机会观察",
+      "eventDate": "2026-11-17",
+      "headline": "AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元",
+      "oneLiner": "Theoretically Media 测了 Seedance 2.5 Flash，结论是暂不推荐；他还拆了两部 AI 短片的账：Nexus 预算 102,725 美元，Junkyard King 每完成一分钟的算力是 1000 到 1500 美元。",
+      "who": "AI 视频创作者 Theoretically Media，在节目里对比测试，并分析同行公开的成本。",
+      "how": "同一组提示词在 Flash 和旗舰版上各跑一遍；Flash 不稳定时加大参考素材，用九张参考图加分镜。",
+      "result": "他说 Flash 比旗舰版便宜约 34%，720p 约 0.15 美元/秒，但出片太看运气。PJ Ace 的 Nexus 用了 45 天、7 人团队，按 80% 是人工成本算，约合每人每天 365 美元。",
+      "tryThis": "接 AI 视频单之前，先算清你的每分钟算力成本和人天成本，再报价。",
+      "caveat": "Flash 最高只到 720p，参考素材上限 20 个（旗舰版 50 个）；Flash 表现差是因为思考被调低，这只是他自己的推测。",
+      "body": "Theoretically Media 在[这期视频](https://www.youtube.com/watch?v=oXlOoCIwJp8)里对比了 Seedance 2.5 Flash 和旗舰版。西部片、蓝西装男人、狙击女孩几组测试下来，他目前不推荐 Flash：便宜一点的额度，出废片照样是浪费。补救办法是**加重参考素材**，Mercy the Monster Hunter 那段用了九张参考图加分镜，人物才能保持一致。\n\n后半段对做商单的人更有用。PJ Ace 的短片 Nexus 预算 102,725 美元，被很多人吐槽太贵。他拆开算：45 天、7 个人、后续还有内容，按 80% 是人工计算，约合每人每天 365 美元。Henry Daubrez 公开了 Junkyard King 的成本：两人团队，每完成一分钟成片的算力 1000 到 1500 美元。\n\n他的观点是，客户要快、便宜、好，只能三选二。说「我能做得更便宜」是在压低整个行业的价格。做 AI 视频接单，先把算力和人天分开记账，报价才有依据。",
+      "sources": [
+        {
+          "label": "Theoretically Media",
+          "title": "Seedance 2.5 Flash Is Cheap. But Is It Good?",
+          "url": "https://www.youtube.com/watch?v=oXlOoCIwJp8"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-04"
+    },
+    {
+      "candidateIds": [
+        "c50"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-17",
+      "headline": "一条提示词做出家庭预算网页，能模拟取消订阅",
+      "oneLiner": "Tom's Guide 的 Amanda Caswell 用免费的 Gemini 4 Hydrogen，一条提示词生成了可交互的预算网站，能算结余、找出三个省钱机会、模拟取消订阅。",
+      "who": "Tom's Guide 作者 Amanda Caswell，想和丈夫一起看清家庭开销。",
+      "how": "提示词要求：输入收入、账单、食品、订阅等支出；自动计算结余，生成图表，给出三项省钱建议，并能模拟砍掉某些支出；不许追问，完成前自查计算并说明哪些没验证。",
+      "result": "她得到了可用的网站。演示用的是随意填的数字，她建议先改收入、删一项订阅，检查总数是否跟着变对。",
+      "tryThis": "复制她的提示词结构，先用示例数据测试按钮和计算，再决定是否填真实数字。",
+      "caveat": "生成网页和发布网页是两回事：想分享给家人，得另找发布方式或自己托管，填真实财务数据前先确认安全。",
+      "body": "Amanda Caswell 在 [Tom's Guide](https://www.tomsguide.com/ai/google-gemini/i-used-googles-new-gemini-4-hydrogen-to-find-out-where-my-paycheck-goes-and-it-only-took-one-prompt) 里公开了完整提示词。可以借鉴的写法有三处：**要求每个按钮和滑块都真能用，不能只是摆设；不许追问，设计由模型自己决定；交付前自查计算，并说明哪些没能验证。**\n\n验收不需要会编程。取消一项 15 美元的订阅，结余应该正好多 15 美元；调低食品预算，图表和省钱建议应该跟着变。她建议在手机上也测一遍。\n\n交给 AI 的只是你手动输入的数字，不用连银行账户，风险比较可控。同样的做法也能用来做餐食计划、家务分工表、旅行预算。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I used Google's new Gemini 4 Hydrogen to find out where my paycheck goes — and it only took one prompt",
+          "url": "https://www.tomsguide.com/ai/google-gemini/i-used-googles-new-gemini-4-hydrogen-to-find-out-where-my-paycheck-goes-and-it-only-took-one-prompt"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-05"
+    }
+  ],
+  "action": "打开你正在用的 AI 工具账单或后台，找出最贵的那项花费，记下它按什么计费：请求数、token 还是席位。如果你在做 AI 产品，把所有免费入口列成清单：试用、优惠码、API。如果只是自己用，就照 Scott Farrar 的办法，给家里三台电器拍下铭牌，让 Claude 整理成一个记录型号和保修的 Markdown 文件。两件事都在半小时内能做完。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-17T14:44:21.506Z",
+    "engine": "cli",
+    "candidateCount": 50,
+    "candidatesBySource": {
+      "Simon Willison": 2,
+      "Lenny's Newsletter & Podcast": 1,
+      "鸭哥 yage.ai": 1,
+      "Matt Wolfe": 1,
+      "Theoretically Media": 1,
+      "Creator Science (Jay Clouse)": 1,
+      "Starter Story (YouTube)": 1,
+      "Every (YouTube)": 3,
+      "Follow Builders (X)": 29,
+      "Latent Space": 2,
+      "The AI Daily Brief": 1,
+      "Dwarkesh Podcast": 1,
+      "Riley Brown": 1,
+      "Ras Mic": 2,
+      "App Masters (Steve P. Young)": 1,
+      "Lifehacker": 1,
+      "Tom's Guide · AI": 1
+    },
+    "shortlist": [
+      {
+        "id": "c3",
+        "reason": "谁：数学老师兼家长 Scott Farrar；怎么用：用 Claude Code 加 Obsidian 搭了一个家庭共享知识库，管家电保修、比较保险报价、跟进家庭项目和共享待办，还配了一块墙面显示屏；结果：有完整的工作流演示，还讲了他为什么觉得持久化文件比长对话好用。是全文。",
+        "source": "Lenny's Newsletter & Podcast",
+        "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS"
+      },
+      {
+        "id": "c50",
+        "reason": "谁：Tom's Guide 作者，在家管预算；怎么用：用 Gemini 4 Hydrogen 只写一个提示词，就做出了家庭预算和消费分析的小应用，覆盖买菜、固定账单和订阅；结果：搞清了工资花到哪去了。属于 AI 生活类，是全文，可以照着试。",
+        "source": "Tom's Guide · AI",
+        "title": "I used Google's new Gemini 4 Hydrogen to find out where my paycheck goes — and it only took one prompt"
+      },
+      {
+        "id": "c40",
+        "reason": "谁：Peter Yang 整理 Nate Parrott 的经验；怎么用：让 Claude 做设计时避开「AI 味」的 5 条具体做法，比如先给上下文、先研究常见交互模式、在 design.md 里写明不要它惯用的风格、先出线框图；结果：个人或小团队拿来就能用。",
+        "source": "Follow Builders (X)",
+        "title": "Peter Yang: My top 5 takeaways from @nateparrott on how to get Claude to design without AI s"
+      },
+      {
+        "id": "c45",
+        "reason": "谁：Riley Brown；怎么用：用 Claude Code 做一个浏览器小游戏当引流钩子，再用 Manychat 设置：用户在 Instagram Reel 下评论 GAME 就自动私信游戏链接，开玩前先留邮箱；结果：简介里步骤写全了，可以照做。注意这条是 Manychat 赞助内容。",
+        "source": "Riley Brown",
+        "title": "The Biggest Marketing Trend of 2027 #ManychatPartner"
+      },
+      {
+        "id": "c8",
+        "reason": "谁：班加罗尔的 Sanskar，以前在呼叫中心上夜班，没读大学；怎么用：一个人连续做产品；结果：上线了 30 多个产品，其中 8 个赚钱，累计收入超过 100 万美元，每月约 1000 个付费用户，团队 0 人。只有简介，细节有限，但数字清楚。",
+        "source": "Starter Story (YouTube)",
+        "title": "Bro worked night shifts at a call center and now has generated $1M+ with 8 apps and zero employees 👀"
+      },
+      {
+        "id": "c33",
+        "reason": "AI 认知类。谁：Vercel CEO Guillermo Rauch；观点：用户正在变成 agent，产品开发要从做用户访谈转向跑评测（evals），他还附了 Vercel 内部做评测的文章作依据。",
+        "source": "Follow Builders (X)",
+        "title": "Guillermo Rauch: The old way: users are human, you run user interviews, get inspired, mock up use"
+      },
+      {
+        "id": "c20",
+        "reason": "AI 认知类。谁：Box CEO Aaron Levie；观点：从一线的使用数据看，每位员工的 token 花费还在一路上涨、看不到顶；他认为编程刚刚真正好用，接下来工具调用和电脑操作也会跟上，现在还在曲线的早期。",
+        "source": "Follow Builders (X)",
+        "title": "Aaron Levie: The chart of token spend per employee still has no ceiling in sight. And the clo"
+      },
+      {
+        "id": "c30",
+        "reason": "AI 认知类。谁：前 Claude Code 团队成员 Thariq；观点：「软件工厂」只是暂时的问题，模型以后会自己搭；更值得想的是怎么做一个让 agent 和人一起协作的工作空间。互动量很高，可以和 c29 里他用 agent 设计游戏角色的演示放在一起讲。",
+        "source": "Follow Builders (X)",
+        "title": "Thariq: software factories feel like a temporary problem. the models will learn to build"
+      },
+      {
+        "id": "c49",
+        "reason": "谁：Lifehacker 作者亲自测 AI 检测工具 Pangram；怎么用：拿真实文本去检测，看它准不准；结果：全文有测试过程和结论。对写东西、怕被误判成 AI 的普通人有参考价值。",
+        "source": "Lifehacker",
+        "title": "I Tested Pangram to See If It Can Really Detect AI-Generated Content Like It Claims"
+      },
+      {
+        "id": "c6",
+        "reason": "谁：AI 视频创作者；怎么用：拿 Seedance 2.5 Flash 和满血版跑同一套测试，发现要靠大量参考素材才能压住效果；结果：暂不推荐 Flash。另外拆了花费 102,725 美元的 AI 短片 Junkyard King 的预算，算出每人每天的成本。只有简介，但有数字。",
+        "source": "Theoretically Media",
+        "title": "Seedance 2.5 Flash Is Cheap. But Is It Good?"
+      },
+      {
+        "id": "c48",
+        "reason": "谁：App Masters 的 Steve Young，第三方拆解；怎么用：逐步拆 GLP-1 追踪应用 Shotsy 的新用户引导、个性化、用户评价和免费试用这几步付费墙设计；结果：这款应用月收入估计超过 20 万美元。做订阅制应用的人可以参考，但只有简介，也不是当事人自述。",
+        "source": "App Masters (Steve P. Young)",
+        "title": "This GLP-Tracker App Makes $200K MRR (Copy Their Paywall)"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 20013,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2267,
+        "output_tokens_details": {
+          "thinking_tokens": 524
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 20013,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2267,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 20013,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 20013
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.205452
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 20758,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 5616,
+      "output_tokens_details": {
+        "thinking_tokens": 984
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 20758,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5616,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 20758,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 20758
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.278392
+  }
+}

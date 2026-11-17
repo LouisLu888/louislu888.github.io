@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c40"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-16",
+      "headline": "让 Claude 做设计不出「AI 味」的五个步骤",
+      "oneLiner": "Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。",
+      "who": "Peter Yang 整理自己对 Nate Parrott 的访谈，适合用 Claude 做界面的 PM、设计师和独立开发者。",
+      "how": "先给上下文：截图、喜欢的页面、过去的作品；已有产品就让 Claude 从代码重建现有界面。遇到难的布局，先让它研究同类产品的常见模式。",
+      "result": "这是一套操作顺序：先用线框图定下核心流程，再定字体和配色；关键页面一次要 5 个方案，挑出满意的部分，混搭后再要 5 个。",
+      "tryThis": "在 design.md 里写明不要 Claude 的惯用手法，例如衬线字体、米白背景、卡片边条。",
+      "caveat": "Nate Parrott 说「模型不知道自己的偏好是什么」，这份禁用清单要靠人看多了才写得出来。",
+      "body": "Peter Yang 在[帖子](https://x.com/petergyang/status/2122347721298510021)里总结了 Nate Parrott 讲的五条做法。核心观点是：Claude 做出来的设计显得千篇一律，往往因为上下文不够，加上模型自己的审美惯性。\n\n可以照搬的顺序是：**给上下文 → 研究用户熟悉的模式 → 写下偏好约束 → 先做线框图 → 多方案混搭。** 第二步很实用：布局难做时，先让 Claude 找几个解决过类似问题的知名产品，记下用户已经会用的布局，不必从零发明。第五步把「挑选」留给人，「生成」交给模型，一轮能看到十个方案。\n\n这套方法适合已有产品要改版或做新页面的场景。design.md 里的约束可以一直沿用，每发现一个新的 AI 惯用手法就加一条。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: My top 5 takeaways from @nateparrott on how to get Claude to design without AI s",
+          "url": "https://x.com/petergyang/status/2122347721298510021"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-03",
+      "issueDate": "2026-11-17",
+      "issueNumber": 39
+    },
+    {
+      "candidateIds": [
         "c1",
         "c2"
       ],

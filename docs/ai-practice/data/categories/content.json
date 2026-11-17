@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c6"
+      ],
+      "category": "content",
+      "kind": "机会观察",
+      "eventDate": "2026-11-17",
+      "headline": "AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元",
+      "oneLiner": "Theoretically Media 测了 Seedance 2.5 Flash，结论是暂不推荐；他还拆了两部 AI 短片的账：Nexus 预算 102,725 美元，Junkyard King 每完成一分钟的算力是 1000 到 1500 美元。",
+      "who": "AI 视频创作者 Theoretically Media，在节目里对比测试，并分析同行公开的成本。",
+      "how": "同一组提示词在 Flash 和旗舰版上各跑一遍；Flash 不稳定时加大参考素材，用九张参考图加分镜。",
+      "result": "他说 Flash 比旗舰版便宜约 34%，720p 约 0.15 美元/秒，但出片太看运气。PJ Ace 的 Nexus 用了 45 天、7 人团队，按 80% 是人工成本算，约合每人每天 365 美元。",
+      "tryThis": "接 AI 视频单之前，先算清你的每分钟算力成本和人天成本，再报价。",
+      "caveat": "Flash 最高只到 720p，参考素材上限 20 个（旗舰版 50 个）；Flash 表现差是因为思考被调低，这只是他自己的推测。",
+      "body": "Theoretically Media 在[这期视频](https://www.youtube.com/watch?v=oXlOoCIwJp8)里对比了 Seedance 2.5 Flash 和旗舰版。西部片、蓝西装男人、狙击女孩几组测试下来，他目前不推荐 Flash：便宜一点的额度，出废片照样是浪费。补救办法是**加重参考素材**，Mercy the Monster Hunter 那段用了九张参考图加分镜，人物才能保持一致。\n\n后半段对做商单的人更有用。PJ Ace 的短片 Nexus 预算 102,725 美元，被很多人吐槽太贵。他拆开算：45 天、7 个人、后续还有内容，按 80% 是人工计算，约合每人每天 365 美元。Henry Daubrez 公开了 Junkyard King 的成本：两人团队，每完成一分钟成片的算力 1000 到 1500 美元。\n\n他的观点是，客户要快、便宜、好，只能三选二。说「我能做得更便宜」是在压低整个行业的价格。做 AI 视频接单，先把算力和人天分开记账，报价才有依据。",
+      "sources": [
+        {
+          "label": "Theoretically Media",
+          "title": "Seedance 2.5 Flash Is Cheap. But Is It Good?",
+          "url": "https://www.youtube.com/watch?v=oXlOoCIwJp8"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-04",
+      "issueDate": "2026-11-17",
+      "issueNumber": 39
+    },
+    {
+      "candidateIds": [
         "c4"
       ],
       "category": "content",

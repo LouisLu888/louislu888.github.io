@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c3"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-16",
+      "headline": "把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑",
+      "oneLiner": "数学教师 Scott Farrar 用 Claude Code 加 Obsidian 管家务：拍下每台家电，整理成型号、序列号和保修清单，再用它比较保险报价、维护全家的待办总表。",
+      "who": "数学教育者、家长 Scott Farrar，和妻子一起管理家务，在 How I AI 节目里演示。",
+      "how": "他把零散的原始信息丢给 Claude，由 Claude 维护 Obsidian 里的 Markdown 文件；用一个自定义 linter 防止待办等文档越写越长；墙上的显示屏展示行程和待办。",
+      "result": "他说家电照片变成了可搜索的保修档案；Claude 能结合房屋细节比较保险报价，指出可能的保障缺口，并拟好追问的问题。",
+      "tryThis": "先让 AI 告诉你它需要哪些背景，比如给每台家电拍照，从一个 Markdown 文件夹做起。",
+      "caveat": "Claude 建议用 GitHub 避免文件冲突，但妻子觉得太复杂。最后共享脚本放 GitHub，日常文件放 Dropbox。agent 跑偏时，他会先查清楚，防止错误信息写进记忆文件。",
+      "body": "Scott Farrar 在[节目](https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight)里说，他不再依赖长对话，原因是**聊天的问题在于记忆漂移，而不在于模型不够聪明**。Claude Code 把上下文存在 Markdown 文件里，他能打开检查、修改，下次会话接着用。他问 Claude 该怎么记录这个家，Claude 建议给每台家电拍照，这些照片后来成了带型号、序列号和保修信息的清单。\n\n他和妻子把能想到的家务都写下来，Claude 按优先级、费用和相关资料整理成一张总表，逾期的事会被提出来。墙上的显示屏展示近期出行、未完成任务、最近完成的事和每日小建议，全家人都看得到。比较保险时，Claude 用房屋的详细资料逐项对照，他不用全听推销员的。\n\n交给 AI 的主要是家电、房屋和保单信息，文件都在本地，自己看得见。想照着做，可以从一个场景起步，比如家电保修。**输入随便写，整理交给 AI，文件由自己审核。**",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: Fable 5.2 Review + How I fight token fraud as a solo founder + Building a Claude Code family OS",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-fable-52-review-how-i-fight"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-02",
+      "issueDate": "2026-11-17",
+      "issueNumber": 39
+    },
+    {
+      "candidateIds": [
+        "c50"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-17",
+      "headline": "一条提示词做出家庭预算网页，能模拟取消订阅",
+      "oneLiner": "Tom's Guide 的 Amanda Caswell 用免费的 Gemini 4 Hydrogen，一条提示词生成了可交互的预算网站，能算结余、找出三个省钱机会、模拟取消订阅。",
+      "who": "Tom's Guide 作者 Amanda Caswell，想和丈夫一起看清家庭开销。",
+      "how": "提示词要求：输入收入、账单、食品、订阅等支出；自动计算结余，生成图表，给出三项省钱建议，并能模拟砍掉某些支出；不许追问，完成前自查计算并说明哪些没验证。",
+      "result": "她得到了可用的网站。演示用的是随意填的数字，她建议先改收入、删一项订阅，检查总数是否跟着变对。",
+      "tryThis": "复制她的提示词结构，先用示例数据测试按钮和计算，再决定是否填真实数字。",
+      "caveat": "生成网页和发布网页是两回事：想分享给家人，得另找发布方式或自己托管，填真实财务数据前先确认安全。",
+      "body": "Amanda Caswell 在 [Tom's Guide](https://www.tomsguide.com/ai/google-gemini/i-used-googles-new-gemini-4-hydrogen-to-find-out-where-my-paycheck-goes-and-it-only-took-one-prompt) 里公开了完整提示词。可以借鉴的写法有三处：**要求每个按钮和滑块都真能用，不能只是摆设；不许追问，设计由模型自己决定；交付前自查计算，并说明哪些没能验证。**\n\n验收不需要会编程。取消一项 15 美元的订阅，结余应该正好多 15 美元；调低食品预算，图表和省钱建议应该跟着变。她建议在手机上也测一遍。\n\n交给 AI 的只是你手动输入的数字，不用连银行账户，风险比较可控。同样的做法也能用来做餐食计划、家务分工表、旅行预算。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I used Google's new Gemini 4 Hydrogen to find out where my paycheck goes — and it only took one prompt",
+          "url": "https://www.tomsguide.com/ai/google-gemini/i-used-googles-new-gemini-4-hydrogen-to-find-out-where-my-paycheck-goes-and-it-only-took-one-prompt"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-17-05",
+      "issueDate": "2026-11-17",
+      "issueNumber": 39
+    },
+    {
+      "candidateIds": [
         "c35"
       ],
       "category": "life",

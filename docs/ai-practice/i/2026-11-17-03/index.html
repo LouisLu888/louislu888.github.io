@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>让 Claude 做设计不出「AI 味」的五个步骤｜AI 实干派</title>
+  <meta name="description" content="Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-17-03/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="让 Claude 做设计不出「AI 味」的五个步骤｜AI 实干派">
+  <meta property="og:description" content="Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-17-03/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-17.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="让 Claude 做设计不出「AI 味」的五个步骤｜AI 实干派">
+  <meta name="twitter:description" content="Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-17.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">42</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">8</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">12</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">18</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">24</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">46</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">26</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-17/">AI 实干派 039 · 2026 年 11 月 17 日 · 周二</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-16<span>·</span>US</div>
+        <h1>让 Claude 做设计不出「AI 味」的五个步骤</h1>
+        <p class="summary">Peter Yang 总结 Nate Parrott 的方法：先喂截图和真实页面，再出线框图，写明 Claude 的设计偏好，每次要 5 个方案后再混搭。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>Peter Yang 整理自己对 Nate Parrott 的访谈，适合用 Claude 做界面的 PM、设计师和独立开发者。</dd><dt>怎么用</dt><dd>先给上下文：截图、喜欢的页面、过去的作品；已有产品就让 Claude 从代码重建现有界面。遇到难的布局，先让它研究同类产品的常见模式。</dd><dt>结果</dt><dd>这是一套操作顺序：先用线框图定下核心流程，再定字体和配色；关键页面一次要 5 个方案，挑出满意的部分，混搭后再要 5 个。</dd><dt>你可以试</dt><dd>在 design.md 里写明不要 Claude 的惯用手法，例如衬线字体、米白背景、卡片边条。</dd><dt>注意</dt><dd>Nate Parrott 说「模型不知道自己的偏好是什么」，这份禁用清单要靠人看多了才写得出来。</dd></dl>
+        <div class="body"><p>Peter Yang 在<a href="https://x.com/petergyang/status/2122347721298510021">帖子</a>里总结了 Nate Parrott 讲的五条做法。核心观点是：Claude 做出来的设计显得千篇一律，往往因为上下文不够，加上模型自己的审美惯性。</p><p>可以照搬的顺序是：<strong>给上下文 → 研究用户熟悉的模式 → 写下偏好约束 → 先做线框图 → 多方案混搭。</strong> 第二步很实用：布局难做时，先让 Claude 找几个解决过类似问题的知名产品，记下用户已经会用的布局，不必从零发明。第五步把「挑选」留给人，「生成」交给模型，一轮能看到十个方案。</p><p>这套方法适合已有产品要改版或做新页面的场景。design.md 里的约束可以一直沿用，每发现一个新的 AI 惯用手法就加一条。</p></div>
+        <div class="sources">原文：<a href="https://x.com/petergyang/status/2122347721298510021" target="_blank" rel="noopener" title="Peter Yang: My top 5 takeaways from @nateparrott on how to get Claude to design without AI s">Follow Builders (X)</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-17/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

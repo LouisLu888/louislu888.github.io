@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T14:44:52.626Z",
+  "updatedAt": "2026-11-17T14:44:24.948Z",
   "categories": [
     {
       "id": "perspective",
@@ -20,14 +20,14 @@
       "name": "内容创作",
       "en": "AI content creation",
       "desc": "用 AI 辅助研究与制作，积累受众，获得广告、赞助和相关收入",
-      "count": 11
+      "count": 12
     },
     {
       "id": "saas",
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 17
+      "count": 18
     },
     {
       "id": "app",
@@ -41,17 +41,54 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 45
+      "count": 46
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 24
+      "count": 26
     }
   ],
   "days": [
+    {
+      "date": "2026-11-17",
+      "number": 39,
+      "title": "一人公司被刷掉数万美元 token，一位父亲用 Claude Code 给全家建了记忆库",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "saas": 1,
+        "life": 2,
+        "productivity": 1,
+        "content": 1
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈"
+        },
+        {
+          "category": "life",
+          "headline": "把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑"
+        },
+        {
+          "category": "productivity",
+          "headline": "让 Claude 做设计不出「AI 味」的五个步骤"
+        },
+        {
+          "category": "content",
+          "headline": "AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元"
+        },
+        {
+          "category": "life",
+          "headline": "一条提示词做出家庭预算网页，能模拟取消订阅"
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "number": 38,
