@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T14:44:24.948Z",
+  "updatedAt": "2026-11-18T14:45:07.423Z",
   "categories": [
     {
       "id": "perspective",
@@ -20,14 +20,14 @@
       "name": "内容创作",
       "en": "AI content creation",
       "desc": "用 AI 辅助研究与制作，积累受众，获得广告、赞助和相关收入",
-      "count": 12
+      "count": 13
     },
     {
       "id": "saas",
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 18
+      "count": 19
     },
     {
       "id": "app",
@@ -41,17 +41,54 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 46
+      "count": 48
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 26
+      "count": 27
     }
   ],
   "days": [
+    {
+      "date": "2026-11-18",
+      "number": 40,
+      "title": "一个人卖 84 款数字产品月入一万美元，Swyx 一周交给 Agent 五类活",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "content": 1,
+        "productivity": 2,
+        "life": 1,
+        "saas": 1
+      },
+      "headlines": [
+        {
+          "category": "content",
+          "headline": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元"
+        },
+        {
+          "category": "productivity",
+          "headline": "Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent"
+        },
+        {
+          "category": "life",
+          "headline": "三个孩子的妈妈，一条提示词做出家庭日程网站"
+        },
+        {
+          "category": "productivity",
+          "headline": "Simon Willison 把 Agent 执行的代码关进外置沙箱"
+        },
+        {
+          "category": "saas",
+          "headline": "给地方政府人事部门做软件，客户从 1 家到约 100 家"
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "number": 39,

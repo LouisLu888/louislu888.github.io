@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c9"
+      ],
+      "category": "content",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-18",
+      "headline": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元",
+      "oneLiner": "Anfernee Tan 自 2023 年起全职单干，他说靠 Gumroad 数字产品、付费 Substack 和线下培训，月收入在 8000 到 10000 美元之间，约七成来自 Gumroad。",
+      "who": "新加坡的 Anfernee Tan，管理公司时累到倦怠，2023 年 8 月辞去总监职务，转做一人生意。",
+      "how": "从自己熟悉的 Notion 模板做起，用免费产品收集订阅者，再用 3 天到 45 封不等的自动邮件序列推付费产品；AI 是他的产品主题之一，也用在自动化上。",
+      "result": "他说月收入 8000 到 10000 美元（收入，非利润）：Gumroad 约 70%，Substack 付费订阅约 10%，新加坡线下培训 10% 到 20%；Gumroad 订阅者约 3 万到 4 万，AI Toolbox 卖出 3000 多份。",
+      "tryThis": "把自己天天在用的一套工具或模板整理成一个免费下载，配一组 3 到 5 封的跟进邮件，看有多少人下载、多少人回信。",
+      "caveat": "Gumroad 的邮件自动化功能简单，同一个人下载多个免费品会同时收到多组序列，已经有订阅者抱怨邮件太多，系统越大越难整理。",
+      "body": "Anfernee Tan 在 [Niche Pursuits 节目](https://www.nichepursuits.com/anfernee-tan/)里讲了他的一人生意。起点是他本来就在用的 Notion。早期他**大约每周上架一款新产品**测需求，店里最多时有 84 款，价格从免费、5 美元、9.9 美元，到 77、97 美元和 100 美元的套装。他原本没抱太大期望的 AI Toolbox，后来卖了 3000 多份，属于中等价位。\n\n收入主要来自**免费品 → 订阅 → 长周期邮件序列**这条链路。下载不同免费品的人进入不同序列，短的 3 天、5 天，长的 20 封、45 封，跟进期六到九个月。他的逻辑是，今天下载的人未必今天就需要付费产品，几周后熟悉了他，才可能买。\n\n代价也出现了：Gumroad 没法在一个人进入新序列时把他移出旧序列，邮件叠加，有人抱怨。想照着做，**一开始就选能管理互斥序列的邮件工具**，或者控制免费品数量。2024 年 4 月他开了 Substack「Solopreneur Code」，想靠付费订阅攒一份更稳定的经常性收入。",
+      "sources": [
+        {
+          "label": "Niche Pursuits",
+          "title": "How Anfernee Tan Makes $8K to $10K Per Month Running a One-Person Digital Product Business",
+          "url": "https://www.nichepursuits.com/anfernee-tan/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-01",
+      "issueDate": "2026-11-18",
+      "issueNumber": 40
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "content",

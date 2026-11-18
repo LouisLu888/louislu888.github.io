@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c54"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-18",
+      "headline": "三个孩子的妈妈，一条提示词做出家庭日程网站",
+      "oneLiner": "Tom's Guide 作者 Amanda Caswell 用一条提示词让 GPT-6.2 Astra 做出带日历、菜单、购物清单和家务进度的家庭网站，11 分钟时界面已成，交互功能还在测试。",
+      "who": "Amanda Caswell，Tom's Guide 作者，在职妈妈，家里三个孩子，日程、晚饭、家务一直靠好几个 App 拼着管。",
+      "how": "在 ChatGPT Work 里选 Astra，一次写清全部需求：可拖动的周日历、按菜单自动生成并可勾选的购物清单、按家庭成员分配的家务、首页汇总，并要求刷新后数据不丢、不许追问、交付前自测并说明哪些没能验证。",
+      "result": "她说成品叫「Hearth」，界面好看，功能都能用，改动会被保存；生成过程比 Gemini Hydrogen 慢，11 分钟时还在测试添加、移动事件和刷新保存。",
+      "tryThis": "照她的结构写一条提示词，换成自家的人数和需求（假期计划、作业追踪、家庭预算都行），关键是写明「先用示例数据，交付前自测」。",
+      "caveat": "Astra 目前只在 ChatGPT Work 里对部分 Plus、Pro、Enterprise、Edu 用户开放；她展示的是刚做好时的效果，长期使用和多人同步是否顺畅还要自己试。",
+      "body": "Amanda Caswell 在 [Tom's Guide](https://www.tomsguide.com/ai/chatgpt/i-tested-chatgpts-new-gpt-6-2-astra-with-one-prompt-and-built-a-website-id-actually-use) 记录了这次测试。她故意让几个功能**互相依赖**：选好的菜要自动进购物清单，家务完成要反映到每个人的周进度，改动要在刷新后还在。她觉得这些不起眼的部分，最能看出模型能不能做出真能用的东西。\n\n提示词里有三句可以直接抄：**「用真实感的示例数据，让我马上能测」「每个按钮和计算都必须能用，不要静态稿」「完成前检查并修复问题，告诉我哪些没能验证」**。生成过程中模型会汇报进度，她可以随时打断改方向，比如换配色。\n\n这次没有交出任何个人账户或真实数据，用的全是示例数据，风险很低。真要填入家人日程，先弄清数据存在哪里（这类页面通常存在本机浏览器），换设备或清缓存可能丢失。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I tested ChatGPT’s new GPT-6.2 Astra with one prompt — and built a website I’d actually use",
+          "url": "https://www.tomsguide.com/ai/chatgpt/i-tested-chatgpts-new-gpt-6-2-astra-with-one-prompt-and-built-a-website-id-actually-use"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-03",
+      "issueDate": "2026-11-18",
+      "issueNumber": 40
+    },
+    {
+      "candidateIds": [
         "c3"
       ],
       "category": "life",

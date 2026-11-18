@@ -8,6 +8,72 @@
   "items": [
     {
       "candidateIds": [
+        "c39",
+        "c22",
+        "c46"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-17",
+      "headline": "Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent",
+      "oneLiner": "Swyx 说他试用 Devin Bots 一周，交出了 AEO、QA、跨平台移植、个人事务和视频剪辑；新模型 Astra 跑着他们大部分内容发布流程，他称公司在自筹资金下人均收入超过 100 万美元。",
+      "who": "Swyx，Latent Space 播客和 AI Engineer 大会的主理人，同时与 Cognition（Devin 的公司）有关联。",
+      "how": "用常驻的 Devin Bots 认领整块结果而不是单个任务，由它管理子 Agent、自查，并用交互式页面汇报进度，代替长对话；内容发布流水线主要交给 GPT-6.2 Astra。",
+      "result": "他说一周内交出五类工作，同时从本地 worktree 转到云端运行；他还说没有 Astra，公司达不到人均超过 100 万美元的收入效率。",
+      "tryThis": "挑一个你负责的问题域（比如某产品的回归测试），写清楚「什么算完成」和汇报格式，让 Agent 对结果负责一周，再看你还要介入多少。",
+      "caveat": "同一个模型评价两极：Matt Shumer 测了几周，说 Astra「基本不可用」，他的其他 Agent 退回了大量 Astra 子任务产出；也有人认为问题出在运行框架上。",
+      "body": "Swyx 在 [X 帖子](https://x.com/swyx/status/2122746401482592549)里说，他试用 Devin Bots 一周，交出了 AEO、QA、跨平台 App 移植、个人事务自动化和视频剪辑。他的结论是：**别期待「AI 员工」，我们还没有 AGI，期望过高只会失败。**他觉得眼下该要的，是比单个任务高一层的东西：**能对结果负责的 Agent 管理者**。他说用人也按这个标准：能认领一块问题、主动带着方案回来的人，他更看重。\n\n另一条[帖子](https://x.com/swyx/status/2122862646265520150)里，他说新发布的 GPT-6.2 Astra 是他用过最好的流程自动化模型，不再陷入死循环，能通过压缩上下文和写技能来学习，现在跑着 Latent Space 和 AI Engineer 的大部分内容发布流程。\n\n反方意见同样强烈。[Latent Space 当日简报](https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/)整理了评价：Matt Shumer 认为 Astra 基本不可用，Pietro Schirano 认为早期问题多半出在运行框架上。换模型之前，**拿自己的真实流程跑一遍再下结论**，比看测评可靠。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Swyx: devin bots are multi-agent teams done right:\n- always on, proactive (but tuned f",
+          "url": "https://x.com/swyx/status/2122746401482592549"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Swyx: the fact that nobody with decisionmaking power saw this coming a mile away and v",
+          "url": "https://x.com/swyx/status/2122862646265520150"
+        },
+        {
+          "label": "Latent Space",
+          "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
+          "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-02",
+      "issueDate": "2026-11-18",
+      "issueNumber": 40
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-17",
+      "headline": "Simon Willison 把 Agent 执行的代码关进外置沙箱",
+      "oneLiner": "Simon Willison 和 Prime Radiant 发布了三个「外置沙箱」实现：Agent 留在沙箱外，它要跑的代码进沙箱，还可以限定能访问哪些网站、不让 Agent 拿到密钥。",
+      "who": "开发者 Simon Willison，在研究怎样放心地试用本地模型，不怕出错或遭提示词注入后破坏本机。",
+      "how": "三种实现提供同一个 localhost API（v86 跑 WebAssembly 里的 Alpine Linux、Apple Containers、微软 Quicksand），Pi、Claude Code、Codex 需要执行代码时都调用它。",
+      "result": "沙箱自带可选的 HTTP/HTTPS 白名单代理，运行中也能在界面上改；另有凭据替换机制，Agent 能发起带认证的 API 调用，但看不到密钥本身。",
+      "tryThis": "如果你在本机给编码 Agent 开了执行权限，先把它的执行环境换到其中一个沙箱，只放行项目必需的几个域名。",
+      "caveat": "这是演示模式的参考实现，需要自己配置 Agent 去调用它；Apple Containers 版只适用于 Mac。",
+      "body": "Simon Willison 在[博客](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/)里介绍了和 Prime Radiant 合作的**外置沙箱模式**。常见做法是把整个 Agent 关进容器，这个模式只隔离代码：Agent 跑在沙箱外，每次要执行代码，就把请求发给沙箱服务。三种实现接口相同，可以随时换底层隔离方式。\n\n有两个设计适合直接借鉴。一是**出站白名单**：Agent 写的代码只能连你允许的主机，即使被提示词注入，也很难把数据发到别处。二是**凭据替换**：真实 token 留在代理那一侧，Agent 手里只有占位符，调用 API 时由代理换成真的。\n\n对在工作电脑上跑 Agent 的工程师、对试用来路不明的本地模型的人，这两点都能降低风险。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "External sandboxes for coding agents",
+          "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-04",
+      "issueDate": "2026-11-18",
+      "issueNumber": 40
+    },
+    {
+      "candidateIds": [
         "c40"
       ],
       "category": "productivity",

@@ -1,0 +1,310 @@
+{
+  "date": "2026-11-18",
+  "title": "一个人卖 84 款数字产品月入一万美元，Swyx 一周交给 Agent 五类活",
+  "items": [
+    {
+      "candidateIds": [
+        "c9"
+      ],
+      "category": "content",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-18",
+      "headline": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元",
+      "oneLiner": "Anfernee Tan 自 2023 年起全职单干，他说靠 Gumroad 数字产品、付费 Substack 和线下培训，月收入在 8000 到 10000 美元之间，约七成来自 Gumroad。",
+      "who": "新加坡的 Anfernee Tan，管理公司时累到倦怠，2023 年 8 月辞去总监职务，转做一人生意。",
+      "how": "从自己熟悉的 Notion 模板做起，用免费产品收集订阅者，再用 3 天到 45 封不等的自动邮件序列推付费产品；AI 是他的产品主题之一，也用在自动化上。",
+      "result": "他说月收入 8000 到 10000 美元（收入，非利润）：Gumroad 约 70%，Substack 付费订阅约 10%，新加坡线下培训 10% 到 20%；Gumroad 订阅者约 3 万到 4 万，AI Toolbox 卖出 3000 多份。",
+      "tryThis": "把自己天天在用的一套工具或模板整理成一个免费下载，配一组 3 到 5 封的跟进邮件，看有多少人下载、多少人回信。",
+      "caveat": "Gumroad 的邮件自动化功能简单，同一个人下载多个免费品会同时收到多组序列，已经有订阅者抱怨邮件太多，系统越大越难整理。",
+      "body": "Anfernee Tan 在 [Niche Pursuits 节目](https://www.nichepursuits.com/anfernee-tan/)里讲了他的一人生意。起点是他本来就在用的 Notion。早期他**大约每周上架一款新产品**测需求，店里最多时有 84 款，价格从免费、5 美元、9.9 美元，到 77、97 美元和 100 美元的套装。他原本没抱太大期望的 AI Toolbox，后来卖了 3000 多份，属于中等价位。\n\n收入主要来自**免费品 → 订阅 → 长周期邮件序列**这条链路。下载不同免费品的人进入不同序列，短的 3 天、5 天，长的 20 封、45 封，跟进期六到九个月。他的逻辑是，今天下载的人未必今天就需要付费产品，几周后熟悉了他，才可能买。\n\n代价也出现了：Gumroad 没法在一个人进入新序列时把他移出旧序列，邮件叠加，有人抱怨。想照着做，**一开始就选能管理互斥序列的邮件工具**，或者控制免费品数量。2024 年 4 月他开了 Substack「Solopreneur Code」，想靠付费订阅攒一份更稳定的经常性收入。",
+      "sources": [
+        {
+          "label": "Niche Pursuits",
+          "title": "How Anfernee Tan Makes $8K to $10K Per Month Running a One-Person Digital Product Business",
+          "url": "https://www.nichepursuits.com/anfernee-tan/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-01"
+    },
+    {
+      "candidateIds": [
+        "c39",
+        "c22",
+        "c46"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-17",
+      "headline": "Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent",
+      "oneLiner": "Swyx 说他试用 Devin Bots 一周，交出了 AEO、QA、跨平台移植、个人事务和视频剪辑；新模型 Astra 跑着他们大部分内容发布流程，他称公司在自筹资金下人均收入超过 100 万美元。",
+      "who": "Swyx，Latent Space 播客和 AI Engineer 大会的主理人，同时与 Cognition（Devin 的公司）有关联。",
+      "how": "用常驻的 Devin Bots 认领整块结果而不是单个任务，由它管理子 Agent、自查，并用交互式页面汇报进度，代替长对话；内容发布流水线主要交给 GPT-6.2 Astra。",
+      "result": "他说一周内交出五类工作，同时从本地 worktree 转到云端运行；他还说没有 Astra，公司达不到人均超过 100 万美元的收入效率。",
+      "tryThis": "挑一个你负责的问题域（比如某产品的回归测试），写清楚「什么算完成」和汇报格式，让 Agent 对结果负责一周，再看你还要介入多少。",
+      "caveat": "同一个模型评价两极：Matt Shumer 测了几周，说 Astra「基本不可用」，他的其他 Agent 退回了大量 Astra 子任务产出；也有人认为问题出在运行框架上。",
+      "body": "Swyx 在 [X 帖子](https://x.com/swyx/status/2122746401482592549)里说，他试用 Devin Bots 一周，交出了 AEO、QA、跨平台 App 移植、个人事务自动化和视频剪辑。他的结论是：**别期待「AI 员工」，我们还没有 AGI，期望过高只会失败。**他觉得眼下该要的，是比单个任务高一层的东西：**能对结果负责的 Agent 管理者**。他说用人也按这个标准：能认领一块问题、主动带着方案回来的人，他更看重。\n\n另一条[帖子](https://x.com/swyx/status/2122862646265520150)里，他说新发布的 GPT-6.2 Astra 是他用过最好的流程自动化模型，不再陷入死循环，能通过压缩上下文和写技能来学习，现在跑着 Latent Space 和 AI Engineer 的大部分内容发布流程。\n\n反方意见同样强烈。[Latent Space 当日简报](https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/)整理了评价：Matt Shumer 认为 Astra 基本不可用，Pietro Schirano 认为早期问题多半出在运行框架上。换模型之前，**拿自己的真实流程跑一遍再下结论**，比看测评可靠。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Swyx: devin bots are multi-agent teams done right:\n- always on, proactive (but tuned f",
+          "url": "https://x.com/swyx/status/2122746401482592549"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Swyx: the fact that nobody with decisionmaking power saw this coming a mile away and v",
+          "url": "https://x.com/swyx/status/2122862646265520150"
+        },
+        {
+          "label": "Latent Space",
+          "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
+          "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-02"
+    },
+    {
+      "candidateIds": [
+        "c54"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-18",
+      "headline": "三个孩子的妈妈，一条提示词做出家庭日程网站",
+      "oneLiner": "Tom's Guide 作者 Amanda Caswell 用一条提示词让 GPT-6.2 Astra 做出带日历、菜单、购物清单和家务进度的家庭网站，11 分钟时界面已成，交互功能还在测试。",
+      "who": "Amanda Caswell，Tom's Guide 作者，在职妈妈，家里三个孩子，日程、晚饭、家务一直靠好几个 App 拼着管。",
+      "how": "在 ChatGPT Work 里选 Astra，一次写清全部需求：可拖动的周日历、按菜单自动生成并可勾选的购物清单、按家庭成员分配的家务、首页汇总，并要求刷新后数据不丢、不许追问、交付前自测并说明哪些没能验证。",
+      "result": "她说成品叫「Hearth」，界面好看，功能都能用，改动会被保存；生成过程比 Gemini Hydrogen 慢，11 分钟时还在测试添加、移动事件和刷新保存。",
+      "tryThis": "照她的结构写一条提示词，换成自家的人数和需求（假期计划、作业追踪、家庭预算都行），关键是写明「先用示例数据，交付前自测」。",
+      "caveat": "Astra 目前只在 ChatGPT Work 里对部分 Plus、Pro、Enterprise、Edu 用户开放；她展示的是刚做好时的效果，长期使用和多人同步是否顺畅还要自己试。",
+      "body": "Amanda Caswell 在 [Tom's Guide](https://www.tomsguide.com/ai/chatgpt/i-tested-chatgpts-new-gpt-6-2-astra-with-one-prompt-and-built-a-website-id-actually-use) 记录了这次测试。她故意让几个功能**互相依赖**：选好的菜要自动进购物清单，家务完成要反映到每个人的周进度，改动要在刷新后还在。她觉得这些不起眼的部分，最能看出模型能不能做出真能用的东西。\n\n提示词里有三句可以直接抄：**「用真实感的示例数据，让我马上能测」「每个按钮和计算都必须能用，不要静态稿」「完成前检查并修复问题，告诉我哪些没能验证」**。生成过程中模型会汇报进度，她可以随时打断改方向，比如换配色。\n\n这次没有交出任何个人账户或真实数据，用的全是示例数据，风险很低。真要填入家人日程，先弄清数据存在哪里（这类页面通常存在本机浏览器），换设备或清缓存可能丢失。",
+      "sources": [
+        {
+          "label": "Tom's Guide · AI",
+          "title": "I tested ChatGPT’s new GPT-6.2 Astra with one prompt — and built a website I’d actually use",
+          "url": "https://www.tomsguide.com/ai/chatgpt/i-tested-chatgpts-new-gpt-6-2-astra-with-one-prompt-and-built-a-website-id-actually-use"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-03"
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-17",
+      "headline": "Simon Willison 把 Agent 执行的代码关进外置沙箱",
+      "oneLiner": "Simon Willison 和 Prime Radiant 发布了三个「外置沙箱」实现：Agent 留在沙箱外，它要跑的代码进沙箱，还可以限定能访问哪些网站、不让 Agent 拿到密钥。",
+      "who": "开发者 Simon Willison，在研究怎样放心地试用本地模型，不怕出错或遭提示词注入后破坏本机。",
+      "how": "三种实现提供同一个 localhost API（v86 跑 WebAssembly 里的 Alpine Linux、Apple Containers、微软 Quicksand），Pi、Claude Code、Codex 需要执行代码时都调用它。",
+      "result": "沙箱自带可选的 HTTP/HTTPS 白名单代理，运行中也能在界面上改；另有凭据替换机制，Agent 能发起带认证的 API 调用，但看不到密钥本身。",
+      "tryThis": "如果你在本机给编码 Agent 开了执行权限，先把它的执行环境换到其中一个沙箱，只放行项目必需的几个域名。",
+      "caveat": "这是演示模式的参考实现，需要自己配置 Agent 去调用它；Apple Containers 版只适用于 Mac。",
+      "body": "Simon Willison 在[博客](https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/)里介绍了和 Prime Radiant 合作的**外置沙箱模式**。常见做法是把整个 Agent 关进容器，这个模式只隔离代码：Agent 跑在沙箱外，每次要执行代码，就把请求发给沙箱服务。三种实现接口相同，可以随时换底层隔离方式。\n\n有两个设计适合直接借鉴。一是**出站白名单**：Agent 写的代码只能连你允许的主机，即使被提示词注入，也很难把数据发到别处。二是**凭据替换**：真实 token 留在代理那一侧，Agent 手里只有占位符，调用 API 时由代理换成真的。\n\n对在工作电脑上跑 Agent 的工程师、对试用来路不明的本地模型的人，这两点都能降低风险。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "External sandboxes for coding agents",
+          "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-04"
+    },
+    {
+      "candidateIds": [
+        "c50"
+      ],
+      "category": "saas",
+      "kind": "机会观察",
+      "eventDate": "2026-11-18",
+      "headline": "给地方政府人事部门做软件，客户从 1 家到约 100 家",
+      "oneLiner": "Holly 联创 Brendan Hellweg 说，他们用 AI 替地方政府做岗位薪酬对标和工会谈判准备，客户从 1 家增长到约 100 家，一个合规问题约一周做出方案。",
+      "who": "Brendan Hellweg，曾在巴尔的摩市长办公室工作，参与搭建过 300 人的新冠公共卫生项目，现为 Holly 联合创始人，在 Supercompanies 节目受访。",
+      "how": "用 AI 在成千上万个各不相同的政府岗位名称之间做数据对标，帮市、县、州的 HR 主管定薪酬、定岗位要求、准备工会合同谈判；这类工作过去要请昂贵的顾问。",
+      "result": "他说客户从 1 家增长到约 100 家；针对加州一项新法规的合规计算问题，团队约一周做出方案，再推给加州其他受影响的机构。",
+      "tryThis": "如果你熟悉某个传统行业的顾问型工作，列出其中「数据量大、规则明确、每家都要做」的环节，这类环节最适合做成软件卖给一整类客户。",
+      "caveat": "政府采购要满足资质和合规要求，节目里他说销售快的前提是机构急需；没有行业经验和人脉的人很难进入。",
+      "body": "在 [Supercompanies 这期节目](https://supercompanies.captivate.fm/episode/building-a-100-million-computation-solution-in-a-week-with-brendan-hellweg-holly)里，Brendan Hellweg 说 Holly 最初做的是坑洼上报 App，后来发现政府机构不缺需求，缺的是人手，于是转向人事和薪酬。他认为，在成千上万个岗位名称之间做对标，这种规模只有 AI 能现实地处理。\n\n两个做法可以参考。一是**同一个法规问题做一次，卖给所有受影响的机构**：加州那个合规方案就是这样推出去的。二是**按工资总额的比例看推理开销**，不设固定预算，也不用 token 排行榜比谁用得多。他还提到，工程产出加快后，PM 和工程师的配比成了要重新考虑的问题。",
+      "sources": [
+        {
+          "label": "Supercompanies (Greg Shove / Section)",
+          "title": "Building a 100 Million Computation Solution in a Week with Brendan Hellweg (Holly)",
+          "url": "https://supercompanies.captivate.fm/episode/building-a-100-million-computation-solution-in-a-week-with-brendan-hellweg-holly"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-18-05"
+    }
+  ],
+  "action": "从你手上反复要做的一件事里，挑一件写成一条完整的提示词或任务说明，交给 AI 或 Agent。说明里写清三点：什么算完成；先用示例数据跑通；交付前自己测一遍，并列出哪些没能验证。做完记下总耗时和你改了哪些地方。这份记录用来判断这件事值不值得长期交给 AI，以后也可以整理成第一个免费下载的模板。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-18T14:45:03.055Z",
+    "engine": "cli",
+    "candidateCount": 54,
+    "candidatesBySource": {
+      "Simon Willison": 3,
+      "Lenny's Newsletter & Podcast": 1,
+      "Ali Abdaal": 1,
+      "Matt Wolfe": 2,
+      "Starter Story (YouTube)": 1,
+      "Niche Pursuits": 1,
+      "Every (YouTube)": 3,
+      "Follow Builders (X)": 33,
+      "Latent Space": 2,
+      "The AI Daily Brief": 1,
+      "The Superwall Podcast": 1,
+      "Supercompanies (Greg Shove / Section)": 1,
+      "Lifehacker": 1,
+      "少数派": 2,
+      "Tom's Guide · AI": 1
+    },
+    "shortlist": [
+      {
+        "id": "c22",
+        "reason": "谁：Swyx（Latent Space / AI Engineer 创始人）；怎么用：日常用 GPT-6.2 Astra 跑播客和大会的内容发布流水线，靠压缩上下文和写 skill 避免死循环；结果：一家自筹资金的小公司做到人均收入超过 100 万美元。亲历，有数字。",
+        "source": "Follow Builders (X)",
+        "title": "Swyx: the fact that nobody with decisionmaking power saw this coming a mile away and v"
+      },
+      {
+        "id": "c39",
+        "reason": "谁：Swyx 本人试用一周；怎么用：让常驻、各自带记忆的 Devin bots 接手 AEO、QA、跨平台移植、个人事务自动化和视频剪辑；结果：这些活已经交出去，也从本地 worktree 搬到了云端。一线工作流，可以跟拆的点很多。",
+        "source": "Follow Builders (X)",
+        "title": "Swyx: devin bots are multi-agent teams done right:\n- always on, proactive (but tuned f"
+      },
+      {
+        "id": "c9",
+        "reason": "谁：一人公司 Anfernee Tan；怎么用：在 Gumroad 卖数字产品、做付费 Substack，用免费产品引流，加 AI 驱动的自动邮件序列；结果：月入 8-10K 美元，每天只工作几小时。只有简介，但已经写清了经营闭环，副业读者可以照着做。",
+        "source": "Niche Pursuits",
+        "title": "How Anfernee Tan Makes $8K to $10K Per Month Running a One-Person Digital Product Business"
+      },
+      {
+        "id": "c54",
+        "reason": "谁：三个孩子的职场妈妈（Tom's Guide 作者）；怎么用：不会写代码，用 GPT-6.2 Astra 一条提示词搭家庭日程和事务管理网站；结果：做出了她自己真会用的网站。属于 AI 生活类，有全文，写得出步骤。",
+        "source": "Tom's Guide · AI",
+        "title": "I tested ChatGPT’s new GPT-6.2 Astra with one prompt — and built a website I’d actually use"
+      },
+      {
+        "id": "c1",
+        "reason": "谁：Simon Willison 与 Prime Radiant；怎么用：提出外部沙箱模式，让编码 agent 待在沙箱外、它执行的代码在沙箱里跑，并开源了三个实现；结果：试本地模型时不用怕误操作或提示词注入。个人开发者可以直接照着用。",
+        "source": "Simon Willison",
+        "title": "External sandboxes for coding agents"
+      },
+      {
+        "id": "c50",
+        "reason": "谁：Holly 联合创始人 Brendan Hellweg；怎么用：用 AI 帮地方政府做岗位设计和集体谈判分析，替代昂贵的咨询，一周搭出要跑 1 亿次计算的方案；结果：拿到真实的政府客户场景。只有简介，可以作为 AI 做咨询的案例。",
+        "source": "Supercompanies (Greg Shove / Section)",
+        "title": "Building a 100 Million Computation Solution in a Week with Brendan Hellweg (Holly)"
+      },
+      {
+        "id": "c49",
+        "reason": "谁：Joseph Choi，帮过 1000 多位 app 开发者，带来 1.8 亿播放和 650 万美元 ARR；怎么用：拆解 100 多个赚钱 app 的打法（痛点型与兴趣型、在细分里找细分、用创意素材做定向）；结果：猫咪计时器 app 两个月赚 4 万美元，一条 TikTok 带来 4000 个等候名单注册。简介里案例和数字都比较具体。",
+        "source": "The Superwall Podcast",
+        "title": "Joseph Choi - I Studied 100+ Profitable Apps, Here’s What Actually Works"
+      },
+      {
+        "id": "c48",
+        "reason": "认知类：用 Ramp、Databricks 等的数据看企业怎么用 AI。10 月 token 用量涨 36%，支出只涨 2%；企业在换模型，用途扩到编程以外，自主 agent 的落地还比较慢。有数据支撑，适合大厂读者。",
+        "source": "The AI Daily Brief",
+        "title": "How Business AI Use is Changing"
+      },
+      {
+        "id": "c46",
+        "reason": "认知类：Latent Space 对 GPT-6.2 发布的分析。Astra 在智能指数上仅次于 Fable 5.2，Sol 以约 15% 的成本追平旧版 Astra，适合当主力模型，并解释了网红差评现象。发布消息的多个版本里只留这条最有信息量的，帮读者判断该换哪个模型。",
+        "source": "Latent Space",
+        "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse"
+      },
+      {
+        "id": "c8",
+        "reason": "谁：manifesting app Stella 的创始人（月收入 30 万美元）；怎么用：选细分、研究爆款、拆解背后的心理、无限复刻这个格式；结果：新开的 TikTok 号两个月 4 万多粉丝。有可以照做的增长方法，但没说 AI 在其中起什么作用，简介也很短，排在后面。",
+        "source": "Starter Story (YouTube)",
+        "title": "$300k/month app founder says going viral isn't luck 😱"
+      },
+      {
+        "id": "c43",
+        "reason": "AI 生活类：Gemini 免费替用户办事，覆盖六个国家，能打电话给本地商家、用 Google Pay 付款、通过短信或转发邮件交任务。能说明普通人的个人助手现在能做到什么。不过这是产品发布帖，缺少用户亲历的结果，排在最后。",
+        "source": "Follow Builders (X)",
+        "title": "Josh Woodward: Gemini can now do your tasks free of charge in six countries! We’ve built it for"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 23243,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 3170,
+        "output_tokens_details": {
+          "thinking_tokens": 932
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 23243,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 3170,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 23243,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 23243
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.249352
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 29064,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 6885,
+      "output_tokens_details": {
+        "thinking_tokens": 1923
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 29064,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6885,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 29064,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 29064
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.37022
+  }
+}
