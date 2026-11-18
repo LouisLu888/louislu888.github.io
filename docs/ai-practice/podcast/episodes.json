@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-11-18",
+    "title": "一个人卖 84 款数字产品月入一万美元，Swyx 一周交给 Agent 五类活",
+    "summary": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元；Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent；三个孩子的妈妈，一条提示词做出家庭日程网站；Simon Willison 把 Agent 执行的代码关进外置沙箱；给地方政府人事部门做软件，客户从 1 家到约 100 家",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-18/",
+    "items": [
+      {
+        "headline": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元",
+        "sources": [
+          {
+            "label": "Niche Pursuits",
+            "title": "How Anfernee Tan Makes $8K to $10K Per Month Running a One-Person Digital Product Business",
+            "url": "https://www.nichepursuits.com/anfernee-tan/"
+          }
+        ]
+      },
+      {
+        "headline": "Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Swyx: devin bots are multi-agent teams done right:\n- always on, proactive (but tuned f",
+            "url": "https://x.com/swyx/status/2122746401482592549"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Swyx: the fact that nobody with decisionmaking power saw this coming a mile away and v",
+            "url": "https://x.com/swyx/status/2122862646265520150"
+          },
+          {
+            "label": "Latent Space",
+            "title": "[AINews] GPT-6.2 Astra, the #2 Frontier Model is better and 20%-600% cheaper, but has mixed reviews; 6.2 Sol likely main workhorse",
+            "url": "https://latent.space/p/ainews-gpt-6-2-astra-the-2-frontier-model-is-better-and-20-600-cheaper-but-has-mixed-reviews-6-2-sol/"
+          }
+        ]
+      },
+      {
+        "headline": "三个孩子的妈妈，一条提示词做出家庭日程网站",
+        "sources": [
+          {
+            "label": "Tom's Guide · AI",
+            "title": "I tested ChatGPT’s new GPT-6.2 Astra with one prompt — and built a website I’d actually use",
+            "url": "https://www.tomsguide.com/ai/chatgpt/i-tested-chatgpts-new-gpt-6-2-astra-with-one-prompt-and-built-a-website-id-actually-use"
+          }
+        ]
+      },
+      {
+        "headline": "Simon Willison 把 Agent 执行的代码关进外置沙箱",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "External sandboxes for coding agents",
+            "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+          }
+        ]
+      },
+      {
+        "headline": "给地方政府人事部门做软件，客户从 1 家到约 100 家",
+        "sources": [
+          {
+            "label": "Supercompanies (Greg Shove / Section)",
+            "title": "Building a 100 Million Computation Solution in a Week with Brendan Hellweg (Holly)",
+            "url": "https://supercompanies.captivate.fm/episode/building-a-100-million-computation-solution-in-a-week-with-brendan-hellweg-holly"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "一个人卖 84 款数字产品，月收入 8 千到 1 万美元"
+      },
+      {
+        "start": 162,
+        "title": "Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent"
+      },
+      {
+        "start": 276,
+        "title": "三个孩子的妈妈，一条提示词做出家庭日程网站"
+      },
+      {
+        "start": 376,
+        "title": "Simon Willison 把 Agent 执行的代码关进外置沙箱"
+      },
+      {
+        "start": 462,
+        "title": "给地方政府人事部门做软件，客户从 1 家到约 100 家"
+      },
+      {
+        "start": 555,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 607,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-18.mp3",
+    "audioBytes": 3643292,
+    "publishedAt": "2026-11-18T22:45:59.553Z"
+  },
+  {
     "date": "2026-11-17",
     "title": "一人公司被刷掉数万美元 token，一位父亲用 Claude Code 给全家建了记忆库",
     "summary": "免费试用被刷爆：ChatPRD 创始人怎样堵住 token 欺诈；把父亲的文件柜搬进 Claude Code：一个家庭的共享大脑；让 Claude 做设计不出「AI 味」的五个步骤；AI 短片怎么报价：每完成一分钟算力 1000 到 1500 美元；一条提示词做出家庭预算网页，能模拟取消订阅",
