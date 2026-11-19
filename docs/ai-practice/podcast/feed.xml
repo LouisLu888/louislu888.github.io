@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-19 · 一个人用 Bot 搭内容团队，curl 改写成 Rust 后谁来跟上 200 个修复</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-19/</link>
+      <description>三个月涨粉 6500：她让几个 Bot 组成了内容团队；Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug；Notion 创始人：什么值得自己 vibe code，什么不值得；新接口上线前，先让 AI 写一个用它的插件；18 岁开发者靠 Fiverr 助理私信几百位创作者推 App（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-19/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 三个月涨粉 6500：她让几个 Bot 组成了内容团队<br>02:56 Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug<br>04:15 Notion 创始人：什么值得自己 vibe code，什么不值得<br>05:53 新接口上线前，先让 AI 写一个用它的插件<br>07:09 18 岁开发者靠 Fiverr 助理私信几百位创作者推 App<br>08:18 今天可以做的一件事</p><p><b>三个月涨粉 6500：她让几个 Bot 组成了内容团队</b><br><a href="https://www.youtube.com/@GregIsenberg/search?query=Build%20a%201%20Person%20Media%20Machine%20With%20Grok%20Bot">Startup Ideas Podcast (Greg Isenberg)</a></p><p><b>Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug</b><br><a href="https://simonwillison.net/2026/Nov/18/daniel-stenberg/">Simon Willison</a></p><p><b>Notion 创始人：什么值得自己 vibe code，什么不值得</b><br><a href="https://www.youtube.com/@EveryInc/search?query=Notion%E2%80%99s%20Founder%20on%20the%20One%20Thing%20Your%20AI%20Is%20Missing">The Every Podcast (AI &amp; I)</a> · <a href="https://x.com/trq212/status/2123106368492298653">Follow Builders (X)</a></p><p><b>新接口上线前，先让 AI 写一个用它的插件</b><br><a href="https://simonwillison.net/2026/Nov/18/datasette-arrows/">Simon Willison</a></p><p><b>18 岁开发者靠 Fiverr 助理私信几百位创作者推 App</b><br><a href="https://www.youtube.com/shorts/tzSaRLr2NG4">Starter Story (YouTube)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-19.mp3" length="3260972" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 22:45:42 GMT</pubDate>
+      <itunes:duration>00:09:03</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-18 · 一个人卖 84 款数字产品月入一万美元，Swyx 一周交给 Agent 五类活</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-18/</link>
       <description>一个人卖 84 款数字产品，月收入 8 千到 1 万美元；Swyx 试用一周，把 QA、视频剪辑等五类活交给 Agent；三个孩子的妈妈，一条提示词做出家庭日程网站；Simon Willison 把 Agent 执行的代码关进外置沙箱；给地方政府人事部门做软件，客户从 1 家到约 100 家（本集语音由 AI 合成）</description>
