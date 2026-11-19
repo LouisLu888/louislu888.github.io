@@ -1,0 +1,298 @@
+{
+  "date": "2026-11-19",
+  "title": "一个人用 Bot 搭内容团队，curl 改写成 Rust 后谁来跟上 200 个修复",
+  "items": [
+    {
+      "candidateIds": [
+        "c51"
+      ],
+      "category": "content",
+      "kind": "本周演示",
+      "eventDate": "2026-11-18",
+      "headline": "三个月涨粉 6500：她让几个 Bot 组成了内容团队",
+      "oneLiner": "Tella 员工 Louise de Sadeleer 用 GrokBot 做选题研究、粗剪和 YouTube 发布，她说开始做账号后三个月里 Instagram 涨了 6,500 个粉丝。",
+      "who": "Louise de Sadeleer 在视频剪辑创业公司 Tella 工作，业余运营讲营销和 AI 的个人账号，在 Greg Isenberg 的节目里演示了整套流程。",
+      "how": "每周定时任务抓取她亲手挑的创作者的爆款帖和她收藏的 hook，汇总趋势和上升关键词；两个 Bot 在群聊里一起出选题；导师反馈做成 skill 审脚本；用手机把素材发进剪辑工具的素材库。",
+      "result": "她说开始做账号后三个月，Instagram 涨粉 6,500，TikTok 也有类似增长。脚本仍由她手写，目标是自动化 80% 的流程。",
+      "tryThis": "先建一个表，手动放进 15 到 25 个你想学的创作者或品牌，每周让 AI 找出其中表现远超平均的帖子，记下话题和开头两句。",
+      "caveat": "她把多数任务设成每周跑一次，因为每天跑额度很快用完；在手机上剪辑要靠 Tella 这类支持 agent 操作的剪辑工具。",
+      "body": "Louise de Sadeleer 在 [Startup Ideas Podcast](https://www.youtube.com/@GregIsenberg/search?query=Build%20a%201%20Person%20Media%20Machine%20With%20Grok%20Bot) 上完整演示了她的视频流程。研究阶段有四个每周任务：去她挑的创作者主页找**远超平均水平的帖子**，记下话题和 hook；从她的 TikTok 收藏夹提取每个视频的前两句，按反直觉、提问、共鸣等类型归类；读她付费订阅的 Substack、X 和新闻站，同一信号被报道多次才算趋势；按 vidIQ 的思路找搜索量上升的 YouTube 关键词。\n\n她坚持**创作者名单自己挑**，因为让 AI 选出来的人会和她想模仿的方向偏离很远。周一她和名为 Production Polly 的 Bot 在 Notion 排期；Polly 熟悉她的写法，Trend Study 像记者一样追热点，两个 Bot 在群聊里把她已有的想法和新趋势结合，一次给出三个选题。她还做了选题、hook、脚本三个顾问 skill，又把导师 Miranda 对脚本的反馈整理成「Miranda feedback」skill，写完脚本先跑一遍。\n\n录完视频她出门吃饭，Bot 把停顿和口头禅剪掉；看到想用的推文，发链接过去，Bot 截图放进素材库。YouTube 标题、描述和章节也交给它写。剪辑多数用 Opus 5.5 medium，复杂 3D 才用 Fable 5.2。她的判断标准是：**一件事你已经有固定方法了，就把它做成 skill。**",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Build a 1 Person Media Machine With Grok Bot",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Build%20a%201%20Person%20Media%20Machine%20With%20Grok%20Bot"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-01"
+    },
+    {
+      "candidateIds": [
+        "c3"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-18",
+      "headline": "Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug",
+      "oneLiner": "curl 作者 Daniel Stenberg 统计：agent 三周多把 18.5 万行 C 改写成 34 万行 Rust，同期 curl 合并 300 多个 commit，修了约 200 个 bug。",
+      "who": "Daniel Stenberg，curl 的维护者，在文章里回应外界用 coding agent 把 curl 改写成 Rust 的项目，Simon Willison 摘录了这段话。",
+      "how": "他认为代码改写只是起点。原项目一直在修 bug 和漏洞，改写版本得持续跟进，他怀疑这些克隆版本跟不上。",
+      "result": "他数过：改写期间 curl 合并了 300 多个 commit、约 200 个 bug 修复，还修了几个漏洞；他说之后一个月又修了约 200 个。",
+      "tryThis": "评估「用 AI 把旧系统重写一遍」时，把原系统每月的修复量列出来，算清楚重写后由谁、怎样持续同步。",
+      "caveat": "这是维护者对克隆项目的判断，改写版本将来能不能跟上还没有结论。",
+      "body": "Simon Willison 摘录了 curl 作者 Daniel Stenberg 的一段话（[原文摘录](https://simonwillison.net/2026/Nov/18/daniel-stenberg/)）。有人用 coding agent 在三周多的时间里，把 curl 的 18.5 万行 C 代码转成了 34 万行 Rust，行数是他自己数的。同一段时间，curl 合并了 300 多个 commit，其中约 200 个是 bug 修复，另有几个漏洞修复，这些改写版本里都没有。他问：这些克隆能跟得上吗？\n\n这段话把重写的成本算到了维护上。**AI 让「一次性改写」变得便宜，持续积累的修复却没有变便宜。**对团队来说，评估迁移或重写方案时，要看原系统还在以什么速度变化，以及改写后谁负责同步。原系统已经基本冻结、很少改动时，这个问题小得多。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Quoting Daniel Stenberg",
+          "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-02"
+    },
+    {
+      "candidateIds": [
+        "c5",
+        "c39"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-18",
+      "headline": "Notion 创始人：什么值得自己 vibe code，什么不值得",
+      "oneLiner": "Notion CEO Ivan Zhao 把软件分成三类，只建议自己改造有强烈偏好的工具；他说团队现在用 Kanban 看板来看清各自 agent 在做什么。",
+      "who": "Notion 联合创始人兼 CEO Ivan Zhao，在 Every 的 Thesis 活动上接受 Dan Shipper 访谈。",
+      "how": "他的划分：有强烈偏好的工具，可以自己改；日历这类没什么主见、只想有人做好的工具，用精心打磨的成品；企业级、关乎安全的软件，不建议自己维护。他认为数据和上下文比 UI、流程代码更持久。",
+      "result": "他说 Notion 团队发现每人各自和 coding agent 对话后，彼此不知道对方在做什么，于是改用 Notion Kanban 看板编排 agent 的工作。他自己和妻子 vibe code 了一款历史学习游戏。",
+      "tryThis": "动手做自用工具前，先问自己对这个工具是否有明确、稳定的偏好；没有的话，先用成品。",
+      "caveat": "他自己承认这么说和 Notion 的商业模式一致；看板方法适合多人协作，单人项目未必需要。",
+      "body": "在 [Every 的节目](https://www.youtube.com/@EveryInc/search?query=Notion%E2%80%99s%20Founder%20on%20the%20One%20Thing%20Your%20AI%20Is%20Missing)里，Ivan Zhao 说大家已经走过「什么都 vibe code」的阶段，「九个月前人们发现做出来的东西还得维护」。他的判断是，**数据、上下文和语义才是 AI 时代更持久的部分**，UI 和流程逻辑 agent 都能写。他还提醒不要把理解力交给 agent：一个中等规模的代码库，一周后人可能就看不懂了，要靠更好的可视化去理解。\n\n前 Claude Code 团队成员 Thariq 同一天[发帖](https://x.com/trq212/status/2123106368492298653)讲了反面经历：他给自己做的工作软件按「模式」组织工作，后来没坚持用，准备改成以待办为中心。他的结论是，**即使有 AI，自己做软件也难，因为很难知道自己真正想要什么**。两人的说法可以合起来用：先用一段时间成品，弄清自己的偏好，再决定要不要自己做。",
+      "sources": [
+        {
+          "label": "The Every Podcast (AI & I)",
+          "title": "Notion’s Founder on the One Thing Your AI Is Missing",
+          "url": "https://www.youtube.com/@EveryInc/search?query=Notion%E2%80%99s%20Founder%20on%20the%20One%20Thing%20Your%20AI%20Is%20Missing"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Thariq: making your own software is tough, even with AI, because it's hard to know what ",
+          "url": "https://x.com/trq212/status/2123106368492298653"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-03"
+    },
+    {
+      "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-18",
+      "headline": "新接口上线前，先让 AI 写一个用它的插件",
+      "oneLiner": "Simon Willison 给 Datasette 加了流式导出接口，Claude Fable 5.2 推荐用 Apache Arrow 格式，并且几乎一次就写出了配套插件。",
+      "who": "Datasette 作者 Simon Willison，在 1.0a43 版本里开放了让插件实现流式导出格式的能力。",
+      "how": "他让 Claude Fable 5.2 给新接口找一个合适的用例，模型提出 Apache Arrow 流式格式，并几乎一次写完了 datasette-arrows 插件。",
+      "result": "装上插件后，导出对话框里多了 Arrow 选项，可以像 CSV、TSV 一样流式导出整张表。",
+      "tryThis": "下次发布新 API 或扩展点时，让 AI 先写一个真实调用它的小示例，用它来检验接口设计。",
+      "caveat": "插件还是 0.1a0；把 Arrow 和 CSV、TSV 放在同一导出区的界面，要等下一个 alpha 版本才会发布。",
+      "body": "Datasette 1.0a43 让插件可以通过 register_output_renderer() 实现流式导出：数据分块输出，导出几百万行也不用全部读进内存。Simon Willison 在[发布记录](https://simonwillison.net/2026/Nov/18/datasette-arrows/)里写，他的规矩是**每次发布新的插件能力，都要同时发一个用到它的插件**。这次他让 Claude Fable 5.2 出主意，模型推荐 Apache Arrow 流式格式，插件几乎一次写成。\n\n可借鉴的是这个顺序：自己设计接口，用 AI 很快做出第一个使用者，用它检验接口好不好用。以前写示例插件很费时间，常被省掉；现在成本低了，可以作为发布前的固定步骤。前提是接口边界清楚，并且你能判断模型选的格式合不合适。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-arrows 0.1a0",
+          "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-04"
+    },
+    {
+      "candidateIds": [
+        "c9"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-18",
+      "headline": "18 岁开发者靠 Fiverr 助理私信几百位创作者推 App",
+      "oneLiner": "AbMaxx 创始人 Lino 18 岁、不会写代码，Starter Story 称这款扫描腹肌的 App 六个月从零做到每月约 6 万美元收入。",
+      "who": "Lino 一个人做了 AbMaxx，一款扫描并评估腹肌的 App，在 Starter Story 短视频里讲 UGC 获客方法。",
+      "how": "在 Fiverr 雇低价虚拟助理，批量私信同领域的创作者；筛选条件是 5,000 到 50,000 粉丝、发帖稳定、出镜露脸、评论区活跃。",
+      "result": "视频标题写的是 5 万美元 MRR，简介写六个月做到每月约 6 万美元，两处口径不同。",
+      "tryThis": "如果你的 App 适合短视频展示，先手动列出 20 个符合这四个条件的创作者，测一轮私信回复率，再决定要不要雇助理放量。",
+      "caveat": "这套方法适合画面效果直观、适合真人出镜的消费类 App；视频没有讲给创作者的报酬怎么定。",
+      "body": "[Starter Story 的短视频](https://www.youtube.com/shorts/tzSaRLr2NG4)介绍了 AbMaxx 的获客方式。Lino 没有自己逐个联系创作者，而是在 Fiverr 雇虚拟助理，**规模化私信几百位同领域创作者**。他只找粉丝 5,000 到 50,000 的账号，还要满足三条：稳定发帖、真人出镜、评论区活跃。\n\n这几个条件对应的是转化：腰部账号更愿意合作，露脸和活跃评论区让推荐更可信。对做 AI App 的人来说，可以照这个思路先做小规模测试，记录回复率、发布率和每条视频带来的下载，再决定预算。腹肌扫描这类结果能直接拍出来给人看的产品，最适合这种打法。",
+      "sources": [
+        {
+          "label": "Starter Story (YouTube)",
+          "title": "$50K MRR solo founder reveals how he gets 100's of creators to promote his app 🤯",
+          "url": "https://www.youtube.com/shorts/tzSaRLr2NG4"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-05"
+    }
+  ],
+  "action": "打开你最常用的内容平台，挑出 15 个你想学的创作者或同行，放进一张表。今天让 AI 帮你看其中 3 个人最近 20 条帖子，找出表现明显高于他们平时水平的那几条，记下话题、开头两句和形式。下周再做一次，比较两周的记录：反复出现的形式，就是你可以先试的选题模板；整理方法稳定之后，再考虑做成每周自动运行的任务。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-19T14:44:40.680Z",
+    "engine": "cli",
+    "candidateCount": 53,
+    "candidatesBySource": {
+      "Simon Willison": 4,
+      "The Every Podcast (AI & I)": 1,
+      "Matt Wolfe": 2,
+      "Starter Story (YouTube)": 2,
+      "Every (YouTube)": 3,
+      "Rest of World": 1,
+      "Follow Builders (X)": 31,
+      "No Priors": 1,
+      "Latent Space": 1,
+      "The AI Daily Brief": 1,
+      "Y Combinator / Lightcone (YouTube)": 1,
+      "Lex Fridman Podcast": 1,
+      "Riley Brown": 1,
+      "Startup Ideas Podcast (Greg Isenberg)": 1,
+      "Tom's Guide · AI": 2
+    },
+    "shortlist": [
+      {
+        "id": "c51",
+        "reason": "有逐字稿。谁：Tella 员工 Louise。怎么用：用 GrokBot 跑通整条视频内容线，包括每周找爆款、存开头钩子、两个 bot 在群聊里一起出选题、用顾问 skill 改脚本、手机发 B-roll、自动写标题和章节。结果：三个月 Instagram 涨粉 6500，个人可以照着搭。",
+        "source": "Startup Ideas Podcast (Greg Isenberg)",
+        "title": "Build a 1 Person Media Machine With Grok Bot"
+      },
+      {
+        "id": "c2",
+        "reason": "谁：Simon Willison 本人。怎么用：让 Claude 推荐用 Apache Arrow 流式格式，几乎一次就把 datasette-arrows 插件写出来了。结果：插件已发布，还附带一条可借鉴的经验：发布新插件功能时，配一个实际用上它的插件。",
+        "source": "Simon Willison",
+        "title": "datasette-arrows 0.1a0"
+      },
+      {
+        "id": "c8",
+        "reason": "谁：Oliver Brocato，Tabs Chocolate 卖掉后的再次创业。做什么：Bustem 不融资做到一年 0 到 60 万美元 MRR，有带数字的经营复盘。只有简介，AI 怎么用要看节目；简介里有章节和数字，编辑可以写个大概。",
+        "source": "Starter Story (YouTube)",
+        "title": "How I Built It: $600K/Month SaaS"
+      },
+      {
+        "id": "c9",
+        "reason": "谁：18 岁的 Lino，没有编程背景。做什么：做了扫腹肌的 App AbMaxx，6 个月做到每月约 6 万美元。怎么做：在 Fiverr 雇 VA 批量私信创作者，挑 5000 到 5 万粉、更新稳定、露脸、评论区活跃的人做 UGC 推广。打法可以照抄，但简介没说 AI 用在哪，'没有编程背景'只能推测是 AI 帮他写的。",
+        "source": "Starter Story (YouTube)",
+        "title": "$50K MRR solo founder reveals how he gets 100's of creators to promote his app 🤯"
+      },
+      {
+        "id": "c39",
+        "reason": "谁：Thariq，前 Claude Code 团队成员。怎么用：用 AI 给自己做了一个按'模式'管理工作的软件。结果：没用下去，打算改成按待办来组织。这是亲历的失败复盘，可以和他在 c38 里的判断'好软件是一组强烈的主张'合在一起写。",
+        "source": "Follow Builders (X)",
+        "title": "Thariq: making your own software is tough, even with AI, because it's hard to know what "
+      },
+      {
+        "id": "c5",
+        "reason": "有逐字稿，认知类。谁：Notion CEO Ivan Zhao 和 Dan Shipper。讲什么：哪些工具值得自己 vibe coding、哪些不值得，以及就算让 agent 来搭，也要懂系统是怎么运作的。适合正在考虑自己做工具的读者。",
+        "source": "The Every Podcast (AI & I)",
+        "title": "Notion’s Founder on the One Thing Your AI Is Missing"
+      },
+      {
+        "id": "c3",
+        "reason": "认知类，有数据。谁：curl 作者 Daniel Stenberg。说什么：agent 三周多把 18.5 万行 C 改写成 34 万行 Rust，同一段时间 curl 本身合并了 300 多个提交、修了 200 多个 bug，这些修复改写版都没有。他借此反问：AI 改写出来的克隆版能不能跟上原项目的维护？",
+        "source": "Simon Willison",
+        "title": "Quoting Daniel Stenberg"
+      },
+      {
+        "id": "c53",
+        "reason": "AI 生活类。谁：Tom's Guide 作者。怎么用：让 ChatGPT 和 Gemini 给爱黑胶的鼓手父亲挑圣诞礼物，比两边的推荐。结果：有明确的对比结论，普通人能照着用 AI 挑礼物。",
+        "source": "Tom's Guide · AI",
+        "title": "I asked ChatGPT and Gemini to find the perfect gifts for a drummer who loves vinyl — here’s the chatbot that gave me better recommendations"
+      },
+      {
+        "id": "c13",
+        "reason": "认知类，偏劳动市场。讲什么：Scale AI 旗下的 Outlier 以最高每小时 180 美元招医生做 AI 训练任务，借此论证 AI 不是取代工作，而是把专业工作变成低薪零工。和大厂员工的职业判断直接相关。",
+        "source": "Rest of World",
+        "title": "AI isn’t replacing your job. It’s turning it into low-paid gig work"
+      },
+      {
+        "id": "c48",
+        "reason": "只有简介，有数字但做法不具体。谁：Ramp CEO（年收入超 20 亿美元、估值 600 亿美元）。讲什么：AI 让部分员工生产力大幅提高，Ramp 因此重新设计公司的工作方式。'100 倍员工'的具体做法要看节目。",
+        "source": "Y Combinator / Lightcone (YouTube)",
+        "title": "Ramp’s Bet on the 100x Employee"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 21331,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2506,
+        "output_tokens_details": {
+          "thinking_tokens": 565
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 21331,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2506,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 21331,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 21331
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.220776
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 33157,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 6817,
+      "output_tokens_details": {
+        "thinking_tokens": 2165
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 33157,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 6817,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 33157,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 33157
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.401604
+  }
+}

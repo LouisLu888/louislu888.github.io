@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-18T14:45:07.423Z",
+  "updatedAt": "2026-11-19T14:44:44.032Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 42
+      "count": 44
     },
     {
       "id": "consulting",
@@ -20,7 +20,7 @@
       "name": "内容创作",
       "en": "AI content creation",
       "desc": "用 AI 辅助研究与制作，积累受众，获得广告、赞助和相关收入",
-      "count": 13
+      "count": 14
     },
     {
       "id": "saas",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 24
+      "count": 25
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 48
+      "count": 49
     },
     {
       "id": "life",
@@ -52,6 +52,43 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-19",
+      "number": 41,
+      "title": "一个人用 Bot 搭内容团队，curl 改写成 Rust 后谁来跟上 200 个修复",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "content": 1,
+        "perspective": 2,
+        "productivity": 1,
+        "app": 1
+      },
+      "headlines": [
+        {
+          "category": "content",
+          "headline": "三个月涨粉 6500：她让几个 Bot 组成了内容团队"
+        },
+        {
+          "category": "perspective",
+          "headline": "Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug"
+        },
+        {
+          "category": "perspective",
+          "headline": "Notion 创始人：什么值得自己 vibe code，什么不值得"
+        },
+        {
+          "category": "productivity",
+          "headline": "新接口上线前，先让 AI 写一个用它的插件"
+        },
+        {
+          "category": "app",
+          "headline": "18 岁开发者靠 Fiverr 助理私信几百位创作者推 App"
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "number": 40,

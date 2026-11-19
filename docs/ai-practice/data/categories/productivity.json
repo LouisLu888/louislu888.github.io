@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-18",
+      "headline": "新接口上线前，先让 AI 写一个用它的插件",
+      "oneLiner": "Simon Willison 给 Datasette 加了流式导出接口，Claude Fable 5.2 推荐用 Apache Arrow 格式，并且几乎一次就写出了配套插件。",
+      "who": "Datasette 作者 Simon Willison，在 1.0a43 版本里开放了让插件实现流式导出格式的能力。",
+      "how": "他让 Claude Fable 5.2 给新接口找一个合适的用例，模型提出 Apache Arrow 流式格式，并几乎一次写完了 datasette-arrows 插件。",
+      "result": "装上插件后，导出对话框里多了 Arrow 选项，可以像 CSV、TSV 一样流式导出整张表。",
+      "tryThis": "下次发布新 API 或扩展点时，让 AI 先写一个真实调用它的小示例，用它来检验接口设计。",
+      "caveat": "插件还是 0.1a0；把 Arrow 和 CSV、TSV 放在同一导出区的界面，要等下一个 alpha 版本才会发布。",
+      "body": "Datasette 1.0a43 让插件可以通过 register_output_renderer() 实现流式导出：数据分块输出，导出几百万行也不用全部读进内存。Simon Willison 在[发布记录](https://simonwillison.net/2026/Nov/18/datasette-arrows/)里写，他的规矩是**每次发布新的插件能力，都要同时发一个用到它的插件**。这次他让 Claude Fable 5.2 出主意，模型推荐 Apache Arrow 流式格式，插件几乎一次写成。\n\n可借鉴的是这个顺序：自己设计接口，用 AI 很快做出第一个使用者，用它检验接口好不好用。以前写示例插件很费时间，常被省掉；现在成本低了，可以作为发布前的固定步骤。前提是接口边界清楚，并且你能判断模型选的格式合不合适。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-arrows 0.1a0",
+          "url": "https://simonwillison.net/2026/Nov/18/datasette-arrows/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-04",
+      "issueDate": "2026-11-19",
+      "issueNumber": 41
+    },
+    {
+      "candidateIds": [
         "c39",
         "c22",
         "c46"

@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c51"
+      ],
+      "category": "content",
+      "kind": "本周演示",
+      "eventDate": "2026-11-18",
+      "headline": "三个月涨粉 6500：她让几个 Bot 组成了内容团队",
+      "oneLiner": "Tella 员工 Louise de Sadeleer 用 GrokBot 做选题研究、粗剪和 YouTube 发布，她说开始做账号后三个月里 Instagram 涨了 6,500 个粉丝。",
+      "who": "Louise de Sadeleer 在视频剪辑创业公司 Tella 工作，业余运营讲营销和 AI 的个人账号，在 Greg Isenberg 的节目里演示了整套流程。",
+      "how": "每周定时任务抓取她亲手挑的创作者的爆款帖和她收藏的 hook，汇总趋势和上升关键词；两个 Bot 在群聊里一起出选题；导师反馈做成 skill 审脚本；用手机把素材发进剪辑工具的素材库。",
+      "result": "她说开始做账号后三个月，Instagram 涨粉 6,500，TikTok 也有类似增长。脚本仍由她手写，目标是自动化 80% 的流程。",
+      "tryThis": "先建一个表，手动放进 15 到 25 个你想学的创作者或品牌，每周让 AI 找出其中表现远超平均的帖子，记下话题和开头两句。",
+      "caveat": "她把多数任务设成每周跑一次，因为每天跑额度很快用完；在手机上剪辑要靠 Tella 这类支持 agent 操作的剪辑工具。",
+      "body": "Louise de Sadeleer 在 [Startup Ideas Podcast](https://www.youtube.com/@GregIsenberg/search?query=Build%20a%201%20Person%20Media%20Machine%20With%20Grok%20Bot) 上完整演示了她的视频流程。研究阶段有四个每周任务：去她挑的创作者主页找**远超平均水平的帖子**，记下话题和 hook；从她的 TikTok 收藏夹提取每个视频的前两句，按反直觉、提问、共鸣等类型归类；读她付费订阅的 Substack、X 和新闻站，同一信号被报道多次才算趋势；按 vidIQ 的思路找搜索量上升的 YouTube 关键词。\n\n她坚持**创作者名单自己挑**，因为让 AI 选出来的人会和她想模仿的方向偏离很远。周一她和名为 Production Polly 的 Bot 在 Notion 排期；Polly 熟悉她的写法，Trend Study 像记者一样追热点，两个 Bot 在群聊里把她已有的想法和新趋势结合，一次给出三个选题。她还做了选题、hook、脚本三个顾问 skill，又把导师 Miranda 对脚本的反馈整理成「Miranda feedback」skill，写完脚本先跑一遍。\n\n录完视频她出门吃饭，Bot 把停顿和口头禅剪掉；看到想用的推文，发链接过去，Bot 截图放进素材库。YouTube 标题、描述和章节也交给它写。剪辑多数用 Opus 5.5 medium，复杂 3D 才用 Fable 5.2。她的判断标准是：**一件事你已经有固定方法了，就把它做成 skill。**",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Build a 1 Person Media Machine With Grok Bot",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Build%20a%201%20Person%20Media%20Machine%20With%20Grok%20Bot"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-19-01",
+      "issueDate": "2026-11-19",
+      "issueNumber": 41
+    },
+    {
+      "candidateIds": [
         "c9"
       ],
       "category": "content",
