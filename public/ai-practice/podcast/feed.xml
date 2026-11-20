@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-20 · AI 对齐 1200 小时直播录音和打赏账单，&quot;一毛钱漏斗&quot;不成立；ChatPRD 免费试用被刷成别人的生产线</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-20/</link>
+      <description>AI 转写 1200 小时直播录音，一毛钱漏斗不成立；ChatPRD 免费试用被刷成别人的生产线，创始人决定关停；Linear 一半工单由 Agent 创建，AI 功能怎么定价；搭了四套 AI 系统后，他说人只该盯红灯；Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-20/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 AI 转写 1200 小时直播录音，一毛钱漏斗不成立<br>03:00 ChatPRD 免费试用被刷成别人的生产线，创始人决定关停<br>04:33 Linear 一半工单由 Agent 创建，AI 功能怎么定价<br>06:21 搭了四套 AI 系统后，他说人只该盯红灯<br>08:17 Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus<br>09:22 今天可以做的一件事</p><p><b>AI 转写 1200 小时直播录音，一毛钱漏斗不成立</b><br><a href="https://yage.ai/live-streaming-3.html">鸭哥 yage.ai</a></p><p><b>ChatPRD 免费试用被刷成别人的生产线，创始人决定关停</b><br><a href="https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/">Simon Willison</a></p><p><b>Linear 一半工单由 Agent 创建，AI 功能怎么定价</b><br><a href="https://latent.space/p/linear-scaling/">Latent Space</a></p><p><b>搭了四套 AI 系统后，他说人只该盯红灯</b><br><a href="https://ranchen.org/content/20261119-ranchen-article-the-real-ai-stack-i-want-end-of-2026">陈然 ranchen.org</a></p><p><b>Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus</b><br><a href="https://x.com/petergyang/status/2123540875733315815">Follow Builders (X)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-20.mp3" length="3659276" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-20</guid>
+      <pubDate>Fri, 20 Nov 2026 22:51:49 GMT</pubDate>
+      <itunes:duration>00:10:10</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-19 · 一个人用 Bot 搭内容团队，curl 改写成 Rust 后谁来跟上 200 个修复</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-19/</link>
       <description>三个月涨粉 6500：她让几个 Bot 组成了内容团队；Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug；Notion 创始人：什么值得自己 vibe code，什么不值得；新接口上线前，先让 AI 写一个用它的插件；18 岁开发者靠 Fiverr 助理私信几百位创作者推 App（本集语音由 AI 合成）</description>

@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-20",
+    "title": "AI 对齐 1200 小时直播录音和打赏账单，\"一毛钱漏斗\"不成立；ChatPRD 免费试用被刷成别人的生产线",
+    "summary": "AI 转写 1200 小时直播录音，一毛钱漏斗不成立；ChatPRD 免费试用被刷成别人的生产线，创始人决定关停；Linear 一半工单由 Agent 创建，AI 功能怎么定价；搭了四套 AI 系统后，他说人只该盯红灯；Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-20/",
+    "items": [
+      {
+        "headline": "AI 转写 1200 小时直播录音，一毛钱漏斗不成立",
+        "sources": [
+          {
+            "label": "鸭哥 yage.ai",
+            "title": "直播观察（三）：谁在直播间当榜一大哥，他们为什么掏钱？",
+            "url": "https://yage.ai/live-streaming-3.html"
+          }
+        ]
+      },
+      {
+        "headline": "ChatPRD 免费试用被刷成别人的生产线，创始人决定关停",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "Token fraud is here and it’s BAD (YouTube)",
+            "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+          }
+        ]
+      },
+      {
+        "headline": "Linear 一半工单由 Agent 创建，AI 功能怎么定价",
+        "sources": [
+          {
+            "label": "Latent Space",
+            "title": "Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
+            "url": "https://latent.space/p/linear-scaling/"
+          }
+        ]
+      },
+      {
+        "headline": "搭了四套 AI 系统后，他说人只该盯红灯",
+        "sources": [
+          {
+            "label": "陈然 ranchen.org",
+            "title": "2026 年底我想要的真正的 AI",
+            "url": "https://ranchen.org/content/20261119-ranchen-article-the-real-ai-stack-i-want-end-of-2026"
+          }
+        ]
+      },
+      {
+        "headline": "Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Peter Yang: Gemini 4 Neon is getting rave reviews, so I made a new video comparing it to Opu",
+            "url": "https://x.com/petergyang/status/2123540875733315815"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "AI 转写 1200 小时直播录音，一毛钱漏斗不成立"
+      },
+      {
+        "start": 180,
+        "title": "ChatPRD 免费试用被刷成别人的生产线，创始人决定关停"
+      },
+      {
+        "start": 273,
+        "title": "Linear 一半工单由 Agent 创建，AI 功能怎么定价"
+      },
+      {
+        "start": 381,
+        "title": "搭了四套 AI 系统后，他说人只该盯红灯"
+      },
+      {
+        "start": 497,
+        "title": "Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus"
+      },
+      {
+        "start": 562,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 610,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-20.mp3",
+    "audioBytes": 3659276,
+    "publishedAt": "2026-11-20T22:51:49.003Z"
+  },
+  {
     "date": "2026-11-19",
     "title": "一个人用 Bot 搭内容团队，curl 改写成 Rust 后谁来跟上 200 个修复",
     "summary": "三个月涨粉 6500：她让几个 Bot 组成了内容团队；Agent 三周把 curl 改写成 Rust，原项目修了 200 个 bug；Notion 创始人：什么值得自己 vibe code，什么不值得；新接口上线前，先让 AI 写一个用它的插件；18 岁开发者靠 Fiverr 助理私信几百位创作者推 App",
