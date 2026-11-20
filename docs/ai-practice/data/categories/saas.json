@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c1"
+      ],
+      "category": "saas",
+      "kind": "本周动态",
+      "eventDate": "2026-11-20",
+      "headline": "ChatPRD 免费试用被刷成别人的生产线，创始人决定关停",
+      "oneLiner": "ChatPRD 创始人 Claire Vo 发现有团伙循环薅免费试用和优惠码，把她的 Agent 当成自家生产工具，她正在逐步取消免费试用。",
+      "who": "Claire Vo 经营 ChatPRD，这是一个帮产品经理把想法写成需求文档的 AI 平台，从 GPT-4 时代上线至今，她一直在公开记录开发过程。",
+      "how": "她在视频里讲了在用量中发现的异常：有团伙循环使用免费试用和优惠码，通过通道接入 ChatPRD 的 Agent，有的只是白用 AI，更多的是转卖 token，或者在上面跑自己的生意。",
+      "result": "她举的例子是一家国际化的 Roblox 和 Fortnite 地图工作室，用她的 Agent 做地图，相当于由她出钱养着。高频出现的 prompt 里还有\"骑自行车的鹈鹕\"SVG，Simon Willison 推测这是用来识别底层模型。她决定全面收掉免费试用。",
+      "tryThis": "如果你的 AI 产品有免费试用，今天就把试用账号的 token 消耗按账号排一次序，看最高的那一批在做什么，再决定是否给试用设用量上限。",
+      "caveat": "取消免费试用会伤害正常用户的转化，模型成本低、被滥用风险小的产品未必需要这么做。",
+      "body": "Simon Willison 在[博客](https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/)里转述了 Claire Vo 的视频。ChatPRD 的免费试用被成批滥用：有人循环使用试用和优惠码，把她的 Agent 接进自己的工作流程。她的原话是：\"我在资助一家国际化的 Roblox 和 Fortnite 地图工作室。\"\n\n有个细节值得做 AI 产品的人留意：滥用者常跑\"骑自行车的鹈鹕\"SVG 这种 prompt。Simon 认为这是在探测底层模型，因为不同模型家族的输出有明显特征，他自己也用这个方法猜过 OpenRouter 上的匿名模型。也就是说，**有人会专门研究你背后接的是哪个模型、值不值得薅**。\n\n对 Micro SaaS 来说，免费试用的成本不再只是\"送出去几天功能\"，每个试用账号都在实打实消耗模型费用。定价和试用设计要把单账号的 token 上限、优惠码能否叠加、异常用量告警一起考虑。Simon 也认为，面对这种程度的滥用，Claire 收掉免费试用看起来是对的决定。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Token fraud is here and it’s BAD (YouTube)",
+          "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-20-02",
+      "issueDate": "2026-11-20",
+      "issueNumber": 42
+    },
+    {
+      "candidateIds": [
+        "c46"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-19",
+      "headline": "Linear 一半工单由 Agent 创建，AI 功能怎么定价",
+      "oneLiner": "Linear COO Cristina Cordova 说，一年前 Agent 创建的工作占 3%，现在超过一半；客服回复由 AI 起草、人来决定，编码会话按 API 原价加少量加价收费。",
+      "who": "Cristina Cordova 是 Linear 的 COO，之前在 Stripe 待了七年半。她在 Latent Space 节目里讲了 Linear 年度经常性收入（ARR）过 1 亿美元途中做的取舍。",
+      "how": "Linear 推出了 MCP server 和 Agent 平台。客服不让 LLM 自己回工单，由 AI 起草、人决定发什么。编码会话让用户自选 OpenAI 或 Anthropic 的模型，按公开 API 价格加少量加价收费。",
+      "result": "公司称有 4 万多付费客户，净收入留存 177%。她说三年半来没有一起因为客服体验差引起的投诉升级。客户还常以为回复是 AI 写的，因为回得太快。",
+      "tryThis": "给自己的产品同时盯两条线：Agent 调用量和用户打开 App 的次数。新的 AI 功能先作为免费 beta 上线，同时提前告知以后会收费。",
+      "caveat": "按 API 原价加价收费的前提是客户愿意自己选模型；按效果收费在 Linear 也还没找到办法。",
+      "body": "[Latent Space 这期访谈](https://latent.space/p/linear-scaling/)里，Cordova 说 Linear 2025 年 5 月上线 MCP server，现在超过一半的 issue 由 Agent 创建。她的判断是，满足于当\"一个挂着 MCP 的数据库\"的 SaaS 是在犯大错。她**同时看 Agent 用量和 App 用量两条线**：Agent 用量涨而 App 用量不涨，说明你正在变成可替换的商品。\n\n定价上，她的原则是对产生成本的部分收费，其余免费。座位费保留；Linear Agent 的聊天功能用的是前沿模型，仍然免费；编码会话和定时任务 Loops 走 AI 额度。新的 AI 功能先作为免费 beta 上线并提前告知会收费，**价格从高往低调，不把原来免费的东西改成收费**。\n\n她还提醒，现在很多企业有专门的 AI 预算，采购变快了，但买家签的多是一年期合同和付费试点。等这些合同到期续约时，才能看出谁的 ARR 是真的。做小型 SaaS 的人可以照搬两件事：客服用 AI 起草、人工把关；把模型成本透明地传给客户，再加一层服务费。",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "Scaling Linear’s GTM to $100M ARR — Cristina Cordova, COO",
+          "url": "https://latent.space/p/linear-scaling/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-20-03",
+      "issueDate": "2026-11-20",
+      "issueNumber": 42
+    },
+    {
+      "candidateIds": [
         "c50"
       ],
       "category": "saas",

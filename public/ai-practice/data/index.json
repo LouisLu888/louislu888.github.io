@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-19T14:44:44.032Z",
+  "updatedAt": "2026-11-20T14:44:41.992Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 44
+      "count": 45
     },
     {
       "id": "consulting",
@@ -27,7 +27,7 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 19
+      "count": 21
     },
     {
       "id": "app",
@@ -41,7 +41,7 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 49
+      "count": 51
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-20",
+      "number": 42,
+      "title": "AI 对齐 1200 小时直播录音和打赏账单，\"一毛钱漏斗\"不成立；ChatPRD 免费试用被刷成别人的生产线",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 9,
+      "itemCount": 5,
+      "categoryCounts": {
+        "productivity": 2,
+        "saas": 2,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "productivity",
+          "headline": "AI 转写 1200 小时直播录音，一毛钱漏斗不成立"
+        },
+        {
+          "category": "saas",
+          "headline": "ChatPRD 免费试用被刷成别人的生产线，创始人决定关停"
+        },
+        {
+          "category": "saas",
+          "headline": "Linear 一半工单由 Agent 创建，AI 功能怎么定价"
+        },
+        {
+          "category": "perspective",
+          "headline": "搭了四套 AI 系统后，他说人只该盯红灯"
+        },
+        {
+          "category": "productivity",
+          "headline": "Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus"
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "number": 41,
