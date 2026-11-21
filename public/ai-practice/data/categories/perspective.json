@@ -8,6 +8,39 @@
   "items": [
     {
       "candidateIds": [
+        "c42",
+        "c39"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-20",
+      "headline": "Box CEO：给 agent 目标，不用再一步步教它",
+      "oneLiner": "Box CEO Aaron Levie 11 月 20 日说，今年模型能力明显提升，用 agent 的方式应该从下达具体步骤改成交给它目标。",
+      "who": "Aaron Levie 是 Box 的 CEO，他的公司在做企业内容加 AI 的产品。这个观点发在他的 X 帖子里。",
+      "how": "他认为，最好把 agent 用在你自己都说不清该怎么解的问题上，给它目标和足够的自由，让它自己找实现方式。",
+      "result": "他的依据是一年前后的对比：一年前不把设计和开发方式说得很细，agent 几乎不可能成功；现在 agent 能在更大的方案范围里找到联系，往往能想出比人更好的实现。",
+      "tryThis": "下次布置任务时，试着只写目标、约束和验收标准，不写步骤，再和你自己写好步骤的版本对比结果。",
+      "caveat": "他预计金融、法律、生命科学等领域也会这样，这是判断，还没有发生。结果能被检验的任务才适合这样放手。",
+      "body": "[Levie 的帖子](https://x.com/levie/status/2123686350410912145)说，任何人都记不全一个行业的全部知识，所以 agent 有机会想出人想不到的方案。按他的说法，未来部署 agent 主要靠给目标，下指令会越来越少。\n\n同一天，投资人 Matt Turck 讲了[一个反例](https://x.com/mattturck/status/2123777488786538982)。有人为了在 Slush 大会上约他见面，连发了五封邮件。真碰上面时，对方盯着他的胸牌看了两遍，显然不知道他是谁，打个招呼就走了。目标定成“约到见面”，agent 确实完成了，可真正需要的是建立关系，这一步落空了。\n\n**放手的前提是验收标准写对。**写清楚什么算成功、哪些环节必须本人出面，再决定给 agent 多少自由。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: This year we’ve had a clear jump in model capability where instead of telling ag",
+          "url": "https://x.com/levie/status/2123686350410912145"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Matt Turck: Automated agentic emailing  vs the real world, a story: \n\nGuy emails me twice to",
+          "url": "https://x.com/mattturck/status/2123777488786538982"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-05",
+      "issueDate": "2026-11-21",
+      "issueNumber": 43
+    },
+    {
+      "candidateIds": [
         "c7"
       ],
       "category": "perspective",

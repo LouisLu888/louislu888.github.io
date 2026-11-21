@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c5"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-18",
+      "headline": "没人用的工具改成代办服务，月收入做到 60 万美元",
+      "oneLiner": "Oliver Brocato 的 Bustem 用 AI 扫描加人工处理，帮电商品牌下架仿冒品。他说公司一年多做到月收入 60 万美元，客户平均每月付约 3000 美元。",
+      "who": "Oliver Brocato 卖掉了巧克力电商 Tabs Chocolate，再次创业做 Bustem，帮电商品牌找出盗图、克隆网站和未授权经销商。",
+      "how": "品牌接入网站、社媒、Amazon 店铺和 Meta 广告账户。AI 抓取图片、把视频拆成帧，组合关键词跑数万次搜索。人工分析师复核结果，品牌确认后，团队去找 Shopify、Amazon、支付商、域名注册商和托管商要求下架。",
+      "result": "他说公司服务 180 多个品牌，团队超过 50 人，没有融资，已经盈利，收费每月 1500 到 5000 美元。第一版是纯工具，免费给 30 个品牌试用，几乎没人用。",
+      "tryThis": "如果你的 B2B 工具没人用，去问用户愿不愿意为“结果”付钱，并在报价里讲清楚有真人在做。他说客户知道有真人参与后，愿意付的钱更多。",
+      "caveat": "这个模式要靠大量人力，他本人也说并不想做 agency。早期客户主要来自他自己的 Twitter 粉丝。",
+      "body": "在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=How%20I%20Built%20It%3A%20%24600K%2FMonth%20SaaS)里，Brocato 讲了一次转型。第一版工具会找出侵权者，再给出一步步的举报说明，但处理起来耗时又枯燥，试用的品牌根本不用。他的结论是：**不卖工具，直接卖客户想要的结果。**\n\n交付做得很细。每个客户都有一个 Slack 频道，每周自动收到总结：下架了多少、有多少等待确认、新发现多少侵权者、这些人卖了多少钱、给团队省了多少时间。每个客户配一名团队负责人和一名客户成功经理。\n\n他的建议是切口越窄越好。主持人还转述了他的一个判断：模型每个月都在变好，同样的服务成本越来越低，利润会越来越高。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "How I Built It: $600K/Month SaaS",
+          "url": "https://www.youtube.com/@starterstory/search?query=How%20I%20Built%20It%3A%20%24600K%2FMonth%20SaaS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-02",
+      "issueDate": "2026-11-21",
+      "issueNumber": 43
+    },
+    {
+      "candidateIds": [
         "c1"
       ],
       "category": "saas",

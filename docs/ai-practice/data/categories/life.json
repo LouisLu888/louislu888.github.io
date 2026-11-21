@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c51"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-20",
+      "headline": "26 份资料，5 分钟做成一个可点击的学习网站",
+      "oneLiner": "Lifehacker 作者 David Nield 用 Gemini Notebook 新上线的建站功能，把 26 份关于《都柏林人》的资料做成互动学习网站，用时约 5 分钟。",
+      "who": "David Nield 以前读书时研究过 Joyce 的《都柏林人》，所以拿这个题目测试，方便自己核对 AI 有没有出错。",
+      "how": "先在 Gemini Notebook 里收集资料，再在对话框里说明想要什么：做一份互动指南，覆盖每篇小说和整体主题，用来复习。之后再追加提示，调整颜色和布局。",
+      "result": "生成的单页网站有情节梗概、分析、背景、母题，底部有测验，还有一张可以点开的关系图。他觉得排版清楚，功能也都能用。",
+      "tryThis": "把一次家庭旅行的行程、地址、要带的东西放进一个 notebook，生成一个家人都能查看的行程页；资料更新后重新生成一次就行。",
+      "caveat": "目前只有网页版能用，手机端还没上线。生成的是单页，没法直接发布，要下载 HTML 自己分享。配色和字体是常见的 AI 风格。",
+      "body": "根据 [Lifehacker 的实测](https://lifehacker.com/tech/gemini-notebooks-new-interactive-site-builder-is-useful?utm_medium=RSS)，Studio 面板里没有建站按钮，要在对话框里输入类似“make me a website”的指令。Google 建议在提示里写清楚这个网站用于工作还是学习。\n\n作者说，生成的东西更像一个小应用，可以在故事和主题之间来回点，比一份静态报告更容易记住内容。他提出的家庭用法包括旅行行程页和家谱页面，都能分享给亲戚。\n\n这个功能适合手里资料多、要给别人讲清楚的场景，比如孩子复习、家庭出行、整理老人的就医资料。**先把资料收齐，再在提示里写清楚用途和读者**，结果会好很多。",
+      "sources": [
+        {
+          "label": "Lifehacker",
+          "title": "Gemini Notebook's New Interactive Site Builder Is Much More Useful Than I Expected",
+          "url": "https://lifehacker.com/tech/gemini-notebooks-new-interactive-site-builder-is-useful?utm_medium=RSS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-04",
+      "issueDate": "2026-11-21",
+      "issueNumber": 43
+    },
+    {
+      "candidateIds": [
         "c54"
       ],
       "category": "life",

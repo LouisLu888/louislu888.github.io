@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-20T14:44:41.992Z",
+  "updatedAt": "2026-11-21T14:45:09.753Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 45
+      "count": 46
     },
     {
       "id": "consulting",
       "name": "AI 咨询",
       "en": "AI consulting",
       "desc": "找客户、诊断业务、界定交付、培训、实施与维护",
-      "count": 8
+      "count": 9
     },
     {
       "id": "content",
@@ -27,14 +27,14 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 21
+      "count": 22
     },
     {
       "id": "app",
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 25
+      "count": 26
     },
     {
       "id": "productivity",
@@ -48,10 +48,48 @@
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 27
+      "count": 28
     }
   ],
   "days": [
+    {
+      "date": "2026-11-21",
+      "number": 43,
+      "title": "业余 App 靠搜索流量一年收入 11.5 万美元，没人用的工具改成代办服务后月收入 60 万美元",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "app": 1,
+        "saas": 1,
+        "consulting": 1,
+        "life": 1,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元"
+        },
+        {
+          "category": "saas",
+          "headline": "没人用的工具改成代办服务，月收入做到 60 万美元"
+        },
+        {
+          "category": "consulting",
+          "headline": "先给潜在客户做好小工具，再谈价格"
+        },
+        {
+          "category": "life",
+          "headline": "26 份资料，5 分钟做成一个可点击的学习网站"
+        },
+        {
+          "category": "perspective",
+          "headline": "Box CEO：给 agent 目标，不用再一步步教它"
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "number": 42,

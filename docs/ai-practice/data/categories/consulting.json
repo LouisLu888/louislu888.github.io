@@ -8,6 +8,39 @@
   "items": [
     {
       "candidateIds": [
+        "c49",
+        "c33"
+      ],
+      "category": "consulting",
+      "kind": "机会观察",
+      "eventDate": "2026-11-20",
+      "headline": "先给潜在客户做好小工具，再谈价格",
+      "oneLiner": "Greg Isenberg 建议用 Gemini 4 Neon 抓取潜在客户的网站，做一个定制小工具发过去，借此谈合作。Zara Zhang 同一天提醒，别直接把 Claude Artifacts 链接发给客户。",
+      "who": "Greg Isenberg 在 Startup Ideas Podcast 上讲了他用 Gemini 4 Neon 的方法，这期节目由 Google 赞助，11 月 19 日录制。Zara Zhang 是独立开发者。",
+      "how": "把目标商家的网址交给模型，让它抓取网站信息，做一个对这家店有用的计算器或小工具，直接发给对方。另一种做法是找网站陈旧的公司，先把网站重做好，再问对方愿不愿意每月付 50 或 100 美元。",
+      "result": "他的测试数据：同一模型在 Antigravity 里的编码得分从 12.8% 升到 39%。thinking 设为 high 比 Carbon 便宜 32%；设为 extra high 要多花 70% 的 token，得分只多不到两分。",
+      "tryThis": "选三家你熟悉的行业里的商家，各做一个小工具。先让模型打开浏览器点按钮、自己修 bug，部署到你自己的域名后再去联系对方。",
+      "caveat": "Zara Zhang 说，客户看到 AI 平台的分享链接，会觉得“我自己 prompt 一下也行”。Neon 没有免费层，回答偏短，还爱用破折号和“不是 X 而是 Y”的句式，要在提示里专门要求改掉。",
+      "body": "Isenberg 在[节目](https://www.youtube.com/@GregIsenberg/search?query=Gemini%204%20Neon%3A%20the%20most%20underrated%20model%20of%20the%20year)里把这种做法叫“特洛伊木马式 demo”：**不发提案，先发一个能用的东西。**他还提到，可以做可玩的小游戏或 3D 配置器来收集邮箱。他说这类东西过去找代理商做，要 1 万到 10 万美元。\n\n[Zara Zhang 的提醒](https://x.com/zarazhangrui/status/2123813583339532321)补上了交付这一环。demo 放在 AI 平台上分享，客户会觉得门槛很低。要收费，就得放在自己的域名下，加上对方的业务数据，后面有修改和维护。客户愿意付钱，买的是你懂他们的业务，也是有人长期负责。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Gemini 4 Neon: the most underrated model of the year",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Gemini%204%20Neon%3A%20the%20most%20underrated%20model%20of%20the%20year"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Zara Zhang: Do not send your clients Claude Artifacts/ChatGPT sites\n\nIt makes them feel like",
+          "url": "https://x.com/zarazhangrui/status/2123813583339532321"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-03",
+      "issueDate": "2026-11-21",
+      "issueNumber": 43
+    },
+    {
+      "candidateIds": [
         "c51"
       ],
       "category": "consulting",

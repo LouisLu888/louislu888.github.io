@@ -1,0 +1,309 @@
+{
+  "date": "2026-11-21",
+  "title": "业余 App 靠搜索流量一年收入 11.5 万美元，没人用的工具改成代办服务后月收入 60 万美元",
+  "items": [
+    {
+      "candidateIds": [
+        "c6"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-15",
+      "headline": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元",
+      "oneLiner": "软件工程师 Kris Chase 业余做了肽类用药追踪 App PeptIQ。他说今年收入已超过 11.5 万美元，月经常性收入约 1.4 万美元，约七成点击和收入来自 Google 搜索。",
+      "who": "Kris Chase 写了 25 年代码，现在的正职是兼职 CTO。PeptIQ 是他 2026 年初在业余时间上线的第一个自有 App。",
+      "how": "他用 vibe coding 工具，大约一周做出能用的版本。营销网站上的文章大部分由 AI 起草，也有他自己写的和外包写手写的。文章里嵌了一个复溶计算器，用户想保存计算结果，就会被引导注册 App。",
+      "result": "他展示的 RevenueCat 后台显示：近 28 天收入 2.2 万美元，有效订阅约 1400 个。过去 12 个月，博客文章带来 59 万次点击。SEO 前六七个月几乎没有效果。",
+      "tryThis": "在已经有人赚到钱的品类里找一个没被覆盖的细分，比如他从 GLP-1 类 App 转向更广的肽类。去 Reddit 收集用户反复问的问题写成文章，再在文章里放一个连到 App 的小工具。",
+      "caveat": "SEO 要等半年以上。他的付费用户多在 45 到 55 岁，习惯用 Google 搜索；如果目标用户更年轻、更常用 ChatGPT，这套打法不一定有效。",
+      "body": "Kris Chase 在 [Starter Story 节目](https://www.youtube.com/@starterstory/search?query=I%20built%20this%20app%20on%20the%20side%20for%20fun.%20It%20just%20hit%20%24100K)里说，PeptIQ 用的是硬付费墙，每月约 30 美元或每年 130 美元。他没投广告，也没找网红推广。\n\n最值得借鉴的是**文章、工具、注册连成一条线**。先想清楚读者看完文章下一步要做什么，比如文章讲怎么复溶，就在文章里放一个计算器，用户一保存数据就进入 App。技术上，他要求页面加载快、schema 和语义标签写对、没有坏链，用 SEMrush 或 Ahrefs 看竞品靠哪些页面拿到流量。他还建议把 sitemap 提交给 Bing，这一步不花钱。\n\n这对上班族做副业有参考价值：开发只用了一周，增长靠的是慢慢积累的内容，适合时间零散的人。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "I built this app on the side for fun. It just hit $100K",
+          "url": "https://www.youtube.com/@starterstory/search?query=I%20built%20this%20app%20on%20the%20side%20for%20fun.%20It%20just%20hit%20%24100K"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-01"
+    },
+    {
+      "candidateIds": [
+        "c5"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-18",
+      "headline": "没人用的工具改成代办服务，月收入做到 60 万美元",
+      "oneLiner": "Oliver Brocato 的 Bustem 用 AI 扫描加人工处理，帮电商品牌下架仿冒品。他说公司一年多做到月收入 60 万美元，客户平均每月付约 3000 美元。",
+      "who": "Oliver Brocato 卖掉了巧克力电商 Tabs Chocolate，再次创业做 Bustem，帮电商品牌找出盗图、克隆网站和未授权经销商。",
+      "how": "品牌接入网站、社媒、Amazon 店铺和 Meta 广告账户。AI 抓取图片、把视频拆成帧，组合关键词跑数万次搜索。人工分析师复核结果，品牌确认后，团队去找 Shopify、Amazon、支付商、域名注册商和托管商要求下架。",
+      "result": "他说公司服务 180 多个品牌，团队超过 50 人，没有融资，已经盈利，收费每月 1500 到 5000 美元。第一版是纯工具，免费给 30 个品牌试用，几乎没人用。",
+      "tryThis": "如果你的 B2B 工具没人用，去问用户愿不愿意为“结果”付钱，并在报价里讲清楚有真人在做。他说客户知道有真人参与后，愿意付的钱更多。",
+      "caveat": "这个模式要靠大量人力，他本人也说并不想做 agency。早期客户主要来自他自己的 Twitter 粉丝。",
+      "body": "在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=How%20I%20Built%20It%3A%20%24600K%2FMonth%20SaaS)里，Brocato 讲了一次转型。第一版工具会找出侵权者，再给出一步步的举报说明，但处理起来耗时又枯燥，试用的品牌根本不用。他的结论是：**不卖工具，直接卖客户想要的结果。**\n\n交付做得很细。每个客户都有一个 Slack 频道，每周自动收到总结：下架了多少、有多少等待确认、新发现多少侵权者、这些人卖了多少钱、给团队省了多少时间。每个客户配一名团队负责人和一名客户成功经理。\n\n他的建议是切口越窄越好。主持人还转述了他的一个判断：模型每个月都在变好，同样的服务成本越来越低，利润会越来越高。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "How I Built It: $600K/Month SaaS",
+          "url": "https://www.youtube.com/@starterstory/search?query=How%20I%20Built%20It%3A%20%24600K%2FMonth%20SaaS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-02"
+    },
+    {
+      "candidateIds": [
+        "c49",
+        "c33"
+      ],
+      "category": "consulting",
+      "kind": "机会观察",
+      "eventDate": "2026-11-20",
+      "headline": "先给潜在客户做好小工具，再谈价格",
+      "oneLiner": "Greg Isenberg 建议用 Gemini 4 Neon 抓取潜在客户的网站，做一个定制小工具发过去，借此谈合作。Zara Zhang 同一天提醒，别直接把 Claude Artifacts 链接发给客户。",
+      "who": "Greg Isenberg 在 Startup Ideas Podcast 上讲了他用 Gemini 4 Neon 的方法，这期节目由 Google 赞助，11 月 19 日录制。Zara Zhang 是独立开发者。",
+      "how": "把目标商家的网址交给模型，让它抓取网站信息，做一个对这家店有用的计算器或小工具，直接发给对方。另一种做法是找网站陈旧的公司，先把网站重做好，再问对方愿不愿意每月付 50 或 100 美元。",
+      "result": "他的测试数据：同一模型在 Antigravity 里的编码得分从 12.8% 升到 39%。thinking 设为 high 比 Carbon 便宜 32%；设为 extra high 要多花 70% 的 token，得分只多不到两分。",
+      "tryThis": "选三家你熟悉的行业里的商家，各做一个小工具。先让模型打开浏览器点按钮、自己修 bug，部署到你自己的域名后再去联系对方。",
+      "caveat": "Zara Zhang 说，客户看到 AI 平台的分享链接，会觉得“我自己 prompt 一下也行”。Neon 没有免费层，回答偏短，还爱用破折号和“不是 X 而是 Y”的句式，要在提示里专门要求改掉。",
+      "body": "Isenberg 在[节目](https://www.youtube.com/@GregIsenberg/search?query=Gemini%204%20Neon%3A%20the%20most%20underrated%20model%20of%20the%20year)里把这种做法叫“特洛伊木马式 demo”：**不发提案，先发一个能用的东西。**他还提到，可以做可玩的小游戏或 3D 配置器来收集邮箱。他说这类东西过去找代理商做，要 1 万到 10 万美元。\n\n[Zara Zhang 的提醒](https://x.com/zarazhangrui/status/2123813583339532321)补上了交付这一环。demo 放在 AI 平台上分享，客户会觉得门槛很低。要收费，就得放在自己的域名下，加上对方的业务数据，后面有修改和维护。客户愿意付钱，买的是你懂他们的业务，也是有人长期负责。",
+      "sources": [
+        {
+          "label": "Startup Ideas Podcast (Greg Isenberg)",
+          "title": "Gemini 4 Neon: the most underrated model of the year",
+          "url": "https://www.youtube.com/@GregIsenberg/search?query=Gemini%204%20Neon%3A%20the%20most%20underrated%20model%20of%20the%20year"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Zara Zhang: Do not send your clients Claude Artifacts/ChatGPT sites\n\nIt makes them feel like",
+          "url": "https://x.com/zarazhangrui/status/2123813583339532321"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-03"
+    },
+    {
+      "candidateIds": [
+        "c51"
+      ],
+      "category": "life",
+      "kind": "本周演示",
+      "eventDate": "2026-11-20",
+      "headline": "26 份资料，5 分钟做成一个可点击的学习网站",
+      "oneLiner": "Lifehacker 作者 David Nield 用 Gemini Notebook 新上线的建站功能，把 26 份关于《都柏林人》的资料做成互动学习网站，用时约 5 分钟。",
+      "who": "David Nield 以前读书时研究过 Joyce 的《都柏林人》，所以拿这个题目测试，方便自己核对 AI 有没有出错。",
+      "how": "先在 Gemini Notebook 里收集资料，再在对话框里说明想要什么：做一份互动指南，覆盖每篇小说和整体主题，用来复习。之后再追加提示，调整颜色和布局。",
+      "result": "生成的单页网站有情节梗概、分析、背景、母题，底部有测验，还有一张可以点开的关系图。他觉得排版清楚，功能也都能用。",
+      "tryThis": "把一次家庭旅行的行程、地址、要带的东西放进一个 notebook，生成一个家人都能查看的行程页；资料更新后重新生成一次就行。",
+      "caveat": "目前只有网页版能用，手机端还没上线。生成的是单页，没法直接发布，要下载 HTML 自己分享。配色和字体是常见的 AI 风格。",
+      "body": "根据 [Lifehacker 的实测](https://lifehacker.com/tech/gemini-notebooks-new-interactive-site-builder-is-useful?utm_medium=RSS)，Studio 面板里没有建站按钮，要在对话框里输入类似“make me a website”的指令。Google 建议在提示里写清楚这个网站用于工作还是学习。\n\n作者说，生成的东西更像一个小应用，可以在故事和主题之间来回点，比一份静态报告更容易记住内容。他提出的家庭用法包括旅行行程页和家谱页面，都能分享给亲戚。\n\n这个功能适合手里资料多、要给别人讲清楚的场景，比如孩子复习、家庭出行、整理老人的就医资料。**先把资料收齐，再在提示里写清楚用途和读者**，结果会好很多。",
+      "sources": [
+        {
+          "label": "Lifehacker",
+          "title": "Gemini Notebook's New Interactive Site Builder Is Much More Useful Than I Expected",
+          "url": "https://lifehacker.com/tech/gemini-notebooks-new-interactive-site-builder-is-useful?utm_medium=RSS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-04"
+    },
+    {
+      "candidateIds": [
+        "c42",
+        "c39"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-20",
+      "headline": "Box CEO：给 agent 目标，不用再一步步教它",
+      "oneLiner": "Box CEO Aaron Levie 11 月 20 日说，今年模型能力明显提升，用 agent 的方式应该从下达具体步骤改成交给它目标。",
+      "who": "Aaron Levie 是 Box 的 CEO，他的公司在做企业内容加 AI 的产品。这个观点发在他的 X 帖子里。",
+      "how": "他认为，最好把 agent 用在你自己都说不清该怎么解的问题上，给它目标和足够的自由，让它自己找实现方式。",
+      "result": "他的依据是一年前后的对比：一年前不把设计和开发方式说得很细，agent 几乎不可能成功；现在 agent 能在更大的方案范围里找到联系，往往能想出比人更好的实现。",
+      "tryThis": "下次布置任务时，试着只写目标、约束和验收标准，不写步骤，再和你自己写好步骤的版本对比结果。",
+      "caveat": "他预计金融、法律、生命科学等领域也会这样，这是判断，还没有发生。结果能被检验的任务才适合这样放手。",
+      "body": "[Levie 的帖子](https://x.com/levie/status/2123686350410912145)说，任何人都记不全一个行业的全部知识，所以 agent 有机会想出人想不到的方案。按他的说法，未来部署 agent 主要靠给目标，下指令会越来越少。\n\n同一天，投资人 Matt Turck 讲了[一个反例](https://x.com/mattturck/status/2123777488786538982)。有人为了在 Slush 大会上约他见面，连发了五封邮件。真碰上面时，对方盯着他的胸牌看了两遍，显然不知道他是谁，打个招呼就走了。目标定成“约到见面”，agent 确实完成了，可真正需要的是建立关系，这一步落空了。\n\n**放手的前提是验收标准写对。**写清楚什么算成功、哪些环节必须本人出面，再决定给 agent 多少自由。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: This year we’ve had a clear jump in model capability where instead of telling ag",
+          "url": "https://x.com/levie/status/2123686350410912145"
+        },
+        {
+          "label": "Follow Builders (X)",
+          "title": "Matt Turck: Automated agentic emailing  vs the real world, a story: \n\nGuy emails me twice to",
+          "url": "https://x.com/mattturck/status/2123777488786538982"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-21-05"
+    }
+  ],
+  "action": "从你熟悉的一个人群里，挑出他们反复问的一个问题：可以翻 Reddit、同事群，或者你自己被问过三次以上的事。用 AI 起草一篇回答，补上你亲身经历的细节，再在文章末尾放一个小工具，比如计算器、清单或模板，让读者留下邮箱才能保存结果。发出去后记录一周的访问量和留邮箱的人数，判断这个问题值不值得继续做成内容、App 或服务。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-21T14:45:04.010Z",
+    "engine": "cli",
+    "candidateCount": 51,
+    "candidatesBySource": {
+      "Simon Willison": 2,
+      "Matt Wolfe": 2,
+      "Starter Story Podcast": 2,
+      "Starter Story (YouTube)": 1,
+      "Liam Ottley / Morningside AI": 1,
+      "Every (YouTube)": 3,
+      "Follow Builders (X)": 31,
+      "Latent Space": 2,
+      "The AI Daily Brief": 1,
+      "Y Combinator / Lightcone (YouTube)": 1,
+      "Riley Brown": 2,
+      "Startup Ideas Podcast (Greg Isenberg)": 1,
+      "App Masters (Steve P. Young)": 1,
+      "Lifehacker": 1
+    },
+    "shortlist": [
+      {
+        "id": "c5",
+        "reason": "有逐字稿：Oliver Brocato 卖掉 Tabs Chocolate 之后，靠自筹资金做 SaaS 产品 Bustem，一年多做到月经常性收入 $600K，讲了转向过程和产品拆解。谁、怎么做、结果都有。",
+        "source": "Starter Story Podcast",
+        "title": "How I Built It: $600K/Month SaaS"
+      },
+      {
+        "id": "c6",
+        "reason": "有逐字稿：干了 25 年的软件工程师 Kris 业余做了个多肽记录 App PeptIQ，一年收入 $115K，没靠爆红，靠 SEO 慢慢做起来。大厂员工做副业可以照着试。",
+        "source": "Starter Story Podcast",
+        "title": "I built this app on the side for fun. It just hit $100K"
+      },
+      {
+        "id": "c51",
+        "reason": "全文：作者亲手试了 Gemini Notebook 新出的功能，把研究笔记生成可交互的网站，写了怎么操作、能拿来做什么、实际效果怎样。适合个人提效或学习。",
+        "source": "Lifehacker",
+        "title": "Gemini Notebook's New Interactive Site Builder Is Much More Useful Than I Expected"
+      },
+      {
+        "id": "c49",
+        "reason": "有逐字稿：Greg Isenberg 在 Antigravity 里实测 Gemini 4 Neon，讲了社区做出来的东西、5 个用法、5 种赚钱或省时间的办法，还有 4 条坦白的缺点。用 AI 怎么做、怎么变现都有，比一般模型发布内容实用。",
+        "source": "Startup Ideas Podcast (Greg Isenberg)",
+        "title": "Gemini 4 Neon: the most underrated model of the year"
+      },
+      {
+        "id": "c23",
+        "reason": "Peter Yang 给了三步具体做法：把 Antigravity 的网页加到手机主屏，就能在手机上远程管理所有对话线程，他还拿它和 Claude 的远程控制做了对比。可以直接照着做。",
+        "source": "Follow Builders (X)",
+        "title": "Peter Yang: For those of you trying out @antigravity for Neon, here's a quick tip:\n\n1. Go to"
+      },
+      {
+        "id": "c7",
+        "reason": "Yoni 做游戏化的屏幕时间管理 App Brainrot，月收入从约 $10K 做到 $400K，总结了 4 条挑 App 点子的规则。简介本身已经写清了做法和数字。",
+        "source": "Starter Story (YouTube)",
+        "title": "$400K MRR founder reveals the 4 rules for picking an app idea that actually makes money 💰"
+      },
+      {
+        "id": "c2",
+        "reason": "Anthropic 的 Levent Alpöge 亲口说他和 Claude 一起证明了黎曼猜想，还用 Lean 做了形式化验证，也讲了合作的过程和感受。这是今天头号大事的一手说法，同一件事的其他版本都没选。",
+        "source": "Simon Willison",
+        "title": "Quoting Levent Alpöge"
+      },
+      {
+        "id": "c42",
+        "reason": "Box CEO Aaron Levie 的判断：今年模型能力明显上了一个台阶，用 agent 的方式该从「告诉它具体怎么做」转向「把你自己说不清的问题交给它」，而且这个变化会扩散到金融、法律等知识工作领域。属于有依据的 AI 认知。",
+        "source": "Follow Builders (X)",
+        "title": "Aaron Levie: This year we’ve had a clear jump in model capability where instead of telling ag"
+      },
+      {
+        "id": "c33",
+        "reason": "Zara Zhang 给做咨询和外包的人一条提醒：别把 Claude Artifacts 或 ChatGPT 生成的网站直接发给客户，客户会觉得「这我自己提示一下也能做」。关系到交付方式和怎么让客户觉得值。",
+        "source": "Follow Builders (X)",
+        "title": "Zara Zhang: Do not send your clients Claude Artifacts/ChatGPT sites\n\nIt makes them feel like"
+      },
+      {
+        "id": "c45",
+        "reason": "简介里写到 NLW 用 Gemini Neon 当「第二意见」：Claude 和 ChatGPT 总把一期讲石油的节目写成百科条目，Neon 帮他找到了故事线，他还写了自己反驳 Neon 之后的结果。内容创作者的真实用法，但只有简介。",
+        "source": "The AI Daily Brief",
+        "title": "Why You Should Try Gemini Neon (Even if You Love Fable)"
+      },
+      {
+        "id": "c39",
+        "reason": "投资人 Matt Turck 亲身遇到的事：有人用 AI 自动化邮件反复约他见面，当面碰到时却根本不认识他。一线视角，提醒大家 AI 自动化外联会怎么翻车。",
+        "source": "Follow Builders (X)",
+        "title": "Matt Turck: Automated agentic emailing  vs the real world, a story: \n\nGuy emails me twice to"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 20092,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2338,
+        "output_tokens_details": {
+          "thinking_tokens": 730
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 20092,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2338,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 20092,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 20092
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.207504
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 35099,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 7429,
+      "output_tokens_details": {
+        "thinking_tokens": 2786
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 35099,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7429,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 35099,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 35099
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.42938
+  }
+}
