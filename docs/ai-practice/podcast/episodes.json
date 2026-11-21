@@ -1,5 +1,103 @@
 [
   {
+    "date": "2026-11-21",
+    "title": "业余 App 靠搜索流量一年收入 11.5 万美元，没人用的工具改成代办服务后月收入 60 万美元",
+    "summary": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元；没人用的工具改成代办服务，月收入做到 60 万美元；先给潜在客户做好小工具，再谈价格；26 份资料，5 分钟做成一个可点击的学习网站；Box CEO：给 agent 目标，不用再一步步教它",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-21/",
+    "items": [
+      {
+        "headline": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元",
+        "sources": [
+          {
+            "label": "Starter Story Podcast",
+            "title": "I built this app on the side for fun. It just hit $100K",
+            "url": "https://www.youtube.com/@starterstory/search?query=I%20built%20this%20app%20on%20the%20side%20for%20fun.%20It%20just%20hit%20%24100K"
+          }
+        ]
+      },
+      {
+        "headline": "没人用的工具改成代办服务，月收入做到 60 万美元",
+        "sources": [
+          {
+            "label": "Starter Story Podcast",
+            "title": "How I Built It: $600K/Month SaaS",
+            "url": "https://www.youtube.com/@starterstory/search?query=How%20I%20Built%20It%3A%20%24600K%2FMonth%20SaaS"
+          }
+        ]
+      },
+      {
+        "headline": "先给潜在客户做好小工具，再谈价格",
+        "sources": [
+          {
+            "label": "Startup Ideas Podcast (Greg Isenberg)",
+            "title": "Gemini 4 Neon: the most underrated model of the year",
+            "url": "https://www.youtube.com/@GregIsenberg/search?query=Gemini%204%20Neon%3A%20the%20most%20underrated%20model%20of%20the%20year"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Zara Zhang: Do not send your clients Claude Artifacts/ChatGPT sites\n\nIt makes them feel like",
+            "url": "https://x.com/zarazhangrui/status/2123813583339532321"
+          }
+        ]
+      },
+      {
+        "headline": "26 份资料，5 分钟做成一个可点击的学习网站",
+        "sources": [
+          {
+            "label": "Lifehacker",
+            "title": "Gemini Notebook's New Interactive Site Builder Is Much More Useful Than I Expected",
+            "url": "https://lifehacker.com/tech/gemini-notebooks-new-interactive-site-builder-is-useful?utm_medium=RSS"
+          }
+        ]
+      },
+      {
+        "headline": "Box CEO：给 agent 目标，不用再一步步教它",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Aaron Levie: This year we’ve had a clear jump in model capability where instead of telling ag",
+            "url": "https://x.com/levie/status/2123686350410912145"
+          },
+          {
+            "label": "Follow Builders (X)",
+            "title": "Matt Turck: Automated agentic emailing  vs the real world, a story: \n\nGuy emails me twice to",
+            "url": "https://x.com/mattturck/status/2123777488786538982"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元"
+      },
+      {
+        "start": 167,
+        "title": "没人用的工具改成代办服务，月收入做到 60 万美元"
+      },
+      {
+        "start": 283,
+        "title": "先给潜在客户做好小工具，再谈价格"
+      },
+      {
+        "start": 391,
+        "title": "26 份资料，5 分钟做成一个可点击的学习网站"
+      },
+      {
+        "start": 482,
+        "title": "Box CEO：给 agent 目标，不用再一步步教它"
+      },
+      {
+        "start": 572,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 622,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-21.mp3",
+    "audioBytes": 3729692,
+    "publishedAt": "2026-11-21T22:46:22.535Z"
+  },
+  {
     "date": "2026-11-20",
     "title": "AI 对齐 1200 小时直播录音和打赏账单，\"一毛钱漏斗\"不成立；ChatPRD 免费试用被刷成别人的生产线",
     "summary": "AI 转写 1200 小时直播录音，一毛钱漏斗不成立；ChatPRD 免费试用被刷成别人的生产线，创始人决定关停；Linear 一半工单由 Agent 创建，AI 功能怎么定价；搭了四套 AI 系统后，他说人只该盯红灯；Peter Yang 用五个场景对比 Gemini 4 Neon 和 Opus",
