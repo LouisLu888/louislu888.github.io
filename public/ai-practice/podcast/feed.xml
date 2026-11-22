@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-22 · 卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-22/</link>
+      <description>连续两年没增长，点击最多的广告讲的是售后支持；推理档位调高一级，同一题从 4 美分涨到 24 美分；mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-22/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 连续两年没增长，点击最多的广告讲的是售后支持<br>02:43 推理档位调高一级，同一题从 4 美分涨到 24 美分<br>04:20 mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录<br>05:54 今天可以做的一件事</p><p><b>连续两年没增长，点击最多的广告讲的是售后支持</b><br><a href="https://smartbearlive.transistor.fm/15">Smart Bear Live</a></p><p><b>推理档位调高一级，同一题从 4 美分涨到 24 美分</b><br><a href="https://simonwillison.net/2026/Nov/20/llm-gemini/">Simon Willison</a> · <a href="https://www.youtube.com/watch?v=K2UEMxBTu9M">Riley Brown</a></p><p><b>mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录</b><br><a href="https://simonwillison.net/2026/Nov/21/muru/">Simon Willison</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-22.mp3" length="2376956" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-22</guid>
+      <pubDate>Sun, 22 Nov 2026 22:45:02 GMT</pubDate>
+      <itunes:duration>00:06:36</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-21 · 业余 App 靠搜索流量一年收入 11.5 万美元，没人用的工具改成代办服务后月收入 60 万美元</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-21/</link>
       <description>业余做的小众 App，靠 SEO 一年收入 11.5 万美元；没人用的工具改成代办服务，月收入做到 60 万美元；先给潜在客户做好小工具，再谈价格；26 份资料，5 分钟做成一个可点击的学习网站；Box CEO：给 agent 目标，不用再一步步教它（本集语音由 AI 合成）</description>

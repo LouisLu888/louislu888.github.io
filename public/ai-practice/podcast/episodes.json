@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-11-22",
+    "title": "卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍",
+    "summary": "连续两年没增长，点击最多的广告讲的是售后支持；推理档位调高一级，同一题从 4 美分涨到 24 美分；mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-22/",
+    "items": [
+      {
+        "headline": "连续两年没增长，点击最多的广告讲的是售后支持",
+        "sources": [
+          {
+            "label": "Smart Bear Live",
+            "title": "E15 w/ Sam Horn: The Audience Shift That Could 10X Your SaaS",
+            "url": "https://smartbearlive.transistor.fm/15"
+          }
+        ]
+      },
+      {
+        "headline": "推理档位调高一级，同一题从 4 美分涨到 24 美分",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "llm-gemini 0.38.1",
+            "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
+          },
+          {
+            "label": "Riley Brown",
+            "title": "Is Claude Still Worth Paying 30x For? | Billion-Dollar Founder Suhail Doshi",
+            "url": "https://www.youtube.com/watch?v=K2UEMxBTu9M"
+          }
+        ]
+      },
+      {
+        "headline": "mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "Muru",
+            "url": "https://simonwillison.net/2026/Nov/21/muru/"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "连续两年没增长，点击最多的广告讲的是售后支持"
+      },
+      {
+        "start": 163,
+        "title": "推理档位调高一级，同一题从 4 美分涨到 24 美分"
+      },
+      {
+        "start": 260,
+        "title": "mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录"
+      },
+      {
+        "start": 354,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 396,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-22.mp3",
+    "audioBytes": 2376956,
+    "publishedAt": "2026-11-22T22:45:02.211Z"
+  },
+  {
     "date": "2026-11-21",
     "title": "业余 App 靠搜索流量一年收入 11.5 万美元，没人用的工具改成代办服务后月收入 60 万美元",
     "summary": "业余做的小众 App，靠 SEO 一年收入 11.5 万美元；没人用的工具改成代办服务，月收入做到 60 万美元；先给潜在客户做好小工具，再谈价格；26 份资料，5 分钟做成一个可点击的学习网站；Box CEO：给 agent 目标，不用再一步步教它",
