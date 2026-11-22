@@ -1,4 +1,5 @@
 export const BLOG_POST_FILES = [
+  'engineer-business-loop.md',
   'jensen-huang-exit.md',
   'ai-tool-business-value.md',
   'job-search-is-sales.md',
