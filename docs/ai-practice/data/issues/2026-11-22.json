@@ -1,0 +1,243 @@
+{
+  "date": "2026-11-22",
+  "title": "卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍",
+  "items": [
+    {
+      "candidateIds": [
+        "c7"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-22",
+      "headline": "连续两年没增长，点击最多的广告讲的是售后支持",
+      "oneLiner": "AttractWell 创始人 Greg Kilwein 在 15 到 20 条 Google 广告标题里发现，点击率最高的一条讲的是专人支持，跟功能无关。两位顾问当场帮他把首页、用户证言和目标人群重新梳理了一遍。",
+      "who": "Greg Kilwein 从 1990 年代就在做软件。他的 AttractWell 给教练和课程创作者提供网站、销售漏斗、邮件、预约、课程和收款，全在一个平台上，已经连续两年没有增长。",
+      "how": "他让 Google Ads 侧边的 AI 助手分析广告数据，发现「专人支持」那条标题点击率最高。之后 Jason Cohen 和 Sam Horn 在节目里帮他逐项拆解定位、用户证言和获客渠道。",
+      "result": "讨论下来有三个改动方向：首页先正面回应「我不懂技术」这层顾虑，用户证言换成「本来怀疑自己做不到，最后做成了」的版本，获客渠道从广告扩展到最好的那批客户常去的地方。",
+      "tryThis": "把自家广告或落地页各条标题的点击率拉出来对比。在注册后的问卷里加一个问题：「是什么事让你决定现在来找这类工具？」",
+      "caveat": "注册问卷只能代表点过广告的人。想转做「影响力还没变现的博主」这个群体，Jason 担心粉丝太少的人卖不出课，靠工具也解决不了。",
+      "body": "[Smart Bear Live 这期节目](https://smartbearlive.transistor.fm/15)把一次真实的诊断完整录了下来。AttractWell 疫情期间靠精油行业的客户做起来，后来转向教练和课程创作者，增长停了两年。现在大部分流量来自 Google Ads。首页主标题是「一天内上线网站、漏斗、预约和收款」。Greg 让 Google 广告后台的 AI 助手帮他看数据，它指出点击最多的标题讲的是专人支持。Jason 的结论是：这又是一个不该只顾加功能的理由。\n\nSam Horn 让 Greg 拿一张纸，在中间画一条竖线。左边写客户心里的顾虑，她认为最大的一条是**冒名顶替综合征**：「我不懂技术，我真的做得成吗？」右边写产品怎么化解这个顾虑。广告关键词仍然要对上用户实际搜的词，点进来以后先讲中这层顾虑，再拿功能证明。用户证言也换个写法，用**先怀疑、后成功**的故事，比如「以前买过好几个工具都没用起来，这是第一个我自己搞定的」。\n\n人群方面，Greg 的注册问卷大约六个月里稳定在新业务 55%、已有业务 45%。Jason 提醒，这只代表点过广告的人。客户多到没空的教练才是最好的客户，他们往往直接买代搭建服务，平时也不刷广告，更可能出现在行业会议和播客上。想找下一个 10 倍增长，多投广告大概不是答案。",
+      "sources": [
+        {
+          "label": "Smart Bear Live",
+          "title": "E15 w/ Sam Horn: The Audience Shift That Could 10X Your SaaS",
+          "url": "https://smartbearlive.transistor.fm/15"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-22-01"
+    },
+    {
+      "candidateIds": [
+        "c2",
+        "c36"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-21",
+      "headline": "推理档位调高一级，同一题从 4 美分涨到 24 美分",
+      "oneLiner": "Simon Willison 实测，Gemini 4 Hydrogen 从 high 档调到 xhigh 档，输出从 5,311 个 token 涨到 31,477 个，费用从 3.99 美分涨到 23.61 美分。Suhail Doshi 建议拿自己的五项日常任务测几个模型，再决定贵的值不值。",
+      "who": "开发者 Simon Willison 在维护自己写的 llm-gemini 插件。YouTuber Riley Brown 说他有一个月不小心花了 1.2 万美元的 API 费用，于是去请教 Mixpanel 联合创始人 Suhail Doshi。",
+      "how": "Simon 用「鹈鹕骑自行车」这道固定题目，对比同一模型在不同推理档位下的 token 用量、费用和出图效果。Suhail 的办法是选五件自己真正在做的事，用同一组提示词跑几个模型，看哪些任务能分出高下。",
+      "result": "Simon 说，xhigh 档下 Hydrogen 画出的鹈鹕能和 Gemini 4 Neon 打个平手，单次费用是 high 档的大约 6 倍。",
+      "tryThis": "挑五个你每周都会重复的任务，同一组提示词分别交给贵模型、便宜模型和高推理档位，把费用和产物放在一张表里比。",
+      "caveat": "Simon 这道题主要用来看出图效果。写作、剪辑这类任务的好坏得你自己判断，样本太少也比不出稳定的差别。",
+      "body": "Simon Willison 发布 [llm-gemini 0.38.1](https://simonwillison.net/2026/Nov/20/llm-gemini/)，补上了 Gemini 4 Hydrogen 和 Neon 的 xhigh 推理档位（Carbon 没有这一档）。他更新了对比表：Hydrogen 在 high 档输出 5,311 个 token，花 3.99 美分；在 xhigh 档输出 31,477 个 token，花 23.61 美分，画出的图追上了 Neon。\n\n同一天，Riley Brown 在[节目](https://www.youtube.com/watch?v=K2UEMxBTu9M)里问 Suhail Doshi：贵的模型什么时候才值得用？Suhail 的建议是**拿自己真实的五项工作做小评测**，用同样的提示词跑几个模型，看在哪些任务上你真能分出差别。节目还谈到 agent 整天运行时价格会怎么变，以及什么时候换成更便宜的开源模型。\n\n两件事放在一起看：模型选择之外，推理档位本身就是一个成本开关。**先用一个固定题目把档位和费用对应起来**，只在差别明显的任务上开高档。agent 长时间跑的时候，这个差距会成倍放大。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "llm-gemini 0.38.1",
+          "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
+        },
+        {
+          "label": "Riley Brown",
+          "title": "Is Claude Still Worth Paying 30x For? | Billion-Dollar Founder Suhail Doshi",
+          "url": "https://www.youtube.com/watch?v=K2UEMxBTu9M"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-22-02"
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-21",
+      "headline": "mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录",
+      "oneLiner": "Graham Dumpleton 20 年前写了 mod_wsgi，现在用 AI 辅助开发新的 Rust 服务器 Muru，三周里边做边写了 19 篇开发记录。",
+      "who": "Graham Dumpleton 是 Python 部署工具 mod_wsgi 的作者，20 年来一直在琢磨生产环境里怎样跑 Python Web 应用最好。",
+      "how": "AI 承担大量表面上的编码工作，他负责判断哪里还不够好。他把每天的进展写成文章发出来，把写作当成开发流程的一部分。",
+      "result": "三周里 19 篇文章依次讲了 worker 内部机制、开发环境 HTTPS、WSGI 和 ASGI 并存、金丝雀发布、Kubernetes 配合、缩容到零和页面内调试工具栏。",
+      "tryThis": "如果你熟悉某个领域，可以挑一个自己做了多年的问题，让 AI 写代码，自己每天写一段「今天判断哪里不够好」的记录。",
+      "caveat": "他能做质量把关，靠的是 20 年在同一个问题上踩过的坑。没有这层积累，AI 写得再快，你也很难分辨哪里不能用。",
+      "body": "Simon Willison [整理了](https://simonwillison.net/2026/Nov/21/muru/) Graham Dumpleton 的新项目 Muru。这是一个 AI 辅助开发的 Rust 服务器，用来在开发和生产环境里运行 ASGI 和 WSGI Python 应用。从 11 月 4 日到 22 日，Graham 几乎每天发一篇，从「mod_wsgi 二十年，接下来做什么」一路写到金丝雀发布、Kubernetes、按 worker 上报的数据扩缩容、缩容到零、页面工具栏里的链路追踪。\n\n其中一篇题为「AI as a lifestyle choice」。他写道：AI 表面上做了很多工作，但判断什么还不够好仍然要靠他自己，mod_wsgi 二十年犯过的错恰好派上了用场。他愿意花力气持续打磨，直到 Muru 成为他自己信任、也能让别人信任的东西。\n\n可以借鉴的是**把领域经验用在验收上，并把开发过程公开写出来**。每天的文章逼他把设计决策讲清楚，也替项目提前攒了文档和读者。对做副业产品的人来说，这套做法同时产出代码、内容和信任。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Muru",
+          "url": "https://simonwillison.net/2026/Nov/21/muru/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-22-03"
+    }
+  ],
+  "action": "从你每周都会重复的工作里挑一件，比如写周报、总结会议、改一段代码。用同一段提示词分别交给两个模型，或同一模型的两个推理档位，记下费用、耗时和你改了多少。再翻出自己产品或简历上最常写的一句卖点，问问自己：它回应的是对方的顾虑，还是只是在列功能？",
+  "readingMinutes": 6,
+  "meta": {
+    "generatedAt": "2026-11-22T14:44:52.360Z",
+    "engine": "cli",
+    "candidateCount": 36,
+    "candidatesBySource": {
+      "Simon Willison": 2,
+      "Lenny's Newsletter & Podcast": 2,
+      "Matt Wolfe": 1,
+      "Starter Story (YouTube)": 1,
+      "Smart Bear Live": 1,
+      "Every (YouTube)": 3,
+      "Follow Builders (X)": 23,
+      "Behind the Craft (Peter Yang)": 1,
+      "The AI Daily Brief": 1,
+      "Riley Brown": 1
+    },
+    "shortlist": [
+      {
+        "id": "c1",
+        "reason": "谁：mod_wsgi 作者 Graham Dumpleton；怎么用：借助 AI 开发 Rust 写的 Python 服务器 Muru，三周里连续公开详细的开发日志；结果：项目已经能演示，开发过程可以照着学。本人亲历的开发过程，是今天最好的一条。",
+        "source": "Simon Willison",
+        "title": "Muru"
+      },
+      {
+        "id": "c36",
+        "reason": "谁：Riley Brown（自称一个月花掉 1.2 万美元 API 费用）对谈 Mixpanel 联合创始人 Suhail Doshi；怎么用：把自己常做的 5 件事用同样的提示词在几个模型上各跑一遍，看哪里能分出高下，用到视频剪辑和写作上；结果：判断贵的模型什么时候值得用。个人照着就能试，简介里已经写清了做法。",
+        "source": "Riley Brown",
+        "title": "Is Claude Still Worth Paying 30x For? | Billion-Dollar Founder Suhail Doshi"
+      },
+      {
+        "id": "c7",
+        "reason": "谁：AttractWell 创始人 Greg（给教练做一站式平台，增长停滞两年）；怎么用：和 Jason Cohen、Sam Horn 现场一起改首页定位和广告文案；结果：有具体的诊断，比如点击最多的广告讲的是人工支持而不是功能。真实客户案例，还有逐字稿。AI 成分不多，但对做 SaaS 的人参考价值高。",
+        "source": "Smart Bear Live",
+        "title": "E15 w/ Sam Horn: The Audience Shift That Could 10X Your SaaS"
+      },
+      {
+        "id": "c2",
+        "reason": "谁：Simon Willison；怎么用：对比 Gemini 4 Hydrogen 在 high 和 xhigh 两档推理强度下的表现；结果：输出从 5,311 token 涨到 31,477 token，花费从 3.99 美分涨到 23.61 美分，效果接近 Neon。数字具体，能帮人决定推理档位开多高。",
+        "source": "Simon Willison",
+        "title": "llm-gemini 0.38.1"
+      },
+      {
+        "id": "c12",
+        "reason": "谁：一名高中生（Amjad Masad 转述）；怎么用：用 GitHub issues 给一群 agent 分派任务，协作把 GTA6 移植到 PC；结果：可能是一种新的开源协作方式。信息比较少，但做法新，小团队可以借鉴。",
+        "source": "Follow Builders (X)",
+        "title": "Amjad Masad: A high school kid is recompiling the GTA6 to work on PC.\n\nWhat’s more interestin"
+      },
+      {
+        "id": "c34",
+        "reason": "AI 认知类。谁：微软负责 Copilot 和 Agents 的执行副总裁 Charles Lamanna；判断：写代码几乎不要成本之后工程师的工作怎么变，agent 会成为软件的主要用户，Office 正在围绕 Copilot 重做。一线负责人的判断，有微软内部的依据。",
+        "source": "Behind the Craft (Peter Yang)",
+        "title": "What Should Engineers Do When AI Writes All the Code | Charles Lamanna"
+      },
+      {
+        "id": "c8",
+        "reason": "AI 认知类。谁：Notion 创始人 Ivan Zhao；判断：哪些工具值得自己用 vibe coding 做、哪些不值得，即使交给 agent 来建，也要懂自己的系统是怎么运作的。对想自己动手做工具的人有直接指导意义。",
+        "source": "Every (YouTube)",
+        "title": "Notion’s Founder on the One Thing Your AI Is Missing"
+      },
+      {
+        "id": "c24",
+        "reason": "AI 认知类。谁：前 Claude Code 团队的 Thariq；判断：模型越强，和模型协作的能力越重要，这本身是一门深度的技术能力，他还没看到这项能力的回报在下降。和 c23、c22 是同一串推文，可以合起来写。",
+        "source": "Follow Builders (X)",
+        "title": "Thariq: yes, Claude is doing a lot of the technical work. and yes, maybe future models w"
+      },
+      {
+        "id": "c4",
+        "reason": "Lenny 社区 Slack 精选，话题有实操价值：同时用多个 agent 时怎么切换上下文、怎么给 AI 生成的设计提反馈、怎么让 AI 写得不那么像 AI。但摘录只有一句「Read more」，看不出内容，优先级低，需要看全文再定。",
+        "source": "Lenny's Newsletter & Podcast",
+        "title": "🧠 Community Wisdom: Handling context switching with multiple agents, giving feedback on AI-generated designs, getting AI to write less like AI, why PMs don’t share what they’re really working on"
+      },
+      {
+        "id": "c6",
+        "reason": "谁：Oliver，19 岁创办 Tabs Chocolate，做到年收入 1100 万美元后卖掉；结果：新做的 SaaS Bustem（帮电商品牌下架仿冒品和未授权转卖）做到月收入 60 万美元，没有拿投资。有经营数字，但看不出用了 AI，只有简介，排在最后备选。",
+        "source": "Starter Story (YouTube)",
+        "title": "This guy scaled from $0 to $11M/year with e-commerce now he does $600K/month with SaaS 😳"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 14098,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2179,
+        "output_tokens_details": {
+          "thinking_tokens": 521
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 14098,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2179,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 14098,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 14098
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.156372
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 29781,
+      "cache_read_input_tokens": 21970,
+      "output_tokens": 8369,
+      "output_tokens_details": {
+        "thinking_tokens": 1427
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 29781,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 3408,
+          "cache_read_input_tokens": 21970,
+          "cache_creation_input_tokens": 7811,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7811
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.410038
+  }
+}

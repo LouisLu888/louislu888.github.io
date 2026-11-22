@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T14:45:09.753Z",
+  "updatedAt": "2026-11-22T14:44:56.065Z",
   "categories": [
     {
       "id": "perspective",
@@ -27,7 +27,7 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 22
+      "count": 23
     },
     {
       "id": "app",
@@ -41,7 +41,7 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 51
+      "count": 53
     },
     {
       "id": "life",
@@ -52,6 +52,33 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-22",
+      "number": 44,
+      "title": "卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 6,
+      "itemCount": 3,
+      "categoryCounts": {
+        "saas": 1,
+        "productivity": 2
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "连续两年没增长，点击最多的广告讲的是售后支持"
+        },
+        {
+          "category": "productivity",
+          "headline": "推理档位调高一级，同一题从 4 美分涨到 24 美分"
+        },
+        {
+          "category": "productivity",
+          "headline": "mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录"
+        }
+      ]
+    },
     {
       "date": "2026-11-21",
       "number": 43,

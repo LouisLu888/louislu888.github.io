@@ -8,6 +8,66 @@
   "items": [
     {
       "candidateIds": [
+        "c2",
+        "c36"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-21",
+      "headline": "推理档位调高一级，同一题从 4 美分涨到 24 美分",
+      "oneLiner": "Simon Willison 实测，Gemini 4 Hydrogen 从 high 档调到 xhigh 档，输出从 5,311 个 token 涨到 31,477 个，费用从 3.99 美分涨到 23.61 美分。Suhail Doshi 建议拿自己的五项日常任务测几个模型，再决定贵的值不值。",
+      "who": "开发者 Simon Willison 在维护自己写的 llm-gemini 插件。YouTuber Riley Brown 说他有一个月不小心花了 1.2 万美元的 API 费用，于是去请教 Mixpanel 联合创始人 Suhail Doshi。",
+      "how": "Simon 用「鹈鹕骑自行车」这道固定题目，对比同一模型在不同推理档位下的 token 用量、费用和出图效果。Suhail 的办法是选五件自己真正在做的事，用同一组提示词跑几个模型，看哪些任务能分出高下。",
+      "result": "Simon 说，xhigh 档下 Hydrogen 画出的鹈鹕能和 Gemini 4 Neon 打个平手，单次费用是 high 档的大约 6 倍。",
+      "tryThis": "挑五个你每周都会重复的任务，同一组提示词分别交给贵模型、便宜模型和高推理档位，把费用和产物放在一张表里比。",
+      "caveat": "Simon 这道题主要用来看出图效果。写作、剪辑这类任务的好坏得你自己判断，样本太少也比不出稳定的差别。",
+      "body": "Simon Willison 发布 [llm-gemini 0.38.1](https://simonwillison.net/2026/Nov/20/llm-gemini/)，补上了 Gemini 4 Hydrogen 和 Neon 的 xhigh 推理档位（Carbon 没有这一档）。他更新了对比表：Hydrogen 在 high 档输出 5,311 个 token，花 3.99 美分；在 xhigh 档输出 31,477 个 token，花 23.61 美分，画出的图追上了 Neon。\n\n同一天，Riley Brown 在[节目](https://www.youtube.com/watch?v=K2UEMxBTu9M)里问 Suhail Doshi：贵的模型什么时候才值得用？Suhail 的建议是**拿自己真实的五项工作做小评测**，用同样的提示词跑几个模型，看在哪些任务上你真能分出差别。节目还谈到 agent 整天运行时价格会怎么变，以及什么时候换成更便宜的开源模型。\n\n两件事放在一起看：模型选择之外，推理档位本身就是一个成本开关。**先用一个固定题目把档位和费用对应起来**，只在差别明显的任务上开高档。agent 长时间跑的时候，这个差距会成倍放大。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "llm-gemini 0.38.1",
+          "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
+        },
+        {
+          "label": "Riley Brown",
+          "title": "Is Claude Still Worth Paying 30x For? | Billion-Dollar Founder Suhail Doshi",
+          "url": "https://www.youtube.com/watch?v=K2UEMxBTu9M"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-22-02",
+      "issueDate": "2026-11-22",
+      "issueNumber": 44
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-21",
+      "headline": "mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录",
+      "oneLiner": "Graham Dumpleton 20 年前写了 mod_wsgi，现在用 AI 辅助开发新的 Rust 服务器 Muru，三周里边做边写了 19 篇开发记录。",
+      "who": "Graham Dumpleton 是 Python 部署工具 mod_wsgi 的作者，20 年来一直在琢磨生产环境里怎样跑 Python Web 应用最好。",
+      "how": "AI 承担大量表面上的编码工作，他负责判断哪里还不够好。他把每天的进展写成文章发出来，把写作当成开发流程的一部分。",
+      "result": "三周里 19 篇文章依次讲了 worker 内部机制、开发环境 HTTPS、WSGI 和 ASGI 并存、金丝雀发布、Kubernetes 配合、缩容到零和页面内调试工具栏。",
+      "tryThis": "如果你熟悉某个领域，可以挑一个自己做了多年的问题，让 AI 写代码，自己每天写一段「今天判断哪里不够好」的记录。",
+      "caveat": "他能做质量把关，靠的是 20 年在同一个问题上踩过的坑。没有这层积累，AI 写得再快，你也很难分辨哪里不能用。",
+      "body": "Simon Willison [整理了](https://simonwillison.net/2026/Nov/21/muru/) Graham Dumpleton 的新项目 Muru。这是一个 AI 辅助开发的 Rust 服务器，用来在开发和生产环境里运行 ASGI 和 WSGI Python 应用。从 11 月 4 日到 22 日，Graham 几乎每天发一篇，从「mod_wsgi 二十年，接下来做什么」一路写到金丝雀发布、Kubernetes、按 worker 上报的数据扩缩容、缩容到零、页面工具栏里的链路追踪。\n\n其中一篇题为「AI as a lifestyle choice」。他写道：AI 表面上做了很多工作，但判断什么还不够好仍然要靠他自己，mod_wsgi 二十年犯过的错恰好派上了用场。他愿意花力气持续打磨，直到 Muru 成为他自己信任、也能让别人信任的东西。\n\n可以借鉴的是**把领域经验用在验收上，并把开发过程公开写出来**。每天的文章逼他把设计决策讲清楚，也替项目提前攒了文档和读者。对做副业产品的人来说，这套做法同时产出代码、内容和信任。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Muru",
+          "url": "https://simonwillison.net/2026/Nov/21/muru/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-22-03",
+      "issueDate": "2026-11-22",
+      "issueNumber": 44
+    },
+    {
+      "candidateIds": [
         "c3"
       ],
       "category": "productivity",
