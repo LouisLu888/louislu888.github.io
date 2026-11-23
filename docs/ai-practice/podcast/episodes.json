@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "流失率 40% 时先修漏斗，一个人一个月用掉千亿 Token 的账怎么算",
+    "summary": "流失率 40% 时他停下扩张，先花半年修漏斗；CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐；每月一千多美元订阅，换来约 1000 亿 Token；一个经理管 20 到 50 人，硅谷团队开始按单验货；一句提示词，做出各浏览器对照的下拉框样式页",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-23/",
+    "items": [
+      {
+        "headline": "流失率 40% 时他停下扩张，先花半年修漏斗",
+        "sources": [
+          {
+            "label": "Starter Story Podcast",
+            "title": "This Micro-SaaS Grew $5K PER WEEK",
+            "url": "https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK"
+          }
+        ]
+      },
+      {
+        "headline": "CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐",
+        "sources": [
+          {
+            "label": "How I AI (Claire Vo)",
+            "title": "OpenClaw for executives: Automate every 1% annoyance",
+            "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp"
+          }
+        ]
+      },
+      {
+        "headline": "每月一千多美元订阅，换来约 1000 亿 Token",
+        "sources": [
+          {
+            "label": "陈然 ranchen.org",
+            "title": "万亿 Token 之路",
+            "url": "https://ranchen.org/content/20261123-ranchen-article-road-to-one-trillion-tokens"
+          }
+        ]
+      },
+      {
+        "headline": "一个经理管 20 到 50 人，硅谷团队开始按单验货",
+        "sources": [
+          {
+            "label": "陈然 ranchen.org",
+            "title": "硅谷 AI native 组织的新风向：程序员正在外卖骑手化",
+            "url": "https://ranchen.org/content/20261122-ranchen-article-programmers-becoming-delivery-riders"
+          }
+        ]
+      },
+      {
+        "headline": "一句提示词，做出各浏览器对照的下拉框样式页",
+        "sources": [
+          {
+            "label": "Simon Willison",
+            "title": "Select Styling Specimens",
+            "url": "https://simonwillison.net/2026/Nov/22/select-styling/"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "流失率 40% 时他停下扩张，先花半年修漏斗"
+      },
+      {
+        "start": 190,
+        "title": "CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐"
+      },
+      {
+        "start": 294,
+        "title": "每月一千多美元订阅，换来约 1000 亿 Token"
+      },
+      {
+        "start": 402,
+        "title": "一个经理管 20 到 50 人，硅谷团队开始按单验货"
+      },
+      {
+        "start": 493,
+        "title": "一句提示词，做出各浏览器对照的下拉框样式页"
+      },
+      {
+        "start": 557,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 608,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-23.mp3",
+    "audioBytes": 3648620,
+    "publishedAt": "2026-11-23T22:45:45.509Z"
+  },
+  {
     "date": "2026-11-22",
     "title": "卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍",
     "summary": "连续两年没增长，点击最多的广告讲的是售后支持；推理档位调高一级，同一题从 4 美分涨到 24 美分；mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录",

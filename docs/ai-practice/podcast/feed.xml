@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-23 · 流失率 40% 时先修漏斗，一个人一个月用掉千亿 Token 的账怎么算</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-23/</link>
+      <description>流失率 40% 时他停下扩张，先花半年修漏斗；CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐；每月一千多美元订阅，换来约 1000 亿 Token；一个经理管 20 到 50 人，硅谷团队开始按单验货；一句提示词，做出各浏览器对照的下拉框样式页（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-23/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 流失率 40% 时他停下扩张，先花半年修漏斗<br>03:10 CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐<br>04:54 每月一千多美元订阅，换来约 1000 亿 Token<br>06:42 一个经理管 20 到 50 人，硅谷团队开始按单验货<br>08:13 一句提示词，做出各浏览器对照的下拉框样式页<br>09:17 今天可以做的一件事</p><p><b>流失率 40% 时他停下扩张，先花半年修漏斗</b><br><a href="https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK">Starter Story Podcast</a></p><p><b>CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐</b><br><a href="https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp">How I AI (Claire Vo)</a></p><p><b>每月一千多美元订阅，换来约 1000 亿 Token</b><br><a href="https://ranchen.org/content/20261123-ranchen-article-road-to-one-trillion-tokens">陈然 ranchen.org</a></p><p><b>一个经理管 20 到 50 人，硅谷团队开始按单验货</b><br><a href="https://ranchen.org/content/20261122-ranchen-article-programmers-becoming-delivery-riders">陈然 ranchen.org</a></p><p><b>一句提示词，做出各浏览器对照的下拉框样式页</b><br><a href="https://simonwillison.net/2026/Nov/22/select-styling/">Simon Willison</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-23.mp3" length="3648620" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 22:45:45 GMT</pubDate>
+      <itunes:duration>00:10:08</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-22 · 卖点写对了比加功能有用，推理档位调高一级花费多了约 6 倍</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-22/</link>
       <description>连续两年没增长，点击最多的广告讲的是售后支持；推理档位调高一级，同一题从 4 美分涨到 24 美分；mod_wsgi 作者用 AI 写 Rust 服务器，三周发了 19 篇开发记录（本集语音由 AI 合成）</description>
