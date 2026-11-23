@@ -1,4 +1,5 @@
 export const BLOG_POST_FILES = [
+  'chick-fil-a-moat.md',
   'engineer-business-loop.md',
   'jensen-huang-exit.md',
   'ai-tool-business-value.md',
