@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c8"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-22",
+      "headline": "流失率 40% 时他停下扩张，先花半年修漏斗",
+      "oneLiner": "Filip 的 Reddit 营销工具 Bazzly 每月 199 美元，他说 15 个月做到 1.5 万美元 MRR，三周后又涨到 4 万；转折点是先把试用转付费率从 2% 提到 14%。",
+      "who": "软件开发者 Filip Panoski 业余做了七年产品，前五个一分钱没赚到，之后辞职全职做独立开发，做出 Bazzly：自动在 Reddit 找到讨论相关问题的帖子，替客户写评论推荐产品。",
+      "how": "产品由 AI 找帖子、起草提及客户产品的评论，可以从客户自己的账号发，也可以从平台的老账号发，还能全程自动跑。开发前先做带 waitlist 的落地页，在 X 上私信潜在用户验证需求。",
+      "result": "他说首月 MRR 100 美元，流失率 40%、试用转付费 2%；访谈流失和未转化用户、调整定位后，两个指标分别变成 25% 和 14%，两个月到 1K MRR；找合伙人后达到 1.5 万，录制三周后到 4 万。",
+      "tryThis": "如果你的产品已经有几十个试用用户，先约流失和没付费的人各聊几位，把他们的原话归类，再决定改定位还是加渠道。",
+      "caveat": "这个模式依赖大量 Reddit 账号。用户涨得太快时，账号容量被摊薄，评论开始被删，流失随之上升。平台规则一变，产品可能整体失效。",
+      "body": "Filip 在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK)里说，Bazzly 只有一个 199 美元/月的套餐，外加用量充值。录制时有 1,600 多个注册用户、100 多个付费客户。技术栈基本免费：Supabase、Vercel 和 PostHog 都用免费档，Railway 每月 5 美元。\n\n最有参考价值的是顺序。首月拿到 100 美元 MRR 以后，他没有加大营销，**花了六个月和流失用户、没转化的用户聊**，然后重新定位。修好漏斗后，渠道还是 X 和 Reddit 这两个。后来他把公司 50% 的股份给了在 X 上有影响力的 Thibault。两人第二次重新定位，主打「不需要自己的 Reddit 账号」，两个月到 3K，再一个月到 7K，试用转付费一度达到 50%。账号容量跟不上以后，他们关闭注册，改成每周小批邀请，增长慢了，质量保住了。\n\n三周后的更新里，他说流失率从 20% 降到 12%，LTV 从 800 美元涨到 1,500 美元。之后取消 waitlist，加上 LinkedIn 和联盟推广。他的总结是：**先把漏斗打牢，再一个个叠加渠道。** 13:18 起有产品演示。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "This Micro-SaaS Grew $5K PER WEEK",
+          "url": "https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-01",
+      "issueDate": "2026-11-23",
+      "issueNumber": 45
+    },
+    {
+      "candidateIds": [
         "c7"
       ],
       "category": "saas",

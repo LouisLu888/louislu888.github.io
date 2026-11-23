@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-22T14:44:56.065Z",
+  "updatedAt": "2026-11-23T14:44:38.746Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 46
+      "count": 48
     },
     {
       "id": "consulting",
@@ -27,7 +27,7 @@
       "name": "Micro SaaS",
       "en": "AI micro SaaS",
       "desc": "窄需求、首批客户、定价、模型成本、续费、利润与维护",
-      "count": 23
+      "count": 24
     },
     {
       "id": "app",
@@ -41,7 +41,7 @@
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 53
+      "count": 55
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-23",
+      "number": 45,
+      "title": "流失率 40% 时先修漏斗，一个人一个月用掉千亿 Token 的账怎么算",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "saas": 1,
+        "productivity": 2,
+        "perspective": 2
+      },
+      "headlines": [
+        {
+          "category": "saas",
+          "headline": "流失率 40% 时他停下扩张，先花半年修漏斗"
+        },
+        {
+          "category": "productivity",
+          "headline": "CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐"
+        },
+        {
+          "category": "perspective",
+          "headline": "每月一千多美元订阅，换来约 1000 亿 Token"
+        },
+        {
+          "category": "perspective",
+          "headline": "一个经理管 20 到 50 人，硅谷团队开始按单验货"
+        },
+        {
+          "category": "productivity",
+          "headline": "一句提示词，做出各浏览器对照的下拉框样式页"
+        }
+      ]
+    },
     {
       "date": "2026-11-22",
       "number": 44,

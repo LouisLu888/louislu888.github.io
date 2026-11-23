@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐｜AI 实干派</title>
+  <meta name="description" content="Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-23-02/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐｜AI 实干派">
+  <meta property="og:description" content="Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-23-02/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-23.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐｜AI 实干派">
+  <meta name="twitter:description" content="Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-23.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">48</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">9</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">14</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">24</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">26</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">55</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">28</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-23/">AI 实干派 045 · 2026 年 11 月 23 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-23<span>·</span>US</div>
+        <h1>CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐</h1>
+        <p class="summary">Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>医疗科技公司 Innovaccer 的 CTO Ankit Maheshwari，在 Claire Vo 的 How I AI 节目里演示他放在一台 Mac Mini 上运行的 OpenClaw 助手。</dd><dt>怎么用</dt><dd>起点是那些让他成了瓶颈的审批，比如 Navan 里的差旅审批。他用 soul file 给每个子 agent 定角色，健康教练、邮件分拣各自独立，再加一个主 soul 统筹。语音外呼也拆成单独的子 agent，Slack 上没回复的同事由它直接打电话。</dd><dt>结果</dt><dd>同一套系统后来接手了点午餐、和餐厅谈订位、到家前开空调。他说过去一个全局 agent 扮演多个角色时会出现幻觉，拆成职责明确的子 agent 后才稳定下来。</dd><dt>你可以试</dt><dd>挑一件你每天都要点一下、却总在拖延的小事（审批、提醒），先只给 agent 这一个权限，跑通后再加下一件。</dd><dt>注意</dt><dd>他每月在 Anthropic 上花 500 到 600 美元，正在测试 GLM 5.3 Flash 这类便宜模型能接手多少。给 agent 打电话、下单的权限，需要事先设好护栏。</dd></dl>
+        <div class="body"><p><a href="https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp">这期节目</a>的主题是他的「1% 烦恼法则」：每件只占用一点注意力的小麻烦都值得自动化。第一个自动化处理的是审批。他提到审批通知容易被漏掉，一单卡住，后面的人跟着等。</p><p>结构上可以借鉴两点。第一，<strong>用职责单一的子 agent 代替一个什么都管的 agent</strong>：他遇到过全局 agent 混淆角色、编造内容的问题，拆开之后才可靠。第二，<strong>像带新员工一样和 agent 说话</strong>，交代背景和期望，不追求写复杂指令。节目里还讲了一次他在飞机上时护栏被考验的经历，24:12 起专门讨论护栏。</p><p>适合尝试的人：手头有大量审批、协调类小事，愿意把日历、Slack、外卖、出行这些账户的权限交给 agent。外呼部分用到了 Bland AI、ElevenLabs、Twilio 这类语音和电话服务。25:49 起讨论能否用本地模型降低成本，以及 GLM 5.3 Flash 能做和做不了的事。</p></div>
+        <div class="sources">原文：<a href="https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp" target="_blank" rel="noopener" title="OpenClaw for executives: Automate every 1% annoyance">How I AI (Claire Vo)</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-23/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

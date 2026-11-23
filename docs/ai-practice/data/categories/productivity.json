@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-23",
+      "headline": "CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐",
+      "oneLiner": "Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。",
+      "who": "医疗科技公司 Innovaccer 的 CTO Ankit Maheshwari，在 Claire Vo 的 How I AI 节目里演示他放在一台 Mac Mini 上运行的 OpenClaw 助手。",
+      "how": "起点是那些让他成了瓶颈的审批，比如 Navan 里的差旅审批。他用 soul file 给每个子 agent 定角色，健康教练、邮件分拣各自独立，再加一个主 soul 统筹。语音外呼也拆成单独的子 agent，Slack 上没回复的同事由它直接打电话。",
+      "result": "同一套系统后来接手了点午餐、和餐厅谈订位、到家前开空调。他说过去一个全局 agent 扮演多个角色时会出现幻觉，拆成职责明确的子 agent 后才稳定下来。",
+      "tryThis": "挑一件你每天都要点一下、却总在拖延的小事（审批、提醒），先只给 agent 这一个权限，跑通后再加下一件。",
+      "caveat": "他每月在 Anthropic 上花 500 到 600 美元，正在测试 GLM 5.3 Flash 这类便宜模型能接手多少。给 agent 打电话、下单的权限，需要事先设好护栏。",
+      "body": "[这期节目](https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp)的主题是他的「1% 烦恼法则」：每件只占用一点注意力的小麻烦都值得自动化。第一个自动化处理的是审批。他提到审批通知容易被漏掉，一单卡住，后面的人跟着等。\n\n结构上可以借鉴两点。第一，**用职责单一的子 agent 代替一个什么都管的 agent**：他遇到过全局 agent 混淆角色、编造内容的问题，拆开之后才可靠。第二，**像带新员工一样和 agent 说话**，交代背景和期望，不追求写复杂指令。节目里还讲了一次他在飞机上时护栏被考验的经历，24:12 起专门讨论护栏。\n\n适合尝试的人：手头有大量审批、协调类小事，愿意把日历、Slack、外卖、出行这些账户的权限交给 agent。外呼部分用到了 Bland AI、ElevenLabs、Twilio 这类语音和电话服务。25:49 起讨论能否用本地模型降低成本，以及 GLM 5.3 Flash 能做和做不了的事。",
+      "sources": [
+        {
+          "label": "How I AI (Claire Vo)",
+          "title": "OpenClaw for executives: Automate every 1% annoyance",
+          "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-02",
+      "issueDate": "2026-11-23",
+      "issueNumber": 45
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-22",
+      "headline": "一句提示词，做出各浏览器对照的下拉框样式页",
+      "oneLiner": "Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。",
+      "who": "开发者 Simon Willison 不满意 HTML 下拉框在各浏览器里长得不一样，在 Chrome 里尤其难看。",
+      "how": "他给 Claude Fable 5.2 的提示词是：做一个 HTML 页面，展示 select 框所有的样式写法，他打算在每个桌面和移动浏览器里截图。",
+      "result": "试过一轮后，他选定了 appearance: none 加内嵌 SVG 箭头、6px 圆角、浅灰边框的写法，并贴出了三个浏览器里的效果。",
+      "tryThis": "遇到「哪种写法最好」这类设计选择时，先让 AI 把所有选项并排做成一页样本，再自己在真实环境里对比挑选。",
+      "caveat": "AI 负责把选项铺开，判断仍要自己在每个目标浏览器里看过才能做。",
+      "body": "这是一个很小的例子（[本人记录](https://simonwillison.net/2026/Nov/22/select-styling/)）。他要 AI 交出的不是答案，而是**一张可以拿来比较的样本页**，提示词里还写明了用途：要在各个浏览器里截图。最后用哪套样式，由他看完截图后自己决定。\n\n这个方法可以用到很多岗位：设计师比较组件样式，PM 比较几种文案或页面布局，运营比较邮件模板。先说清「我要拿它做什么对比」，AI 生成的样本才会覆盖到你真正需要的维度。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Select Styling Specimens",
+          "url": "https://simonwillison.net/2026/Nov/22/select-styling/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-05",
+      "issueDate": "2026-11-23",
+      "issueNumber": 45
+    },
+    {
+      "candidateIds": [
         "c2",
         "c36"
       ],

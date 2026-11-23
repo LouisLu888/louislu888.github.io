@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一句提示词，做出各浏览器对照的下拉框样式页｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-23-05/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="一句提示词，做出各浏览器对照的下拉框样式页｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-23-05/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-23.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="一句提示词，做出各浏览器对照的下拉框样式页｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-23.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">48</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">9</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">14</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">24</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">26</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">55</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">28</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-23/">AI 实干派 045 · 2026 年 11 月 23 日 · 周一</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-22<span>·</span>US</div>
+        <h1>一句提示词，做出各浏览器对照的下拉框样式页</h1>
+        <p class="summary">Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 不满意 HTML 下拉框在各浏览器里长得不一样，在 Chrome 里尤其难看。</dd><dt>怎么用</dt><dd>他给 Claude Fable 5.2 的提示词是：做一个 HTML 页面，展示 select 框所有的样式写法，他打算在每个桌面和移动浏览器里截图。</dd><dt>结果</dt><dd>试过一轮后，他选定了 appearance: none 加内嵌 SVG 箭头、6px 圆角、浅灰边框的写法，并贴出了三个浏览器里的效果。</dd><dt>你可以试</dt><dd>遇到「哪种写法最好」这类设计选择时，先让 AI 把所有选项并排做成一页样本，再自己在真实环境里对比挑选。</dd><dt>注意</dt><dd>AI 负责把选项铺开，判断仍要自己在每个目标浏览器里看过才能做。</dd></dl>
+        <div class="body"><p>这是一个很小的例子（<a href="https://simonwillison.net/2026/Nov/22/select-styling/">本人记录</a>）。他要 AI 交出的不是答案，而是<strong>一张可以拿来比较的样本页</strong>，提示词里还写明了用途：要在各个浏览器里截图。最后用哪套样式，由他看完截图后自己决定。</p><p>这个方法可以用到很多岗位：设计师比较组件样式，PM 比较几种文案或页面布局，运营比较邮件模板。先说清「我要拿它做什么对比」，AI 生成的样本才会覆盖到你真正需要的维度。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/22/select-styling/" target="_blank" rel="noopener" title="Select Styling Specimens">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-23/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

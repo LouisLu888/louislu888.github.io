@@ -1,0 +1,283 @@
+{
+  "date": "2026-11-23",
+  "title": "流失率 40% 时先修漏斗，一个人一个月用掉千亿 Token 的账怎么算",
+  "items": [
+    {
+      "candidateIds": [
+        "c8"
+      ],
+      "category": "saas",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-22",
+      "headline": "流失率 40% 时他停下扩张，先花半年修漏斗",
+      "oneLiner": "Filip 的 Reddit 营销工具 Bazzly 每月 199 美元，他说 15 个月做到 1.5 万美元 MRR，三周后又涨到 4 万；转折点是先把试用转付费率从 2% 提到 14%。",
+      "who": "软件开发者 Filip Panoski 业余做了七年产品，前五个一分钱没赚到，之后辞职全职做独立开发，做出 Bazzly：自动在 Reddit 找到讨论相关问题的帖子，替客户写评论推荐产品。",
+      "how": "产品由 AI 找帖子、起草提及客户产品的评论，可以从客户自己的账号发，也可以从平台的老账号发，还能全程自动跑。开发前先做带 waitlist 的落地页，在 X 上私信潜在用户验证需求。",
+      "result": "他说首月 MRR 100 美元，流失率 40%、试用转付费 2%；访谈流失和未转化用户、调整定位后，两个指标分别变成 25% 和 14%，两个月到 1K MRR；找合伙人后达到 1.5 万，录制三周后到 4 万。",
+      "tryThis": "如果你的产品已经有几十个试用用户，先约流失和没付费的人各聊几位，把他们的原话归类，再决定改定位还是加渠道。",
+      "caveat": "这个模式依赖大量 Reddit 账号。用户涨得太快时，账号容量被摊薄，评论开始被删，流失随之上升。平台规则一变，产品可能整体失效。",
+      "body": "Filip 在 [Starter Story 访谈](https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK)里说，Bazzly 只有一个 199 美元/月的套餐，外加用量充值。录制时有 1,600 多个注册用户、100 多个付费客户。技术栈基本免费：Supabase、Vercel 和 PostHog 都用免费档，Railway 每月 5 美元。\n\n最有参考价值的是顺序。首月拿到 100 美元 MRR 以后，他没有加大营销，**花了六个月和流失用户、没转化的用户聊**，然后重新定位。修好漏斗后，渠道还是 X 和 Reddit 这两个。后来他把公司 50% 的股份给了在 X 上有影响力的 Thibault。两人第二次重新定位，主打「不需要自己的 Reddit 账号」，两个月到 3K，再一个月到 7K，试用转付费一度达到 50%。账号容量跟不上以后，他们关闭注册，改成每周小批邀请，增长慢了，质量保住了。\n\n三周后的更新里，他说流失率从 20% 降到 12%，LTV 从 800 美元涨到 1,500 美元。之后取消 waitlist，加上 LinkedIn 和联盟推广。他的总结是：**先把漏斗打牢，再一个个叠加渠道。** 13:18 起有产品演示。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "This Micro-SaaS Grew $5K PER WEEK",
+          "url": "https://www.youtube.com/@starterstory/search?query=This%20Micro-SaaS%20Grew%20%245K%20PER%20WEEK"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-01"
+    },
+    {
+      "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-23",
+      "headline": "CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐",
+      "oneLiner": "Innovaccer CTO Ankit Maheshwari 用 OpenClaw 搭了个人助手 Jarvis，从工作审批一路扩展到打电话催人、订餐厅和智能家居，每月 Anthropic 账单 500 到 600 美元。",
+      "who": "医疗科技公司 Innovaccer 的 CTO Ankit Maheshwari，在 Claire Vo 的 How I AI 节目里演示他放在一台 Mac Mini 上运行的 OpenClaw 助手。",
+      "how": "起点是那些让他成了瓶颈的审批，比如 Navan 里的差旅审批。他用 soul file 给每个子 agent 定角色，健康教练、邮件分拣各自独立，再加一个主 soul 统筹。语音外呼也拆成单独的子 agent，Slack 上没回复的同事由它直接打电话。",
+      "result": "同一套系统后来接手了点午餐、和餐厅谈订位、到家前开空调。他说过去一个全局 agent 扮演多个角色时会出现幻觉，拆成职责明确的子 agent 后才稳定下来。",
+      "tryThis": "挑一件你每天都要点一下、却总在拖延的小事（审批、提醒），先只给 agent 这一个权限，跑通后再加下一件。",
+      "caveat": "他每月在 Anthropic 上花 500 到 600 美元，正在测试 GLM 5.3 Flash 这类便宜模型能接手多少。给 agent 打电话、下单的权限，需要事先设好护栏。",
+      "body": "[这期节目](https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp)的主题是他的「1% 烦恼法则」：每件只占用一点注意力的小麻烦都值得自动化。第一个自动化处理的是审批。他提到审批通知容易被漏掉，一单卡住，后面的人跟着等。\n\n结构上可以借鉴两点。第一，**用职责单一的子 agent 代替一个什么都管的 agent**：他遇到过全局 agent 混淆角色、编造内容的问题，拆开之后才可靠。第二，**像带新员工一样和 agent 说话**，交代背景和期望，不追求写复杂指令。节目里还讲了一次他在飞机上时护栏被考验的经历，24:12 起专门讨论护栏。\n\n适合尝试的人：手头有大量审批、协调类小事，愿意把日历、Slack、外卖、出行这些账户的权限交给 agent。外呼部分用到了 Bland AI、ElevenLabs、Twilio 这类语音和电话服务。25:49 起讨论能否用本地模型降低成本，以及 GLM 5.3 Flash 能做和做不了的事。",
+      "sources": [
+        {
+          "label": "How I AI (Claire Vo)",
+          "title": "OpenClaw for executives: Automate every 1% annoyance",
+          "url": "https://podcasters.spotify.com/pod/show/pen-name/episodes/OpenClaw-for-executives-Automate-every-1-annoyance-e3sl7sp"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-02"
+    },
+    {
+      "candidateIds": [
+        "c6"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-23",
+      "headline": "每月一千多美元订阅，换来约 1000 亿 Token",
+      "oneLiner": "独立开发者陈然说他现在每月用 1000 亿到 2000 亿 Token：前 1000 亿靠四家美国厂商的顶配订阅，大约每月一千多美元，再往上只能靠强弱模型分工。",
+      "who": "写了一二十年代码的独立开发者陈然，在个人网站开了新系列《万亿 Token 之路》，这是第一篇。",
+      "how": "他认为 Token 用量可以当作「用电量」来看，前提是费用由自己掏。还有一条：先把赚钱的闭环跑通，再去提效。",
+      "result": "他的依据是自己的账：Anthropic、OpenAI、Google、xAI 四家顶配订阅全部开满，每月一千多美元，大约能支撑 1000 亿 Token。超出部分转向 DeepSeek-V4.1-Flash-1017，他引用的官方价格是非高峰时段缓存命中输入每百万 Token 0.003 美元。",
+      "tryThis": "如果你还在按 API 价目表估算成本，先把自己主力厂商的订阅额度折算一遍；重度使用时，订阅和按量计费可能差几十倍。",
+      "caveat": "单个账号的订阅额度有上限，他明确说多开账号违反条款。便宜模型不能从零自由发挥，必须由强模型先定规范、后做抽检。他也提到 Meta 已经因为员工刷 Token 榜单，把用量看板移出了绩效评估。",
+      "body": "陈然在[《万亿 Token 之路》](https://ranchen.org/content/20261123-ranchen-article-road-to-one-trillion-tokens)里给出的分工是：**先用 Opus 5.5 这类顶级模型定好系统骨架、数据口径、校验门禁和规范；再把大量标准化、高并发的执行交给新一代 Gemini、订阅额度池和 DeepSeek；最后定期让强模型回来抽检、交叉 review、纠偏。** 用他的话说，前 1000 亿拼的是愿不愿意掏钱买订阅，后面的 9000 亿拼的是混合编排的功力。\n\n他自己能吃下这么多 Token 的生意是内容站加广告：把政府网页、长篇 PDF、旧数据库里散乱的信息清洗成结构化数据，做成能接住长尾搜索的页面，再在上面叠加对比工具和问答。\n\n对读者有用的是判断顺序。用量本身不值得追，**先问你的业务能不能把算力换回现金**。能的话，从订阅起步，前期成本并不高；需要放大规模时，再投入设计强弱模型分工和质检。",
+      "sources": [
+        {
+          "label": "陈然 ranchen.org",
+          "title": "万亿 Token 之路",
+          "url": "https://ranchen.org/content/20261123-ranchen-article-road-to-one-trillion-tokens"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-03"
+    },
+    {
+      "candidateIds": [
+        "c7"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-22",
+      "headline": "一个经理管 20 到 50 人，硅谷团队开始按单验货",
+      "oneLiner": "陈然从湾区一线经理口中听到的做法：一人管二十人、周五晚和周一早同步进度、按月排名、连续两个月不达标当天就能结束合作。他称之为程序员的「外卖骑手化」。",
+      "who": "陈然（独立开发者，经常和湾区工程经理交流），2026 年 11 月在个人网站发表的长文。",
+      "how": "他认为 AI 让软件交付变得透明、可以按件验收，于是组织开始用平台考核骑手的方式考核工程师：结算原子化、排名实时、不留培养缓冲、管理层压扁。",
+      "result": "他列举的公开事件有：Amazon 要求一线员工与管理者的比例提高 15%，Google 压缩中层，Fortune 报道 Meta 试点 1 比 50 的管理跨度，Shopify 要求申请编制前先证明 AI 干不了。团队内部的细节来自他听到的经理自述。",
+      "tryThis": "在大厂工作的人，可以从现在开始按「交付了什么、用了多久、是否稳定」记录自己的产出，比「参与了哪些会议」更接近新的考核方式。",
+      "caveat": "团队细节来自饭局上的转述，描述的是高压的 AI native 团队，不代表大多数公司。他也提到 Meta 已经把 Token 用量移出绩效，说明「用得多」不等于做得好。",
+      "body": "[这篇文章](https://ranchen.org/content/20261122-ranchen-article-programmers-becoming-delivery-riders)描述的团队做法很具体：二十人拆成六七个两三人的 pod，经理每周只和各组牵头人对齐一次；进度同步放在周五晚和周一早；每月让经理把下属从第一排到第十；连续两个月不达标时，去问和这个人协作摩擦最大的两位同事：「他现在是不是负产出？」\n\n他的解释分四层：互联网的高毛利和人才稀缺撑起了二十年的温和管理；AI 让「实现」变便宜，人与人之间的差距在两三周内就看得出来；固定月薪买的是时间，员工用 AI 提效反而没有动力；巨额算力投入又迫使公司证明能用更少的人做更多事。\n\n对读者，这是一种判断而非定论。如果你所在的团队已经出现管理跨度变宽、按天追进度的迹象，**能独立拆解模糊需求、管好 AI 产出质量**会比形式上的积极更重要。他也提到有工程师辞职去做按任务结算的专家评估，时薪 200 到 500 美元，这是另一条路。",
+      "sources": [
+        {
+          "label": "陈然 ranchen.org",
+          "title": "硅谷 AI native 组织的新风向：程序员正在外卖骑手化",
+          "url": "https://ranchen.org/content/20261122-ranchen-article-programmers-becoming-delivery-riders"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-04"
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-22",
+      "headline": "一句提示词，做出各浏览器对照的下拉框样式页",
+      "oneLiner": "Simon Willison 让 Claude 生成一个页面，列出 select 下拉框的各种样式，在多个浏览器截图比较后，定下了自己的一套 CSS。",
+      "who": "开发者 Simon Willison 不满意 HTML 下拉框在各浏览器里长得不一样，在 Chrome 里尤其难看。",
+      "how": "他给 Claude Fable 5.2 的提示词是：做一个 HTML 页面，展示 select 框所有的样式写法，他打算在每个桌面和移动浏览器里截图。",
+      "result": "试过一轮后，他选定了 appearance: none 加内嵌 SVG 箭头、6px 圆角、浅灰边框的写法，并贴出了三个浏览器里的效果。",
+      "tryThis": "遇到「哪种写法最好」这类设计选择时，先让 AI 把所有选项并排做成一页样本，再自己在真实环境里对比挑选。",
+      "caveat": "AI 负责把选项铺开，判断仍要自己在每个目标浏览器里看过才能做。",
+      "body": "这是一个很小的例子（[本人记录](https://simonwillison.net/2026/Nov/22/select-styling/)）。他要 AI 交出的不是答案，而是**一张可以拿来比较的样本页**，提示词里还写明了用途：要在各个浏览器里截图。最后用哪套样式，由他看完截图后自己决定。\n\n这个方法可以用到很多岗位：设计师比较组件样式，PM 比较几种文案或页面布局，运营比较邮件模板。先说清「我要拿它做什么对比」，AI 生成的样本才会覆盖到你真正需要的维度。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Select Styling Specimens",
+          "url": "https://simonwillison.net/2026/Nov/22/select-styling/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-23-05"
+    }
+  ],
+  "action": "打开你手上 AI 产品或副业项目的后台，找出最近一批试用后没付费、或者付费后流失的用户，今天给其中 3 个人发消息，只问一个问题：「当时为什么没继续用？」把原话一字不改记下来。没有产品的话，就把这个月各家 AI 订阅和 API 的账单列在一起，算出每一类任务实际花了多少钱，看看哪些执行工作可以换成更便宜的模型，只留关键判断给最强的那个。",
+  "readingMinutes": 8,
+  "meta": {
+    "generatedAt": "2026-11-23T14:44:35.893Z",
+    "engine": "cli",
+    "candidateCount": 35,
+    "candidatesBySource": {
+      "Simon Willison": 1,
+      "How I AI (Claire Vo)": 1,
+      "Lenny's Newsletter & Podcast": 1,
+      "Ali Abdaal": 1,
+      "Matt Wolfe": 1,
+      "陈然 ranchen.org": 2,
+      "Starter Story Podcast": 1,
+      "Starter Story (YouTube)": 2,
+      "Rest of World": 1,
+      "Follow Builders (X)": 22,
+      "少数派": 1,
+      "Tom's Guide · AI": 1
+    },
+    "shortlist": [
+      {
+        "id": "c8",
+        "reason": "谁：独立开发者 Filip，之前做了 5 个产品都没赚到钱；怎么做：在 X 上公开构建，做了一个 micro-SaaS，改了一处地方后月收入一个月涨了两倍；结果：月收入 1.5 万美元，有完整经营复盘，带逐字稿",
+        "source": "Starter Story Podcast",
+        "title": "This Micro-SaaS Grew $5K PER WEEK"
+      },
+      {
+        "id": "c2",
+        "reason": "谁：Innovaccer 的 CTO；怎么用 AI：在 Mac Mini 上跑 OpenClaw 个人助手，从审批做到点餐、打电话催同事、订餐厅、开空调，讲了 soul 文件、安全护栏和语音子 agent 的拆分；结果：每月 Anthropic 账单 500–600 美元，正在测便宜模型替代。简介本身已写清做法",
+        "source": "How I AI (Claire Vo)",
+        "title": "OpenClaw for executives: Automate every 1% annoyance"
+      },
+      {
+        "id": "c6",
+        "reason": "谁：独立开发者陈然本人；怎么用 AI：月 Token 消耗从 100 亿涨到 1000–2000 亿，系列文章会讲花多少钱、能不能赚回来；结果：带数字的一手亲历",
+        "source": "陈然 ranchen.org",
+        "title": "万亿 Token 之路"
+      },
+      {
+        "id": "c1",
+        "reason": "谁：Simon Willison；怎么用 AI：一句提示词让 Claude 生成页面，列出 select 下拉框的所有样式写法，再拿去各浏览器截图对比；结果：定下自己最喜欢的 CSS，个人可以照着试",
+        "source": "Simon Willison",
+        "title": "Select Styling Specimens"
+      },
+      {
+        "id": "c10",
+        "reason": "谁：Oliver，之前把巧克力品牌做到年收入 1100 万美元后卖掉；怎么用 AI：做 Bustem，AI agent 加真人一起帮电商品牌找出并下架仿品和未授权分销商；结果：每家客户每月付 1500–5000 美元，平均约 3000 美元。摘录较短，但谁、怎么用、结果三项都有",
+        "source": "Starter Story (YouTube)",
+        "title": "Bro charges $3K a month for his SaaS and says it's \"very affordable\" 👀"
+      },
+      {
+        "id": "c7",
+        "reason": "AI 认知：陈然记录硅谷一线工程经理怎么带 AI 时代的团队（月度排名、末位淘汰、像管外包一样管员工），对大厂员工有直接参考价值",
+        "source": "陈然 ranchen.org",
+        "title": "硅谷 AI native 组织的新风向：程序员正在外卖骑手化"
+      },
+      {
+        "id": "c33",
+        "reason": "谁：Ryo Lu（Cursor、Notion 的设计师）；怎么用 AI：用 airbuild 几乎一次生成一个原生 iOS 卡拉 OK 应用；结果：能用的作品。摘录较短，可作为 vibe coding 的小案例",
+        "source": "Follow Builders (X)",
+        "title": "Ryo Lu: ryOS Karaoke, native on iOS, almost one-shotted with @airbuild\n\nhalf fold the iP"
+      },
+      {
+        "id": "c17",
+        "reason": "AI 认知：微软 Copilot 的 EVP 判断，agent 会成为软件的主要用户，它们只看性能、价格和可靠性，API 和产品体验要为 agent 改，对做产品的人有参考价值",
+        "source": "Follow Builders (X)",
+        "title": "Peter Yang: \"Agents are very harsh customers.\"\n\nFrom @clamanna (EVP @Microsoft Copilot) on w"
+      },
+      {
+        "id": "c23",
+        "reason": "AI 认知：Vercel CEO 提醒，「免费」的匿名模型可能被用来大规模窃取数据，对用 AI 写代码、处理客户数据的个人和团队是实用的安全提醒",
+        "source": "Follow Builders (X)",
+        "title": "Guillermo Rauch: This aged extremely well.\n\nThere's a tweet out there (will likely get deleted so"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 16873,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2116,
+        "output_tokens_details": {
+          "thinking_tokens": 578
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 16873,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2116,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 16873,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 16873
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.177312
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 33923,
+      "cache_read_input_tokens": 0,
+      "output_tokens": 7090,
+      "output_tokens_details": {
+        "thinking_tokens": 1990
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 33923,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 7090,
+          "cache_read_input_tokens": 0,
+          "cache_creation_input_tokens": 33923,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 33923
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.413192
+  }
+}
