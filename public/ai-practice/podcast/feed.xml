@@ -14,6 +14,18 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <item>
+      <title>2026-11-24 · 每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强</title>
+      <link>https://www.jiabinlu.com/ai-practice/d/2026-11-24/</link>
+      <description>每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人；想了一年的图表插件，一个周日做出原型；陈然：AI 转型是半年到一年没有正反馈的煎熬；Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差；用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词（本集语音由 AI 合成）</description>
+      <content:encoded><![CDATA[<p><a href="https://www.jiabinlu.com/ai-practice/d/2026-11-24/">图文版</a> · 本集口播稿与语音由 AI 生成合成</p><p>00:00 每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人<br>03:00 想了一年的图表插件，一个周日做出原型<br>04:36 陈然：AI 转型是半年到一年没有正反馈的煎熬<br>06:33 Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差<br>07:47 用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词<br>09:16 今天可以做的一件事</p><p><b>每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人</b><br><a href="https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives">Lenny's Newsletter &amp; Podcast</a></p><p><b>想了一年的图表插件，一个周日做出原型</b><br><a href="https://simonwillison.net/2026/Nov/23/datasette-charts/">Simon Willison</a></p><p><b>陈然：AI 转型是半年到一年没有正反馈的煎熬</b><br><a href="https://ranchen.org/content/20261124-ranchen-article-stop-romanticizing-ai-transformation">陈然 ranchen.org</a></p><p><b>Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差</b><br><a href="https://x.com/amasad/status/2124969305674748175">Follow Builders (X)</a></p><p><b>用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词</b><br><a href="https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/My-Favorite-ASO-Tool-for-Keyword-Research-e3sslga">App Masters (Steve P. Young)</a></p>]]></content:encoded>
+      <enclosure url="https://audio.jiabinlu.com/ai-practice-2026-11-24.mp3" length="3611900" type="audio/mpeg"/>
+      <guid isPermaLink="false">ai-practice-2026-11-24</guid>
+      <pubDate>Tue, 24 Nov 2026 22:45:44 GMT</pubDate>
+      <itunes:duration>00:10:02</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>2026-11-23 · 流失率 40% 时先修漏斗，一个人一个月用掉千亿 Token 的账怎么算</title>
       <link>https://www.jiabinlu.com/ai-practice/d/2026-11-23/</link>
       <description>流失率 40% 时他停下扩张，先花半年修漏斗；CTO 让 Mac Mini 上的 agent 替他审批、催回复、订餐；每月一千多美元订阅，换来约 1000 亿 Token；一个经理管 20 到 50 人，硅谷团队开始按单验货；一句提示词，做出各浏览器对照的下拉框样式页（本集语音由 AI 合成）</description>
