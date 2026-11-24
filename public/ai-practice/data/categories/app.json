@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c57"
+      ],
+      "category": "app",
+      "kind": "本周演示",
+      "eventDate": "2026-11-24",
+      "headline": "用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词",
+      "oneLiner": "App Masters 创始人 Steve P. Young 以一款 GLP-1 记录 App 为例，演示先用 ASO Mobile 导出竞品关键词，再让 Claude 挑出 6 到 10 个值得做的词。",
+      "who": "Steve P. Young，App Masters 创始人，做 App 商店优化（ASO）。这期节目带了 ASO Mobile 的黑五促销。",
+      "how": "用 ASO Mobile 导出竞品关键词，交给 Claude 分析竞品，筛出流量不一定大、但竞争低又相关的词，再写进标题、副标题和关键词字段。",
+      "result": "他主张集中做 6 到 10 个相关关键词，效果可能比铺几百个词更好。之后持续跟踪排名和竞品的 ASO 改动，再扩展到海外市场。",
+      "tryThis": "如果你有一款上架的 App，导出三五个直接竞品的关键词表，让 AI 按相关度和竞争度排序，挑 6 到 10 个词改一版元数据，过几周看排名变化。",
+      "caveat": "需要付费的 ASO 工具提供搜索量和竞争数据，AI 只负责分析。冷门词流量本来就小，适合细分类目的 App。",
+      "body": "Steve P. Young 在[这期节目](https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/My-Favorite-ASO-Tool-for-Keyword-Research-e3sslga)里反对一味追高流量关键词。他认为好机会往往是竞品没在做的低竞争词。演示用的是一款真实的 GLP-1 记录 App：**导出竞品关键词 → 让 Claude 分析并挑出 6 到 10 个高潜力词 → 改标题、副标题和关键词字段 → 跟踪排名和竞品更新。**\n\n这套流程适合独立开发者，花一个下午就能完成一轮。AI 在这里做的是筛选和归纳，真正的数据还得靠 ASO 工具。改完元数据要留出几周观察排名，一次不要改动太多字段，否则分不清是哪个改动起的作用。",
+      "sources": [
+        {
+          "label": "App Masters (Steve P. Young)",
+          "title": "My Favorite ASO Tool for Keyword Research",
+          "url": "https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/My-Favorite-ASO-Tool-for-Keyword-Research-e3sslga"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-24-05",
+      "issueDate": "2026-11-24",
+      "issueNumber": 46
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "app",

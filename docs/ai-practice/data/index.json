@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-23T14:44:38.746Z",
+  "updatedAt": "2026-11-24T14:45:20.899Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 48
+      "count": 50
     },
     {
       "id": "consulting",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 26
+      "count": 27
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 55
+      "count": 57
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-24",
+      "number": 46,
+      "title": "每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 8,
+      "itemCount": 5,
+      "categoryCounts": {
+        "productivity": 2,
+        "perspective": 2,
+        "app": 1
+      },
+      "headlines": [
+        {
+          "category": "productivity",
+          "headline": "每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人"
+        },
+        {
+          "category": "productivity",
+          "headline": "想了一年的图表插件，一个周日做出原型"
+        },
+        {
+          "category": "perspective",
+          "headline": "陈然：AI 转型是半年到一年没有正反馈的煎熬"
+        },
+        {
+          "category": "perspective",
+          "headline": "Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差"
+        },
+        {
+          "category": "app",
+          "headline": "用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词"
+        }
+      ]
+    },
     {
       "date": "2026-11-23",
       "number": 45,

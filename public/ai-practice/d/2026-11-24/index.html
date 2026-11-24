@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 实干派 046｜每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强</title>
+  <meta name="description" content="Innovaccer CTO Ankit Maheshwari 在 Mac Mini 上用 OpenClaw 搭了个人助理 Jarvis，第一个自动化是每四小时汇总一次待审批的简历。他说这套系统每月模型费大约 500 到 600 美元。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/d/2026-11-24/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI 实干派 046｜每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强">
+  <meta property="og:description" content="Innovaccer CTO Ankit Maheshwari 在 Mac Mini 上用 OpenClaw 搭了个人助理 Jarvis，第一个自动化是每四小时汇总一次待审批的简历。他说这套系统每月模型费大约 500 到 600 美元。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/d/2026-11-24/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-24.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI 实干派 046｜每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强">
+  <meta name="twitter:description" content="Innovaccer CTO Ankit Maheshwari 在 Mac Mini 上用 OpenClaw 搭了个人助理 Jarvis，第一个自动化是每四小时汇总一次待审批的简历。他说这套系统每月模型费大约 500 到 600 美元。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-24.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/" class="active">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">50</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">9</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">14</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">24</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">27</span></a><a class="cat-chip" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">57</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">28</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <header class="issue-head">
+        <div class="eyebrow">AI 实干派 046 · 2026 年 11 月 24 日 · 周二 · 约 8 分钟读完</div>
+        <h1>每月 600 美元的 AI 幕僚长；32 个 agent 未必比 8 个强</h1>
+      </header>
+      
+      <section class="tldr">
+        <h2>30 秒速读</h2>
+        <ul><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-24-01">Innovaccer CTO Ankit Maheshwari 在 Mac Mini 上用 OpenClaw 搭了个人助理 Jarvis，第一个自动化是每四小时汇总一次待审批的简历。他说这套系统每月模型费大约 500 到 600 美元。</a></li><li><span class="tag" data-cat="productivity">工作提效</span><a href="#2026-11-24-02">Simon Willison 琢磨这个问题一年多，周日用 Claude Fable 5.2 做了原型，效果好到直接做成了正式插件 datasette-charts，目前是 alpha 版。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-24-03">陈然 2025 年在 Pure Global 推倒重建内部系统，国内研发团队从二十来人压到一两个人。他认为个人 AI 转型的常态，是持续数月到一年的焦虑和试错。</a></li><li><span class="tag" data-cat="perspective">AI 认知</span><a href="#2026-11-24-04">Replit 的研究显示，同样两小时，Opus 5.5 优化 NumPy 时单 agent 提速 3.7 倍，32 个 agent 提速 18.9 倍；GPT-6.2 Astra 单打最强，超过 8 个 agent 后反而变差。</a></li><li><span class="tag" data-cat="app">AI App</span><a href="#2026-11-24-05">App Masters 创始人 Steve P. Young 以一款 GLP-1 记录 App 为例，演示先用 ASO Mobile 导出竞品关键词，再让 Claude 挑出 6 到 10 个值得做的词。</a></li></ul>
+      </section>
+      <section class="item" id="2026-11-24-01">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-23<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-24-01/">01｜每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Innovaccer CTO Ankit Maheshwari，在 How I AI 节目里演示他给自己搭的 AI 幕僚长 Jarvis。</dd><dt>怎么用</dt><dd>OpenClaw 跑在 Mac Mini 上，用他本人的账号凭证执行任务。每个 agent 的角色、边界、权限和分工写在 soul.md 这类文件里，语音通话交给一个单独的专用 agent。</dd><dt>结果</dt><dd>Jarvis 现在替他做审批汇总、每天点午饭、给不回 Slack 的同事打电话、订餐厅、控制智能家居。他说用 Opus 5.5 每月大约 500 到 600 美元，正在测试本地模型。</dd><dt>你可以试</dt><dd>挑一件每天卡住你的审批或待办，先做一个定时汇总：每隔几小时把待处理事项和判断需要的背景整理给你。前提是 agent 能读到相关系统。</dd><dt>注意</dt><dd>agent 拿着你的凭证，就能替你做决定。他出差途中，系统自己批了几笔快过期的差旅申请，之后他才给岗位审批这类操作加上明确限制。复杂的浏览器操作目前还离不开前沿模型。</dd></dl>
+        <div class="body"><p>Ankit Maheshwari 在 <a href="https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives">How I AI</a> 里演示了他的 Jarvis。起点很小：一个每四小时跑一次的 cron 任务，把所有待审批简历连同候选人履历和 GitHub 记录一起汇总给他。这个跑通以后，他开始在一天里到处找类似的瓶颈。他的规则是 <strong>「1% 烦恼」：一件事只要有一点烦，又重复了几次，就自动化。</strong> 午饭 agent 每天 9:30 跟他确认订单，他不回就自己下单。有一次他纠正说点咖喱别配面包，之后它学会了判断什么时候该加面包、什么时候套餐里已经有了。</p><p>搭建本身不复杂：打开 OpenClaw 的终端界面，像给新员工交代工作那样跟它说话，要写代码时它自己调用 Claude Code。<strong>他说最费功夫的是写 soul 文件</strong>，也就是每个 agent 的性格、边界、权限和路由规则，花的迭代比接工具多得多。总控 agent 一会儿订餐厅、一会儿找同事，人设容易乱；把语音通话拆给专用 agent 后才稳定下来。</p><p>关于成本，他的初步测试显示，摘要、邮件、定时检查和通话调度，几乎免费的本地模型就能做，复杂的浏览器任务还得用前沿模型。他建议趁系统还没变得离不开，先把账单优化好。</p></div>
+        <div class="sources">原文：<a href="https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives" target="_blank" rel="noopener" title="🎙️ How I AI: OpenClaw for executives: Automate every 1% annoyance">Lenny&#39;s Newsletter &amp; Podcast</a></div>
+      </section>
+      <section class="item" id="2026-11-24-02">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周动态<span>·</span>2026-11-23<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-24-02/">02｜想了一年的图表插件，一个周日做出原型</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison，给他维护的开源数据工具 Datasette 做可视化插件。</dd><dt>怎么用</dt><dd>用 Claude Fable 5.2 做原型。插件给每种图表写了一套判断规则，自动推荐适合当前数据的图表，再把图表编译成在全量数据上做聚合的 SQL。</dd><dt>结果</dt><dd>datasette-charts 0.1a0 已发布，可以在 Datasette Lite 里直接试用。图表统计全部行，以前的插件只统计当前页，通常最多 100 行。</dd><dt>你可以试</dt><dd>把一个想了很久、但一直嫌太费事的内部工具需求写清楚，花一个周末让 coding agent 做原型，再判断值不值得继续投入。</dd><dt>注意</dt><dd>他是 Datasette 的作者，又想了一年多。原型能这么快，前提是需求和技术路线早就想清楚了。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/23/datasette-charts/">发布记录</a>里说，这个问题他想了一年多，周日终于用 Claude Fable 5.2 做了原型。原型顺利到他直接把它做成了完整插件。插件适用于任何表或任意 SQL 查询，顶部的推荐缩略图都是用真实数据画出来的，点开就能进完整图表继续调整。图表状态存在 URL 的 # 片段里，可以收藏或分享。</p><p>他认为最重要的一点是<strong>图表统计全部行</strong>。插件把每张图编译成一条 SQL，用 GROUP BY、按时间分桶和窗口函数在整个结果集上聚合，数据可能有几百万行，每次最多返回 5,000 行给图表。大表先抽样，用来推荐图表类型。</p><p>可借鉴的是分工：<strong>哪种数据配哪种图、怎么在数据库里聚合，这些判断由人定，代码和原型交给 agent。</strong> 做数据分析或内部报表的人，可以拿一个积压很久的需求试试。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/23/datasette-charts/" target="_blank" rel="noopener" title="datasette-charts 0.1a0">Simon Willison</a></div>
+      </section>
+      <section class="item" id="2026-11-24-03">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-24<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-24-03/">03｜陈然：AI 转型是半年到一年没有正反馈的煎熬</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>陈然，2023 年离开大厂，现在在旧金山，2025 年在 Pure Global 主导内部系统重构。观点来自他 2026-11-24 的个人文章。</dd><dt>核心观点</dt><dd>他反对一切把 AI 转型讲得轻松的说法。发 demo 换的是点赞，做生意要的是陌生人反复付钱，两者的奖励机制正好相反。</dd><dt>依据</dt><dd>依据有他自己的经历：离开大厂后撞了快两年墙，以及那次团队压缩。他还引用了几项研究：MIT NANDA 2025 年报告称约 95% 的企业 AI 项目没有可衡量的财务回报；BCG 调研发现同时看管超过三个 AI 工具时认知疲劳会骤增；HBR 研究称四成白领上个月收到过 workslop，平均每次要花两小时核对返工。</dd><dt>对你的意义</dt><dd>如果你打算做副业，按半年到一年没有收入来做预算和心理准备，尽早去接触愿意为具体问题付钱的陌生人。</dd><dt>争议·条件</dt><dd>他自己也承认有一小批人转型顺利，比如在细分行业深耕十年、手里已经有大客户的人。「未来几年一半以上知识工作者要面对岗位消失或收入重估」是他个人的判断。</dd></dl>
+        <div class="body"><p>陈然在<a href="https://ranchen.org/content/20261124-ranchen-article-stop-romanticizing-ai-transformation">《我旗帜鲜明地反对一切浪漫化 AI 转型的表达》</a>里写的，正是 demo 视频剪掉的那部分：两个周末上线的小产品，访问曲线一条平线；五十封冷邮件，四十八封已读不回；三个月换了第二个方向，还是没有收入。他说工具越强，人越没借口，因为代码和设计几乎人人都用得上了。</p><p>企业那一侧，他写了自己 2025 年在 Pure Global 推倒重建内部系统：凌晨盯报错日志，切换期交付不稳，要给老客户道歉，还要亲手把离职协议递给老同事。他还提到 Klarna 的例子：AI 客服压成本压过了头，质量下滑，后来又重新招人。</p><p>对读者来说，他的结论很朴素：<strong>be realistic</strong>。趁还有工资或存款托底，把「十分钟做出爆款海报」的教程关掉，直接去真实市场里找愿意付钱的人。这篇文章基调悲观，适合用来校准预期。</p></div>
+        <div class="sources">原文：<a href="https://ranchen.org/content/20261124-ranchen-article-stop-romanticizing-ai-transformation" target="_blank" rel="noopener" title="我旗帜鲜明地反对一切浪漫化 AI 转型的表达">陈然 ranchen.org</a></div>
+      </section>
+      <section class="item" id="2026-11-24-04">
+        <div class="item-meta"><span class="tag" data-cat="perspective">AI 认知</span><span>·</span>观点访谈<span>·</span>2026-11-23<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-24-04/">04｜Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差</a></h3>
+        <dl class="facts"><dt>谁说的</dt><dd>Replit CEO Amjad Masad 在 X 上发布公司关于 agent 集群扩展规律的研究，并开源了 Optimization-Bench。</dd><dt>核心观点</dt><dd>他们的结论是：增加 agent 数量可以大幅提升效果，但算力加多了不一定更好，agent 怎么组织起来同样关键。</dd><dt>依据</dt><dd>实验在固定两小时内完成。模型会自发形成不同的组织结构，去中心化的集群比依赖中心调度的扩展得更好。问题本身能不能拆开并行做，最能预测集群的表现。单个模型越聪明，不代表集群越强。</dd><dt>对你的意义</dt><dd>给团队上多 agent 并行之前，先看任务能不能拆开并行做。可以分别用 1、4、8 个 agent 跑同一个任务，比较结果再决定规模。</dd><dt>争议·条件</dt><dd>实验做的是性能优化这类结果可以量化的任务。写方案、做设计这种难以评分、步骤环环相扣的工作，不一定适用同样的规律。</dd></dl>
+        <div class="body"><p>Amjad Masad 在<a href="https://x.com/amasad/status/2124969305674748175">帖子</a>里公布了 Replit 的一项研究：同样给两小时，用 Opus 5.5 优化 NumPy，单 agent 提速 3.7 倍，32 个 agent 提速 18.9 倍。GPT-6.2 Astra 单独跑是最强的，但超过 8 个 agent 后出现负扩展。</p><p>对正在给团队铺 coding agent 的人，有两点可以直接用。第一，<strong>先判断任务能不能拆开并行</strong>，这是最强的预测指标，加人头或加 agent 都要先过这一关。第二，<strong>单兵最强的模型不一定适合组队</strong>，选模型要在你实际的并行规模下测。研究还发现，让 agent 自己分头推进的集群，比一个总指挥分派任务的集群扩展得更好。他们开源了 Optimization-Bench，可以拿来复现。</p></div>
+        <div class="sources">原文：<a href="https://x.com/amasad/status/2124969305674748175" target="_blank" rel="noopener" title="Amjad Masad: New research from Replit on scaling laws for agent swarms. 
+
+We show that scalin">Follow Builders (X)</a></div>
+      </section>
+      <section class="item" id="2026-11-24-05">
+        <div class="item-meta"><span class="tag" data-cat="app">AI App</span><span>·</span>本周演示<span>·</span>2026-11-24<span>·</span>US</div>
+        <h3><a class="permalink" href="/ai-practice/i/2026-11-24-05/">05｜用 Claude 从竞品关键词里挑出 6 到 10 个低竞争词</a></h3>
+        <dl class="facts"><dt>谁·场景</dt><dd>Steve P. Young，App Masters 创始人，做 App 商店优化（ASO）。这期节目带了 ASO Mobile 的黑五促销。</dd><dt>怎么用</dt><dd>用 ASO Mobile 导出竞品关键词，交给 Claude 分析竞品，筛出流量不一定大、但竞争低又相关的词，再写进标题、副标题和关键词字段。</dd><dt>结果</dt><dd>他主张集中做 6 到 10 个相关关键词，效果可能比铺几百个词更好。之后持续跟踪排名和竞品的 ASO 改动，再扩展到海外市场。</dd><dt>你可以试</dt><dd>如果你有一款上架的 App，导出三五个直接竞品的关键词表，让 AI 按相关度和竞争度排序，挑 6 到 10 个词改一版元数据，过几周看排名变化。</dd><dt>注意</dt><dd>需要付费的 ASO 工具提供搜索量和竞争数据，AI 只负责分析。冷门词流量本来就小，适合细分类目的 App。</dd></dl>
+        <div class="body"><p>Steve P. Young 在<a href="https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/My-Favorite-ASO-Tool-for-Keyword-Research-e3sslga">这期节目</a>里反对一味追高流量关键词。他认为好机会往往是竞品没在做的低竞争词。演示用的是一款真实的 GLP-1 记录 App：<strong>导出竞品关键词 → 让 Claude 分析并挑出 6 到 10 个高潜力词 → 改标题、副标题和关键词字段 → 跟踪排名和竞品更新。</strong></p><p>这套流程适合独立开发者，花一个下午就能完成一轮。AI 在这里做的是筛选和归纳，真正的数据还得靠 ASO 工具。改完元数据要留出几周观察排名，一次不要改动太多字段，否则分不清是哪个改动起的作用。</p></div>
+        <div class="sources">原文：<a href="https://podcasters.spotify.com/pod/show/app-marketing-podcast/episodes/My-Favorite-ASO-Tool-for-Keyword-Research-e3sslga" target="_blank" rel="noopener" title="My Favorite ASO Tool for Keyword Research">App Masters (Steve P. Young)</a></div>
+      </section>
+      <section class="action"><h2>今天可以做的一件事</h2><p>列出这周让你烦过两次以上的三件小事：等审批、催回复、整理同一类表格都算。挑一件，照 Ankit Maheshwari 的做法先做一个「汇总」版本：把待处理事项和你做判断要看的信息交给 AI，让它整理成一页，你只负责拍板。连续做三天，记下每次省了几分钟、哪里需要你纠正。哪天准备让它自动执行，先把它不许做的事写下来。</p></section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-23/">← 2026 年 11 月 23 日 · 周一</a></span>
+        <span></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

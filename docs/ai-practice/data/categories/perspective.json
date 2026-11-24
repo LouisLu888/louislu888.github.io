@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c8"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-24",
+      "headline": "陈然：AI 转型是半年到一年没有正反馈的煎熬",
+      "oneLiner": "陈然 2025 年在 Pure Global 推倒重建内部系统，国内研发团队从二十来人压到一两个人。他认为个人 AI 转型的常态，是持续数月到一年的焦虑和试错。",
+      "who": "陈然，2023 年离开大厂，现在在旧金山，2025 年在 Pure Global 主导内部系统重构。观点来自他 2026-11-24 的个人文章。",
+      "how": "他反对一切把 AI 转型讲得轻松的说法。发 demo 换的是点赞，做生意要的是陌生人反复付钱，两者的奖励机制正好相反。",
+      "result": "依据有他自己的经历：离开大厂后撞了快两年墙，以及那次团队压缩。他还引用了几项研究：MIT NANDA 2025 年报告称约 95% 的企业 AI 项目没有可衡量的财务回报；BCG 调研发现同时看管超过三个 AI 工具时认知疲劳会骤增；HBR 研究称四成白领上个月收到过 workslop，平均每次要花两小时核对返工。",
+      "tryThis": "如果你打算做副业，按半年到一年没有收入来做预算和心理准备，尽早去接触愿意为具体问题付钱的陌生人。",
+      "caveat": "他自己也承认有一小批人转型顺利，比如在细分行业深耕十年、手里已经有大客户的人。「未来几年一半以上知识工作者要面对岗位消失或收入重估」是他个人的判断。",
+      "body": "陈然在[《我旗帜鲜明地反对一切浪漫化 AI 转型的表达》](https://ranchen.org/content/20261124-ranchen-article-stop-romanticizing-ai-transformation)里写的，正是 demo 视频剪掉的那部分：两个周末上线的小产品，访问曲线一条平线；五十封冷邮件，四十八封已读不回；三个月换了第二个方向，还是没有收入。他说工具越强，人越没借口，因为代码和设计几乎人人都用得上了。\n\n企业那一侧，他写了自己 2025 年在 Pure Global 推倒重建内部系统：凌晨盯报错日志，切换期交付不稳，要给老客户道歉，还要亲手把离职协议递给老同事。他还提到 Klarna 的例子：AI 客服压成本压过了头，质量下滑，后来又重新招人。\n\n对读者来说，他的结论很朴素：**be realistic**。趁还有工资或存款托底，把「十分钟做出爆款海报」的教程关掉，直接去真实市场里找愿意付钱的人。这篇文章基调悲观，适合用来校准预期。",
+      "sources": [
+        {
+          "label": "陈然 ranchen.org",
+          "title": "我旗帜鲜明地反对一切浪漫化 AI 转型的表达",
+          "url": "https://ranchen.org/content/20261124-ranchen-article-stop-romanticizing-ai-transformation"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-24-03",
+      "issueDate": "2026-11-24",
+      "issueNumber": 46
+    },
+    {
+      "candidateIds": [
+        "c27"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-23",
+      "headline": "Replit 实验：32 个 agent 提速 18.9 倍，有的模型超过 8 个反而变差",
+      "oneLiner": "Replit 的研究显示，同样两小时，Opus 5.5 优化 NumPy 时单 agent 提速 3.7 倍，32 个 agent 提速 18.9 倍；GPT-6.2 Astra 单打最强，超过 8 个 agent 后反而变差。",
+      "who": "Replit CEO Amjad Masad 在 X 上发布公司关于 agent 集群扩展规律的研究，并开源了 Optimization-Bench。",
+      "how": "他们的结论是：增加 agent 数量可以大幅提升效果，但算力加多了不一定更好，agent 怎么组织起来同样关键。",
+      "result": "实验在固定两小时内完成。模型会自发形成不同的组织结构，去中心化的集群比依赖中心调度的扩展得更好。问题本身能不能拆开并行做，最能预测集群的表现。单个模型越聪明，不代表集群越强。",
+      "tryThis": "给团队上多 agent 并行之前，先看任务能不能拆开并行做。可以分别用 1、4、8 个 agent 跑同一个任务，比较结果再决定规模。",
+      "caveat": "实验做的是性能优化这类结果可以量化的任务。写方案、做设计这种难以评分、步骤环环相扣的工作，不一定适用同样的规律。",
+      "body": "Amjad Masad 在[帖子](https://x.com/amasad/status/2124969305674748175)里公布了 Replit 的一项研究：同样给两小时，用 Opus 5.5 优化 NumPy，单 agent 提速 3.7 倍，32 个 agent 提速 18.9 倍。GPT-6.2 Astra 单独跑是最强的，但超过 8 个 agent 后出现负扩展。\n\n对正在给团队铺 coding agent 的人，有两点可以直接用。第一，**先判断任务能不能拆开并行**，这是最强的预测指标，加人头或加 agent 都要先过这一关。第二，**单兵最强的模型不一定适合组队**，选模型要在你实际的并行规模下测。研究还发现，让 agent 自己分头推进的集群，比一个总指挥分派任务的集群扩展得更好。他们开源了 Optimization-Bench，可以拿来复现。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Amjad Masad: New research from Replit on scaling laws for agent swarms. \n\nWe show that scalin",
+          "url": "https://x.com/amasad/status/2124969305674748175"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-24-04",
+      "issueDate": "2026-11-24",
+      "issueNumber": 46
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "perspective",

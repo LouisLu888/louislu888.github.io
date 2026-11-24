@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c6"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-23",
+      "headline": "每月 600 美元的 AI 幕僚长：替 CTO 审批、点餐、打电话催人",
+      "oneLiner": "Innovaccer CTO Ankit Maheshwari 在 Mac Mini 上用 OpenClaw 搭了个人助理 Jarvis，第一个自动化是每四小时汇总一次待审批的简历。他说这套系统每月模型费大约 500 到 600 美元。",
+      "who": "Innovaccer CTO Ankit Maheshwari，在 How I AI 节目里演示他给自己搭的 AI 幕僚长 Jarvis。",
+      "how": "OpenClaw 跑在 Mac Mini 上，用他本人的账号凭证执行任务。每个 agent 的角色、边界、权限和分工写在 soul.md 这类文件里，语音通话交给一个单独的专用 agent。",
+      "result": "Jarvis 现在替他做审批汇总、每天点午饭、给不回 Slack 的同事打电话、订餐厅、控制智能家居。他说用 Opus 5.5 每月大约 500 到 600 美元，正在测试本地模型。",
+      "tryThis": "挑一件每天卡住你的审批或待办，先做一个定时汇总：每隔几小时把待处理事项和判断需要的背景整理给你。前提是 agent 能读到相关系统。",
+      "caveat": "agent 拿着你的凭证，就能替你做决定。他出差途中，系统自己批了几笔快过期的差旅申请，之后他才给岗位审批这类操作加上明确限制。复杂的浏览器操作目前还离不开前沿模型。",
+      "body": "Ankit Maheshwari 在 [How I AI](https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives) 里演示了他的 Jarvis。起点很小：一个每四小时跑一次的 cron 任务，把所有待审批简历连同候选人履历和 GitHub 记录一起汇总给他。这个跑通以后，他开始在一天里到处找类似的瓶颈。他的规则是 **「1% 烦恼」：一件事只要有一点烦，又重复了几次，就自动化。** 午饭 agent 每天 9:30 跟他确认订单，他不回就自己下单。有一次他纠正说点咖喱别配面包，之后它学会了判断什么时候该加面包、什么时候套餐里已经有了。\n\n搭建本身不复杂：打开 OpenClaw 的终端界面，像给新员工交代工作那样跟它说话，要写代码时它自己调用 Claude Code。**他说最费功夫的是写 soul 文件**，也就是每个 agent 的性格、边界、权限和路由规则，花的迭代比接工具多得多。总控 agent 一会儿订餐厅、一会儿找同事，人设容易乱；把语音通话拆给专用 agent 后才稳定下来。\n\n关于成本，他的初步测试显示，摘要、邮件、定时检查和通话调度，几乎免费的本地模型就能做，复杂的浏览器任务还得用前沿模型。他建议趁系统还没变得离不开，先把账单优化好。",
+      "sources": [
+        {
+          "label": "Lenny's Newsletter & Podcast",
+          "title": "🎙️ How I AI: OpenClaw for executives: Automate every 1% annoyance",
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-openclaw-for-executives"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-24-01",
+      "issueDate": "2026-11-24",
+      "issueNumber": 46
+    },
+    {
+      "candidateIds": [
+        "c5"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-23",
+      "headline": "想了一年的图表插件，一个周日做出原型",
+      "oneLiner": "Simon Willison 琢磨这个问题一年多，周日用 Claude Fable 5.2 做了原型，效果好到直接做成了正式插件 datasette-charts，目前是 alpha 版。",
+      "who": "开发者 Simon Willison，给他维护的开源数据工具 Datasette 做可视化插件。",
+      "how": "用 Claude Fable 5.2 做原型。插件给每种图表写了一套判断规则，自动推荐适合当前数据的图表，再把图表编译成在全量数据上做聚合的 SQL。",
+      "result": "datasette-charts 0.1a0 已发布，可以在 Datasette Lite 里直接试用。图表统计全部行，以前的插件只统计当前页，通常最多 100 行。",
+      "tryThis": "把一个想了很久、但一直嫌太费事的内部工具需求写清楚，花一个周末让 coding agent 做原型，再判断值不值得继续投入。",
+      "caveat": "他是 Datasette 的作者，又想了一年多。原型能这么快，前提是需求和技术路线早就想清楚了。",
+      "body": "Simon Willison 在[发布记录](https://simonwillison.net/2026/Nov/23/datasette-charts/)里说，这个问题他想了一年多，周日终于用 Claude Fable 5.2 做了原型。原型顺利到他直接把它做成了完整插件。插件适用于任何表或任意 SQL 查询，顶部的推荐缩略图都是用真实数据画出来的，点开就能进完整图表继续调整。图表状态存在 URL 的 # 片段里，可以收藏或分享。\n\n他认为最重要的一点是**图表统计全部行**。插件把每张图编译成一条 SQL，用 GROUP BY、按时间分桶和窗口函数在整个结果集上聚合，数据可能有几百万行，每次最多返回 5,000 行给图表。大表先抽样，用来推荐图表类型。\n\n可借鉴的是分工：**哪种数据配哪种图、怎么在数据库里聚合，这些判断由人定，代码和原型交给 agent。** 做数据分析或内部报表的人，可以拿一个积压很久的需求试试。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-charts 0.1a0",
+          "url": "https://simonwillison.net/2026/Nov/23/datasette-charts/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-24-02",
+      "issueDate": "2026-11-24",
+      "issueNumber": 46
+    },
+    {
+      "candidateIds": [
         "c2"
       ],
       "category": "productivity",
