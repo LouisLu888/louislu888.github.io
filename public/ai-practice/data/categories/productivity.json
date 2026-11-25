@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c2"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-24",
+      "headline": "历史教授交给 AI 一本无名画册，22 分钟查出作者",
+      "oneLiner": "历史学教授 Mark Humphries 只给了很少的提示，GPT-6.2 Astra 用 22 分钟查出耶鲁馆藏一本 1808 年匿名速写本的作者，还找到一份少有人知的新史料。",
+      "who": "历史学教授 Mark Humphries，研究对象是耶鲁 Beinecke 图书馆收藏的一本 1808 年匿名速写本。",
+      "how": "让 GPT-6.2 Astra 自主检索公开的一手和二手资料，提出作者假设，并指出该去查哪份档案来验证。",
+      "result": "他说模型用 22 分钟找到一条日记记载：vicomte de Chabot 到访附近河流，日期比画册里的一个日期早五天。模型预测 Chabot 的旅行日记能证实这个假设，后来证实了。",
+      "tryThis": "手上有卡住的考证或尽调问题，可以让 agent 先列出假设和用来验证的资料，原件由你自己去调阅核对。",
+      "caveat": "关键的那份日记只能向 Cleveland State University 订购，最后一步核实还得靠人去拿到原件。",
+      "body": "Simon Willison [转述了这个案例](https://simonwillison.net/2026/Nov/24/astra-historical-mystery/)。模型在一份旧档案里找到线索：Chabot 子爵的到访日期，比速写本里提到的一个日期早五天，地点就在附近的河边。模型据此推测，Chabot 的旅行日记能证明画册是他画的。这份日记只能向 Cleveland State University 订购，调来一看，确实证实了。Humphries 说，这份日记本身对加拿大史和毛皮贸易史研究者就是一个重要发现。\n\n这个做法的要点是**让 AI 提出可以被验证的预测**，而不只是给出一个答案。查资料、做行业研究或竞品尽调的人可以照这个结构提要求：结论、证据链、还缺哪份材料能证实或推翻它。\n\nHumphries 估计，明年春夏历史学界会出现一场「信心危机」，但会比数学界轻：历史学不追求唯一的真理，写作也更接近哲学和文学。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "GPT 6.2 Astra Solves a Historical Mystery",
+          "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-25-02",
+      "issueDate": "2026-11-25",
+      "issueNumber": 47
+    },
+    {
+      "candidateIds": [
+        "c44"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-24",
+      "headline": "一个周末摸透 Antigravity，最多同时跑了 42 个 agent",
+      "oneLiner": "Peter Yang 用 Gemini 4 Neon 加 Antigravity 做了一个周末，最多同时跑了 42 个 agent，还录了一门 17 分钟的免费课程。",
+      "who": "做 AI 教程和访谈的 Peter Yang，用一个周末测试 Google Antigravity 搭配 Gemini 4 Neon。",
+      "how": "用 Orchestrator 和 /swarm 安排多个 agent 分头规划和开发；先跑内置的 /grill-me，让它反过来问澄清问题，把计划补全再动手。",
+      "result": "他说最多同时跑过 42 个 agent；他认为 Antigravity 的远程控制比 Claude Code 好用，因为每个线程默认都处于活跃状态。",
+      "tryThis": "下一个功能动工前，先让 agent 用 /grill-me 这类方式追问你十个问题，再写计划。",
+      "caveat": "多 agent 并行很耗额度和算力，任务拆不开的话，同时跑再多也快不了。",
+      "body": "Peter Yang 在 [X 帖子](https://x.com/petergyang/status/2125246815884984398)里总结了三点。第一，Orchestrator 和 /swarm 适合多个 agent 一起规划和开发，他最多同时开了 42 个。第二，**/grill-me 会让 agent 先追问澄清问题**，帮你把计划想完整。第三，远程控制比 Claude Code 好用，因为每个线程默认都开着，他在视频里演示了怎么把 Antigravity 加到手机主屏幕。\n\n第二点用任何编程 agent 都能学：动手前先让模型找出需求里的漏洞，比写完再返工省时间。课程视频 17 分钟，已经在用 Antigravity 的人可以直接看多 agent 编排那部分。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Peter Yang: I've been using Gemini 4 Neon and @antigravity all weekend and made a free video",
+          "url": "https://x.com/petergyang/status/2125246815884984398"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-25-05",
+      "issueDate": "2026-11-25",
+      "issueNumber": 47
+    },
+    {
+      "candidateIds": [
         "c6"
       ],
       "category": "productivity",

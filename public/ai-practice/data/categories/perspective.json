@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c1"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-24",
+      "headline": "Simon Willison：一年三个拐点，能说清的软件就能做出来",
+      "oneLiner": "Simon Willison 认为过去 12 个月编程 agent 有三次能力拐点。他说用 Fable 5.2 的三周里，自己发布了 Datasette 三个 alpha 版和 LLM 五个版本。",
+      "who": "开发者 Simon Willison，在 AI Engineer Code Summit 做主题演讲，之后写成博客文章。",
+      "how": "他认为有三个拐点：2025 年 11 月 Opus 4.5 让 Claude Code 默认就能做对；2026 年夏天的 Fable 类模型给目标和工具就会主动想办法；九十月份模型学会了 3D 建模，也开始懂「好玩」。",
+      "result": "他让 Opus 5.5「把游戏做得好玩得多」，模型自己试玩了 12 个小时，重新调平衡，他的 RTS 游戏从无聊变得很好玩。",
+      "tryThis": "给 agent 派活时，把目标、验收标准和需要的工具都交给它，少去规定具体步骤。",
+      "caveat": "Fable 5.2 是不是新的拐点，他自己还没有定论。独立游戏圈对 AI 辅助编程争议很大，已经吵成了文化战争。",
+      "body": "Simon Willison 在[这篇文章](https://simonwillison.net/2026/Nov/24/llm-inflection-points/)里说，Opus 4.5 是他用 Claude Code 时第一个「默认结果基本正确」的模型，他从这时起每天用它干活。到了 Fable 类模型，变化在于主动：有一次修 Safari 的显示问题，模型自己写了截图脚本，又起了一个本地日志服务器。还有一次，模型用房间里的五个麦克风，把一个找不到的蜂鸣声定位到约 40 厘米范围内。他的说法是**「给目标，给对的工具，然后看它做」**。\n\n他对最近几周的判断是：只要你能想清楚并描述清楚一个软件，Fable 就能把它做出来。这是他的个人体验，他也说还在判断这算不算拐点。对读者来说，这意味着瓶颈在往「把需求说清楚」这边移，写需求和做验收的能力会更值钱。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "Three LLM inflection points in twelve months",
+          "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-25-04",
+      "issueDate": "2026-11-25",
+      "issueNumber": 47
+    },
+    {
+      "candidateIds": [
         "c8"
       ],
       "category": "perspective",

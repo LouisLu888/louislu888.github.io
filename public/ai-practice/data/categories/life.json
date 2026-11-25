@@ -12,6 +12,33 @@
       ],
       "category": "life",
       "kind": "本周演示",
+      "eventDate": "2026-11-24",
+      "headline": "让 Gemini 翻邮箱，几分钟列出全部订阅开销",
+      "oneLiner": "Lifehacker 作者 Khamosh Pathak 用 Gemini Task 读 Gmail，几分钟整理出自己付费的全部订阅，自动换算美元和卢比，还批量退订了营销邮件。",
+      "who": "Lifehacker 作者 Khamosh Pathak，日常全用 Google 的服务，人在印度。",
+      "how": "打开 Gemini 的 Task 标签，连上 Gmail、Drive 等账户，用 @Gmail 指定数据来源，可以设成每天自动运行。",
+      "result": "他说，Gemini 几分钟就列出了订阅清单，统一换算成卢比并算出月均花费，结果输出到 Google Sheets；每日早报提醒了他信用卡快到期的账单。",
+      "tryThis": "连上 Gmail 后试一句：「找出我所有付费订阅，列出金额和扣款周期，输出到表格。」",
+      "caveat": "退订前必须由本人确认，而且只能整批确认，不能逐个取消勾选；Amazon 等网站会直接拦截 agent。免费版每天只能跑一次，代打电话等功能只在美国开放。",
+      "body": "Pathak 在 [Lifehacker 的实测](https://lifehacker.com/tech/geminis-new-ai-agent-is-surprisingly-useful-if-you-use-google-for-everything?utm_medium=RSS)里交给 Gemini 的是邮箱权限。他让 Gemini 找出上周的营销邮件并代为退订。每次退订都要他点同意，而且只能整批同意。有一批 10 封里混着两封银行邮件，他就整批跳过了。做完后，Gemini 在 Google Sheets 里生成了一份操作报告。\n\n最实用的是**替代付费的订阅管理 App**：Gemini 从邮件里汇总出各项付费服务，自动处理美元和卢比两种币种，算出合计和月均。他还用同样的办法统计了当月的咖啡订单。\n\n网页上的任务就弱很多。他让 Gemini 每天盯一款耳机的价格，Amazon 直接把它拦了，印度零售商 Croma 能打开，但判断价格要将近一分钟。免费版每天只能跑一次任务，最多同时 10 个，AI Pro 是 50 个。",
+      "sources": [
+        {
+          "label": "Lifehacker",
+          "title": "Gemini's New AI Agent Is Surprisingly Useful (If You Use Google for Everything)",
+          "url": "https://lifehacker.com/tech/geminis-new-ai-agent-is-surprisingly-useful-if-you-use-google-for-everything?utm_medium=RSS"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-25-03",
+      "issueDate": "2026-11-25",
+      "issueNumber": 47
+    },
+    {
+      "candidateIds": [
+        "c51"
+      ],
+      "category": "life",
+      "kind": "本周演示",
       "eventDate": "2026-11-20",
       "headline": "26 份资料，5 分钟做成一个可点击的学习网站",
       "oneLiner": "Lifehacker 作者 David Nield 用 Gemini Notebook 新上线的建站功能，把 26 份关于《都柏林人》的资料做成互动学习网站，用时约 5 分钟。",

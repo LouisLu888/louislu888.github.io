@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-24T14:45:20.899Z",
+  "updatedAt": "2026-11-25T14:44:56.470Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 50
+      "count": 51
     },
     {
       "id": "consulting",
@@ -34,24 +34,61 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 27
+      "count": 28
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 57
+      "count": 59
     },
     {
       "id": "life",
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 28
+      "count": 29
     }
   ],
   "days": [
+    {
+      "date": "2026-11-25",
+      "number": 47,
+      "title": "每周测 3000 条广告的阅读 App，22 分钟查出 1808 年画册的作者",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 7,
+      "itemCount": 5,
+      "categoryCounts": {
+        "app": 1,
+        "productivity": 2,
+        "life": 1,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "离开 Kindle 自建 App，一年后月收入近百万美元"
+        },
+        {
+          "category": "productivity",
+          "headline": "历史教授交给 AI 一本无名画册，22 分钟查出作者"
+        },
+        {
+          "category": "life",
+          "headline": "让 Gemini 翻邮箱，几分钟列出全部订阅开销"
+        },
+        {
+          "category": "perspective",
+          "headline": "Simon Willison：一年三个拐点，能说清的软件就能做出来"
+        },
+        {
+          "category": "productivity",
+          "headline": "一个周末摸透 Antigravity，最多同时跑了 42 个 agent"
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "number": 46,
