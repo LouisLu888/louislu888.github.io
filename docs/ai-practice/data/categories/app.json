@@ -13,6 +13,60 @@
       "category": "app",
       "kind": "经营复盘",
       "eventDate": "2026-11-25",
+      "headline": "摔跤 App 一年从月入 1.7 万到 12 万美元",
+      "oneLiner": "George Lampropoulos 说，他的三个 App 本月合计收入接近 12 万美元，一年前只有 1.7 万；增长主要来自垂直领域网红和付费广告。",
+      "who": "独立开发者 George Lampropoulos，旗下有摔跤训练 App Wrestle.ai、照搬同一思路做的拳击 App，以及一个健身 App。",
+      "how": "Wrestle.ai 只靠网红推广；后两个 App 一上线就投付费广告。拳击 App 合作 8 位创作者，健身 App 只和一位持股的网红合作，由他专门拍广告素材。",
+      "result": "他说三个 App 本月收入合计约 12 万美元；Wrestle.ai 只靠网红时，最好的月份约 4 万美元。",
+      "tryThis": "预算少就先找垂直领域网红；投广告时按购买事件优化，每天至少测 100 美元。",
+      "caveat": "摔跤有季节性，只在 11 月到次年 2 月热；付费广告是第一个 App 赚到钱之后才大规模投的。",
+      "body": "George 一年前上 Starter Story 时月入 1.7 万美元，这次回来[复盘](https://www.youtube.com/@starterstory/search?query=I%20Built%203%20Apps%20to%20%24100K%2Fmonth%3A%20This%20is%20My%20Playbook)说三个 App 合计接近 12 万。扩张的原因很实际：摔跤赛季一过用户就流失，他把同一套产品搬到拳击上。他也解释了为什么不做 UGC 和创始人自己出镜：产品太垂直，拍视频的得是真摔跤手；他自己发过 800 多条 TikTok，只有三条破 10 万播放。\n\n他的打法按顺序是：**界面直观到交给妈妈也能马上看懂 → 先让前几位创作者用联名帖（collab post）发在自己账号上，积累品牌背书，之后谈价更顺 → 广告先把转化追踪调好，按购买事件优化，不按安装量。**跑起来以后看数据：几千人下载却不付费，问题出在漏斗，不在营销。他不建议做过于复杂的引导流程，说这往往会让转化率下降。\n\n适合有明确圈层、圈里有现成创作者的产品。他的总结是：没有结果多半是做的量还不够。",
+      "sources": [
+        {
+          "label": "Starter Story Podcast",
+          "title": "I Built 3 Apps to $100K/month: This is My Playbook",
+          "url": "https://www.youtube.com/@starterstory/search?query=I%20Built%203%20Apps%20to%20%24100K%2Fmonth%3A%20This%20is%20My%20Playbook"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-26-01",
+      "issueDate": "2026-11-26",
+      "issueNumber": 48
+    },
+    {
+      "candidateIds": [
+        "c58"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-10-27",
+      "headline": "程序员两周半做出历史地图，1400 星来自一次转发",
+      "oneLiner": "程序员 DeanChen 用 vibe coding 两周半做出可拖动时间轴的中国历史地图，提交 200 多次代码；被 X 上一个账号转发后，几天内多了一千多个 GitHub star。",
+      "who": "DeanChen，喜欢历史的理科生程序员，业余时间做开源项目「江山时序」。",
+      "how": "第一句 prompt 是「帮我做一个能够拖动时间轴的中国历史地图」，之后和 AI 一起找开源数据集，再对照《资治通鉴》和正史纠错；还加了 AI Skill，用户可以用诗句直接查询地图。",
+      "result": "他说 star 从几十个涨到 1400；陆续有外部贡献者帮忙优化渲染、加 GeoJSON 导出、做繁体版。",
+      "tryThis": "做出原型后，中文版和英文版各发几个平台，看哪里有反应，再主动找对口的大号。",
+      "caveat": "数据纠错靠作者自己的历史积累，比如发现辽上京被画在疆域外面；小红书和知乎都限了他的流。",
+      "body": "DeanChen 在[少数派](https://sspai.com/post/117510)回顾了这个项目。7 月的游戏原型半途放弃，10 月模型能力提升后，他只做地图本身。第一版只有粗糙色块和锯齿边界，之后他陆续加了「点地溯源」（看一座城的历代名称和大事）和「点人溯事」（画出苏轼等人的一生行迹）。大部分代码在深夜和周末写成。\n\n分发过程更有参考价值：先发同事群和朋友圈，GitHub 上起初没人看；英文版发 LinkedIn 毫无反应，Reddit 上反响不错；小红书、知乎都被限流，投稿中文 GitHub 推荐社群也没动静。**X 上「知识分享官」的一次转发**，几天内带来一千多个 star。之后反倒是别人搬运他的地图，在小红书和公众号上拿到了流量。\n\n对做 side project 的人来说，AI 降低了做出东西的门槛。能不能被看见，还是看有没有找对分发节点。",
+      "sources": [
+        {
+          "label": "少数派",
+          "title": "我用AI做了一张两千年的中国历史地图",
+          "url": "https://sspai.com/post/117510"
+        }
+      ],
+      "region": "CN",
+      "id": "2026-11-26-03",
+      "issueDate": "2026-11-26",
+      "issueNumber": 48
+    },
+    {
+      "candidateIds": [
+        "c8"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-25",
       "headline": "离开 Kindle 自建 App，一年后月收入近百万美元",
       "oneLiner": "Inkitt 创始人 Ali Albazaz 说，Amazon 上卖电子书卡在月入 4 万美元；改用自有阅读 App 直接卖给读者，约一年后月收入接近 100 万美元，现在年化收入 1.3 亿美元。",
       "who": "Inkitt 创始人兼 CEO Ali Albazaz 在 Sub Club 播客上讲公司起步。旗下有 Galatea、CandyJar 等 App，他说付费订阅用户超过一百万。",

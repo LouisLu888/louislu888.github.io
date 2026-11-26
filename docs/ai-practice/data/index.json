@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-25T14:44:56.470Z",
+  "updatedAt": "2026-11-26T14:44:21.359Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 51
+      "count": 52
     },
     {
       "id": "consulting",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 28
+      "count": 30
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 59
+      "count": 61
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-26",
+      "number": 48,
+      "title": "三个小众 App 月入近 12 万美元的投放打法，免费 ChatGPT 加 Keynote 画出论文机理图",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 7,
+      "itemCount": 5,
+      "categoryCounts": {
+        "app": 2,
+        "productivity": 2,
+        "perspective": 1
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "摔跤 App 一年从月入 1.7 万到 12 万美元"
+        },
+        {
+          "category": "productivity",
+          "headline": "免费 ChatGPT 出草图，Keynote 临摹成投稿机理图"
+        },
+        {
+          "category": "app",
+          "headline": "程序员两周半做出历史地图，1400 星来自一次转发"
+        },
+        {
+          "category": "productivity",
+          "headline": "Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图"
+        },
+        {
+          "category": "perspective",
+          "headline": "陈然：做自媒体和找商业闭环是两件事"
+        }
+      ]
+    },
     {
       "date": "2026-11-25",
       "number": 47,

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图｜AI 实干派</title>
+  <meta name="description" content="Andrej Karpathy 用 Claude Code 让模型下载并解析 31 个美国公开数据源，7 小时、4.5 万行代码后，做出一张可浏览的文明风格地图。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-26-04/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图｜AI 实干派">
+  <meta property="og:description" content="Andrej Karpathy 用 Claude Code 让模型下载并解析 31 个美国公开数据源，7 小时、4.5 万行代码后，做出一张可浏览的文明风格地图。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-26-04/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-26.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图｜AI 实干派">
+  <meta name="twitter:description" content="Andrej Karpathy 用 Claude Code 让模型下载并解析 31 个美国公开数据源，7 小时、4.5 万行代码后，做出一张可浏览的文明风格地图。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-26.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">52</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">9</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">14</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">24</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">30</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">61</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">29</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-26/">AI 实干派 048 · 2026 年 11 月 26 日 · 周四</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-26<span>·</span>US</div>
+        <h1>Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图</h1>
+        <p class="summary">Andrej Karpathy 用 Claude Code 让模型下载并解析 31 个美国公开数据源，7 小时、4.5 万行代码后，做出一张可浏览的文明风格地图。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>AI 研究者 Andrej Karpathy，周末式的个人探索项目。</dd><dt>怎么用</dt><dd>在 Claude Code 桌面版里使用 Opus 5.5（medium 档）并打开 ultracode，让它自己下载 Census、BLS、NOAA 等数据，统一映射到 25 公里的六边形网格上。</dd><dt>结果</dt><dd>他说跑了 7 小时，生成约 4.5 万行代码，覆盖 3100 多个县和 524 个都市区，有 19 种视图，并已部署上线。</dd><dt>你可以试</dt><dd>手头有多个公开数据源时，可以先给 agent 一个明确的统一口径（比如同一网格、同一套指标），让它负责下载、清洗和对齐。</dd><dt>注意</dt><dd>这次用掉了他半周的 Claude 额度；Claude 自作主张跳过了几个州和领地，结果需要人工核对覆盖范围。</dd></dl>
+        <div class="body"><p>Karpathy 在 <a href="https://x.com/karpathy/status/2125779541952246039">X 上</a>介绍了这个项目：海拔、GDP、就业、电厂、港口、灾害等数据全部换成游戏语言。GDP 对应金币产出，城市的区划对应真实的产业专长，比如 San Jose 是 Campus，并标注当地每 4 个劳动者里就有 1 个是工程师、程序员或科学家，全国平均是 1/14。Explorer 可以把任一县的任一列转成表格和散点图，并和地图联动。</p><p>值得借鉴的是任务的设定：<strong>目标模糊（他自己也说不清要做成什么），但数据口径和呈现规则写得很具体</strong>，比如奇观按国家公园访客量、大学研发经费这类公开规则来选。长时间运行的 agent 适合这种需要大量下载、解析和对齐的数据工作。最后仍要人检查覆盖范围有没有缺漏。</p></div>
+        <div class="sources">原文：<a href="https://x.com/karpathy/status/2125779541952246039" target="_blank" rel="noopener" title="Andrej Karpathy: I asked Claude to populate a Civilization-style game map with real data from the">Follow Builders (X)</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-26/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>

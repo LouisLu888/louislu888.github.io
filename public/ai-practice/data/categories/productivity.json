@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c57"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-26",
+      "headline": "免费 ChatGPT 出草图，Keynote 临摹成投稿机理图",
+      "oneLiner": "一位食品专业研究生用免费版 ChatGPT 生成机理草图当模板，再在 Keynote 里逐处临摹，画出的综述插图已随论文录用。",
+      "who": "少数派作者胡拉图说，食品专业研究生，要给「沙棘果渣固态发酵」综述画机理图。",
+      "how": "先让 ChatGPT 把正文写成约 300 字的作图提纲，再用带约束的提示词生成草图，对照正文列出修改清单，最后在 Keynote 里按模块重画。",
+      "result": "论文已投稿并被录用；全程只用了免费版 ChatGPT 和系统自带的 Keynote。",
+      "tryThis": "把要画的段落先压成「起点—中间步骤—终点」三问，答不上来就先改正文。",
+      "caveat": "AI 草图错误很多，有乱码、术语错误、箭头乱指和凭空多出的步骤，必须逐项核对，不能直接用。",
+      "body": "作者在[少数派](https://sspai.com/post/119563)写了完整流程。提示词里有四条约束他建议保留：**先出文字分区方案再画图；限定 3～4 个核心阶段；主色不超过 3 种；不许捏造正文没提到的步骤或设备。**第一版草图乍一看挺像样，但标题别扭、结晶区的表达不准确、文字过多、化学键断裂的部分没有逻辑。他的办法是把正文读熟，对着草图逐块核对，列出修改清单再开始画。\n\nKeynote 这一步的经验是**先画局部模块并成组，最后再拼整体**，背景框置底后锁定，用「对齐」「分布」统一间距。图标从 Bioicons、SciDraw 等站点下载 SVG，并逐个核对许可证。导出时先存成「最佳」质量的 PDF，再用「预览」转成 300 或 600 DPI 的 TIFF/PNG，插进 Word，按实际排版尺寸检查，最小字号不低于 8 磅。\n\n这套流程不限于论文。周报里的流程图、方案的架构图，都可以先用 AI 出构图，再自己重画。",
+      "sources": [
+        {
+          "label": "少数派",
+          "title": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图",
+          "url": "https://sspai.com/post/119563"
+        }
+      ],
+      "region": "CN",
+      "id": "2026-11-26-02",
+      "issueDate": "2026-11-26",
+      "issueNumber": 48
+    },
+    {
+      "candidateIds": [
+        "c15"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-26",
+      "headline": "Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图",
+      "oneLiner": "Andrej Karpathy 用 Claude Code 让模型下载并解析 31 个美国公开数据源，7 小时、4.5 万行代码后，做出一张可浏览的文明风格地图。",
+      "who": "AI 研究者 Andrej Karpathy，周末式的个人探索项目。",
+      "how": "在 Claude Code 桌面版里使用 Opus 5.5（medium 档）并打开 ultracode，让它自己下载 Census、BLS、NOAA 等数据，统一映射到 25 公里的六边形网格上。",
+      "result": "他说跑了 7 小时，生成约 4.5 万行代码，覆盖 3100 多个县和 524 个都市区，有 19 种视图，并已部署上线。",
+      "tryThis": "手头有多个公开数据源时，可以先给 agent 一个明确的统一口径（比如同一网格、同一套指标），让它负责下载、清洗和对齐。",
+      "caveat": "这次用掉了他半周的 Claude 额度；Claude 自作主张跳过了几个州和领地，结果需要人工核对覆盖范围。",
+      "body": "Karpathy 在 [X 上](https://x.com/karpathy/status/2125779541952246039)介绍了这个项目：海拔、GDP、就业、电厂、港口、灾害等数据全部换成游戏语言。GDP 对应金币产出，城市的区划对应真实的产业专长，比如 San Jose 是 Campus，并标注当地每 4 个劳动者里就有 1 个是工程师、程序员或科学家，全国平均是 1/14。Explorer 可以把任一县的任一列转成表格和散点图，并和地图联动。\n\n值得借鉴的是任务的设定：**目标模糊（他自己也说不清要做成什么），但数据口径和呈现规则写得很具体**，比如奇观按国家公园访客量、大学研发经费这类公开规则来选。长时间运行的 agent 适合这种需要大量下载、解析和对齐的数据工作。最后仍要人检查覆盖范围有没有缺漏。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Andrej Karpathy: I asked Claude to populate a Civilization-style game map with real data from the",
+          "url": "https://x.com/karpathy/status/2125779541952246039"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-26-04",
+      "issueDate": "2026-11-26",
+      "issueNumber": 48
+    },
+    {
+      "candidateIds": [
         "c2"
       ],
       "category": "productivity",
