@@ -1,5 +1,93 @@
 [
   {
+    "date": "2026-11-26",
+    "title": "三个小众 App 月入近 12 万美元的投放打法，免费 ChatGPT 加 Keynote 画出论文机理图",
+    "summary": "摔跤 App 一年从月入 1.7 万到 12 万美元；免费 ChatGPT 出草图，Keynote 临摹成投稿机理图；程序员两周半做出历史地图，1400 星来自一次转发；Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图；陈然：做自媒体和找商业闭环是两件事",
+    "link": "https://www.jiabinlu.com/ai-practice/d/2026-11-26/",
+    "items": [
+      {
+        "headline": "摔跤 App 一年从月入 1.7 万到 12 万美元",
+        "sources": [
+          {
+            "label": "Starter Story Podcast",
+            "title": "I Built 3 Apps to $100K/month: This is My Playbook",
+            "url": "https://www.youtube.com/@starterstory/search?query=I%20Built%203%20Apps%20to%20%24100K%2Fmonth%3A%20This%20is%20My%20Playbook"
+          }
+        ]
+      },
+      {
+        "headline": "免费 ChatGPT 出草图，Keynote 临摹成投稿机理图",
+        "sources": [
+          {
+            "label": "少数派",
+            "title": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图",
+            "url": "https://sspai.com/post/119563"
+          }
+        ]
+      },
+      {
+        "headline": "程序员两周半做出历史地图，1400 星来自一次转发",
+        "sources": [
+          {
+            "label": "少数派",
+            "title": "我用AI做了一张两千年的中国历史地图",
+            "url": "https://sspai.com/post/117510"
+          }
+        ]
+      },
+      {
+        "headline": "Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图",
+        "sources": [
+          {
+            "label": "Follow Builders (X)",
+            "title": "Andrej Karpathy: I asked Claude to populate a Civilization-style game map with real data from the",
+            "url": "https://x.com/karpathy/status/2125779541952246039"
+          }
+        ]
+      },
+      {
+        "headline": "陈然：做自媒体和找商业闭环是两件事",
+        "sources": [
+          {
+            "label": "陈然 ranchen.org",
+            "title": "关于“死磕自媒体”的一点点想法",
+            "url": "https://ranchen.org/content/20261125-ranchen-article-thoughts-on-self-media"
+          }
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "start": 0,
+        "title": "摔跤 App 一年从月入 1.7 万到 12 万美元"
+      },
+      {
+        "start": 144,
+        "title": "免费 ChatGPT 出草图，Keynote 临摹成投稿机理图"
+      },
+      {
+        "start": 243,
+        "title": "程序员两周半做出历史地图，1400 星来自一次转发"
+      },
+      {
+        "start": 337,
+        "title": "Karpathy 让 Claude 跑 7 小时，把 31 个公开数据源做成文明式地图"
+      },
+      {
+        "start": 434,
+        "title": "陈然：做自媒体和找商业闭环是两件事"
+      },
+      {
+        "start": 515,
+        "title": "今天可以做的一件事"
+      }
+    ],
+    "duration": 564,
+    "audioUrl": "https://audio.jiabinlu.com/ai-practice-2026-11-26.mp3",
+    "audioBytes": 3386684,
+    "publishedAt": "2026-11-26T22:45:47.590Z"
+  },
+  {
     "date": "2026-11-25",
     "title": "每周测 3000 条广告的阅读 App，22 分钟查出 1808 年画册的作者",
     "summary": "离开 Kindle 自建 App，一年后月收入近百万美元；历史教授交给 AI 一本无名画册，22 分钟查出作者；让 Gemini 翻邮箱，几分钟列出全部订阅开销；Simon Willison：一年三个拐点，能说清的软件就能做出来；一个周末摸透 Antigravity，最多同时跑了 42 个 agent",
