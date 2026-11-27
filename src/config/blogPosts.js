@@ -1,4 +1,5 @@
 export const BLOG_POST_FILES = [
+  'thanksgiving-2026.md',
   'product-or-self-media.md',
   'chick-fil-a-moat.md',
   'engineer-business-loop.md',
