@@ -16,6 +16,10 @@ import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
 import matter from 'gray-matter';
+import { unified } from 'unified';
+import remarkParse from 'remark-parse';
+import remarkGfm from 'remark-gfm';
+import remarkRehype from 'remark-rehype';
 import { fileURLToPath } from 'url';
 import { BLOG_POST_FILES } from '../src/config/blogPosts.js';
 
@@ -27,10 +31,16 @@ const BUTTONDOWN_API = 'https://api.buttondown.com/v1/emails';
 const BLOG_POSTS_DIR = path.join(__dirname, '..', 'public', 'blog-posts');
 const SENT_STATE_FILE = path.join(__dirname, '.newsletter-sent.json');
 
+// Gmail clips messages over ~102KB of HTML. Buttondown's template adds ~15-20KB,
+// so the article body gets this budget before it is truncated with a "read more" link.
+// Typical posts render to 15-40KB, so nearly all go out in full.
+const MAX_BODY_HTML_BYTES = 70_000;
+
 function parseArgs(argv) {
   const args = {
     post: null,
     dryRun: false,
+    draft: false,
     force: false,
     changedOnly: false,
     list: false,
@@ -40,6 +50,7 @@ function parseArgs(argv) {
   for (let i = 2; i < argv.length; i++) {
     const arg = argv[i];
     if (arg === '--dry-run') args.dryRun = true;
+    else if (arg === '--draft') args.draft = true;
     else if (arg === '--force') args.force = true;
     else if (arg === '--changed-only') args.changedOnly = true;
     else if (arg === '--all') args.all = true;
@@ -64,6 +75,7 @@ Options:
   --changed-only    Only posts changed in the pushed commit range (for CI)
   --all             Send all unsent posts (default: newest only)
   --dry-run         Preview email without sending
+  --draft           Create a Buttondown draft (not sent, sent state untouched)
   --force           Send even if already marked as sent
   --list            List unsent published posts
   --help            Show this help
@@ -129,6 +141,7 @@ function loadPost(fileName) {
     date: data.date || null,
     category: data.category || 'General',
     excerpt: data.excerpt || extractExcerpt(content),
+    content,
     published: data.published !== false,
     url: `${SITE_URL}/blog/${slug}`,
   };
@@ -144,23 +157,116 @@ function extractExcerpt(content) {
   return paragraph.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').slice(0, 280);
 }
 
-function buildEmailBody(post) {
-  const lines = [
-    post.title,
-    '',
-    post.excerpt ? `${post.excerpt}` : '',
-    post.excerpt ? '' : null,
-    `[Read on jiabinlu.com →](${post.url})`,
-    '',
-    '---',
-    '',
-    `You received this because you subscribed at [${SITE_URL}](${SITE_URL}).`,
-  ].filter((line) => line !== null);
+// Inline styles keep the layout tight in every client (Gmail drops <style> in many cases).
+const FONT = "font-size:16px;line-height:1.7;color:#1f2328";
+const STYLES = {
+  p: `margin:0 0 12px;${FONT}`,
+  h1: 'margin:24px 0 8px;font-size:21px;line-height:1.4;color:#111',
+  h2: 'margin:24px 0 8px;font-size:19px;line-height:1.4;color:#111',
+  h3: 'margin:20px 0 6px;font-size:17px;line-height:1.4;color:#111',
+  h4: 'margin:16px 0 6px;font-size:16px;line-height:1.4;color:#111',
+  ul: `margin:0 0 12px;padding-left:22px;${FONT}`,
+  ol: `margin:0 0 12px;padding-left:22px;${FONT}`,
+  li: 'margin:0 0 4px',
+  blockquote: 'margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid #d0d7de;color:#57606a',
+  hr: 'margin:20px 0;border:0;border-top:1px solid #e5e7eb',
+  img: 'display:block;max-width:100%;height:auto;margin:4px auto 12px;border-radius:6px',
+  a: 'color:#0969da',
+  pre: 'margin:0 0 12px;padding:10px 12px;background:#f6f8fa;border-radius:6px;overflow-x:auto;font-size:13px;line-height:1.5',
+  code: 'font-family:Menlo,Consolas,monospace;font-size:0.9em',
+  table: 'border-collapse:collapse;margin:0 0 12px;font-size:14px',
+  th: 'border:1px solid #d0d7de;padding:4px 8px;background:#f6f8fa',
+  td: 'border:1px solid #d0d7de;padding:4px 8px',
+};
+const VOID_TAGS = new Set(['img', 'br', 'hr', 'input']);
+const SKIP_PROPS = new Set(['className', 'dataFootnoteRef', 'dataFootnoteBackref', 'dataFootnotes', 'ariaDescribedBy', 'ariaLabel', 'id']);
 
-  return lines.join('\n');
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
-async function sendViaButtondown({ subject, body, dryRun }) {
+function absoluteUrl(url) {
+  if (typeof url !== 'string') return url;
+  if (url.startsWith('/') && !url.startsWith('//')) return `${SITE_URL}${url}`;
+  return url;
+}
+
+function hastToHtml(node, parent) {
+  if (node.type === 'root') return node.children.map((child) => hastToHtml(child, node)).join('');
+  if (node.type === 'text') {
+    // remark-rehype emits "\n" text nodes between blocks; drop them so the HTML has no blank
+    // lines (Buttondown parses the body as markdown, and a blank line would end the HTML block).
+    if (parent && parent.type !== 'element') return node.value.trim() ? escapeHtml(node.value) : '';
+    if (/^\s*$/.test(node.value) && parent && ['ul', 'ol', 'table', 'thead', 'tbody', 'tr', 'blockquote'].includes(parent.tagName)) return '';
+    return escapeHtml(node.value).replace(/\n/g, parent?.tagName === 'code' ? '\n' : ' ');
+  }
+  if (node.type !== 'element') return '';
+
+  const tag = node.tagName;
+  const props = { ...node.properties };
+  const attrs = [];
+
+  if (tag === 'a') props.href = absoluteUrl(props.href);
+  if (tag === 'img') props.src = absoluteUrl(props.src);
+  // Inline <code> inside <pre> keeps the <pre> styling only.
+  const style = tag === 'code' && parent?.tagName === 'pre' ? STYLES.code : STYLES[tag];
+  if (style) attrs.push(`style="${style}"`);
+
+  for (const [key, value] of Object.entries(props)) {
+    if (SKIP_PROPS.has(key) || value === undefined || value === null || value === false) continue;
+    const name = key.toLowerCase();
+    attrs.push(value === true ? name : `${name}="${escapeHtml(Array.isArray(value) ? value.join(' ') : value)}"`);
+  }
+
+  const open = `<${tag}${attrs.length ? ` ${attrs.join(' ')}` : ''}>`;
+  if (VOID_TAGS.has(tag)) return open;
+  return `${open}${node.children.map((child) => hastToHtml(child, node)).join('')}</${tag}>`;
+}
+
+function markdownToBlocks(markdown) {
+  const processor = unified().use(remarkParse).use(remarkGfm).use(remarkRehype);
+  const tree = processor.runSync(processor.parse(markdown));
+  // A paragraph holding only an image renders as a bare block image (no extra <p> margin).
+  return tree.children
+    .filter((node) => node.type === 'element')
+    .map((node) => {
+      const kids = node.children.filter((c) => !(c.type === 'text' && !c.value.trim()));
+      if (node.tagName === 'p' && kids.length === 1 && kids[0].tagName === 'img') return hastToHtml(kids[0], node);
+      return hastToHtml(node, tree);
+    });
+}
+
+function buildEmailBody(post) {
+  const blocks = markdownToBlocks(post.content);
+
+  let truncated = false;
+  let size = 0;
+  const kept = [];
+  for (const block of blocks) {
+    size += Buffer.byteLength(block, 'utf-8');
+    if (size > MAX_BODY_HTML_BYTES && kept.length > 0) {
+      truncated = true;
+      break;
+    }
+    kept.push(block);
+  }
+
+  // Strip a trailing <hr> so the footer link does not sit under a double divider.
+  while (kept.length && kept[kept.length - 1].startsWith('<hr')) kept.pop();
+
+  const footer = truncated
+    ? `<p style="margin:16px 0 0;${FONT}"><a style="${STYLES.a};font-weight:600" href="${post.url}">继续阅读全文 →</a></p>`
+    : `<p style="margin:20px 0 0;font-size:14px;line-height:1.6;color:#6e7781">在网站上阅读、分享或留言：<a style="${STYLES.a}" href="${post.url}">jiabinlu.com</a></p>`;
+
+  // One line, no blank lines: Buttondown treats the whole body as a single raw-HTML block.
+  return `<div>${kept.join('')}${footer}</div>`;
+}
+
+async function sendViaButtondown({ subject, body, dryRun, draft }) {
   if (dryRun) {
     console.log('\n--- DRY RUN ---');
     console.log(`Subject: ${subject}`);
@@ -186,7 +292,7 @@ async function sendViaButtondown({ subject, body, dryRun }) {
     body: JSON.stringify({
       subject,
       body,
-      status: 'about_to_send',
+      status: draft ? 'draft' : 'about_to_send',
     }),
   });
 
@@ -273,9 +379,11 @@ async function main() {
 
     console.log(`Sending: ${post.slug} — ${post.title}`);
 
-    const result = await sendViaButtondown({ subject, body, dryRun: args.dryRun });
+    const result = await sendViaButtondown({ subject, body, dryRun: args.dryRun, draft: args.draft });
 
-    if (!args.dryRun) {
+    if (args.draft) {
+      console.log(`📝 Draft created (${result.id || 'ok'}) — review it in Buttondown, nothing was sent.`);
+    } else if (!args.dryRun) {
       sentState[post.slug] = {
         sentAt: new Date().toISOString(),
         emailId: result.id || null,
