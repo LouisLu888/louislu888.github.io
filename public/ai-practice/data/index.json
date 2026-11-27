@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-11-26T14:44:21.359Z",
+  "updatedAt": "2026-11-27T14:44:25.133Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 52
+      "count": 53
     },
     {
       "id": "consulting",
       "name": "AI 咨询",
       "en": "AI consulting",
       "desc": "找客户、诊断业务、界定交付、培训、实施与维护",
-      "count": 9
+      "count": 10
     },
     {
       "id": "content",
       "name": "内容创作",
       "en": "AI content creation",
       "desc": "用 AI 辅助研究与制作，积累受众，获得广告、赞助和相关收入",
-      "count": 14
+      "count": 15
     },
     {
       "id": "saas",
@@ -48,10 +48,43 @@
       "name": "AI 生活",
       "en": "AI in daily life",
       "desc": "个人和家庭用 AI 办生活里的事：个人助手、清理忘了取消的订阅、打客服电话追回退款、账单、看病、出行",
-      "count": 29
+      "count": 30
     }
   ],
   "days": [
+    {
+      "date": "2026-11-27",
+      "number": 49,
+      "title": "1500 美元给 4000 万家公司打分，在 X 上一年涨粉 8 万的 12 条做法",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 7,
+      "itemCount": 4,
+      "categoryCounts": {
+        "perspective": 1,
+        "content": 1,
+        "life": 1,
+        "consulting": 1
+      },
+      "headlines": [
+        {
+          "category": "perspective",
+          "headline": "给全球 4000 万家公司打分，Clay 算下来约 1500 美元"
+        },
+        {
+          "category": "content",
+          "headline": "一年在 X 上涨粉 8 万：每天发三条，回复不交给 AI"
+        },
+        {
+          "category": "life",
+          "headline": "感恩节怕漏掉问候，他从本地聊天记录里找出该联系的人"
+        },
+        {
+          "category": "consulting",
+          "headline": "Aaron Levie：以 agent 为核心的服务公司，可以去做原来够不着的小客户"
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "number": 48,

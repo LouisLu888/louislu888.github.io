@@ -8,6 +8,39 @@
   "items": [
     {
       "candidateIds": [
+        "c11",
+        "c1"
+      ],
+      "category": "content",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-26",
+      "headline": "一年在 X 上涨粉 8 万：每天发三条，回复不交给 AI",
+      "oneLiner": "Zara Zhang 说她一年在 X 上涨了 8 万粉丝，前 6 个月每天发 3 条，一半是回应别人的内容，并且明确不让 AI 代写回复。",
+      "who": "Zara Zhang 是一名 builder，身边很多人从 LinkedIn 转到 X 发帖，她把自己告诉这些人的做法整理成了 12 条。",
+      "how": "她先调整信息流：找几个领域大号，关注他们关注和互动的人，大约一周后时间线就会变。之后大量发帖，一半是回复和引用，内容来自别人常问她的问题，以及她当面说过、让人觉得有新意的话。",
+      "result": "她自述一年涨粉 8 万。她估计大约十条里有一条表现不错，五十条里有一条会爆。",
+      "tryThis": "列出客户、投资人或同事最常问你的 10 个问题，每个写成一条像发短信一样随意的帖子。粉丝不到 1000 时先不推广自己的公司。",
+      "caveat": "每天发 3 条、坚持半年，需要稳定的时间和持续的想法。她特别提醒，用 AI 写的太完美的文字会让人反感，甚至可能被拉黑。",
+      "body": "Zara Zhang 在 [X 上的帖子](https://x.com/zarazhangrui/status/2126055939749118294)里说，她一年在 X 上涨了 8 万粉丝。她的比喻是 **LinkedIn 是舞台，X 是派对**：先找到自己的圈子，听大家在聊什么，再开口。LinkedIn 上一周发 3 到 5 条已经算多，她在 X 上连续 6 个月每天发 3 条。起步阶段一半内容是回复、引用和点评，其中引用别人的内容才能帮自己的账号增长。\n\n她对 AI 的态度很明确：**不要用 AI 或机器人写回复**，读的人能看出来。Simon Willison 同一天[引用了 Jack Despain Zhou 的一段话](https://simonwillison.net/2026/Nov/26/jack-despain-zhou/)：打开 YouTube、坐在会场、翻收件箱，到处都能听出 Claude 的腔调。两件事放在一起看，AI 可以帮你整理选题、回顾自己说过的话，最后发出去的句子最好还是你自己的口吻。\n\n她还建议在屏幕前录自己说话的视频，因为 X 上大多是文字，视频容易被注意到。转发公司新闻时，加上自己的看法，不用公关腔。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Zara Zhang: 12 tips for people who posted on LinkedIn but now wanna post on X\n\nA lot of peop",
+          "url": "https://x.com/zarazhangrui/status/2126055939749118294"
+        },
+        {
+          "label": "Simon Willison",
+          "title": "Quoting Jack Despain Zhou",
+          "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-27-02",
+      "issueDate": "2026-11-27",
+      "issueNumber": 49
+    },
+    {
+      "candidateIds": [
         "c51"
       ],
       "category": "content",
