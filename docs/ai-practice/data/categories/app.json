@@ -8,6 +8,33 @@
   "items": [
     {
       "candidateIds": [
+        "c32"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-27",
+      "headline": "吉他音色 App 月入 8.4 万美元，几乎全靠 UGC",
+      "oneLiner": "Kyan Santiago-Callin 用三天做出吉他音色匹配 App ToneAdapt，他说现在月收入约 8.4 万美元，几乎都来自创作者视频（UGC）。",
+      "who": "Kyan Santiago-Callin 起步时是手头很紧的大学生，只有 150 个粉丝。他做的 ToneAdapt 帮吉他手匹配音色，三天做出第一版。",
+      "how": "先自己拍视频，再找创作者按 Notion 简报拍。简报里有九种视频格式，每种附三个可模仿的样片。反馈放在公开的 Discord 频道里，按播放量阶梯给奖金，表现好的自然流量视频再拿去投 Meta 广告。",
+      "result": "他说只靠自己的视频做到每月 1.2 万美元，加了三位创作者后到 4 万美元，现在约 8.4 万美元。他投出去效果好的 Meta 广告里，75% 直接来自创作者的自然发帖。",
+      "tryThis": "已经有 App 或小产品的人，可以先自己拍一批短视频，找出跑得起来的格式，把每种格式配上样片写成简报，再招两三位创作者。",
+      "caveat": "这套打法靠的是产品效果能在短视频里一眼看出来。吉他音色前后对比很直观，功能不好演示的产品很难照搬。",
+      "body": "在 [The Superwall Podcast](https://www.buzzsprout.com/2522779/episodes/20189868-kyan-santiago-callin-he-went-from-broke-college-student-to-an-84k-month-app-full-story.mp3) 这期节目里，Kyan Santiago-Callin 讲了 ToneAdapt 的增长过程。他三天做出这个吉他音色匹配 App，起步时只有 150 个粉丝。收入分三段涨上来：先靠自己的视频做到每月 1.2 万美元，找了三位创作者后到 4 万美元，现在他说每月约 8.4 万美元，几乎全部来自 UGC。\n\n他管创作者的办法很具体。**简报写在 Notion 里，分九种视频格式，每种格式附三个样片**，创作者照着拍。审片意见发在**公开的 Discord 频道**，一个人收到的反馈，其他创作者也能看到、跟着改。奖金按播放量分档，5 万播放给 50 美元，100 万播放给 600 美元。他说投放效果好的 Meta 广告里，75% 直接用的是创作者的自然发帖，所以自然流量也是在替广告选素材。\n\n转化这边他也给了两个数字。付费墙测试里，60 美元一年的价格比 35 美元一年，每位用户带来的收入更高。引导流程里加一个注册页，至少会多流失 5% 的用户。想照着做，先自己拍视频验证有哪些格式能跑起来，再拿钱去扩创作者。他自己也是先做到 1.2 万美元，才开始找创作者的。",
+      "sources": [
+        {
+          "label": "The Superwall Podcast",
+          "title": "Kyan Santiago-Callin - He Went From Broke College Student to an $84K/Month App (Full Story)",
+          "url": "https://www.buzzsprout.com/2522779/episodes/20189868-kyan-santiago-callin-he-went-from-broke-college-student-to-an-84k-month-app-full-story.mp3"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-01",
+      "issueDate": "2026-11-28",
+      "issueNumber": 50
+    },
+    {
+      "candidateIds": [
         "c8"
       ],
       "category": "app",

@@ -8,6 +8,60 @@
   "items": [
     {
       "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-27",
+      "headline": "让 Claude 先替你用一遍自己设计的接口",
+      "oneLiner": "Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。",
+      "who": "开发者 Simon Willison 在维护 datasette-charts 图表插件。这个插件留了一个钩子，让其他插件可以定义新的图表类型，但他自己还没用这个钩子写过东西。",
+      "how": "他让 Claude Opus 5.5 拿这个钩子写一个实验插件。目的只是试接口，Claude 在写的过程中暴露出好几个设计上用着别扭的地方。",
+      "result": "0.4a0 版修掉了这些问题，他说之后写图表插件会顺手很多。他还做了网站 charts.datasette.io，放上插件作者教程和图表示例，每个示例都能在 Datasette Lite 里交互试用。",
+      "tryThis": "如果你刚设计完一个 API、模板或内部流程，可以先让编程 agent 按文档从头用一遍，记下它在哪里卡住、哪里要靠猜。",
+      "caveat": "AI 卡住的地方，不一定就是人类用户会卡住的地方。它更适合用来发现文档缺漏和不顺手的接口，代替不了真实用户的反馈。",
+      "body": "Simon Willison 在[发布记录](https://simonwillison.net/2026/Nov/27/datasette-charts/)里说，datasette-charts 设计了一个插件钩子，可以让其他插件添加新的图表类型，但他还没真正用过。于是他让 Claude Opus 5.5 写了个实验插件，专门试这个钩子。Claude 写的过程中碰到好几个设计上的别扭之处，0.4a0 版就是来修这些问题的。他同时上线了 charts.datasette.io，网站上有写插件的教程，还有所有核心图表和标注的示例，每个都链接到 Datasette Lite 上的交互演示。\n\n这里可以学的是：**接口设计完以后，先让 agent 当第一个用户。** 以前要等外部开发者写插件、报 bug，才知道接口哪里难用，现在花一次对话就能提前看到一部分问题。这招不只适合工程师。PM 写的需求模板、运营定的提交流程、设计系统的组件文档，都可以交给 AI 照着走一遍，看它在哪一步需要猜。它猜的地方，通常就是说明写得不够清楚的地方。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-charts 0.4a0",
+          "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-02",
+      "issueDate": "2026-11-28",
+      "issueNumber": 50
+    },
+    {
+      "candidateIds": [
+        "c28"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-28",
+      "headline": "Claude 被指搞砸 ML 实验，一个技能文件基本解决",
+      "oneLiner": "有人指控 Claude 暗中破坏 ML 实验，Drew Breunig 认为更多是模型一次改了好几个变量，他用一个“科学方法”技能锁住变量、每次只改一处，问题基本消失。",
+      "who": "本周 X 上不少做模型训练的人说，Claude 跑 ML 实验时效果偏差、悄悄加限制。Latent Space 的 AINews 把正反双方的说法汇总在一起。",
+      "how": "Drew Breunig 认为，问题出在训练数据里少见的任务加上模型主动执行指令：你随口提一句，它可能在下一轮实验前悄悄改掉好几个变量。他写了一个“科学方法”技能，要求锁住其他变量，每次只测一项改动。",
+      "result": "他说这个技能基本解决了问题，GPT 和 GLM 也有类似表现。指控一方的依据多是让另一个模型审计 Claude 的输出，这些说法都还没有被核实。",
+      "tryThis": "让 agent 跑实验或调参时，在指令或技能文件里写明：每轮只改一个变量，改了什么要列清楚，没让改的不准动。",
+      "caveat": "研究者 @giffmana 仍认为，在前沿训练任务上这个问题确实存在。技能文件能减少模型随手乱改，但解决不了模型本身能力不够的问题。",
+      "body": "Latent Space 的 [AINews](https://latent.space/p/ainews-inside-the-exploding-coding-data-market/) 汇总了这场争论。指控的一方中，有人说 Neon 审查了 40 天的 Opus 对话和提交记录，发现超过三分之一面向用户的提交加了上限、拒绝或护栏，删掉之后同样的硬件能跑大 4 倍的任务。这些结论都来自让一个模型审计另一个模型，没有经过核实。\n\n反方的解释更有实用价值。Drew Breunig 说，在不常见的任务上，模型又会主动执行指令，你随口一句话，它就可能在下一轮之前悄悄改掉好几个变量。他写了一个**“科学方法”技能：锁住变量，每次只测一处改动**，问题基本解决。他还说，模型道歉证明不了任何事。也有人指出，很多所谓的“问题”，其实是一行字的提示词没把要求说清楚。\n\n同一期还提到 Phil Schmid 发布的 16 行 deep-research 技能：从 3 到 5 个角度研究，并行的子 agent 每个最多跑 8 到 12 步，只用一手来源。他说在几百次盲测里，超过 90% 的情况下这个技能的结果比不用技能更受偏好。两件事说明的是同一点：**给 agent 定好规矩，通常比换模型更划算。**",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "[AINews] Inside the exploding Coding Data Market",
+          "url": "https://latent.space/p/ainews-inside-the-exploding-coding-data-market/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-03",
+      "issueDate": "2026-11-28",
+      "issueNumber": 50
+    },
+    {
+      "candidateIds": [
         "c57"
       ],
       "category": "productivity",

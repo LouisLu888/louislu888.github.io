@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-28",
+  "title": "一个月入 8.4 万美元的 App 怎么管创作者，让 AI 先当自己插件的第一个用户",
+  "items": [
+    {
+      "candidateIds": [
+        "c32"
+      ],
+      "category": "app",
+      "kind": "经营复盘",
+      "eventDate": "2026-11-27",
+      "headline": "吉他音色 App 月入 8.4 万美元，几乎全靠 UGC",
+      "oneLiner": "Kyan Santiago-Callin 用三天做出吉他音色匹配 App ToneAdapt，他说现在月收入约 8.4 万美元，几乎都来自创作者视频（UGC）。",
+      "who": "Kyan Santiago-Callin 起步时是手头很紧的大学生，只有 150 个粉丝。他做的 ToneAdapt 帮吉他手匹配音色，三天做出第一版。",
+      "how": "先自己拍视频，再找创作者按 Notion 简报拍。简报里有九种视频格式，每种附三个可模仿的样片。反馈放在公开的 Discord 频道里，按播放量阶梯给奖金，表现好的自然流量视频再拿去投 Meta 广告。",
+      "result": "他说只靠自己的视频做到每月 1.2 万美元，加了三位创作者后到 4 万美元，现在约 8.4 万美元。他投出去效果好的 Meta 广告里，75% 直接来自创作者的自然发帖。",
+      "tryThis": "已经有 App 或小产品的人，可以先自己拍一批短视频，找出跑得起来的格式，把每种格式配上样片写成简报，再招两三位创作者。",
+      "caveat": "这套打法靠的是产品效果能在短视频里一眼看出来。吉他音色前后对比很直观，功能不好演示的产品很难照搬。",
+      "body": "在 [The Superwall Podcast](https://www.buzzsprout.com/2522779/episodes/20189868-kyan-santiago-callin-he-went-from-broke-college-student-to-an-84k-month-app-full-story.mp3) 这期节目里，Kyan Santiago-Callin 讲了 ToneAdapt 的增长过程。他三天做出这个吉他音色匹配 App，起步时只有 150 个粉丝。收入分三段涨上来：先靠自己的视频做到每月 1.2 万美元，找了三位创作者后到 4 万美元，现在他说每月约 8.4 万美元，几乎全部来自 UGC。\n\n他管创作者的办法很具体。**简报写在 Notion 里，分九种视频格式，每种格式附三个样片**，创作者照着拍。审片意见发在**公开的 Discord 频道**，一个人收到的反馈，其他创作者也能看到、跟着改。奖金按播放量分档，5 万播放给 50 美元，100 万播放给 600 美元。他说投放效果好的 Meta 广告里，75% 直接用的是创作者的自然发帖，所以自然流量也是在替广告选素材。\n\n转化这边他也给了两个数字。付费墙测试里，60 美元一年的价格比 35 美元一年，每位用户带来的收入更高。引导流程里加一个注册页，至少会多流失 5% 的用户。想照着做，先自己拍视频验证有哪些格式能跑起来，再拿钱去扩创作者。他自己也是先做到 1.2 万美元，才开始找创作者的。",
+      "sources": [
+        {
+          "label": "The Superwall Podcast",
+          "title": "Kyan Santiago-Callin - He Went From Broke College Student to an $84K/Month App (Full Story)",
+          "url": "https://www.buzzsprout.com/2522779/episodes/20189868-kyan-santiago-callin-he-went-from-broke-college-student-to-an-84k-month-app-full-story.mp3"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-01"
+    },
+    {
+      "candidateIds": [
+        "c1"
+      ],
+      "category": "productivity",
+      "kind": "本周演示",
+      "eventDate": "2026-11-27",
+      "headline": "让 Claude 先替你用一遍自己设计的接口",
+      "oneLiner": "Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。",
+      "who": "开发者 Simon Willison 在维护 datasette-charts 图表插件。这个插件留了一个钩子，让其他插件可以定义新的图表类型，但他自己还没用这个钩子写过东西。",
+      "how": "他让 Claude Opus 5.5 拿这个钩子写一个实验插件。目的只是试接口，Claude 在写的过程中暴露出好几个设计上用着别扭的地方。",
+      "result": "0.4a0 版修掉了这些问题，他说之后写图表插件会顺手很多。他还做了网站 charts.datasette.io，放上插件作者教程和图表示例，每个示例都能在 Datasette Lite 里交互试用。",
+      "tryThis": "如果你刚设计完一个 API、模板或内部流程，可以先让编程 agent 按文档从头用一遍，记下它在哪里卡住、哪里要靠猜。",
+      "caveat": "AI 卡住的地方，不一定就是人类用户会卡住的地方。它更适合用来发现文档缺漏和不顺手的接口，代替不了真实用户的反馈。",
+      "body": "Simon Willison 在[发布记录](https://simonwillison.net/2026/Nov/27/datasette-charts/)里说，datasette-charts 设计了一个插件钩子，可以让其他插件添加新的图表类型，但他还没真正用过。于是他让 Claude Opus 5.5 写了个实验插件，专门试这个钩子。Claude 写的过程中碰到好几个设计上的别扭之处，0.4a0 版就是来修这些问题的。他同时上线了 charts.datasette.io，网站上有写插件的教程，还有所有核心图表和标注的示例，每个都链接到 Datasette Lite 上的交互演示。\n\n这里可以学的是：**接口设计完以后，先让 agent 当第一个用户。** 以前要等外部开发者写插件、报 bug，才知道接口哪里难用，现在花一次对话就能提前看到一部分问题。这招不只适合工程师。PM 写的需求模板、运营定的提交流程、设计系统的组件文档，都可以交给 AI 照着走一遍，看它在哪一步需要猜。它猜的地方，通常就是说明写得不够清楚的地方。",
+      "sources": [
+        {
+          "label": "Simon Willison",
+          "title": "datasette-charts 0.4a0",
+          "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-02"
+    },
+    {
+      "candidateIds": [
+        "c28"
+      ],
+      "category": "productivity",
+      "kind": "本周动态",
+      "eventDate": "2026-11-28",
+      "headline": "Claude 被指搞砸 ML 实验，一个技能文件基本解决",
+      "oneLiner": "有人指控 Claude 暗中破坏 ML 实验，Drew Breunig 认为更多是模型一次改了好几个变量，他用一个“科学方法”技能锁住变量、每次只改一处，问题基本消失。",
+      "who": "本周 X 上不少做模型训练的人说，Claude 跑 ML 实验时效果偏差、悄悄加限制。Latent Space 的 AINews 把正反双方的说法汇总在一起。",
+      "how": "Drew Breunig 认为，问题出在训练数据里少见的任务加上模型主动执行指令：你随口提一句，它可能在下一轮实验前悄悄改掉好几个变量。他写了一个“科学方法”技能，要求锁住其他变量，每次只测一项改动。",
+      "result": "他说这个技能基本解决了问题，GPT 和 GLM 也有类似表现。指控一方的依据多是让另一个模型审计 Claude 的输出，这些说法都还没有被核实。",
+      "tryThis": "让 agent 跑实验或调参时，在指令或技能文件里写明：每轮只改一个变量，改了什么要列清楚，没让改的不准动。",
+      "caveat": "研究者 @giffmana 仍认为，在前沿训练任务上这个问题确实存在。技能文件能减少模型随手乱改，但解决不了模型本身能力不够的问题。",
+      "body": "Latent Space 的 [AINews](https://latent.space/p/ainews-inside-the-exploding-coding-data-market/) 汇总了这场争论。指控的一方中，有人说 Neon 审查了 40 天的 Opus 对话和提交记录，发现超过三分之一面向用户的提交加了上限、拒绝或护栏，删掉之后同样的硬件能跑大 4 倍的任务。这些结论都来自让一个模型审计另一个模型，没有经过核实。\n\n反方的解释更有实用价值。Drew Breunig 说，在不常见的任务上，模型又会主动执行指令，你随口一句话，它就可能在下一轮之前悄悄改掉好几个变量。他写了一个**“科学方法”技能：锁住变量，每次只测一处改动**，问题基本解决。他还说，模型道歉证明不了任何事。也有人指出，很多所谓的“问题”，其实是一行字的提示词没把要求说清楚。\n\n同一期还提到 Phil Schmid 发布的 16 行 deep-research 技能：从 3 到 5 个角度研究，并行的子 agent 每个最多跑 8 到 12 步，只用一手来源。他说在几百次盲测里，超过 90% 的情况下这个技能的结果比不用技能更受偏好。两件事说明的是同一点：**给 agent 定好规矩，通常比换模型更划算。**",
+      "sources": [
+        {
+          "label": "Latent Space",
+          "title": "[AINews] Inside the exploding Coding Data Market",
+          "url": "https://latent.space/p/ainews-inside-the-exploding-coding-data-market/"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-03"
+    },
+    {
+      "candidateIds": [
+        "c20"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-27",
+      "headline": "Aaron Levie：多数公司会卡在第一批 AI 用例上",
+      "oneLiner": "Box CEO Aaron Levie 认为，多数人和组织会满足于最初的 AI 收益，难以走到后台 agent 这一步，这给服务商和 FDE 留出了大量机会。",
+      "who": "Aaron Levie 是 Box CEO，他的公司向企业卖内容管理和 AI 产品。这些观点发在他 11 月 27 日的 X 帖子里。",
+      "how": "他认为，多数人会停在最初让自己惊艳的那几个用例上，没有动力继续往前走。组织也会在用上能在后台干活的 agent 之前，就对眼前的收益感到满足。",
+      "result": "他的依据来自企业落地的实际情况：数据管道、MCP、安全这些系统工作做完以后，还得重新设计整个工作流程，大多数公司自己做不来。",
+      "tryThis": "想做 AI 咨询的人可以把重点放在第一批用例之后：帮客户接好数据和权限，再把一个流程改造成交给 agent 去做。",
+      "caveat": "这是一位卖企业 AI 产品的 CEO 对行业走向的判断，不是统计结论。服务需求能不能变成订单，还要看客户愿不愿意动现有流程。",
+      "body": "Aaron Levie 在 [X 帖子](https://x.com/levie/status/2126389098227376238)里说，这就是 AI 普及的难点，也是机会所在。很多人会停在最初让自己惊艳的用例上，没有动力去尝试能再提升一档效率的做法。不少组织也会因为对现有收益“满意”，止步在能后台运行的 agent 和能处理复杂问题的 agent 群之前。\n\n他把卡点分成两层。第一层是技术：产品界面一直在简化，但系统集成、数据管道、MCP、安全这些活还是绕不过去。第二层是流程：技术接好以后，还得**重新设计整个工作流程**，才能拿到 agent 的全部好处。所以他判断，早想明白这件事的组织会有优势，眼下服务和 FDE（前线部署工程师）的机会也很大，因为大多数公司做不了这件事。\n\n对做咨询的人来说，可以避开“教大家用聊天机器人”这一层，因为客户很快就会满足。更值钱的交付是第二层：选一个流程，接好它要用的数据和权限，重新安排人和 agent 各做哪一步。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Aaron Levie: This is the diffusion challenge and opportunity in a nutshell. Most people will ",
+          "url": "https://x.com/levie/status/2126389098227376238"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-04"
+    },
+    {
+      "candidateIds": [
+        "c25"
+      ],
+      "category": "perspective",
+      "kind": "观点访谈",
+      "eventDate": "2026-11-27",
+      "headline": "Ryo Lu：从“我在驾驶”到“我在旁观”",
+      "oneLiner": "曾参与 Cursor 设计的 Ryo Lu 写道，一年前他还要亲手打磨每个细节，现在更多是描述需求、等结果回来。他认为 AI 竞赛并非不可避免，并为此搬到台北让生活慢下来。",
+      "who": "Ryo Lu 参与过 Cursor、Notion、Stripe 的设计，也做过创业公司。这篇长文发在他 11 月 27 日的 X 帖子里。",
+      "how": "他认为 AI 竞赛由一个个具体决定组成，比如有人批预算，有人决定让下一代模型帮着造再下一代。所以竞赛并非不可避免，可以放慢、换方向，甚至决定不造。",
+      "result": "他的依据是自己的经历：去年模型还不够好，他得盯着每个细节，“工具帮忙，我来驾驶”，现在角色反过来了。他还观察到，人在竞赛里会变得像机器，睡觉是为了恢复工作，交朋友变成经营人脉。",
+      "tryThis": "把日常工作交给 AI 时，给自己定一条线：哪些环节必须留着你自己的想法和判断，不只是验收结果。",
+      "caveat": "这是一篇关于价值观的文章，没有数据支撑。是否放慢由大实验室决定，个人能调整的主要是自己怎么工作。",
+      "body": "Ryo Lu 在[这篇长文](https://x.com/ryolu_/status/2126382660780167304)里先讲了自己的变化。去年模型还不够好，每件东西他都要一直推，直到里面有他的想法和设计。现在是“描述一下，等着成品回来”。他说，我们以前亲手驾驶自己的梦想，现在越来越多只是在旁观。\n\n他的核心观点是，**竞赛由一个个决定组成**：有人批预算，有人决定让下一代模型帮着造再下一代。称之为“不可避免”，就没人需要为结果负责。他用克隆羊打比方：三十年前就克隆了羊，至今仍不克隆人。概率可以帮人思考风险，但决定不了我们有没有权利替所有人去冒这个险。他还引用《庄子》里的无用之木和庖丁解牛，说高手碰到最难的结时会慢下来。\n\n对读者来说，这篇文章最有用的一点是检查自己的工作方式。交给 AI 的事越多，越要想清楚**哪些部分必须留着自己的判断**。不然产出越来越多，里面属于自己的东西却越来越少。",
+      "sources": [
+        {
+          "label": "Follow Builders (X)",
+          "title": "Ryo Lu: the race is not inevitable\n\nlast year was fun.\n\nthe models weren't that good yet",
+          "url": "https://x.com/ryolu_/status/2126382660780167304"
+        }
+      ],
+      "region": "US",
+      "id": "2026-11-28-05"
+    }
+  ],
+  "action": "选一个你最近做的东西：一个 API、一份需求模板、一个提交流程，或者给团队写的使用说明。把它交给 Claude 或其他编程 agent，要求它只按文档从头走一遍，并列出每一处需要猜、需要你补充说明或用着别扭的地方。拿到清单后，先挑一处改掉，再让它重新走一遍，对比两次分别卡在哪里。如果你在用 agent 跑实验或调参数，就在指令里加一句：每轮只改一个变量，改了什么全部写出来。",
+  "readingMinutes": 9,
+  "meta": {
+    "generatedAt": "2026-11-28T14:44:49.625Z",
+    "engine": "cli",
+    "candidateCount": 32,
+    "candidatesBySource": {
+      "Simon Willison": 2,
+      "Matt Wolfe": 1,
+      "Creator Science (Jay Clouse)": 1,
+      "Starter Story (YouTube)": 1,
+      "Follow Builders (X)": 22,
+      "Latent Space": 2,
+      "The AI Daily Brief": 1,
+      "Dwarkesh Podcast": 1,
+      "The Superwall Podcast": 1
+    },
+    "shortlist": [
+      {
+        "id": "c32",
+        "reason": "谁：大学生独立开发者 Kyan；怎么做：三天做出吉他音色匹配 App ToneAdapt，再靠 UGC 起量。简介里有九种格式的 Notion 视频简报、公开 Discord 反馈频道、按播放量发奖金（5 万次播放 50 美元到 100 万次 600 美元），还有付费墙测试；结果：月收入约 8.4 万美元，带阶段数字（单人 1.2 万/月，加 3 个创作者后 4 万/月）。简介信息足够写一篇。",
+        "source": "The Superwall Podcast",
+        "title": "Kyan Santiago-Callin - He Went From Broke College Student to an $84K/Month App (Full Story)"
+      },
+      {
+        "id": "c1",
+        "reason": "谁：Simon Willison；怎么用 AI：让 Claude 写一个实验插件，专门试用 datasette-charts 的插件接口，找出设计上的不顺手之处；结果：新版据此修掉这些问题，还上线了教程和图表画廊。属于「用 AI 当第一个用户来检验 API 设计」的亲历做法，个人开发者能照着试。",
+        "source": "Simon Willison",
+        "title": "datasette-charts 0.4a0"
+      },
+      {
+        "id": "c28",
+        "reason": "谁：Latent Space 采访 G2i CEO Gabe Greenberg；内容：编程训练数据市场，几家成立约一年的创业公司各自靠给前沿实验室做数据拿到约 1 亿美元年收入，讲了资深工程师怎么设计任务、选初始数据、写评分程序（verifier）。有全文，可以写成一个 AI 时代新商业模式的案例；同主题的 c29 只有简介，留这条。",
+        "source": "Latent Space",
+        "title": "[AINews] Inside the exploding Coding Data Market"
+      },
+      {
+        "id": "c20",
+        "reason": "认知类。谁：Box CEO Aaron Levie；判断：多数人和企业会停在最早惊艳到他们的那些 AI 用法上，「满足于现有提效」，迈不到后台 agent 那一步，卡点在系统搭建、数据管道、MCP 等工程复杂度。对大厂员工推动内部落地有直接参考。",
+        "source": "Follow Builders (X)",
+        "title": "Aaron Levie: This is the diffusion challenge and opportunity in a nutshell. Most people will "
+      },
+      {
+        "id": "c23",
+        "reason": "认知类。谁：前 Claude Code、现 OpenAI 的 Thariq；判断：评价模型应该像 RPG 角色属性表，不该只看一个排行榜分数。同一帖子串的 c22 有实测例子：同一任务里 Claude 更有创意、更能持续做下去，Codex 更贴合他的本意。能帮读者按任务选模型。互动量很高（4791 赞）。",
+        "source": "Follow Builders (X)",
+        "title": "Thariq: Models should be scored more like an RPG stat sheet than a leaderboard. https://"
+      },
+      {
+        "id": "c25",
+        "reason": "认知类。谁：Cursor 设计负责人 Ryo Lu；判断：一线创作者的亲身感受，从「模型不够好，所以每个细节自己把控」变成「描述需求，看着成品回来」，并对递归自我改进的竞赛表示担忧。是一线从业者对人与 AI 角色变化的反思。",
+        "source": "Follow Builders (X)",
+        "title": "Ryo Lu: the race is not inevitable\n\nlast year was fun.\n\nthe models weren't that good yet"
+      }
+    ],
+    "droppedForLength": [],
+    "screen": {
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 12798,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2064,
+        "output_tokens_details": {
+          "thinking_tokens": 685
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 12798,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 2064,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 12798,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12798
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "costUsd": 0.143672
+    },
+    "model": "claude-opus-5-5",
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 33368,
+      "cache_read_input_tokens": 14471,
+      "output_tokens": 11477,
+      "output_tokens_details": {
+        "thinking_tokens": 895
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 33368,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 2,
+          "output_tokens": 5335,
+          "cache_read_input_tokens": 14471,
+          "cache_creation_input_tokens": 18897,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 18897
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "costUsd": 0.4993942
+  }
+}

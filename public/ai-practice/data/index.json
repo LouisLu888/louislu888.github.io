@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-27T14:44:25.133Z",
+  "updatedAt": "2026-11-28T14:44:53.724Z",
   "categories": [
     {
       "id": "perspective",
       "name": "AI 认知",
       "en": "Perspectives on AI",
       "desc": "方法论与世界观：一线的人怎么看 AI 的能力边界和走向，人该怎么和 AI 一起工作",
-      "count": 53
+      "count": 55
     },
     {
       "id": "consulting",
@@ -34,14 +34,14 @@
       "name": "AI App",
       "en": "AI app",
       "desc": "消费者体验与分发：获客、商店、付费转化、退款和留存",
-      "count": 30
+      "count": 31
     },
     {
       "id": "productivity",
       "name": "工作提效",
       "en": "AI at work",
       "desc": "真实工作场景里的步骤、输入与产物、人工检查和失败",
-      "count": 61
+      "count": 63
     },
     {
       "id": "life",
@@ -52,6 +52,42 @@
     }
   ],
   "days": [
+    {
+      "date": "2026-11-28",
+      "number": 50,
+      "title": "一个月入 8.4 万美元的 App 怎么管创作者，让 AI 先当自己插件的第一个用户",
+      "sample": false,
+      "hasEditorNote": false,
+      "readingMinutes": 9,
+      "itemCount": 5,
+      "categoryCounts": {
+        "app": 1,
+        "productivity": 2,
+        "perspective": 2
+      },
+      "headlines": [
+        {
+          "category": "app",
+          "headline": "吉他音色 App 月入 8.4 万美元，几乎全靠 UGC"
+        },
+        {
+          "category": "productivity",
+          "headline": "让 Claude 先替你用一遍自己设计的接口"
+        },
+        {
+          "category": "productivity",
+          "headline": "Claude 被指搞砸 ML 实验，一个技能文件基本解决"
+        },
+        {
+          "category": "perspective",
+          "headline": "Aaron Levie：多数公司会卡在第一批 AI 用例上"
+        },
+        {
+          "category": "perspective",
+          "headline": "Ryo Lu：从“我在驾驶”到“我在旁观”"
+        }
+      ]
+    },
     {
       "date": "2026-11-27",
       "number": 49,

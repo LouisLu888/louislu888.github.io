@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>让 Claude 先替你用一遍自己设计的接口｜AI 实干派</title>
+  <meta name="description" content="Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。">
+  <link rel="canonical" href="https://www.jiabinlu.com/ai-practice/i/2026-11-28-02/">
+  <meta property="og:site_name" content="AI 实干派">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="让 Claude 先替你用一遍自己设计的接口｜AI 实干派">
+  <meta property="og:description" content="Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。">
+  <meta property="og:url" content="https://www.jiabinlu.com/ai-practice/i/2026-11-28-02/">
+  <meta property="og:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-28.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="让 Claude 先替你用一遍自己设计的接口｜AI 实干派">
+  <meta name="twitter:description" content="Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。">
+  <meta name="twitter:image" content="https://www.jiabinlu.com/ai-practice/og/2026-11-28.png">
+  <link rel="icon" href="/ai-practice/logo.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="AI 实干派" href="/ai-practice/feed.xml">
+  <link rel="stylesheet" href="/ai-practice/styles.css">
+  <script src="/vendor/amplitude-min.js" defer></script>
+  <script src="/analytics.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-brand" href="/">Jiabin Lu</a>
+      <nav class="site-nav" aria-label="站点">
+        <a href="/blog">博客</a>
+        <a href="/ai-practice/" class="active">AI 实干派</a>
+        <a href="/decks/">演讲</a>
+        <a href="/services">咨询</a>
+        <a href="/products">产品</a>
+      </nav>
+    </div>
+  </header>
+  <div class="section-bar">
+    <div class="wrap header-inner">
+      <a class="brand" href="/ai-practice/">
+        <img class="brand-mark" src="/ai-practice/logo.svg" alt="" width="34" height="34">
+        <span>
+          <span class="brand-name">AI 实干派</span>
+          <span class="brand-tag">看真正用 AI 拿到结果的人怎么做</span>
+        </span>
+      </a>
+      <nav class="tabs" aria-label="视图">
+        <a href="/ai-practice/">按日期</a>
+        <a href="/ai-practice/c/">按栏目</a>
+      </nav>
+    </div>
+    <div class="wrap"><nav class="cat-bar" aria-label="栏目"><a class="cat-chip" data-cat="perspective" href="/ai-practice/c/perspective/"><span class="dot"></span>AI 认知<span class="count">55</span></a><a class="cat-chip" data-cat="consulting" href="/ai-practice/c/consulting/"><span class="dot"></span>AI 咨询<span class="count">10</span></a><a class="cat-chip" data-cat="content" href="/ai-practice/c/content/"><span class="dot"></span>内容创作<span class="count">15</span></a><a class="cat-chip" data-cat="saas" href="/ai-practice/c/saas/"><span class="dot"></span>Micro SaaS<span class="count">24</span></a><a class="cat-chip" data-cat="app" href="/ai-practice/c/app/"><span class="dot"></span>AI App<span class="count">31</span></a><a class="cat-chip active" data-cat="productivity" href="/ai-practice/c/productivity/"><span class="dot"></span>工作提效<span class="count">63</span></a><a class="cat-chip" data-cat="life" href="/ai-practice/c/life/"><span class="dot"></span>AI 生活<span class="count">30</span></a></nav></div>
+  </div>
+  <main class="wrap">
+    <article>
+      <div class="eyebrow"><a href="/ai-practice/d/2026-11-28/">AI 实干派 050 · 2026 年 11 月 28 日 · 周六</a></div>
+      <section class="item item-single">
+        <div class="item-meta"><span class="tag" data-cat="productivity">工作提效</span><span>·</span>本周演示<span>·</span>2026-11-27<span>·</span>US</div>
+        <h1>让 Claude 先替你用一遍自己设计的接口</h1>
+        <p class="summary">Simon Willison 让 Claude Opus 5.5 用他新设计的插件钩子写了个实验插件，摸出几个设计上的别扭之处，改完就发了 datasette-charts 0.4a0。</p>
+        <dl class="facts"><dt>谁·场景</dt><dd>开发者 Simon Willison 在维护 datasette-charts 图表插件。这个插件留了一个钩子，让其他插件可以定义新的图表类型，但他自己还没用这个钩子写过东西。</dd><dt>怎么用</dt><dd>他让 Claude Opus 5.5 拿这个钩子写一个实验插件。目的只是试接口，Claude 在写的过程中暴露出好几个设计上用着别扭的地方。</dd><dt>结果</dt><dd>0.4a0 版修掉了这些问题，他说之后写图表插件会顺手很多。他还做了网站 charts.datasette.io，放上插件作者教程和图表示例，每个示例都能在 Datasette Lite 里交互试用。</dd><dt>你可以试</dt><dd>如果你刚设计完一个 API、模板或内部流程，可以先让编程 agent 按文档从头用一遍，记下它在哪里卡住、哪里要靠猜。</dd><dt>注意</dt><dd>AI 卡住的地方，不一定就是人类用户会卡住的地方。它更适合用来发现文档缺漏和不顺手的接口，代替不了真实用户的反馈。</dd></dl>
+        <div class="body"><p>Simon Willison 在<a href="https://simonwillison.net/2026/Nov/27/datasette-charts/">发布记录</a>里说，datasette-charts 设计了一个插件钩子，可以让其他插件添加新的图表类型，但他还没真正用过。于是他让 Claude Opus 5.5 写了个实验插件，专门试这个钩子。Claude 写的过程中碰到好几个设计上的别扭之处，0.4a0 版就是来修这些问题的。他同时上线了 charts.datasette.io，网站上有写插件的教程，还有所有核心图表和标注的示例，每个都链接到 Datasette Lite 上的交互演示。</p><p>这里可以学的是：<strong>接口设计完以后，先让 agent 当第一个用户。</strong> 以前要等外部开发者写插件、报 bug，才知道接口哪里难用，现在花一次对话就能提前看到一部分问题。这招不只适合工程师。PM 写的需求模板、运营定的提交流程、设计系统的组件文档，都可以交给 AI 照着走一遍，看它在哪一步需要猜。它猜的地方，通常就是说明写得不够清楚的地方。</p></div>
+        <div class="sources">原文：<a href="https://simonwillison.net/2026/Nov/27/datasette-charts/" target="_blank" rel="noopener" title="datasette-charts 0.4a0">Simon Willison</a></div>
+      </section>
+      <nav class="pager">
+        <span><a href="/ai-practice/d/2026-11-28/">← 当期全部 5 条</a></span>
+        <span><a href="/ai-practice/c/productivity/">更多「工作提效」→</a></span>
+      </nav>
+    </article>
+  </main>
+  <footer class="wrap site-footer">
+    <form class="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/325louis" method="post" target="_blank">
+  <div class="subscribe-title">订阅 AI 实干派</div>
+  <input type="hidden" name="embed" value="1">
+  <input type="hidden" name="tag" value="ai-practice">
+  <div class="subscribe-row">
+    <input type="email" name="email" placeholder="你的邮箱" required aria-label="邮箱">
+    <button type="submit">订阅</button>
+  </div>
+  <div class="subscribe-freq">
+    <label><input type="radio" name="tag" value="ai-practice-daily" checked> 每天一期</label>
+    <label><input type="radio" name="tag" value="ai-practice-weekly"> 每周精选</label>
+  </div>
+  <p class="subscribe-note">邮件由 Buttondown 发送，可随时退订。订阅后也会收到卢佳斌博客的新文章通知。</p>
+  <p class="subscribe-note">也可以听：<a href="https://podcasts.apple.com/us/podcast/ai-%E5%AE%9E%E5%B9%B2%E6%B4%BE/id6826900340" target="_blank" rel="noopener" data-track-event="CTA Clicked" data-track-cta_id="podcast_apple" data-track-location="subscribe_form">Apple 播客</a> · <a href="/ai-practice/podcast/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="podcast_rss" data-track-location="subscribe_form">播客 RSS</a></p>
+</form>
+    <p>每天从全球一手来源中挑选，由 Claude 按编辑规则成稿。收入和效果按本人披露的口径呈现，不等于审计；每条都附原文链接。<a href="/">卢佳斌</a> 编辑 · <a href="/ai-practice/feed.xml" data-track-event="CTA Clicked" data-track-cta_id="rss" data-track-location="footer">RSS</a></p>
+  </footer>
+</body>
+</html>
